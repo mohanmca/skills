@@ -1,0 +1,32 @@
+{
+  "rows": [
+    [
+      "Field",
+      "Description"
+    ],
+    [
+      "cmd",
+      "Type of message.\nAlways oof, as encoded by the protocol."
+    ],
+    [
+      "topic",
+      "The topic which contained the message that has gone out of\nfocus."
+    ],
+    [
+      "msg_len",
+      "The length of the message body."
+    ],
+    [
+      "sow_key",
+      "An AMPS-created identifier for the message that has gone out of\nfocus."
+    ],
+    [
+      "reason",
+      "The reason the message has gone out of focus.\nValid reasons include deleted, expired, match, and\nentitlement."
+    ],
+    [
+      "sids",
+      "The subscription IDs of the subscriptions that produced this\nmessage.\nThe AMPS clients will provide this message to the handler\nregistered for each of the subscriptions specified."
+    ]
+  ]
+}

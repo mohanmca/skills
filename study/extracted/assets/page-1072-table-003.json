@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Header",
+      "Comment"
+    ],
+    [
+      "Topic\n(required)",
+      "Sets the topic to query. The topic specified can be the literal topic name,\nor a regular expression that matches multiple topics."
+    ]
+  ]
+}

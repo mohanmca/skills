@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "TRUE_VALUE"
+    ],
+    [
+      "TRUE_VALUE()\nReturns a boolean true value. This function is most useful for constructing values in\nmessage types that have a distinct type for boolean values. In the AMPS expression\nlanguage, true is typically represented with a literal 1.\nParameters\nNone.\nReturns\nA boolean true value."
+    ]
+  ]
+}

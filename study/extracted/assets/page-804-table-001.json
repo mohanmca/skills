@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Module",
+      "Description"
+    ],
+    [
+      "libamps_multi_authentication.so",
+      "This module supports multiple authentication\nmechanisms. In this release, LDAP and\nKerberos are provided. See Multimethod\nAuthentication Module for details."
+    ],
+    [
+      "libamps_http_entitlement.so",
+      "This module makes requests to an external\nRESTful service for authentication. This\nmodule will typically also handle entitlements\nfor the Transports that use it. See RESTful\nAuthentication and Entitlements for details."
+    ]
+  ]
+}

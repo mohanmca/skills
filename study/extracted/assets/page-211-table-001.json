@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "GREATEST"
+    ],
+    [
+      "GREATEST(number, [number, ...])\nReturns the largest of the provided numbers.\nParameters\nnumber: A list of numbers to compare.\nReturns\nThe largest of the provided numbers, or NaN if no argument is a number.\nExample\nGREATEST(/requestedQty, /availableQty, /reserveQty)"
+    ]
+  ]
+}

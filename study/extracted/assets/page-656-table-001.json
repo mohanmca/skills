@@ -1,0 +1,32 @@
+{
+  "rows": [
+    [
+      "Module Name",
+      "Does"
+    ],
+    [
+      "amps-action-do-disable-\nauthentication",
+      "Disables authentication for the instance."
+    ],
+    [
+      "amps-action-do-disable-\nentitlement",
+      "Disables entitlement for the instance."
+    ],
+    [
+      "amps-action-do-enable-\nauthentication",
+      "Enables authentication for the instance."
+    ],
+    [
+      "amps-action-do-enable-\nentitlement",
+      "Enables entitlement for the instance."
+    ],
+    [
+      "amps-action-do-reset-\nauthentication",
+      "Resets authentication by clearing AMPS caches and\nreinitializing authentication."
+    ],
+    [
+      "amps-action-do-reset-\nentitlement",
+      "Resets entitlement by clearing AMPS caches and\nreinitializing entitlement."
+    ]
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Field",
+      "Value"
+    ],
+    [
+      "",
+      "A name is interpreted as a regular expression if it contains any characters\nused in regular expression matching (for example; ^, $, *, . and so on).\nRegular expression matching provides full support for PCRE regular\nexpressions."
+    ],
+    [
+      "read",
+      "Defines the read permission for the topic.\nThe value of this field can be either true, false or an AMPS filter.\nWhen the value is true, the module grants read permission to the topic\nwith no restrictions. When the value is false, the module denies read\npermission. When the value is a filter, the module grants read permission\nto the topic only for those messages that match the filter."
+    ],
+    [
+      "write",
+      "Defines the write permission for the topic.\nThe value of this field can be either true, false or an AMPS filter.\nWhen the value is true, the module grants write permission to the topic\nwith no restrictions. When the value is false, the module denies write\npermission. When the value is a filter, the module grants write permission\nto the topic only for those messages that match the filter."
+    ],
+    [
+      "select",
+      "Defines the entitlement select list for this topic.\nWhen this value is present, the module applies the select list provided to\nthe topic entitlement.\nNotice that this element should include only the select list specifier and not\nthe enclosing brackets for the select list. For example, a valid select\nelement might be:\n\"select\":\"-/,+/id,+/home/range\""
+    ]
+  ]
+}

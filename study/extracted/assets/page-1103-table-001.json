@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Metric",
+      "Short Description"
+    ],
+    [
+      "",
+      "This is calculated as the difference in seconds between\nthe time that the last message acknowledged by the\ndestination was written to the transaction log and the\ntime that the most recent message was written to the\ntransaction log.\nThat is, if the last message that the destination has\nacknowledged was written to the local transaction log at\n12:00:01.100 (one second and 100 ms after 12:00) and\nthe last message in the transaction log was written at\n12:00:03.212, the seconds behind shown in the current\nstatistics would be approximately 2.112.\nAcknowledgments are transmitted at a specific interval\n(1s by default) from the destination instance to the source\ninstance.\nAMPS rounds any value below 1 to 0.\nNote: This is not an estimate of the time required to\nsynchronize the downstream instance."
+    ],
+    [
+      "/messages_out_per_sec",
+      "Number of messages sent to the destination (per second)."
+    ]
+  ]
+}

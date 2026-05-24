@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Field",
+      "Description"
+    ],
+    [
+      "send_matching_ids",
+      "If true subscription identifiers will be sent for a matched\nmessage."
+    ],
+    [
+      "sow_keys",
+      "A comma-delimited list of SowKeys that identify the messages\nto return from the query.\nFor example, you might send a query with the SowKeys value\n42,100,3467 which would return records with those SowKey\nvalues, if any exist in the SOW."
+    ],
+    [
+      "sub_id",
+      "The subscription ID for this command. When provided with a\nnew subscription, this is the identifier that AMPS will use for\nthe subscription.\nWhen provided with the replace option, this field specifies\nthe subscription to replace.\nWhen provided with a pause or resume option, this field\nspecifies the subscriptions to pause or resume.\nFor a new subscription, the AMPS clients will generate a\nsubscription ID if one is not provided."
+    ],
+    [
+      "top_n",
+      "Return up to the number of messages specified from the SOW\nquery."
+    ]
+  ]
+}

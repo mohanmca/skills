@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Message\nType",
+      "Description"
+    ],
+    [
+      "xml",
+      "XML messages (of any schema).\nAMPS preserves element names and attributes when parsing XML data.\nFor performance, the AMPS xml message parser limits nested element\ndepth to 64 levels of nesting."
+    ],
+    [
+      "binary",
+      "Uninterpreted binary payload.\nSince this module does not attempt to parse the payload, it does not\nsupport content filtering, views and aggregates.\nLikewise, because there is no set format for the payload, this message\ntype cannot support features that construct messages (such as delta\nmessaging, /AMPS/.* topic subscriptions and stats acks)."
+    ],
+    [
+      "protobuf",
+      "Google protocol buffer messages.\nTo use this message type, you must configure a MessageType with the\nformat of the messages (the .proto files). The section on Protobuf\nMessage Types describes this configuration."
+    ],
+    [
+      "struct",
+      "Binary data in the format of a C language struct.\nTo use this message type, you must configure a MessageType that\nspecifies the format of the message. The section on Struct Message\nTypes describes this configuration."
+    ]
+  ]
+}

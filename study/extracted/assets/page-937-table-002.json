@@ -1,0 +1,29 @@
+{
+  "rows": [
+    [
+      "Metric",
+      "Description",
+      "Type"
+    ],
+    [
+      "memory_bytes",
+      "Number of bytes consumed to maintain this\npaginated set.",
+      "snapshot"
+    ],
+    [
+      "message_type",
+      "Message type for this paginated set.",
+      "fixed"
+    ],
+    [
+      "subscription_count",
+      "Number of subscriptions using this paginated set.",
+      "snapshot"
+    ],
+    [
+      "topic",
+      "Source topic for this paginated set.",
+      "fixed"
+    ]
+  ]
+}

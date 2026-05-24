@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "TIP\nUse message queues when it is important to ensure that a message is processed\nonce, by a single consumer. When it is important to distribute messages to a\nnumber of consumers, use the AMPS publish/subscribe delivery model rather than a\nmessage queue."
+    ],
+    [
+      ""
+    ]
+  ]
+}

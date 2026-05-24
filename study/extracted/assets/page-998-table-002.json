@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Command",
+      "Description"
+    ],
+    [
+      "group_begin",
+      "Indicates the beginning of results from a SOW query."
+    ]
+  ]
+}

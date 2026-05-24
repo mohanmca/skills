@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "COUNT_DISTINCT"
+    ],
+    [
+      "COUNT_DISTINCT(expression)\nCounts the number of distinct values in an expression, ignoring NULL.\nParameters\nexpression: The expression to count distinct values from.\nReturns\nThe number of distinct values in the expression. AMPS type conversion rules apply\nwhen determining distinct values."
+    ]
+  ]
+}

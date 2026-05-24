@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Variable",
+      "Description"
+    ],
+    [
+      "AMPS_INSTANCE_NAME",
+      "The name of the AMPS instance."
+    ],
+    [
+      "AMPS_BYTE_XX",
+      "Insert byte XX, where XX is a 2-digit uppercase hex number\n(00-FF). AMPS expands this variable to the corresponding\nbyte value.\nThese variables are useful for creating field separators or\nproducing characters that are not permitted within XML."
+    ],
+    [
+      "AMPS_DATETIME",
+      "The current date and time in ISO-8601 format."
+    ],
+    [
+      "AMPS_UNIX_TIMESTAMP",
+      "The current date and time as a UNIX timestamp."
+    ]
+  ]
+}

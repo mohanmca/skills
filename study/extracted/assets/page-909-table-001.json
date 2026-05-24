@@ -1,0 +1,28 @@
+{
+  "rows": [
+    [
+      "Type",
+      "Description"
+    ],
+    [
+      "Cumulative",
+      "Statistics are cumulative since the instance was started (for\nexample, the number of bytes AMPS has sent over a given network\ninterface since the instance started)."
+    ],
+    [
+      "Fixed",
+      "Information that is fixed for the lifetime of the instance (for example,\nthe process ID of the AMPS server)."
+    ],
+    [
+      "Snapshot",
+      "The value of a metric at a specific point in time (for example, the\nnumber of active subscriptions for a client at a particular moment)."
+    ],
+    [
+      "Interval\nAverage",
+      "Average computed for this statistics interval (for example, the\nnumber of bytes sent per second on a given network interface for\nthe last statistics interval)."
+    ],
+    [
+      "Running\nAverage",
+      "Average computed since the instance was started (for example, the\nconflation ratio for a conflated topic)."
+    ]
+  ]
+}

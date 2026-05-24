@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Variable",
+      "Description"
+    ],
+    [
+      "AMPS_MINIDUMP_PATH",
+      "The path to where the minidump is created."
+    ]
+  ]
+}

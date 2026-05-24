@@ -1,0 +1,100 @@
+{
+  "rows": [
+    [
+      null,
+      null,
+      "Message",
+      null,
+      null,
+      "Entitlement\nSelect List",
+      null,
+      "Subscriber Select\nList",
+      "Result",
+      null
+    ],
+    [
+      null,
+      null,
+      "{\"a\":1, \"b\":2}",
+      null,
+      null,
+      "-/a",
+      null,
+      "+/a",
+      "{\"b\":2}",
+      null
+    ],
+    [
+      null,
+      null,
+      "{\"a\":1, \"b\":2}",
+      null,
+      null,
+      "-/,+/b",
+      null,
+      "(none)",
+      "{\"b\":2}",
+      null
+    ],
+    [
+      null,
+      null,
+      "{\"a\":1, \"b\":2, \"c\":",
+      null,
+      null,
+      "",
+      null,
+      "",
+      "{\"c\":\n{\"c2\":2}}",
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      "{\"a\":1, \"b\":2, \"c\":",
+      "",
+      "",
+      null,
+      "",
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      "{\"c\":"
+    ],
+    [
+      null,
+      "",
+      "{\"c1\":1, \"c2\":2,",
+      null,
+      null,
+      "",
+      "-",
+      "-/,+/c/c1,+/c/c2",
+      "",
+      null
+    ],
+    [
+      "",
+      null,
+      "",
+      "\"c3\":3} }",
+      null,
+      null,
+      null,
+      null,
+      null,
+      "{\"c2\":2}}"
+    ]
+  ]
+}

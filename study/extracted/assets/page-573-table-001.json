@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "file\n(required)",
+      "The file to search."
+    ],
+    [
+      "timestamp\n(required)",
+      "The timestamp to extract, in the format YYYYMMDDTHHmmSS"
+    ]
+  ]
+}

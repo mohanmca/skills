@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "error\n(required)",
+      "The error code to lookup.\nThis can also be a regular expression."
+    ]
+  ]
+}

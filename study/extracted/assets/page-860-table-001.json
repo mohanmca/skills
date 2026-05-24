@@ -1,0 +1,14 @@
+{
+  "rows": [
+    [
+      "Function",
+      "Parameters",
+      "Description"
+    ],
+    [
+      "VALUE_LOOKUP",
+      "name of lookup\none or more values for\nlookup\nThe number of values\nprovided must match the\ndefinition for the lookup\nname.",
+      "Returns a value from the referenced\ntopic as a string.\nIf multiple records match the\nlookup, returns one of those records.\nIf no records match the lookup,\nreturns NULL."
+    ]
+  ]
+}

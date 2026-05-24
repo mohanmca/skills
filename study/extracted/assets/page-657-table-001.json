@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Parameter",
+      "Description"
+    ],
+    [
+      "",
+      "If no ID is provided, these modules affect all clients."
+    ]
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "/proc/sys/fs/file-max"
+    ],
+    [
+      "Each AMPS instance needs file descriptors to service connections and maintain file\nhandles for open files. This number needs to be at least double the sum of counts for\nthe following: connected clients, SOW topics and pre-allocated journal files. This file-\nmax setting is global to the host and impacts all applications, so this needs to be set\nhigh enough to service all applications on the host.\nMinimum: 262144\nRecommended: 6815744\nTo view the value of this setting, as root you can enter the following command:\ncat /proc/sys/fs/file-max\nTo edit this value, as root you can enter the following command:\nsysctl -w fs.file-max=6815744\nThis command will update the value for /proc/sys/fs/file-max and allow\n6,815,744 concurrent files to be opened, but will only do so until the next time the\nmachine is rebooted. To make a permanent change to this setting, as a root user,\nedit the /etc/sysctl.conf file and either edit or append the following setting:\nfs.file-max = 6815744"
+    ]
+  ]
+}

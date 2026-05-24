@@ -1,0 +1,36 @@
+{
+  "rows": [
+    [
+      "Type",
+      "Description"
+    ],
+    [
+      "int8",
+      "8-bit integer"
+    ],
+    [
+      "int16",
+      "16-bit integer"
+    ],
+    [
+      "int32",
+      "32-bit integer"
+    ],
+    [
+      "int64",
+      "64-bit integer"
+    ],
+    [
+      "double",
+      "64-bit IEEE 754 floating point number"
+    ],
+    [
+      "datetime",
+      "UTC datetime containing milliseconds since Unix epoch (64-bit\nrepresentation)"
+    ],
+    [
+      "leb128",
+      "Signed LEB128 integer (variable length)"
+    ]
+  ]
+}

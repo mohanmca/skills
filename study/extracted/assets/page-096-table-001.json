@@ -1,0 +1,36 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Effect"
+    ],
+    [
+      "--verify-\nconfig",
+      "Parse and verify the specified configuration file, then exit."
+    ],
+    [
+      "--sample-\nconfig",
+      "Produce a minimal AMPS config.xml file to standard output, then\nexit."
+    ],
+    [
+      "--dump-config",
+      "Process the specified configuration file, resolving any Include\ndirectives and expanding environment variables. Dump the\nresulting file to standard output."
+    ],
+    [
+      "--version",
+      "Print the AMPS version string, then exit."
+    ],
+    [
+      "--help",
+      "Print usage information for the command line options accepted\nby the ampServer program, then exit."
+    ],
+    [
+      "--daemon",
+      "Run AMPS as a daemon process."
+    ],
+    [
+      "-D<variable>=\n<value>",
+      "Set the specified environment variable to the specified value\nwhen running the AMPS process. AMPS accepts any number of -D\noptions.\nFor example, to set the variable AMPS_PATH to /mnt/fast/AMPS\nuse the command line option -DAMPS_PATH=/mnt/fast/AMPS"
+    ]
+  ]
+}

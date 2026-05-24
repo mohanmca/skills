@@ -1,0 +1,29 @@
+{
+  "rows": [
+    [
+      "Metric",
+      "Description",
+      "Type"
+    ],
+    [
+      "module",
+      "The name of the module that implements the message type.",
+      "fixed"
+    ],
+    [
+      "name",
+      "The name of the message type.",
+      "fixed"
+    ],
+    [
+      "options",
+      "Any options provided to the module.",
+      "fixed"
+    ],
+    [
+      "type",
+      "The type configured for the message type module.\nThis configuration parameter is obsolete in 4.0 and later\nreleases.",
+      "(obsolete)"
+    ]
+  ]
+}

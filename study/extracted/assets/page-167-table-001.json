@@ -1,0 +1,20 @@
+{
+  "rows": [
+    [
+      "Filter",
+      "Evaluates as"
+    ],
+    [
+      "/data LIKE 'z'",
+      "TRUE, a member of /data matches 'z'"
+    ],
+    [
+      "/other > 30",
+      "TRUE, a member of /other is > 30"
+    ],
+    [
+      "/other > 50",
+      "FALSE, no member of /other is > 50"
+    ]
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "rows": [
+    [
+      "Module",
+      "Description"
+    ],
+    [
+      "amps-default-\nauthentication-module",
+      "Allows any username and password. Does not allow\nimplicit logon by default. Does not provide the username\nto AMPS by default."
+    ],
+    [
+      "amps-implicit-\nauthentication-module",
+      "Allows any username and password. Allows implicit logon\nby default. Does not provide the username to AMPS by\ndefault."
+    ],
+    [
+      "amps-default-no-\nauthentication-module",
+      "Does not allow authentication regardless of the\nusername and password provided.\nThis can be useful for testing application behavior when\nlogon is denied, or for setting a policy for the instance\nthat individual transports must override."
+    ]
+  ]
+}

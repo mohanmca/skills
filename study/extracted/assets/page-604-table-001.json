@@ -1,0 +1,56 @@
+{
+  "rows": [
+    [
+      "Action",
+      "Module"
+    ],
+    [
+      "Enable or Disable Transports",
+      "amps-action-do-enable-transport\namps-action-do-disable-transport"
+    ],
+    [
+      "Publish Message",
+      "amps-action-do-publish-message"
+    ],
+    [
+      "Manage Replication Acknowledgment",
+      "amps-action-do-downgrade-replication\namps-action-do-upgrade-replication"
+    ],
+    [
+      "Extract Values from a Message",
+      "amps-action-do-extract-values"
+    ],
+    [
+      "Translate Data Within an Action",
+      "amps-action-do-translate-data"
+    ],
+    [
+      "Increment Counter",
+      "amps-action-do-increment-counter"
+    ],
+    [
+      "Raise a Custom Event",
+      "amps-action-do-execute-event"
+    ],
+    [
+      "Execute System Command",
+      "amps-action-do-execute-system"
+    ],
+    [
+      "Manage Queue Transfers",
+      "amps-action-do-enable-proxied-transfer\namps-action-do-disable-proxied-transfer"
+    ],
+    [
+      "Create a Minidump",
+      "amps-action-do-minidump"
+    ],
+    [
+      "Shutdown AMPS",
+      "amps-action-do-shutdown"
+    ],
+    [
+      "Debug Action Configurations",
+      "amps-action-do-nothing\namps-action-do-echo-message"
+    ]
+  ]
+}

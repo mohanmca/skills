@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Command",
+      "Usage"
+    ],
+    [
+      "publish",
+      "Send a message to AMPS."
+    ],
+    [
+      "delta_publish",
+      "Send a partial message to AMPS. If a previous state for the\nmessage exists in the SOW Topic this message is published to,\nupdate the fields that are not NULL in this message, ignore fields\nthat are NULL (including missing fields) in this message.\nFor publishes to topics that are not defined as a SOW Topic, there\nis no difference between this command and publish."
+    ]
+  ]
+}

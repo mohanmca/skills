@@ -1,0 +1,28 @@
+{
+  "rows": [
+    [
+      "Parameter",
+      "Description"
+    ],
+    [
+      "(required)",
+      ""
+    ],
+    [
+      "MessageType\n(required)",
+      "The message type for the topic.\nThere is no default for this parameter."
+    ],
+    [
+      "Data\n(required)",
+      "The data that the message will contain."
+    ],
+    [
+      "Delta",
+      "Whether to use a delta publish.\nWhen this option is present, and the value is true, the action will use\na delta publish."
+    ],
+    [
+      "UpdateOnly",
+      "Specifies whether a delta publish is allowed to insert a record, or only\nupdate a record.\nWhen a delta publish is specified (that is, Delta is true ), and this\noption is set to true, AMPS will only accept the publish if there is a\nrecord present to be updated.\nWhen no value is specified, this option is false."
+    ]
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Field",
+      "Description"
+    ],
+    [
+      "seq",
+      "The last message sequence number processed (and, if possible, safely\npersisted) for this client."
+    ],
+    [
+      "bookmark",
+      "The last Bookmark persisted for this client."
+    ]
+  ]
+}

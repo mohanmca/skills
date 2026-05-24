@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "USER"
+    ],
+    [
+      "USER()\nReturns the user ID of the currently connected client.\nParameters\nNone.\nReturns\nThe user ID of the currently connected client.\nAvailable For\nSubscriptions to a topic or conflated topic.\nEnrichment and preprocessing."
+    ]
+  ]
+}

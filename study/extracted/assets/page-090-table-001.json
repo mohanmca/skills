@@ -1,0 +1,19 @@
+{
+  "rows": [
+    [
+      "Component",
+      "Description",
+      "Minimum\nVerification"
+    ],
+    [
+      "TIMESTAMP",
+      "Proprietary build timestamp.",
+      "(does not affect\nverification\nlevel)"
+    ],
+    [
+      "TAG",
+      "Identifier that corresponds to precise code used in\nthe release.",
+      "(does not affect\nverification\nlevel)"
+    ]
+  ]
+}

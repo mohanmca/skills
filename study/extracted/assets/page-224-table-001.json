@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "COT"
+    ],
+    [
+      "COT(number)\nReturns the cotangent of the provided number.\nParameters\nnumber: The number to operate on.\nReturns\nThe cotangent of the number.\nExample\nCOT(/x)"
+    ]
+  ]
+}

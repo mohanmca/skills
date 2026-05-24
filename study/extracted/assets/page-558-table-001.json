@@ -1,0 +1,36 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "filename\n(required)",
+      "Filename of the SOW file."
+    ],
+    [
+      "-n LIMIT",
+      "Maximum number of records to print per file."
+    ],
+    [
+      "-v, --\nverbose",
+      "Print record metadata for records and file summary."
+    ],
+    [
+      "--sizing-\nchart",
+      "Print memory sizing chart for efficiency comparison (experimental)."
+    ],
+    [
+      "-d\nDELIMITER",
+      "Prints only the record data using the provided ASCII character value\nas the record delimiter [default: 10 for newline]."
+    ],
+    [
+      "--version",
+      "Show the version number of the program and exit."
+    ],
+    [
+      "-h, --help",
+      "Show the help message and exit."
+    ]
+  ]
+}

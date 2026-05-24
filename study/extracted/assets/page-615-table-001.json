@@ -1,0 +1,20 @@
+{
+  "rows": [
+    [
+      "Variable",
+      "Description"
+    ],
+    [
+      "AMPS_CLIENT_NAME",
+      "The name of the AMPS client."
+    ],
+    [
+      "AMPS_CONNECTION_NAME",
+      "The name of the AMPS connection."
+    ],
+    [
+      "AMPS_AUTHENTICATION_ID",
+      "The authentication ID of the AMPS connection."
+    ]
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "ASIN"
+    ],
+    [
+      "ASIN(number)\nReturns the arcsine of the provided number.\nParameters\nnumber: The number to operate on.\nReturns\nThe arcsine of the number.\nExample\nASIN(/x)"
+    ]
+  ]
+}

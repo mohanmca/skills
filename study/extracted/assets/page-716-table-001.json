@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "1 <AMPSConfig>\n2 <Name>amps-1</Name>\n3 <Group>DataCenter-NYC-1</Group>\n4 ...\n5\n6 <Transports>\n7 <Transport>\n8\n9 <!-- The amps-replication transport is required. This is a\n10 proprietary message format used by AMPS to replicate\n11 messages between instances. This AMPS instance will\n12 receive replication messages on this transport. The\n13 instance can receive messages from any number of\n14 upstream instances on this transport.\n15\n16 An instance of AMPS may only define one incoming"
+    ],
+    [
+      ""
+    ]
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "rows": [
+    [
+      "1 <!-- Notice that the topics to use for the queue (ORDERS_.*) must be\n2 recorded in a transaction log. -->\n3 <SOW>\n4 <Queue>\n5 <Name>MQ</Name>"
+    ],
+    [
+      "1"
+    ],
+    [
+      "2"
+    ],
+    [
+      "3"
+    ],
+    [
+      "4"
+    ],
+    [
+      "5"
+    ]
+  ]
+}

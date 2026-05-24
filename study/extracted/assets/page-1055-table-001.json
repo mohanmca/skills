@@ -1,0 +1,72 @@
+{
+  "rows": [
+    [
+      "FIX/NVFIX Header Field",
+      "AMPS Protocol Equivalent"
+    ],
+    [
+      "20000",
+      "cmd"
+    ],
+    [
+      "20001",
+      "cmd_id"
+    ],
+    [
+      "20002",
+      "client_name"
+    ],
+    [
+      "20003",
+      "user_id"
+    ],
+    [
+      "20004",
+      "timestamp"
+    ],
+    [
+      "20005",
+      "topic"
+    ],
+    [
+      "20006",
+      "filter"
+    ],
+    [
+      "20007",
+      "message_type"
+    ],
+    [
+      "20008",
+      "ack_type"
+    ],
+    [
+      "20009",
+      "sub_id"
+    ],
+    [
+      "20011",
+      "version"
+    ],
+    [
+      "20012",
+      "expiration"
+    ],
+    [
+      "20013",
+      "N/A -- obsolete header\n(SendSubscriptionIDs)"
+    ],
+    [
+      "20014",
+      "data_only"
+    ],
+    [
+      "20015",
+      "heartbeat"
+    ],
+    [
+      "20016",
+      "timeout_interval"
+    ]
+  ]
+}

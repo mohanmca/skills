@@ -1,0 +1,8 @@
+{
+  "rows": [
+    [
+      "grouping=\n[keys]",
+      "For an aggregated subscription, the format of this option is a comm\ndelimited list of XPath identifiers within brackets.\nFor example, to aggregate entries based on their /description\n(producing one record in the aggregation for each distinct value in\n/description), you would use the following option:\ngrouping=[/description]\nThere is no default for this option. When this option is provided, a\nprojection must also be provided."
+    ]
+  ]
+}

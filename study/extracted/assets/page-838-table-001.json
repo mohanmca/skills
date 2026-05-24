@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "",
+      "Default: false"
+    ],
+    [
+      "AllowSelfSigned",
+      "Specifies whether AMPS will accept self-signed certificates\nfor https connections.\nDefault: false"
+    ]
+  ]
+}

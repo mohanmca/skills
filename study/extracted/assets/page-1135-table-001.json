@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Method",
+      "Description"
+    ],
+    [
+      "build",
+      "Returns the constructed AMPS Sink."
+    ]
+  ]
+}

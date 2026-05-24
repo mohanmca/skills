@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "LAST_UPDATED"
+    ],
+    [
+      "LAST_UPDATED()\nReturns a timestamp for the last time that a message in the SOW was updated, as a\ndouble.\nFor a subscription (including the subscription part of a sow_and_subscribe\ncommand), the LAST_UPDATED value will be the current timestamp. This function is\nmost useful for queries of a topic in the SOW.\nNotice that this field is set based on when the local instance has updated the\nmessage. For replicated topics, this means that a given message will have different\nvalues on different instances.\nParameters\nNone.\nReturns\nA timestamp for the last time the message was updated.\nAvailable For\nQueries of a SOW topic."
+    ]
+  ]
+}

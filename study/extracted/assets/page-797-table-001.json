@@ -1,0 +1,20 @@
+{
+  "rows": [
+    [
+      "Parameter",
+      "Recommendation"
+    ],
+    [
+      "",
+      "memory devoted to client messages is unavailable for other\npurposes.\nRecommended starting point for tuning large result sets:\n10% of the system memory (for example, on a server with\n128GB of memory, start with a 13GB limit). 60East\nrecommends tuning the MessageDiskLimit first. If necessary,\nincrease this parameter by 1-2% at a time.\nUse caution with settings over 20%: devoting large amounts\nof memory to client messages may cause swapping and\nreduce, rather than increase, overall performance."
+    ],
+    [
+      "MessageDiskLimit",
+      "The maximum amount of space to consume for offline\nmessages.\nRecommended starting point for tuning large result sets:\naverage record size * number of expected records * number\nof simultaneous clients, or MessageMemoryLimit, whichever is\ngreater."
+    ],
+    [
+      "MessageDiskPath",
+      "The path in which to store offline message files.\n60East recommends that the message disk path be hosted\non fast, high-capacity storage such as a PCIe-attached flash\ndrive. The available storage capacity of the disk must be\ngreater than the configured MessageDiskLimit.\nPay attention to the performance characteristics of the\ndevice: for example, some devices suffer reduced\nperformance when they run low on free space, so for those\ndevices you would want to make sure that there is space\navailable on the device even when AMPS is close to the\nMessageDiskLimit."
+    ]
+  ]
+}

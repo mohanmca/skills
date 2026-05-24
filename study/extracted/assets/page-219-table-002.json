@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "UUID7"
+    ],
+    [
+      "UUID7()\nGenerates a unique identifier (UUID) in the version 7 format specified by RFC 9562.\nParameters\nNone.\nReturns\nThe identifier is returned as a formatted string."
+    ]
+  ]
+}

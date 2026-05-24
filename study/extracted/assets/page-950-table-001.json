@@ -1,0 +1,34 @@
+{
+  "rows": [
+    [
+      "Metric",
+      "Description",
+      "Type"
+    ],
+    [
+      "last_processed_txid",
+      "Last local transaction ID processed by this cursor.",
+      "live\nstate"
+    ],
+    [
+      "last_delivered_txid",
+      "Last local transaction ID delivered to a\nsubscription from this cursor.",
+      "live\nstate"
+    ],
+    [
+      "last_result",
+      "Last result recorded by the cursor when\nevaluating a message for delivery to a subscriber.",
+      "live\nstate"
+    ],
+    [
+      "processing_count",
+      "Count of delivery evaluations by this cursor.",
+      "live\nstate"
+    ],
+    [
+      "cursor_subscriptions",
+      "Details for the subscriptions serviced by this\ncursor, including the client name, filter in use by\nthe client, current and maximum backlog for the\nsubscription, and so on.",
+      "live\nstate"
+    ]
+  ]
+}

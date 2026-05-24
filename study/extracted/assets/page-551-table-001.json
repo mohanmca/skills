@@ -1,0 +1,36 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "filename\n(required)",
+      "Filename of the AMPS journal file."
+    ],
+    [
+      "-h, --help",
+      "Show the program help message and quit."
+    ],
+    [
+      "-l LIMIT",
+      "Limit range of output to entries N:M where N is the first entry and\nM is the last entry.\nPassing in a single value, M, will return the first M results."
+    ],
+    [
+      "--localtime",
+      "Display ISO 8601 timestamp in local time."
+    ],
+    [
+      "--extents",
+      "Add local and replication extents information at the end of the\njournal dump."
+    ],
+    [
+      "--no-data",
+      "Do not display data values in the journal dump output."
+    ],
+    [
+      "--include-\nnoops",
+      "Include noops in the journal dump."
+    ]
+  ]
+}

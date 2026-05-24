@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Guide",
+      "Purpose"
+    ],
+    [
+      "Introduction to\nAMPS",
+      "Overview of AMPS features and capabilities, intended as a\nstarting point for learning AMPS."
+    ],
+    [
+      "AMPS User Guide",
+      "Description of AMPS server-side features and configuration\noptions."
+    ]
+  ]
+}

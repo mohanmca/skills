@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "SOW_KEY_HASH"
+    ],
+    [
+      "SOW_KEY_HASH()\nFor a message in a SOW topic, returns the AMPS-generated identifier for the\nmessage. For topics that do not use explicit publisher-provided keys, this function\nwill return the same value as SOW_KEY. For topics that use explicit publisher-provided\nkeys (that is, where the SOW key must be set on the header of the publish command\nrather than derived from the data), this will return the hash value AMPS uses\ninternally for the message rather than the publisher-provided key.\nThis function is designed for use in enrichment. In a query, subscription, or delete\ncommand, using the SowKeys header with the key or keys of interest is more\nefficient.\nParameters\nNone.\nReturns\nThe SOW key hash that AMPS uses internally for the message, as a string.\nAvailable For\nQueries or enrichment of a SOW topic\nSubscription to a SOW topic"
+    ]
+  ]
+}

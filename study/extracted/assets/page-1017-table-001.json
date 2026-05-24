@@ -1,0 +1,32 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "",
+      "This option must contain an entry for every field in the\naggregated message. If there is no entry for a field in this\noption, that field will not appear in the aggregated message,\neven if the field is in the underlying message.\nWhen this option is provided, a projection must also be\nprovided.\nThis option cannot be used with a bookmark."
+    ],
+    [
+      "live",
+      "Tells AMPS to send messages to subscribing clients before they\nhave been persisted to the transaction log."
+    ],
+    [
+      "no_empties",
+      "Tells AMPS not to send empty publish messages to matching\nsubscriptions.\nThis can be useful for suppressing messages where no fields\nhave changed."
+    ],
+    [
+      "no_sowkey",
+      "Tells AMPS not to send the AMPS-generated SowKey for\nmessages."
+    ],
+    [
+      "non_regex_topic",
+      "Specifies that the topic name should be a literal match, even if\nthe topic name contains regular expression characters."
+    ],
+    [
+      "oof",
+      "Send an OOF message for records that have fallen out of focus\nfrom the original subscription.\nWhen focus tracking is enabled, AMPS will also deliver the full\nmessage to a subscription when a previously out-of-focus\nmessage comes into focus."
+    ]
+  ]
+}

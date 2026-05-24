@@ -1,0 +1,20 @@
+{
+  "rows": [
+    [
+      "Level",
+      "Description"
+    ],
+    [
+      "critical",
+      "Events impacting major components of AMPS that if left uncorrected\nmay cause a fatal event or message loss."
+    ],
+    [
+      "emergency",
+      "A fatal event.\nAMPS will typically exit after logging an emergency-level event."
+    ],
+    [
+      "none",
+      "No logging, even in the case of a critical or fatal event."
+    ]
+  ]
+}

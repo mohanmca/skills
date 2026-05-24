@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Option /\nHeader",
+      "Result"
+    ],
+    [
+      "top_n\n(option)",
+      "Limits the results returned to the number of messages specified.\nWhen a skip_n option is also provided for a subscription, AMPS\ncreates a paginated subscription. Otherwise, this option applies only\nto the SOW query part of a sow_and_subscribe or\nsow_and_delta_subscribe command."
+    ],
+    [
+      "skip_n\n(option)",
+      "Skips the number of messages specified before returning results.\nA command that provides this option must also provide a top_n\noption."
+    ]
+  ]
+}

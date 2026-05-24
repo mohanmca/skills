@@ -1,0 +1,20 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Definition"
+    ],
+    [
+      "server\n(required)",
+      "AMPS server to connect to."
+    ],
+    [
+      "topic\n(required)",
+      "Topic to delete records from."
+    ],
+    [
+      "file",
+      "File from which to read messages to be deleted."
+    ]
+  ]
+}

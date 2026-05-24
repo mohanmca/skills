@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "ResourceURI",
+      "Identifier for the credential store to use for this entitlement\ncontext. This is a synonym for the CredentialStore parameter.\nThe module accepts this synonym to make it easier to verify that\nthe Entitlement context and the Authentication context use\nthe same values.\nThere is no default for this parameter. Either the ResourceURI or\nCredentialStore must be provided. If both are provided, the\nmodule uses the value of the CredentialStore."
+    ],
+    [
+      "CredentialStore",
+      "Identifier for the entitlement cache. When used for entitlement,\nthis is the name of the entitlement cache that AMPS uses to look"
+    ]
+  ]
+}

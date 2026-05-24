@@ -1,0 +1,54 @@
+{
+  "rows": [
+    [
+      "Element",
+      "Description",
+      "Type"
+    ],
+    [
+      "anonymous",
+      "The total amount of anonymous memory allocated.",
+      "snapshot"
+    ],
+    [
+      "available",
+      "The total amount of memory available.\nThis is the MemAvailable reported by the operating\nsystem, or the sum of free, buffers and cached if\nMemAvailable is not provided by the operating system.",
+      "snapshot"
+    ],
+    [
+      "buffers",
+      "The amount of physical memory available for file buffers.",
+      "snapshot"
+    ],
+    [
+      "cached",
+      "The amount of physical memory used as cache memory.",
+      "snapshot"
+    ],
+    [
+      "free",
+      "The amount of physical memory left unused by the\nsystem.",
+      "snapshot"
+    ],
+    [
+      "in_use",
+      "The amount of memory currently in use.",
+      "snapshot"
+    ],
+    [
+      "swap_free",
+      "The amount of swap memory which is unused.",
+      "snapshot"
+    ],
+    [
+      "swap_total",
+      "The total amount of physical swap memory.",
+      "fixed"
+    ],
+    [
+      "total",
+      "Total amount of RAM.",
+      "fixed"
+    ]
+  ]
+}

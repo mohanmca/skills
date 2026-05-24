@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Parameter",
+      "Description"
+    ],
+    [
+      "Event\n(required)",
+      "The name of the event to raise.\nThere is no default value for this parameter."
+    ],
+    [
+      "EventVariable\n(required)",
+      "The variable from which to retrieve the name of the event to raise.\nThere is no default value for this parameter."
+    ]
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Metric",
+      "Short Description"
+    ],
+    [
+      "/seconds_behind",
+      "Age of oldest unacknowledged message in the queue."
+    ],
+    [
+      "/queue_depth",
+      "Number of messages in the queue."
+    ]
+  ]
+}

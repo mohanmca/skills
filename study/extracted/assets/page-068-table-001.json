@@ -1,0 +1,19 @@
+{
+  "rows": [
+    [
+      "Component",
+      "Description",
+      "Minimum\nVerification"
+    ],
+    [
+      "MAJOR",
+      "Increments when there are any backward-\nincompatible changes in functionality, file formats,\nclient network formats or configuration; or when\ndeprecated functionality is removed.\nMay introduce major new functionality or include\ninternal improvements that introduce major\nbehavioral changes.",
+      "Megacert"
+    ],
+    [
+      "MINOR",
+      "Increments when functionality is added in a\nbackwards-compatible way, or when functionality\nis deprecated.\nMay include internal improvements, including\ninternal improvements that introduce minor\nbehavioral changes or changes to network\nformats used only by the AMPS server (such as\nreplication).",
+      "Megacert"
+    ]
+  ]
+}

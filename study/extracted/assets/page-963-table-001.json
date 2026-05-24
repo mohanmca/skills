@@ -1,0 +1,34 @@
+{
+  "rows": [
+    [
+      "Metric",
+      "Description",
+      "Type"
+    ],
+    [
+      "is_enabled",
+      "Indicates whether the transport is enabled.",
+      "snapshot"
+    ],
+    [
+      "message_type",
+      "The message type for this transport.",
+      "fixed"
+    ],
+    [
+      "name",
+      "The name of this transport.",
+      "fixed"
+    ],
+    [
+      "options",
+      "The options provided for this transport.",
+      "fixed"
+    ],
+    [
+      "type",
+      "The type of transport.",
+      "fixed"
+    ]
+  ]
+}

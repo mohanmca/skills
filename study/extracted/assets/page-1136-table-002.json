@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Method",
+      "Description"
+    ],
+    [
+      "setDeliveryGuarantee",
+      "Sets the sink's delivery guarantee. Default is NONE.\nThis should only be set to AT_LEAST_ONCE or\nEXACTLY_ONCE if checkpointing is enabled. EXACTLY_ONCE\nrequires strictly increasing timestamps. AT_LEAST_ONCE\nshould be used over EXACTLY_ONCE for message queues."
+    ],
+    [
+      "setUseSuffix",
+      "Sets the flag for if a suffix should be appended to the client\nname. Default is false, but it will be set to true if parallelism\nis greater than 1."
+    ]
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Field",
+      "Description"
+    ],
+    [
+      "correlation_id",
+      "A user-provided string that will be passed, verbatim, to\nsubscribers.\nIf this header is not present on the SOW record, subscribers\nreceive no value for the CorrelationId.\nThe contents of this header must consist of characters that are\nlegal in Base64 encoding."
+    ],
+    [
+      "msg_len",
+      "The length of the next SOW message in the data portion of this\nmessage."
+    ]
+  ]
+}

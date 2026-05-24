@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "ISO8601(timestamp)",
+      "Convert an AMPS statistics timestamp to an ISO8601\nformat string."
+    ],
+    [
+      "ISO8601_local(timestamp)",
+      "Convert an AMPS statistics timestamp to an ISO8601\nformat string in the local timezone."
+    ]
+  ]
+}

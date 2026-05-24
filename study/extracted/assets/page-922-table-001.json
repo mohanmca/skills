@@ -1,0 +1,14 @@
+{
+  "rows": [
+    [
+      "Metric",
+      "Description",
+      "Type"
+    ],
+    [
+      "command_queue_depth",
+      "The number of pending commands.",
+      "snapshot"
+    ]
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "LOG10\nLOG10(number)"
+    ],
+    [
+      "Returns the base-10 logarithm of the provided number.\nParameters\nnumber: The number to operate on.\nReturns\nThe base-10 logarithm of the number.\nExample\nLOG10(/displayData)"
+    ]
+  ]
+}

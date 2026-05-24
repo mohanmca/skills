@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "conflation=n",
+      "Specifies whether to conflate this subscription. The value\nprovided can be a time interval, auto or none.\nWhen present and set to a value other than none, enables\nconflation for the subscription.\nCan also be set to auto, which requests that AMPS attempt to\ndetermine an appropriate conflation interval based on client\nconsumption.\nRecognizes the same time specifiers used in the AMPS\nconfiguration file (for example, 100ms or 1s or 1m).\nDefaults to none."
+    ],
+    [
+      "conflation_key=\n[keys]",
+      "When conflation is enabled, specifies the fields to use to\ndetermine message uniqueness. The format of this option is a\ncomma-delimited list of XPath identifiers within brackets.\nFor example, to conflate based on the value of the /tickerId\nand /customerId within a message. the value of this option\nwould be:\n[/tickerId,/customerId]\nDefaults to the SOW key fields for SOW topics.\nNo default for non-SOW topics. This option is required for non-\nSOW topics.\nThis option is not valid with the oof option unless the keys\nprovided are identical to the keys for the topic.\nThis option can only be used when conflation is also\nspecified."
+    ]
+  ]
+}

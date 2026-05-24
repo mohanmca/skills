@@ -1,0 +1,44 @@
+{
+  "rows": [
+    [
+      "Character",
+      "Meaning"
+    ],
+    [
+      "^",
+      "Beginning of string"
+    ],
+    [
+      "$",
+      "End of string"
+    ],
+    [
+      ".",
+      "Any character except a newline"
+    ],
+    [
+      "*",
+      "Match previous 0 or more times"
+    ],
+    [
+      "?",
+      "Match previous 0 or 1 times"
+    ],
+    [
+      "()",
+      "Grouping of expression"
+    ],
+    [
+      "[]",
+      "Set of characters"
+    ],
+    [
+      "{}",
+      "Repetition modifier"
+    ],
+    [
+      "\\",
+      "Escape for special characters"
+    ]
+  ]
+}

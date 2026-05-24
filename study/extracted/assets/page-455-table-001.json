@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Identifier",
+      "Value"
+    ],
+    [
+      "/id",
+      "1"
+    ],
+    [
+      "/data",
+      "\"sample\""
+    ],
+    [
+      "/message",
+      "[\"part one message\", \"another part\"]"
+    ],
+    [
+      "/customer",
+      "\"Awesome Amalgamated, Ltd.\""
+    ]
+  ]
+}

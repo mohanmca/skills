@@ -1,0 +1,8 @@
+{
+  "rows": [
+    [
+      "1 <Admin>\n2 <!-- ... existing configuration ... -->\n3\n4 <!-- URI to use for sending commands to AMPS. -->\n5\n<SQLTransportInetAddr>proxy_host_address/amps_four/wss</SQLTransportInetAd\n6 </Admin>",
+      ""
+    ]
+  ]
+}

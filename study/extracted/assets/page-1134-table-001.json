@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Method",
+      "Description"
+    ],
+    [
+      "setUri",
+      "Sets the URI that will be used to connect to AMPS."
+    ],
+    [
+      "setServerChooserSupplier",
+      "Sets the supplier used to get a server chooser to\nconnect to AMPS. The supplier must be serializable."
+    ]
+  ]
+}

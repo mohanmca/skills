@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Header",
+      "Comment"
+    ],
+    [
+      "topic\n(required)",
+      "Sets the topic to publish to. The topic specified must be a literal\ntopic name. Regular expression characters in the topic name are\nnot interpreted. Some topics in AMPS, such as views and\nconflated topics, cannot be published to directly. Instead, a\npublisher must publish to the underlying topics."
+    ],
+    [
+      "data",
+      "The data to publish to the topic. The AMPS client does not\ninterpret, escape, or validate this data: the data is provided to the"
+    ]
+  ]
+}

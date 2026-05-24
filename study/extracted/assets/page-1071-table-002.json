@@ -1,0 +1,40 @@
+{
+  "rows": [
+    [
+      null,
+      "Header",
+      "Comment",
+      null
+    ],
+    [
+      null,
+      "Topic\n(required)",
+      "Sets the topic to query. The topic specified can be the literal topic name,\nor a regular expression that matches multiple topics.",
+      null
+    ],
+    [
+      null,
+      "Options",
+      "The top_n option specifies the maximum number of records to return\nfrom the query. AMPS uses the OrderBy header to determine the order\nof the records. If no OrderBy header is provided, records are returned in\nan indeterminate order. In most cases, using an OrderBy header when\nyou use the TopN header will guarantee that you get the records of\ninterest. For example, to specify that the first ten records are returned,\nyou would use the option top_n=10",
+      null
+    ],
+    [
+      null,
+      "OrderBy",
+      "Orders the results returned as specified. Requires a comma-separated\nlist of identifiers of the form: /field/[ASC | DESC]. For example, to sort\nin descending order by orderDate so that the most recent orders are\nfirst, and ascending order by customerName for orders with the same\ndate, you might use a specifier such as: /orderDate DESC,\n/customerName ASC",
+      null
+    ],
+    [
+      "",
+      "",
+      "",
+      "/customerName ASC"
+    ],
+    [
+      null,
+      "",
+      null,
+      null
+    ]
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Header",
+      "Comment"
+    ],
+    [
+      "",
+      "or one of the client-provided constants. AMPS also accepts a comma-\ndelimited list of bookmarks. In this case, AMPS begins the subscription\nfrom whichever of the bookmarks is earliest in the transaction log."
+    ],
+    [
+      "ack_type",
+      "Sets the acknowledgment messages that AMPS returns. The AMPS\nclients typically request a processed acknowledgment for a subscription\nto verify whether the subscription succeeded. To receive a completed\nacknowledgment, which indicates the point at which replay is complete\nfor the subscription, include completed in the set of acknowledgments\nrequested. AMPS will return a message with a command type of ack and\nan ack type of completed at that point in the subscription."
+    ]
+  ]
+}

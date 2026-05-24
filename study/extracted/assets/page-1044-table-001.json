@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Field",
+      "Description"
+    ],
+    [
+      "cmd",
+      "Type of message.\nAlways group_end, as encoded by the protocol."
+    ],
+    [
+      "query_id",
+      "The query_id of the query that produced this message. If no explicit\nquery ID was submitted, this will be the command ID of the command\nthat ran the query."
+    ]
+  ]
+}

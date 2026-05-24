@@ -1,0 +1,20 @@
+{
+  "rows": [
+    [
+      "Module Name",
+      "Does"
+    ],
+    [
+      "amps-action-do-\narchive-journal",
+      "Archives journal files that are older than a specified age to the\nJournalArchiveDirectory specified for the transaction log.\nThis action marks files to be archived and then returns."
+    ],
+    [
+      "amps-action-do-\ncompress-journal",
+      "Compresses journal files that are older than a specified age.\nThis action marks files to be compressed and then returns."
+    ],
+    [
+      "amps-action-do-\nremove-journal",
+      "Deletes journal files that are older than a specified age.\nThis action marks files to be deleted and then returns.\nIf a journal file is currently in use, it will be removed when it is\nno longer in use."
+    ]
+  ]
+}

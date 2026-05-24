@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Queue Type",
+      "Initial Owner"
+    ],
+    [
+      "LocalQueue\ncannot be\nreplicated",
+      "N/A\nEach instance owns its copy of the message. The queue is not\nreplicated. Each instance will independently deliver its copy of\nthe message."
+    ]
+  ]
+}

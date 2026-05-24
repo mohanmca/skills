@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "GEO_DISTANCE"
+    ],
+    [
+      "GEO_DISTANCE(first_latitude, first_longitude, second_latitude,\nsecond_longitude)\nReturns a double that contains the distance between the point identified by\nfirst_latitude, first_longitude and second_latitude, second_longitude in\nmeters. AMPS uses the haversine formula when computing distances.\nParameters\nfirst_latitude: The latitude of the first point.\nfirst_longitude: The longitude of the first point.\nsecond_latitude: The latitude of the second point.\nsecond_longitude: The longitude of the second point.\nReturns\nA double representing the distance between the two points in meters.\nExample\nGiven a home point and a message containing /lat and /long fields, you could use\nthe following expression to calculate the distance from home.\nGEO_DISTANCE( /lat, /long, 40.786337, -119.206508)"
+    ]
+  ]
+}

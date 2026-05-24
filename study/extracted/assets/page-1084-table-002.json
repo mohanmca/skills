@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Header",
+      "Comment"
+    ],
+    [
+      "topic\n(required)",
+      "Sets the topic to subscribe to. All messages from the topic will be\ndelivered on this subscription. The topic specified can be the literal topic\nname, or a regular expression that matches multiple topics."
+    ],
+    [
+      "opts",
+      "A comma-delimited set of options for this command. See the subscribe\nsection for a description of supported options."
+    ]
+  ]
+}

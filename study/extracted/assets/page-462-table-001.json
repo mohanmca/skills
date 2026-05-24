@@ -1,0 +1,28 @@
+{
+  "rows": [
+    [
+      "Specifier",
+      "C Type",
+      "Size (bytes)",
+      "AMPS\nType"
+    ],
+    [
+      "x",
+      "n/a",
+      "(number of bytes must be specified)",
+      "padding\nbytes,\nignored by\nAMPS"
+    ],
+    [
+      "c",
+      "char",
+      "1 (number of bytes may be specified)",
+      "string"
+    ],
+    [
+      "b",
+      "signed char",
+      "1",
+      "integer"
+    ]
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "rows": [
+    [
+      "Method",
+      "Description"
+    ],
+    [
+      "setReconnectDelayStrategySupplier",
+      "Sets the supplier that gets each client a\nReconnectDelayStrategy. Default uses\nexponential delay. The supplier must be\nserializable."
+    ],
+    [
+      "setHeartbeat",
+      "Sets the heartbeat interval in seconds for the\nclients."
+    ],
+    [
+      "setMaxBacklog",
+      "Sets the max backlog when subscribing to a\nmessage queue. If \"max_backlog=n\" is set\nusing options, then this value will be ignored.\nOnly valid for queues."
+    ],
+    [
+      "setPruneInterval",
+      "Sets the milliseconds that must pass before a\nLoggedBookmarkStore is pruned. Default is\n30_000L or 30 seconds. This field only has an\neffect if there is a bookmark store defined, and\nit is a LoggedBookmarkStore."
+    ],
+    [
+      "setHeaderKeys",
+      "Sets the headers that should be preserved\nfrom a message from AMPS. The headers will\nbe preserved in an AMPSMessage and can only\nbe accessed using the\n.getHeader(AMPSSourceHeaderKeys) method\nin an AMPSDeserializationSchema."
+    ],
+    [
+      "setConnectorInitializer",
+      "Sets the ConnectorInitializer that will run\nits init(HAClient) method before the reader\nconnects to AMPS. This can be used to execute\ncode such as setting up an SSLContext for the\nAMPS clients."
+    ]
+  ]
+}

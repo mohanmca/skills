@@ -1,0 +1,44 @@
+{
+  "rows": [
+    [
+      "AMPS Severity",
+      "Syslog Severity"
+    ],
+    [
+      "none",
+      "LOG_DEBUG"
+    ],
+    [
+      "developer",
+      "LOG_DEBUG"
+    ],
+    [
+      "trace",
+      "LOG_DEBUG"
+    ],
+    [
+      "stats",
+      "LOG_INFO"
+    ],
+    [
+      "info",
+      "LOG_INFO"
+    ],
+    [
+      "warning",
+      "LOG_WARNING"
+    ],
+    [
+      "error",
+      "LOG_ERR"
+    ],
+    [
+      "critical",
+      "LOG_CRIT"
+    ],
+    [
+      "emergency",
+      "LOG_EMERG"
+    ]
+  ]
+}

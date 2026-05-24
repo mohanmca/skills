@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Header",
+      "Comment"
+    ],
+    [
+      "topic\n(required)",
+      "Sets the topic to subscribe to. The topic specified can be the literal topic\nname, or a regular expression that matches multiple topics."
+    ],
+    [
+      "opts",
+      "A comma-separated list of options for the command. Set the conflation\ninterval in the options. For example, to set a conflation interval of 250\nmilliseconds, provide the following option: conflation=250ms. To set the\nconflation interval to 1 minute, provide an option of: conflation=1m ."
+    ]
+  ]
+}

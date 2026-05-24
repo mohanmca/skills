@@ -1,0 +1,52 @@
+{
+  "rows": [
+    [
+      "Example Name",
+      "Demonstrates"
+    ],
+    [
+      "CustomSerializerExample.java",
+      "A job that uses a custom serialization schema\nwhen serializing messages being published to\nAMPS."
+    ],
+    [
+      "MessageQueueExample.java",
+      "Jobs that use message queues with the\nconnectors. Also includes an example that\ndemonstrates fault tolerance when using the\nconnectors with a message queue."
+    ],
+    [
+      "ParallelSourceExample.java",
+      "A job that highlights how messages are not lost\nwhen using parallelism with the AMPS Sources."
+    ],
+    [
+      "PublishStoreExample.java",
+      "A job that shows how publish stores can be\nused by the AMPS Sink to ensure all messages\nare delivered."
+    ],
+    [
+      "ReplicationExample.java",
+      "Jobs that revolve around replication with the\nconnectors."
+    ],
+    [
+      "SOWExample.java",
+      "A job that focuses on SOW queries."
+    ],
+    [
+      "SSLExample.java",
+      "A job that is a modification of\nSimpleExample.java that involves setting up an\nSSLContext for the AMPS clients used by the\nconnectors."
+    ],
+    [
+      "SimpleExample.java",
+      "A job that uses the connectors to publish and\nreceive ad hoc messages."
+    ],
+    [
+      "SoakTest.java",
+      "A long-running job that uses ad hoc messages\nto ensure the connectors do not encounter a\nfailure when running for long periods of time."
+    ],
+    [
+      "TableExample.java",
+      "Jobs that involve using the Flink table API along\nwith the connectors."
+    ],
+    [
+      "VolumeExample.java",
+      "A job that receives a large volume of messages\nfrom an AMPS Source and publishes those\nmessages back to AMPS with an AMPS Sink."
+    ]
+  ]
+}

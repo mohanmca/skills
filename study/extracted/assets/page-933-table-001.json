@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Element",
+      "Description",
+      "Type"
+    ],
+    [
+      "event",
+      "The type of event logged. For example, started or shutdown.",
+      "fixed"
+    ],
+    [
+      "timestamp",
+      "The timestamp of the event.",
+      "fixed"
+    ],
+    [
+      "version",
+      "The AMPS version string for the instance that logged the event.",
+      "fixed"
+    ]
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "rows": [
+    [
+      "AMPS Code",
+      "Component"
+    ],
+    [
+      "00",
+      "AMPS Startup"
+    ],
+    [
+      "01",
+      "General"
+    ],
+    [
+      "02",
+      "Message Processing"
+    ],
+    [
+      "03",
+      "Expiration"
+    ],
+    [
+      "04",
+      "Publish Engine"
+    ],
+    [
+      "05",
+      "Statistics"
+    ],
+    [
+      "06",
+      "Metadata"
+    ],
+    [
+      "07",
+      "Client"
+    ],
+    [
+      "08",
+      "Regex"
+    ],
+    [
+      "09",
+      "ID Generator"
+    ],
+    [
+      "0A",
+      "Diff Merge"
+    ],
+    [
+      "0B",
+      "Out of Focus Processing"
+    ],
+    [
+      "0C",
+      "View"
+    ],
+    [
+      "0D",
+      "Message Data Cache"
+    ],
+    [
+      "0E",
+      "Conflated Topic"
+    ],
+    [
+      "0F",
+      "Message Processor Manager"
+    ],
+    [
+      "11",
+      "Connectivity"
+    ]
+  ]
+}

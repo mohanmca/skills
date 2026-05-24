@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Element",
+      "Description"
+    ],
+    [
+      "downgrade",
+      "Change the replication type of this connection from sync to async."
+    ],
+    [
+      "reconnect",
+      "Close and reopen the connection to the remote instance."
+    ]
+  ]
+}

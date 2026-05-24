@@ -1,0 +1,36 @@
+{
+  "rows": [
+    [
+      "Field",
+      "Description"
+    ],
+    [
+      "cmd",
+      "Command to be executed.\nValue: subscribe"
+    ],
+    [
+      "topic",
+      "Topic to place a subscription against."
+    ],
+    [
+      "ack_type",
+      "Acknowledgment type for the given command.\nValue is a comma separated list of one or more of the following:\nnone, received, processed or completed."
+    ],
+    [
+      "bookmark",
+      "A bookmark specifying the point in the transaction log at which\nto start the subscription.\nIf the topic provided is not recorded in a transaction log, AMPS\nenters the subscription without replaying messages. You can\nprovide a single bookmark, or a comma-delimited list of\nbookmarks. When a list is provided, AMPS starts the\nsubscription at the earliest bookmark in the list."
+    ],
+    [
+      "cmd_id",
+      "If specified with an AMPS command requesting an\nacknowledgment message, all requested acknowledgment\nmessages will contain the CommandId in the ack response\nheader."
+    ],
+    [
+      "data_only",
+      "A Boolean value (true or false) which, if true, will send only\nraw data to subscriber for a matching publish message.\nIn the case where the message type is XML, the SOAP envelope\nwill not be included."
+    ],
+    [
+      "filter",
+      "A CDATA wrapped string, used as a content filter expression."
+    ]
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "rows": [
+    [
+      "1 <MessageTypes>\n2 <MessageType>\n3 <Name>custom-composite</Name>\n4 <Module>composite-local</Module>\n5 <MessageType>json</MessageType>"
+    ],
+    [
+      "1"
+    ],
+    [
+      "2"
+    ],
+    [
+      "3"
+    ],
+    [
+      "4"
+    ],
+    [
+      "5"
+    ]
+  ]
+}

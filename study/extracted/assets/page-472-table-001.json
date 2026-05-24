@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Acknowledgment\nType",
+      "Description"
+    ],
+    [
+      "completed",
+      "The command (or a portion of the command) has\ncompleted."
+    ]
+  ]
+}

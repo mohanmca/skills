@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "LDAP.PasswordFile",
+      "Specifies the file name from which to read the password to\nprovide when authenticating to a destination that uses LDAP\nauthentication.When this option is specified, the module will\nprovide LDAP authentication and an LDAP.Username must also\nbe specified.There is no default for this parameter."
+    ]
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project xmlns=\"http://maven.apache.org/POM/4.0.0\"\nxmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\nxsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0\nhttp://maven.apache.org/xsd/maven-4.0.0.xsd\">\n<modelVersion>4.0.0</modelVersion>\n<groupId>example</groupId>\n<artifactId>first-program</artifactId>\n<version>1.0.0</version>\n<name>first-program</name>\n<packaging>jar</packaging>\n<properties>\n<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>\n<maven.compiler.release>17</maven.compiler.release>\n<flink.version>2.2.0</flink.version>\n<amps.client.version>5.3.5.0</amps.client.version>\n<amps.flink.connector.version>1.2.0-2.2</amps.flink.connector.version\n</properties>\n<dependencies>\n<dependency>\n<groupId>com.crankuptheamps</groupId>\n<artifactId>amps-client</artifactId>\n<version>${amps.client.version}</version>"
+    ],
+    [
+      ""
+    ]
+  ]
+}

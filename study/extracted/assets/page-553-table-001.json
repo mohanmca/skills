@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Field",
+      "Description"
+    ],
+    [
+      "File\nName",
+      "The name of the file as it appears on the local filesystem."
+    ],
+    [
+      "File Size",
+      "Number of total bytes allocated by the journal file."
+    ],
+    [
+      "Version",
+      "This is the version of the formatting used to write the data in the journal\nfile."
+    ],
+    [
+      "Extents",
+      "A pair of numbers where the first is the number of extents used by the\njournal file, and the second is the number of blocks allocated for the\njournal file."
+    ]
+  ]
+}

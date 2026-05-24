@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "CRC64"
+    ],
+    [
+      "CRC64(string)\nReturns a 64-bit integer calculated as a checksum of the provided string. This\nfunction uses a polynomial of 0x95AC9329AC4BC9B5 to create the result. If a NULL\nvalue is provided, this function returns a constant value.\nParameters\nstring: The string to calculate the checksum for.\nReturns\nA 64-bit integer checksum."
+    ]
+  ]
+}

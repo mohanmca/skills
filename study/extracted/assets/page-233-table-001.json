@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "BOOKMARK"
+    ],
+    [
+      "BOOKMARK()\nReturns the bookmark for the current message, if one is available.\nMessages retrieved from a SOW topic using a query return NULL for BOOKMARK, since\nthe SOW does not store the bookmark of a message.\nBookmarks are assigned using a combination of an identifier derived from the client\nname and a sequence number. When working with bookmarks, 60East recommends\ntreating bookmarks as opaque identifiers. In particular, bookmarks are not\nguaranteed to sort in any particular order between different publishers.\nAMPS only assigns bookmarks when a message is stored in the transaction log.\nMessages that are not in the transaction log do not have bookmarks assigned.\nParameters\nNone.\nReturns\nThe bookmark for the current message.\nAvailable For\nSubscriptions to a transaction-logged topic\nBookmark subscriptions to a transaction-logged topic\nSOW delete by filter for a transaction-logged topic"
+    ]
+  ]
+}

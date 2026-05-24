@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Parameter",
+      "Description"
+    ],
+    [
+      "database",
+      "The sqlite3 database file to query."
+    ],
+    [
+      "query",
+      "The query to run. Notice that the query must be enclosed in quotes,\nsince this is a command-line program run by the Linux shell."
+    ]
+  ]
+}

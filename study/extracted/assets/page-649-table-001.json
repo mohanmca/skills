@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Parameter",
+      "Description"
+    ],
+    [
+      "",
+      "There is no default for this parameter."
+    ],
+    [
+      "Pattern\n(required)",
+      "Specifies the pattern for files to remove. The module removes any files\nthat match the specified Pattern that have not been modified more\nrecently than the specified Age.\nThis parameter is interpreted as a Unix shell globbing pattern. It is not\ninterpreted as a regular expression.\nAs with other parameters that use the file system, when the pattern\nspecified is a relative path, the parameter is interpreted relative to the\ncurrent working directory of the AMPS process. When the pattern\nspecified is an absolute path, AMPS uses the absolute path.\nThere is no default for this parameter."
+    ],
+    [
+      "Keep",
+      "Specifies the number of files that meet the Age and Pattern criteria\nto retain. When this parameter is specified, AMPS will remove files\nmatching the criteria, starting with the oldest files, and stop when the\nnumber of remaining files is the number specified in this parameter.\nThere is no default for this parameter. When both Keep and Count are\nspecified, AMPS will not remove any files if the number of files meeting\nthe criteria is less than the number specified in the Keep parameter."
+    ],
+    [
+      "Count",
+      "Specifies the maximum number of files that meet the Age and\nPattern criteria to remove. AMPS will remove files matching the\ncriteria, starting with the oldest files, and stop when the number of\nfiles specified in this parameter have been removed.\nThere is no default for this parameter. When both Keep and Count are\nspecified, AMPS will not remove any files if the number of files meeting\nthe criteria is less than the number specified in the Keep parameter."
+    ]
+  ]
+}

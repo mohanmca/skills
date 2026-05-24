@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "SOW_KEY"
+    ],
+    [
+      "SOW_KEY()\nFor a message in a SOW topic, returns the current SOW key of the message. This will\ntypically be the AMPS-generated identifier for the message. For topics that use\nexplicit publisher-provided keys (that is, where the SOW key must be set on the\nheader of the publish command rather than derived from the data), this will be the\npublisher-provided key.\nThis function is designed for use in enrichment. In a query, subscription, or delete\ncommand, using the SowKeys header with the key or keys of interest is more\nefficient.\nParameters\nNone.\nReturns\nThe SOW key that AMPS uses for the message, either as provided by the publisher or\nas used internally by AMPS, as a string.\nAvailable For\nQueries or enrichment of a SOW topic\nSubscription to a SOW topic"
+    ]
+  ]
+}

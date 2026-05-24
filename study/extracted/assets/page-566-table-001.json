@@ -1,0 +1,36 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "-H,\n--with-filename",
+      "Include filename in results."
+    ],
+    [
+      "-h,\n--no-filename",
+      "Do not include filename in results."
+    ],
+    [
+      "-i,\n--ignore-case",
+      "Use case-insensitive matching."
+    ],
+    [
+      "-v,\n--invert-match",
+      "Invert the sense of matching, to select non-matching\nlines."
+    ],
+    [
+      "--no-data",
+      "Do not display data field in journal results."
+    ],
+    [
+      "--include-noops",
+      "Include noops in the journal dump."
+    ],
+    [
+      "--client=CLIENTS",
+      "Search for records published by a given client. This\nargument accepts either a client name or a client name\nhash. This argument can be specified multiple times to\nsearch for multiple clients."
+    ]
+  ]
+}

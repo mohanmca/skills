@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Variable",
+      "Description"
+    ],
+    [
+      "AMPS_TOPIC",
+      "The topic of the message that expired."
+    ]
+  ]
+}

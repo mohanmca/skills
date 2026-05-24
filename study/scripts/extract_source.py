@@ -88,11 +88,20 @@ def is_likely_heading(text, font_size, avg_size, is_bold=False):
     if not text or not text.strip():
         return False
     text = text.strip()
-    if text.startswith(("Chapter", "MODULE", "Unit", "Lesson", "Topic")) and font_size >= avg_size:
+    # Ignore single letters or very short fragments (likely decorative initials)
+    if len(text) <= 2:
+        return False
+    # Ignore pure numbers (likely page numbers)
+    if text.isdigit():
+        return False
+    # Common heading prefixes
+    if text.startswith(("Chapter", "MODULE", "Unit", "Lesson", "Topic", "Exercise")) and font_size >= avg_size:
         return True
-    if font_size >= avg_size * 1.25:
+    # Significantly larger font
+    if font_size >= avg_size * 1.35 and len(text) < 150:
         return True
-    if is_bold and font_size >= avg_size * 1.1 and len(text) < 120:
+    # Bold and moderately larger
+    if is_bold and font_size >= avg_size * 1.15 and len(text) < 120:
         return True
     return False
 
@@ -187,42 +196,23 @@ def extract_pdf(input_path, output_dir):
                 spans = line["spans"]
                 if not spans:
                     continue
-                # Merge adjacent spans on the same line that share similar size/boldness
-                merged_text = ""
-                merged_size = spans[0]["size"]
-                merged_bold = bool(spans[0].get("flags", 0) & 16) or "bold" in spans[0]["font"].lower()
-                for span in spans:
-                    txt = span["text"]
-                    # If font changes dramatically, flush previous merge
-                    size_diff = abs(span["size"] - merged_size)
-                    span_bold = bool(span.get("flags", 0) & 16) or "bold" in span["font"].lower()
-                    if size_diff > 1.5 or span_bold != merged_bold:
-                        merged_text = merged_text.strip()
-                        if merged_text:
-                            is_heading = is_likely_heading(merged_text, merged_size, avg_size, merged_bold)
-                            page_blocks.append({
-                                "type": "heading" if is_heading else "paragraph",
-                                "text": merged_text,
-                                "page": page_num,
-                                "font_size": round(merged_size, 2),
-                                "is_bold": merged_bold,
-                            })
-                        merged_text = txt
-                        merged_size = span["size"]
-                        merged_bold = span_bold
-                    else:
-                        merged_text += txt
-                # Flush final merge
-                merged_text = merged_text.strip()
-                if merged_text:
-                    is_heading = is_likely_heading(merged_text, merged_size, avg_size, merged_bold)
-                    page_blocks.append({
-                        "type": "heading" if is_heading else "paragraph",
-                        "text": merged_text,
-                        "page": page_num,
-                        "font_size": round(merged_size, 2),
-                        "is_bold": merged_bold,
-                    })
+                # Merge ALL spans on the same line (titles often alternate font sizes/weights)
+                line_text = "".join(s["text"] for s in spans).strip()
+                if not line_text:
+                    continue
+                max_size = max(s["size"] for s in spans)
+                any_bold = any(
+                    bool(s.get("flags", 0) & 16) or "bold" in s["font"].lower()
+                    for s in spans
+                )
+                is_heading = is_likely_heading(line_text, max_size, avg_size, any_bold)
+                page_blocks.append({
+                    "type": "heading" if is_heading else "paragraph",
+                    "text": line_text,
+                    "page": page_num,
+                    "font_size": round(max_size, 2),
+                    "is_bold": any_bold,
+                })
 
         all_blocks.extend(page_blocks)
 
@@ -295,8 +285,77 @@ def extract_pdf(input_path, output_dir):
     print(f"  Corrections flagged: {len(corrections)}")
 
 
+def merge_short_headings(blocks):
+    """Merge consecutive short heading fragments (e.g., decorative title letters)."""
+    merged = []
+    buffer = []
+    for b in blocks:
+        if b["type"] == "heading" and len(b["text"]) <= 30:
+            buffer.append(b)
+        else:
+            if buffer:
+                # Decide whether to merge or flush as-is
+                total_len = sum(len(x["text"]) for x in buffer)
+                if total_len <= 80 and len(buffer) >= 2:
+                    merged.append({
+                        "type": "heading",
+                        "text": " ".join(x["text"] for x in buffer),
+                        "page": buffer[0]["page"],
+                        "font_size": buffer[0]["font_size"],
+                        "is_bold": buffer[0]["is_bold"],
+                    })
+                else:
+                    merged.extend(buffer)
+                buffer = []
+            merged.append(b)
+    if buffer:
+        total_len = sum(len(x["text"]) for x in buffer)
+        if total_len <= 80 and len(buffer) >= 2:
+            merged.append({
+                "type": "heading",
+                "text": " ".join(x["text"] for x in buffer),
+                "page": buffer[0]["page"],
+                "font_size": buffer[0]["font_size"],
+                "is_bold": buffer[0]["is_bold"],
+            })
+        else:
+            merged.extend(buffer)
+    return merged
+
+
+def filter_noise(blocks):
+    """Remove page numbers, running headers, and other noise."""
+    # First pass: detect running headers that appear on multiple pages
+    text_page_counts = {}
+    for b in blocks:
+        text = b["text"].strip()
+        if len(text) <= 15 and b["type"] == "paragraph":
+            text_page_counts[text] = text_page_counts.get(text, 0) + 1
+    running_headers = {text for text, count in text_page_counts.items() if count >= 3}
+
+    cleaned = []
+    for b in blocks:
+        text = b["text"].strip()
+        # Skip pure page numbers
+        if text.isdigit() and len(text) <= 3:
+            continue
+        # Skip common header/footer text fragments that are very short and standalone
+        if len(text) <= 2 and b["type"] == "paragraph":
+            continue
+        # Skip reprint lines
+        if text.lower().startswith("reprint"):
+            continue
+        # Skip running headers (e.g., "MATHEMATICS" on every page)
+        if text in running_headers:
+            continue
+        cleaned.append(b)
+    return cleaned
+
+
 def group_blocks_into_sections(blocks):
     """Group flat blocks into hierarchical sections based on headings."""
+    blocks = merge_short_headings(blocks)
+    blocks = filter_noise(blocks)
     sections = []
     current = None
 

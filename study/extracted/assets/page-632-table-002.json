@@ -1,0 +1,28 @@
+{
+  "rows": [
+    [
+      "Variable",
+      "Description"
+    ],
+    [
+      "AMPS_TOPIC",
+      "The topic of the OOF message."
+    ],
+    [
+      "AMPS_DATA",
+      "The data of the OOF message."
+    ],
+    [
+      "AMPS_DATA_LENGTH",
+      "The length of the data of the OOF message."
+    ],
+    [
+      "AMPS_PREVIOUS_DATA",
+      "The data previously contained from the updated\nrecord."
+    ],
+    [
+      "AMPS_PREVIOUS_DATA_LENGTH",
+      "The length of the data previously contained from the\nupdated record."
+    ]
+  ]
+}

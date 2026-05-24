@@ -1,0 +1,44 @@
+{
+  "rows": [
+    [
+      "Metric",
+      "Short Description"
+    ],
+    [
+      "/memory/free",
+      "Amount of memory currently free."
+    ],
+    [
+      "/memory/in_use",
+      "Amount of memory in use."
+    ],
+    [
+      "/memory/swap_free",
+      "Amount of swap currently free."
+    ],
+    [
+      "/memory/swap_total",
+      "Total amount of swap."
+    ],
+    [
+      "/network/<if>/bytes_in",
+      "Total bytes in (by interface name)."
+    ],
+    [
+      "/network/<if>/bytes_out",
+      "Total bytes out (by interface name)."
+    ],
+    [
+      "/disks/<dev>/file_system_free_percent",
+      "Free space (by device)."
+    ],
+    [
+      "/cpus/all/iowait_percent",
+      "Amount of CPU time waiting on I/O."
+    ],
+    [
+      "/cpus/all/idle_percent",
+      "Amount of CPU time idle."
+    ]
+  ]
+}

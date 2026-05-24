@@ -1,0 +1,20 @@
+{
+  "rows": [
+    [
+      "AMPS Command",
+      "Entitlement Type"
+    ],
+    [
+      "delta_subscribe,\nsow, sow_and_subscribe,\nsubscribe, sow_and_delta_subscribe",
+      "read"
+    ],
+    [
+      "delta_publish, publish,\nsow_delete",
+      "write"
+    ],
+    [
+      "Commands received over replication",
+      "replication allowed"
+    ]
+  ]
+}

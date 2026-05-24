@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Metric",
+      "Short Description"
+    ],
+    [
+      "/queue_depth",
+      "The current number of pending updates for the view."
+    ]
+  ]
+}

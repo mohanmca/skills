@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "",
+      "absolute path or a relative path based on the current working\ndirectory of the AMPS server process.\nWhen this option is specified, the module will provide Kerberos\nauthentication and a Kerberos.SPN must be specified.\nThere is no default for this parameter."
+    ],
+    [
+      "Kerberos.SPN",
+      "Sets the Service Principal Name (SPN) to use for Kerberos\nauthentication.\nWhen this option is specified, the module will provide Kerberos\nauthentication and a Kerberos.Keytab must be specified.\nThere is no default for this parameter."
+    ]
+  ]
+}

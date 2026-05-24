@@ -1,0 +1,36 @@
+{
+  "rows": [
+    [
+      "Scenario",
+      "Start With"
+    ],
+    [
+      "New to AMPS",
+      "Introduction to AMPS"
+    ],
+    [
+      "Beginning an Evaluation of\nAMPS",
+      "AMPS Evaluation Guide\nIntroduction to AMPS"
+    ],
+    [
+      "Understanding AMPS Features\nand Configuration Options",
+      "AMPS User Guide\n(see the chapter on the feature in question)"
+    ],
+    [
+      "Planning a Deployment of\nAMPS",
+      "Introduction to AMPS\nOperation and Deployment\nMonitoring AMPS\nDeployment Checklist"
+    ],
+    [
+      "Developing Applications with\nAMPS",
+      "Introduction to AMPS\n(developer guide and API reference for your\nlanguage of choice -- available here or from the\nAMPS developer pages)\n(further reading in the User Guide\nCommand Reference for features you will use)"
+    ],
+    [
+      "Troubleshooting an Issue",
+      "Troubleshooting AMPS"
+    ],
+    [
+      "Contacting 60East Support",
+      "Support Site"
+    ]
+  ]
+}

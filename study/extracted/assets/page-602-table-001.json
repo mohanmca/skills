@@ -1,0 +1,172 @@
+{
+  "rows": [
+    [
+      null,
+      "Condition",
+      null,
+      "Modules",
+      null
+    ],
+    [
+      null,
+      "On a Linux Signal",
+      null,
+      "amps-action-on-signal",
+      null
+    ],
+    [
+      null,
+      "On a REST Request",
+      null,
+      "amps-action-on-admin",
+      null
+    ],
+    [
+      null,
+      "On Minidump Creation",
+      null,
+      "amps-action-on-minidump",
+      null
+    ],
+    [
+      null,
+      "On Client Connect or Disconnect",
+      null,
+      "amps-action-on-connect-client\namps-action-on-disconnect-client",
+      null
+    ],
+    [
+      null,
+      "On Client Logon",
+      null,
+      "amps-action-on-logon-client",
+      null
+    ],
+    [
+      null,
+      "On Client Offline Message\nBuffering",
+      null,
+      "amps-action-on-offline-start\namps-action-on-offline-stop",
+      null
+    ],
+    [
+      null,
+      "On Subscribe or Unsubscribe",
+      null,
+      "amps-action-on-subscribe\namps-action-on-unsubscribe",
+      null
+    ],
+    [
+      null,
+      "On Incoming Replication",
+      null,
+      "amps-action-on-connect-incoming-\nreplication\namps-action-on-disconnect-incoming-\nreplication",
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      "amps-action-on-connect-incoming-"
+    ],
+    [
+      null,
+      null,
+      "On Incoming Replication",
+      "",
+      ""
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      "replication"
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      ""
+    ],
+    [
+      null,
+      null,
+      null,
+      "",
+      null
+    ],
+    [
+      "",
+      "Connections",
+      null,
+      "",
+      ""
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      "replication"
+    ],
+    [
+      null,
+      "",
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      "On Outgoing Replication\nConnections",
+      null,
+      "amps-action-on-connect-replication\namps-action-on-disconnect-replication\namps-action-on-replication-resync-complete\namps-action-on-upgrade-replication\namps-action-on-downgrade-replication",
+      null
+    ],
+    [
+      null,
+      "On Message Published to AMPS",
+      null,
+      "amps-action-on-publish-message",
+      null
+    ],
+    [
+      null,
+      "On Message Delivered to\nSubscriber",
+      null,
+      "amps-action-on-deliver-message",
+      null
+    ],
+    [
+      null,
+      "On Message Affinity",
+      null,
+      "amps-action-on-message-affinity",
+      null
+    ],
+    [
+      null,
+      "On SOW Message Expiration",
+      null,
+      "amps-action-on-sow-expire-message",
+      null
+    ],
+    [
+      null,
+      "On SOW Message Delete",
+      null,
+      "amps-action-on-sow-delete-message",
+      null
+    ],
+    [
+      null,
+      "On Out-of-Focus Message",
+      null,
+      "amps-action-on-oof-message",
+      null
+    ]
+  ]
+}

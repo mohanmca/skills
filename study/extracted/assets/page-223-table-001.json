@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "COS"
+    ],
+    [
+      "COS(number)\nReturns the cosine of the provided number.\nParameters\nnumber: The number to operate on.\nReturns\nThe cosine of the number.\nExample\nCOS(/x)"
+    ]
+  ]
+}

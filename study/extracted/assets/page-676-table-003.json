@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Parameter",
+      "Description"
+    ],
+    [
+      "Path\n(required)",
+      "Specifies the filesystem path to monitor.\nThe AMPS process must have sufficient permissions to check the disk\nusage for this path at the time the check runs.\nThere is no default for this parameter."
+    ],
+    [
+      "GreaterThan\n(required)",
+      "The threshold to check, specified as a percentage.\nIf the provided path has more space used than specified in this\nparameter, subsequent Do and If blocks will run. Otherwise, the\naction will complete with this step."
+    ]
+  ]
+}

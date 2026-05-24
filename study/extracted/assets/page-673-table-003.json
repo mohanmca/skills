@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Module Name",
+      "Does"
+    ],
+    [
+      "amps-action-do-shutdown",
+      "Shuts down AMPS."
+    ]
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "rows": [
+    [
+      null,
+      "DANGER\nThis action is treated by the AMPS engine as a publish from an internal AMPS client.\nWhen an amps-action-do-publish-message runs in response to the amps-action-",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      "amps-action-",
+      "",
+      ""
+    ],
+    [
+      "",
+      "",
+      "on-publish-message",
+      null,
+      null,
+      null
+    ]
+  ]
+}

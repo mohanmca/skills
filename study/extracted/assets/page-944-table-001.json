@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Processing\nType",
+      "Description"
+    ],
+    [
+      "sow",
+      "Messages from queries of a SOW topic."
+    ]
+  ]
+}

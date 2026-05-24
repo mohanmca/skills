@@ -1,0 +1,89 @@
+{
+  "rows": [
+    [
+      "Metric",
+      "Description",
+      "Type"
+    ],
+    [
+      "authenticated_id",
+      "The ID used to authenticate this client, if\nany.",
+      "fixed"
+    ],
+    [
+      "bytes_in",
+      "Number of bytes received.",
+      "cumulative"
+    ],
+    [
+      "bytes_in_per_sec",
+      "Rate of bytes received.",
+      "interval\naverage"
+    ],
+    [
+      "bytes_out",
+      "Number of bytes sent.",
+      "cumulative"
+    ],
+    [
+      "bytes_out_per_sec",
+      "Rate of bytes sent.",
+      "interval\naverage"
+    ],
+    [
+      "client_name",
+      "Identifier for the client, set during logon.",
+      "fixed"
+    ],
+    [
+      "client_name_hash",
+      "AMPS hash for the client name.",
+      "fixed"
+    ],
+    [
+      "client_version",
+      "Version string provided by the client.",
+      "fixed"
+    ],
+    [
+      "connect_time",
+      "UTC time client connection is established.",
+      "fixed"
+    ],
+    [
+      "connection_name",
+      "Name of the connection.",
+      "fixed"
+    ],
+    [
+      "correlation_id",
+      "The CorrelationId provided with the logon\ncommand, if any.",
+      "fixed"
+    ],
+    [
+      "denied_reads",
+      "Number of read requests which have been\ndenied due to an entitlement filter.",
+      "cumulative"
+    ],
+    [
+      "denied_writes",
+      "Number of write requests which have\nbeen denied due to an entitlement filter.",
+      "cumulative"
+    ],
+    [
+      "messages_in",
+      "Number of messages received from client.",
+      "cumulative"
+    ],
+    [
+      "messages_in_per_sec",
+      "Rate of messages received.",
+      "interval\naverage"
+    ],
+    [
+      "messages_out",
+      "Number of messages sent to the client.",
+      "cumulative"
+    ]
+  ]
+}

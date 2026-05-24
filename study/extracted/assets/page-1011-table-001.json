@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "replace",
+      "Replace the subscription associated with SubId with another\nsubscription. When provided as part of sow_and_subscribe,\nAMPS runs a SOW query for the new subscription."
+    ],
+    [
+      "resume",
+      "Resume a bookmark subscription. This option is only valid for\nbookmark subscriptions that do not use the live option.\nWhen this option is present, AMPS resumes the subscription or\nsubscriptions provided in the SubId of the command."
+    ],
+    [
+      "send_keys",
+      "AMPS will send the SOW keys fields back with messages from\nthe SOW.\nNotice that without this option, messages will never contain\nthese fields (since, by definition, they do not change from\nupdate to update)."
+    ],
+    [
+      "timestamp",
+      "AMPS will include a header with the time at which this instance\nof AMPS processed the incoming publish command for this\nmessage."
+    ]
+  ]
+}

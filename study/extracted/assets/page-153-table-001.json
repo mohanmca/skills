@@ -1,0 +1,40 @@
+{
+  "rows": [
+    [
+      "Operand1",
+      "",
+      "Operand2",
+      "Result"
+    ],
+    [
+      "TRUE",
+      "(AND)",
+      "NULL",
+      "NULL"
+    ],
+    [
+      "FALSE",
+      "(AND)",
+      "NULL",
+      "FALSE"
+    ],
+    [
+      "NULL",
+      "(AND)",
+      "NULL",
+      "NULL"
+    ],
+    [
+      "NULL",
+      "(AND)",
+      "TRUE",
+      "NULL"
+    ],
+    [
+      "NULL",
+      "(AND)",
+      "FALSE",
+      "NULL"
+    ]
+  ]
+}

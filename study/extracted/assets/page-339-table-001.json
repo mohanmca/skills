@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Command",
+      "Result"
+    ],
+    [
+      "delta_subscribe",
+      "Register a delta subscription, starting with newly\nreceived messages."
+    ],
+    [
+      "sow_and_delta_subscribe",
+      "Replay the state of the SOW and atomically register a\ndelta subscription."
+    ]
+  ]
+}

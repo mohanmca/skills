@@ -1,0 +1,20 @@
+{
+  "rows": [
+    [
+      "Field",
+      "Description"
+    ],
+    [
+      "",
+      "When both SubId and QueryId are provided, AMPS removes all\nmatching subscriptions and SOW queries.\nThis command requires at least one of the SubId or QueryId fields to be\nset."
+    ],
+    [
+      "ack_type",
+      "Acknowledgment type for the given command.\nValue is a comma separated list of one or more of the following: none,\nreceived or persisted."
+    ],
+    [
+      "cmd_id",
+      "If specified within an AMPS command requesting an acknowledgment\nmessage, all requested acknowledgment messages will contain the\nCommandId in the ack response header."
+    ]
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "REVERSE"
+    ],
+    [
+      "REVERSE(string)\nReturns the provided string in reverse.\nParameters\nstring: The string to process.\nReturns\nThe reversed string.\nExample\nREVERSE(\"fandango\") == \"ognadnaf\""
+    ]
+  ]
+}

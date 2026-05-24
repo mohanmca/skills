@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Header",
+      "Comment"
+    ],
+    [
+      "Bookmark",
+      "Sets the historical point in the SOW at which to query. The query returns\nthe saved state of the records in the SOW as of the point in time\nspecified in this header."
+    ],
+    [
+      "Filter",
+      "Sets the content filter to be applied to the query. Only messages that\nmatch the content filter will be provided to the query."
+    ]
+  ]
+}

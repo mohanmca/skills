@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Field",
+      "Description"
+    ],
+    [
+      "matches",
+      "The number of records that match the topic regular expression\nand content filter.\nThis header field is present on stats acknowledgments."
+    ]
+  ]
+}

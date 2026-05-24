@@ -1,0 +1,34 @@
+{
+  "rows": [
+    [
+      "Metric",
+      "Description",
+      "Type"
+    ],
+    [
+      "bytes_written",
+      "Number of bytes written to the console.",
+      "cumulative"
+    ],
+    [
+      "exclude_errors",
+      "Errors which are excluded from logging.",
+      "fixed"
+    ],
+    [
+      "include_errors",
+      "Errors which are included during logging.",
+      "fixed"
+    ],
+    [
+      "log_levels",
+      "Log level used to control logging output.",
+      "fixed"
+    ],
+    [
+      "target",
+      "Console to which logging output is directed.\nDefault: stdout",
+      "fixed"
+    ]
+  ]
+}

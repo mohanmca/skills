@@ -1,0 +1,36 @@
+{
+  "rows": [
+    [
+      "Example Name",
+      "Demonstrates"
+    ],
+    [
+      "AMPSSinkExample.java",
+      "The AMPS Sink publishing messages to AMPS."
+    ],
+    [
+      "AMPSSourceExample.java",
+      "The AMPS Source receiving messages from\nAMPS."
+    ],
+    [
+      "AggregationExample.java",
+      "A job that uses Flink's aggregation and\nwatermarks to aggregate messages from AMPS."
+    ],
+    [
+      "BatchExample.java",
+      "A job that uses topN to demonstrate\nbounded/batch usage of the AMPS Source."
+    ],
+    [
+      "BlogExample.java",
+      "Jobs that use Flink's windowing to monitor a\ndata stream from AMPS. This example is further\nexplored in a blog."
+    ],
+    [
+      "CheckpointExample.java",
+      "A job that intentionally throws exceptions to\ndemonstrate the AMPS Source and AMPS Sink\ndelivery guarantees as well as their fault\ntolerance."
+    ],
+    [
+      "CustomDeserializerExample.java",
+      "A job that uses a custom deserialization\nschema when deserializing messages from\nAMPS."
+    ]
+  ]
+}

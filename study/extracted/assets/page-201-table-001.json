@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "LEFT"
+    ],
+    [
+      "LEFT(string, number_of_characters)\nReturns the leftmost number_of_characters from the provided string.\nParameters\nstring: The string to process.\nnumber_of_characters: The number of characters to return from the left.\nReturns\nThe leftmost characters of the string.\nExample\nLEFT(\"fandango\", 3) == \"fan\""
+    ]
+  ]
+}

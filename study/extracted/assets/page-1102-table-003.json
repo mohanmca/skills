@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Metric",
+      "Short Description"
+    ],
+    [
+      "/is_connected",
+      "Whether or not this destination is currently connected."
+    ],
+    [
+      "/seconds_behind",
+      "The current point in the transaction log that has been\nacknowledged by this destination."
+    ]
+  ]
+}

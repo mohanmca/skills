@@ -1,0 +1,22 @@
+{
+  "rows": [
+    [
+      "Configuration\nTag",
+      "Replication\nType",
+      "Description",
+      "Message\nOwnership"
+    ],
+    [
+      "LocalQueue",
+      "Local queue",
+      "Queue exists on a single\ninstance, delivery\nguarantees only apply to\nthat instance.\nCannot be replicated.",
+      "Instance that\ncontains the\nqueue.\nNo other\ninstance may\nrequest\nownership."
+    ],
+    [
+      "GroupLocalQueue",
+      "Queue\nreplicated to\nspecific\ninstances,\nmost often in\nthe same\nreplication\nGroup.",
+      "Distributed queue on a\nspecific set of instances.\nIn version 5.3.4 and higher,\nthe instances that contain\nthe queue must all be in the\nsame Group or define the\nsame\nGroupLocalQueueDomain\ntag.\nIn earlier versions of AMPS,\nevery queue with the same\nname in the replication\nfabric is treated as an\ninstance of the same queue\nand must have the same\ndefinition and the same\nInitialOwner.",
+      "Instance\nspecified in the\nInitialOwner\ntag for the\nqueue.\nOther\ninstances may\nrequest\nownership."
+    ]
+  ]
+}

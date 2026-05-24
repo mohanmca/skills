@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "",
+      "Default: 2"
+    ],
+    [
+      "LDAP.BaseDN",
+      "Sets the base Distinguished Name (DN) to use\nfor LDAP authentication.\nWhen this option is specified, the module will\nprovide LDAP authentication and an\nLDAP.Host must also be specified.\nThis parameter defaults to an empty string."
+    ],
+    [
+      "LDAP.ServiceAccountDN",
+      "Sets the Distinguished Name (DN) for the\nservice account to use for LDAP\nauthentication.\nWhen this option is specified, the module will\nprovide LDAP authentication and an\nLDAP.Host must also be specified.\nThis parameter defaults to an empty string."
+    ],
+    [
+      "LDAP.ServiceAccountPasswordFile",
+      "Sets a file from which to read the password for\nthe service account to use for LDAP\nauthentication.\nWhen this option is specified, the module will\nprovide LDAP authentication and an\nLDAP.Host must also be specified.\nThis parameter defaults to an empty string,\nwhich specifies that no password will be\nprovided."
+    ]
+  ]
+}

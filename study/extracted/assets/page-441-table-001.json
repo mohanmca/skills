@@ -1,0 +1,28 @@
+{
+  "rows": [
+    [
+      "Publish To",
+      "Results"
+    ],
+    [
+      "ORDERS",
+      "Both ORDERS_ANALYTICS and ORDERS_RISK enqueue the\nmessage, since ORDERS matches the UnderlyingTopic\nof both queues."
+    ],
+    [
+      "ORDERS_ANALYTICS",
+      "The message is published to the\nDefaultPublishTarget of ORDERS_ANALYTICS, which is\nORDERS_ANALYTICS_DIRECT.\nThe message is then enqueued to ORDERS_ANALYTICS,\nsince ORDERS_ANALYTICS_DIRECT matches the\nUnderlyingTopic of ORDERS_ANALYTICS."
+    ],
+    [
+      "ORDERS_RISK",
+      "The message is published to the\nDefaultPublishTarget of ORDERS_RISK, which is\nORDERS_RISK_DIRECT.\nThe message is then enqueued to ORDERS_RISK, since\nORDERS_RISK_DIRECT matches the UnderlyingTopic\nORDERS_RISK."
+    ],
+    [
+      "ORDERS_ANALYTICS_DIRECT",
+      "The message is published to\nORDERS_ANALYTICS_DIRECT, and is then enqueued to\nORDERS_ANALYTICS."
+    ],
+    [
+      "ORDERS_RISK_DIRECT",
+      "The message is published to ORDERS_RISK_DIRECT, and\nis then enqueued to ORDERS_RISK."
+    ]
+  ]
+}

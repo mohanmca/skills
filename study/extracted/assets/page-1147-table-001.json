@@ -1,0 +1,25 @@
+{
+  "rows": [
+    [
+      null,
+      "TIP\nflink-connector-amps-",
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      "flink-connector-amps-",
+      "",
+      ""
+    ],
+    [
+      "",
+      "",
+      "examples/src/main/com/crankuptheamps/flink/example/helper/Constants.java",
+      null,
+      null
+    ]
+  ]
+}

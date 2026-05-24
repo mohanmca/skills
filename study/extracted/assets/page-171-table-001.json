@@ -1,0 +1,28 @@
+{
+  "rows": [
+    [
+      "Construct",
+      "Meaning"
+    ],
+    [
+      "a*",
+      "Zero or more a's"
+    ],
+    [
+      "a?",
+      "Zero or one a's"
+    ],
+    [
+      "a{m}",
+      "Exactly m a's"
+    ],
+    [
+      "a{m,}",
+      "At least m a's"
+    ],
+    [
+      "a{m,n}",
+      "At least m, but no more than n a's"
+    ]
+  ]
+}

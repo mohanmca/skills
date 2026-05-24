@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Header",
+      "Comment"
+    ],
+    [
+      "",
+      "server verbatim."
+    ],
+    [
+      "correlation_id",
+      "The correlation_id to provide on the message. AMPS provides\nthe correlation_id to subscribers. The correlation_id has no\nsignificance for AMPS. The correlation_id may only contain\ncharacters that are valid in base-64 encoding."
+    ]
+  ]
+}

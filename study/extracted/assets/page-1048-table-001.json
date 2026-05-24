@@ -1,0 +1,29 @@
+{
+  "rows": [
+    [
+      "AMPS Header Field",
+      "Abbreviation",
+      "Name"
+    ],
+    [
+      "topic",
+      "t",
+      "Topic"
+    ],
+    [
+      "use_ns",
+      "",
+      "UseNamespaces"
+    ],
+    [
+      "user_id",
+      "",
+      "UserId"
+    ],
+    [
+      "version",
+      "v",
+      "Version"
+    ]
+  ]
+}

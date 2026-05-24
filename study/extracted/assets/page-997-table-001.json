@@ -1,0 +1,32 @@
+{
+  "rows": [
+    [
+      "Field",
+      "Description"
+    ],
+    [
+      "",
+      "enabled, AMPS returns the saved state of the SOW as of that\nbookmark. For SOW topics where historical query is not\nenabled, the only valid bookmark is NOW.\nIf the topic is enabled for historical query and AMPS has a\ntransaction log that covers the topic, AMPS returns the saved\nstate of the SOW as of that bookmark and starts a bookmark\nsubscription at a point in the transaction log immediately after\nthe point at which the SOW state was saved.\nIn other words, if the granularity of the historical SOW\npreserves the state of the SOW at 11:30:10 AM and 11:30:50\nAM, a request for a bookmark at 11:30:20 AM will provide the\nSOW state as of 11:30:10 AM, and begin the replay\nimmediately after that SOW state. This ensures no messages\nare missed, but means that the subscription may begin before\nthe bookmark."
+    ],
+    [
+      "cmd_id",
+      "If specified with an AMPS command requesting an\nacknowledgment message, all ack messages will contain the\nCommandId in the acknowledgment message."
+    ],
+    [
+      "data_only",
+      "Only send raw data to subscriber for a matching publish\nmessage if true.\nFor example, this will remove the SOAP envelope in an XML\nmessage."
+    ],
+    [
+      "filter",
+      "Content filter expression."
+    ],
+    [
+      "opts",
+      "A comma separated list of flags available to the\nsow_and_subscribe command.\nThe Options Field table below describes the Options available\nfor use in the sow_and_subscribe command."
+    ],
+    [
+      "orderby",
+      "Return the SOW results sorted by the specified fields.\nFields are a comma-delimited list of AMPS identifiers, and may\noptionally include a sort specifier, ASC or DESC."
+    ]
+  ]
+}

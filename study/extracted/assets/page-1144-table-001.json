@@ -1,0 +1,13 @@
+{
+  "rows": [
+    [
+      ""
+    ],
+    [
+      "int pubCount = 100;\n/*\n* Try with resources block to create and close the client.\n*/\ntry (Client client = new Client(\"client\");) {\n/*\n* Connect the client to AMPS.\n*/\nclient.connect(uri);\nclient.logon();\n/*\n* Publish the initial messages to AMPS.\n*/\nfor (int i = 0; i < pubCount; i++) {\nclient.publish(initTopic, String.format(\"{\\\"id\\\":%d}\", i));\n}\nclient.publishFlush();\n/*\n* Subscribe to the modified ad hoc topic. To print\n* the messages modified by Flink.\n*/\nclient.subscribe(new MessageHandler() {\n@Override\npublic void invoke(Message message) {\nSystem.out.println(message.getData());\n}\n}, modifiedTopic, 0);\n/*\n* Create an AMPS Source that will subscribe to the initial\ntopic.\n* The bookmark is the EPOCH bookmark, which starts the replay\n* from the first message in the specified topic. The topN\n* tells the source to only receive pubCount messages from AMPS\n* before considering the job finished. The URI, topic,\n* deserialization schema, and build() are all required to\n* create a valid AMPS Source. The bookmark and topN are\noptional.\n*/\nAMPSSource<String> source = AMPSSource.<String>builder()\n.setUri(uri)\n.setTopic(initTopic)\n.setBookmark(\"0\")\n.setTopN(pubCount)\n.setDeserializationSchema(new SimpleStringSchema())\n.build();\n/*\n* Creates an AMPS Sink that will publish to the modified"
+    ],
+    [
+      ""
+    ]
+  ]
+}

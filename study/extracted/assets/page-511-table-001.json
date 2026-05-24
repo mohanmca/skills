@@ -1,0 +1,36 @@
+{
+  "rows": [
+    [
+      "Mask",
+      "Definition"
+    ],
+    [
+      "%Y",
+      "Year"
+    ],
+    [
+      "%m",
+      "Month"
+    ],
+    [
+      "%d",
+      "Day"
+    ],
+    [
+      "%H",
+      "Hour"
+    ],
+    [
+      "%M",
+      "Minute"
+    ],
+    [
+      "%S",
+      "Second"
+    ],
+    [
+      "%n",
+      "Iterator which starts at 00000 when AMPS is first started and increments\neach time a RotationThreshold size is reached on the log file."
+    ]
+  ]
+}

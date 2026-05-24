@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Parameter",
+      "Description"
+    ],
+    [
+      "Every\n(required)",
+      "Specifies a recurring action that runs whenever the time matches the\nprovided specification. Specifications can take three forms:\n1. Timer action - a specification that is simply a duration, such as 4h\nor 1d, creates a timer action. AMPS starts the timer when the instance\nstarts. When the timer expires, AMPS runs the action and resets the\ntimer.\n2. Daily action - a specification that is a time of day, such as 00:32 or\n17:47, creates a daily action. AMPS runs the action every day at the\nspecified time. AMPS uses a 24 hour notation for daily actions.\n3. Weekly action - a specification that includes a day of the week and\na time, such as Saturday at 11:00 or Wednesday at 03:32, creates a\nweekly action. AMPS runs the action each week on the day specified,\nat the time specified. AMPS uses a 24 hour notation for weekly actions.\nAMPS accepts both local time and UTC for time specifications. To use\nUTC, append a Z to the time specifier. For example, the time\nspecification 11:32 is 11:32 AM local time. The time specification\n11:32Z is 11:32 AM UTC."
+    ],
+    [
+      "Name",
+      "The name of the schedule. This name appears in log messages related\nto this schedule.\nDefault: unknown"
+    ]
+  ]
+}

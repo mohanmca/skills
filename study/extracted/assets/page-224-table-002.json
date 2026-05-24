@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "SIN\nSIN(number)"
+    ],
+    [
+      "Returns the sine of the provided number.\nParameters\nnumber: The number to operate on.\nReturns\nThe sine of the number.\nExample\nSIN(/x)"
+    ]
+  ]
+}

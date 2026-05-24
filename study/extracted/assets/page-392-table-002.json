@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Specifier",
+      "Behavior"
+    ],
+    [
+      ")",
+      "Exclusive replay. End immediately before the bookmark or range\nspecified. The specified bookmark will not be present in the replay."
+    ],
+    [
+      "]",
+      "Inclusive replay. End immediately after the bookmark or range specified.\nThe specified bookmark will be present in the replay."
+    ]
+  ]
+}

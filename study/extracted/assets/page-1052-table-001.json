@@ -1,0 +1,44 @@
+{
+  "rows": [
+    [
+      "Name",
+      "Type",
+      "Definition"
+    ],
+    [
+      "SendEmpty",
+      "Boolean (true or false);\ndefault is true",
+      "If true, empty messages\nthat are published will be\nforwarded to matching\nsubscriptions."
+    ],
+    [
+      "SendKeys",
+      "Boolean (true or false)",
+      "Option to instruct AMPS that\na client would like to receive\nthe SowKey(s) back."
+    ],
+    [
+      "SendOutOfFocus",
+      "Boolean (true or false)",
+      "If true, Out of Focus\nmessages are sent for the\nSOW query."
+    ],
+    [
+      "SendSubscriptionIDs",
+      "Boolean (true or false)",
+      "If false, subscription\nidentifiers will not be sent for\na matched message."
+    ],
+    [
+      "Sequence",
+      "integer greater than zero",
+      "An integer that corresponds\nto the publish message\nsequence number.\nFor more information see the\nReplicating Messages\nBetween Instances chapter\nin the AMPS User Guide."
+    ],
+    [
+      "SowKey",
+      "string containing the digits\nof an unsigned long for\nAMPS-generated SOW keys\narbitrary string in the\nbase64 character set for\nuser-provided SOW keys",
+      "A SowKey will accompany\neach message returned in an\nSOW batch.\nA SowKey may also be added\nto messages coming in on a\nsubscription when the\npublished message matches\na record in the SOW.\nA publish command may\ncontain a SOW key if the\nSOW for the topic is\nconfigured to accept user-\nprovided SOW keys."
+    ],
+    [
+      "SowKeys",
+      "comma-separated list of\nSowKey values",
+      "Comma-separated list of\nSowKey values."
+    ]
+  ]
+}

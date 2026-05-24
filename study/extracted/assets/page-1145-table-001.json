@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      ""
+    ],
+    [
+      "topic.\n* The URI, topic, serialization schema, and build() are all\n* required to create a valid AMPS Sink.\n*/\nAMPSSink<String> sink = AMPSSink.<String>builder()\n.setUri(uri)\n.setTopic(modifiedTopic)\n.setSerializationSchema(new SimpleStringSchema())\n.build();\n/*\n* The Stream Execution Environment is used to create the job\n* and submit it to Flink.\n*/\nStreamExecutionEnvironment env =\nStreamExecutionEnvironment.getExecutionEnvironment();\n/*\n* Parallelism is set to 1 since this example does not use\nparallelism.\n*/\nenv.setParallelism(1);\n/*\n* Create the job graph. First, we use the AMPS Source to\nreceive data\n* from AMPS and create a Data Stream of Strings. Then, we use\na Process\n* Function to add a new field to the Strings. Finally, we sink\nthe\n* Strings back to AMPS using the AMPS Sink. In this example,\nall three\n* steps are chained together.\n*/\nenv.fromSource(source, WatermarkStrategy.noWatermarks(), \"AMPS\nSource\")\n.process(new ProcessFunction<String, String>() {\n@Override\npublic void processElement(String value,\nProcessFunction<String, String>.Context ctx,\nCollector<String> out) throws Exception {\n/*\n* Sleep for a short duration to avoid cluttering\nthe console with messages.\n*/\nThread.sleep(200);\n/*\n* Remove the trailing '}' to allow a new field to\nbe added."
+    ]
+  ]
+}

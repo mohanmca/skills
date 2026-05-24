@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Parameter",
+      "Description"
+    ],
+    [
+      "Path\n(required)",
+      "Specifies the path under /amps/administrator/actions where this\naction should appear. The action will run when a request for the\nspecified path is received by the AMPS admin interface.\nFor entitlement purposes, the AMPS admin interface treats actions\nconfigured using this module identically to resources provided by\nAMPS. That is, the user requesting that the action run must have\naccess to the appropriate admin resource for the action to run.\nFor example, to add an action that runs journal maintenance at the\npath /amps/administrator/actions/journal_cleanup, you would use\nthe following Path element:\n<Path>journal_cleanup</Path>\nThe Path element should contain only a resource name. No /\ncharacter should appear in the Path element."
+    ]
+  ]
+}

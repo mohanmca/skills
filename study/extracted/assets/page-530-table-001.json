@@ -1,0 +1,40 @@
+{
+  "rows": [
+    [
+      "Utility",
+      "Description"
+    ],
+    [
+      "amps_file",
+      "Can be used to report the type of a file, if the file is in\na format known to AMPS."
+    ],
+    [
+      "amps_grep",
+      "Can be used to search and extract information from\nthe AMPS error and event log or AMPS journal files."
+    ],
+    [
+      "amps_journal_dump",
+      "Can be used to examine the contents of an AMPS\njournal file during troubleshooting, debugging and\nprogram tuning."
+    ],
+    [
+      "amps_journal_search",
+      "Can be used to find the transaction log record for a\nspecific bookmark or transaction ID."
+    ],
+    [
+      "amps_sow_dump",
+      "Can be used to inspect the contents of a SOW topic\nstore."
+    ],
+    [
+      "amps_clients_ack_dump",
+      "Can be used to inspect the contents of an AMPS\nclients acknowledgment file."
+    ],
+    [
+      "amps_queues_ack_dump",
+      "Can be used to inspect the contents of an AMPS\nqueues acknowledgment file."
+    ],
+    [
+      "amps_tx_topic_index_dump",
+      "Can be used to inspect the contents of an AMPS\njournal topic index."
+    ]
+  ]
+}

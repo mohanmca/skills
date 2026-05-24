@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Utility",
+      "Description"
+    ],
+    [
+      "spark",
+      "Provided as a minimal command-line AMPS client. Some functions of the\nprogrammatic AMPS clients can also be accomplished with the spark utility.\nThis is most useful for adhoc troubleshooting (for example, publishing a\ndiagnostic message to a topic)."
+    ]
+  ]
+}

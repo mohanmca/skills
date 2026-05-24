@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "/proc/sys/fs/aio-max-nr"
+    ],
+    [
+      "Each AMPS instance requires AIO in the kernel to support at least 16384 plus 8192\nfor each SOW topic in simultaneous I/O operations. The setting aio-max-nr is global\nto the host and impacts all applications. As such this value needs to be set high\nenough to service all applications using AIO on the host.\nMinimum: 65536\nRecommended: 1048576\nTo view the value of this setting, as root you can enter the following command:\ncat /proc/sys/fs/aio-max-nr\nTo edit this value, as root you can enter the following command:\nsysctl -w fs.aio-max-nr=1048576\nThis command will update the value for /proc/sys/fs/aio-max-nr and allow\n1,048,576 simultaneous I/O operations, but will only do so until the next time the\nmachine is rebooted. To make a permanent change to this setting, as a root user,\nedit the /etc/sysctl.conf file and either edit or append the following setting:\nfs.aio-max-nr = 1048576"
+    ]
+  ]
+}

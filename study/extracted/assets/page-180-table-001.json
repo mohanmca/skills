@@ -1,0 +1,40 @@
+{
+  "rows": [
+    [
+      "Category",
+      "Function Types Provided"
+    ],
+    [
+      "Geospatial",
+      "Geospatial Functions"
+    ],
+    [
+      "Numeric",
+      "Numeric Functions"
+    ],
+    [
+      "Checksum",
+      "CRC Functions"
+    ],
+    [
+      "Message",
+      "Current Message Functions"
+    ],
+    [
+      "Client",
+      "Client Information Functions"
+    ],
+    [
+      "Working with NULL Values",
+      "Finding Non-NULL Values"
+    ],
+    [
+      "AMPS Information",
+      "AMPS Information Functions"
+    ],
+    [
+      "Typed Value Creation",
+      "Typed Value Creation"
+    ]
+  ]
+}

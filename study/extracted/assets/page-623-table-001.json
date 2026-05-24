@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Parameter",
+      "Description"
+    ],
+    [
+      "MessageType\n(required)",
+      "The message type of the monitored topic and the control topic."
+    ],
+    [
+      "ControlTopic\n(required)",
+      "The name of the control topic.\nThis topic is monitored for subscriptions. Any client that subscribes\nto the ControlTopic is considered to be eligible to have messages\naffinitized to that client."
+    ]
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "rows": [
+    [
+      "Extension",
+      "File Type",
+      "Description"
+    ],
+    [
+      "",
+      "",
+      "On recovery, AMPS can begin restoring the\nstate of the queue from that point rather than\nreprocessing the entire transaction log.\nThese files do not contain messages.\nWhen present, AMPS will use this file to\ndetermine the last point in the journal for a\ngiven queue where all queue messages were\nfully consumed (acknowledged or expired).\nQueue recovery will begin at that point for\neach queue. If this file is not present, AMPS\nwill scan journals from the beginning to\nrecover the queue."
+    ],
+    [
+      ".queue.cache",
+      "Queue metadata\ncache",
+      "For a queue that specifies that metadata be\ncached in a file, this is the file that contains\nthe cache.\nIf this file is removed, the queue state will be\nrestored from the transaction log (using the\nrecovery point stored in the queues.ack file).\nThese files do not contain messages or\nmessage headers. They contain delivery state\nfor messages in the queue and the location of\nthose messages in the transaction log."
+    ]
+  ]
+}

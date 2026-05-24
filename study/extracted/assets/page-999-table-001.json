@@ -1,0 +1,28 @@
+{
+  "rows": [
+    [
+      "Command",
+      "Description"
+    ],
+    [
+      "group_end",
+      "Indicates the end of results from a SOW query."
+    ],
+    [
+      "sow",
+      "Indicates a record returned from a SOW query"
+    ],
+    [
+      "publish",
+      "A new message or update published to AMPS."
+    ],
+    [
+      "oof",
+      "Returned when the oof option is requested on the command, the\nsubscription is to a topic in the SOW, and the subscription is not a\nbookmark subscribe."
+    ],
+    [
+      "ack",
+      "Acknowledgments requested, as described in the following section."
+    ]
+  ]
+}

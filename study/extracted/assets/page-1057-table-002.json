@@ -1,0 +1,36 @@
+{
+  "rows": [
+    [
+      "FIX/NVFIX Header Field",
+      "AMPS Protocol Field"
+    ],
+    [
+      "20008",
+      "ack_type"
+    ],
+    [
+      "20037",
+      "bookmark"
+    ],
+    [
+      "20023",
+      "batch_size"
+    ],
+    [
+      "20002",
+      "client_name"
+    ],
+    [
+      "20000",
+      "cmd"
+    ],
+    [
+      "20001",
+      "cmd_id"
+    ],
+    [
+      "20035",
+      "correlation_id"
+    ]
+  ]
+}

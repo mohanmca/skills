@@ -1,0 +1,32 @@
+{
+  "rows": [
+    [
+      "Acknowledgment",
+      "Description"
+    ],
+    [
+      "none",
+      "No ack message is returned.\nThis is the default behavior."
+    ],
+    [
+      "completed",
+      "The sow_and_delta_subscribe message has completed the\nsow portion of the command, and all future messages will be\nupdated based on publishes."
+    ],
+    [
+      "persisted",
+      "Not supported at this time."
+    ],
+    [
+      "processed",
+      "AMPS has compiled the filter(s) for the\nsow_and_delta_subscribe message(s)."
+    ],
+    [
+      "received",
+      "The sow_and_delta_subscribe message has been received."
+    ],
+    [
+      "stats",
+      "Returns an ack message with Matches, TopicMatches and\nRecordsReturned."
+    ]
+  ]
+}

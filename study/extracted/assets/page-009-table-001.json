@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Directory",
+      "Description"
+    ],
+    [
+      "bin",
+      "AMPS engine binaries and utilities"
+    ],
+    [
+      "docs",
+      "Documentation"
+    ],
+    [
+      "lib",
+      "Library dependencies"
+    ],
+    [
+      "sdk",
+      "Include files for the AMPS extension API"
+    ]
+  ]
+}

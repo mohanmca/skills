@@ -1,0 +1,29 @@
+{
+  "rows": [
+    [
+      "Element",
+      "Description",
+      "Type"
+    ],
+    [
+      "idle_percent",
+      "Percent of CPU time that the system was waiting for\nan operation other than an I/O request to complete.",
+      "snapshot"
+    ],
+    [
+      "iowait_percent",
+      "Percent of CPU time spent waiting for I/O requests to\ncomplete.",
+      "snapshot"
+    ],
+    [
+      "system_percent",
+      "Percent of CPU utilization time which occurred while\nexecuting kernel processes.",
+      "snapshot"
+    ],
+    [
+      "user_percent",
+      "Percent of CPU utilization time which occurred while\nrunning at the application level.",
+      "snapshot"
+    ]
+  ]
+}

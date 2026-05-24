@@ -1,0 +1,32 @@
+{
+  "rows": [
+    [
+      "Completed?",
+      "Task"
+    ],
+    [
+      "",
+      "Ensure Sufficient Capacity for the system, including capacity testing\nas necessary."
+    ],
+    [
+      "",
+      "Verify the recommended settings for host system and Apply System\nConfiguration and add AMPS NUMA Configuration if necessary for\nthe deployment."
+    ],
+    [
+      "",
+      "Create a Maintenance Plan."
+    ],
+    [
+      "",
+      "Create and implement a Monitoring Strategy."
+    ],
+    [
+      "",
+      "Create a Patch and Upgrade Plan."
+    ],
+    [
+      "",
+      "Create and test the support plan to define and verify the process\nfor providing artifacts to 60East, responding to issues, and so on."
+    ]
+  ]
+}

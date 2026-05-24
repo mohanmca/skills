@@ -1,0 +1,32 @@
+{
+  "rows": [
+    [
+      "Regular Expression",
+      "AMPS Operator Equivalent"
+    ],
+    [
+      "^something",
+      "BEGINS WITH('something')"
+    ],
+    [
+      "something$",
+      "ENDS WITH ('something')"
+    ],
+    [
+      "something",
+      "INSTR(/field, 'something') != 0"
+    ],
+    [
+      "(?i)something",
+      "INSTR_I(/field, 'something') != 0"
+    ],
+    [
+      "(?i)^something$",
+      "STREQUAL_I(/field, 'something') != 0"
+    ],
+    [
+      "^a$",
+      "= 'a'"
+    ]
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "rows": [
+    [
+      "Metric",
+      "Description",
+      "Type"
+    ],
+    [
+      "backlog",
+      "The current number of messages leased on this\nsubscription.\nApplies to subscriptions to a queue.",
+      "snapshot"
+    ],
+    [
+      "bookmark",
+      "The bookmark the client provided when the\nsubscription was entered, if any.",
+      "fixed"
+    ],
+    [
+      "client_id",
+      "The ID of the subscribing client.",
+      "fixed"
+    ],
+    [
+      "cursor_id",
+      "For bookmark subscriptions, the ID of the cursor\nreplaying messages in the transaction log.",
+      "snapshot"
+    ],
+    [
+      "entitlement_filter",
+      "The filter applied to this subscription by the\nentitlement module, if any.\n(Since a regular expression subscription can have\nmultiple entitlement filters, one for each\nmatching topic, this is blank for subscriptions\nthat use a regular expression for the topic name.)",
+      "fixed"
+    ],
+    [
+      "filter",
+      "The filter requested on the subscription, if any.",
+      "fixed"
+    ],
+    [
+      "message_type",
+      "Message type for the subscription message.\nMessage type for a subscription is established\nwhen the client connects to a Transport. It will be\nthe MessageType of the Transport or the message\ntype supplied in the URI in the case the Transport\ndoesn’t specify a MessageType.",
+      "fixed"
+    ],
+    [
+      "options",
+      "The options string for the subscription.",
+      "fixed"
+    ]
+  ]
+}

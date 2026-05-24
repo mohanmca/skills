@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "WIDTH_BUCKET"
+    ],
+    [
+      "WIDTH_BUCKET(expression, min, max, bucket_count)\nThe bucket_count argument specifies the number of buckets to create over the\nrange defined by min and max. min is inclusive, while max is not. The value from\nexpression is assigned to a bucket, and the function returns a corresponding bucket\nnumber.\nParameters\nexpression: The expression to evaluate.\nmin: The minimum value of the range.\nmax: The maximum value of the range.\nbucket_count: The number of buckets to create.\nReturns\nThe bucket number. When expression falls outside the range of buckets, the\nfunction returns either 0 or max + 1, depending on whether expression is lower\nthan min or greater than or equal to max.\nExample\nWIDTH_BUCKET(/percentage, 0, 100, 10) AS /displayBar"
+    ]
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "AVG"
+    ],
+    [
+      "AVG(expression)\nAverages an expression.\nParameters\nexpression: The expression to average.\nReturns\nThe mean value of the values specified by the expression."
+    ]
+  ]
+}

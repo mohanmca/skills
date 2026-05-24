@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Parameter",
+      "Description"
+    ],
+    [
+      "Key\n(required)",
+      "The name of the counter that AMPS will increment.\nThere is no default value for this parameter."
+    ],
+    [
+      "Value\n(required)",
+      "The variable in which to store the current value of the counter."
+    ]
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Parameter",
+      "Description"
+    ],
+    [
+      "Command",
+      "The command to execute.\nWhen the action runs, this command is executed as a shell command\non the system where AMPS is running."
+    ]
+  ]
+}

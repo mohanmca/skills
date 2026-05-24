@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Filter",
+      "Evaluates as"
+    ],
+    [
+      "/data[0] = 1",
+      "TRUE, first element of /data is 1"
+    ],
+    [
+      "/data[3] = \"zebra\"",
+      "TRUE, fourth element of /data is 'zebra'"
+    ],
+    [
+      "/data[1] != 1",
+      "TRUE, second element of /data is not 1"
+    ],
+    [
+      "/other[1] LIKE '4'",
+      "TRUE, second element of /other matches '4'"
+    ]
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "rows": [
+    [
+      "Construct",
+      "Usage"
+    ],
+    [
+      "Text",
+      "Standard document text"
+    ],
+    [
+      "Code",
+      "Inline code fragment"
+    ],
+    [
+      "Variable",
+      "Variables within commands or configuration"
+    ],
+    [
+      "Parameter\n(required)",
+      "Required parameters in parameter tables"
+    ],
+    [
+      "Optional",
+      "Optional parameters in parameter tables"
+    ]
+  ]
+}

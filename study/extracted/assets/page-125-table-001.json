@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Topic",
+      "Behavior"
+    ],
+    [
+      "^trade$",
+      "Matches only \"trade\"."
+    ],
+    [
+      "^client.*",
+      "Matches \"client\", \"clients\", \"client001\", etc."
+    ],
+    [
+      ".*trade.*",
+      "Matches \"NYSEtrades\", \"ICEtrade\", etc."
+    ],
+    [
+      "trade.info",
+      "Matches \"trade/info\", \"trade-info\", \"every/trade/info\", etc."
+    ]
+  ]
+}

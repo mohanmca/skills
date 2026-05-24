@@ -1,0 +1,20 @@
+{
+  "rows": [
+    [
+      "Parameter",
+      "Description"
+    ],
+    [
+      "MessageType\n(required)",
+      "The message type of the topic to monitor for OOF messages.\nThis parameter supports regular expressions.\nThere is no default for this parameter."
+    ],
+    [
+      "Filter",
+      "Set the filter to apply.\nThis filter forms the internal subscription for which OOF messages\nwill be generated."
+    ],
+    [
+      "Type",
+      "The type of OOF message to take action on:\nmatch - take action on OOF messages generated because\nmessage no longer matches filter.\ndelete - take action on OOF messages generated because\nmessage has been removed from the SOW.\nexpire - take action on OOF messages generated because the\nmessage expired from the SOW.\nall - take action on all of the above types.\nDefault: all"
+    ]
+  ]
+}

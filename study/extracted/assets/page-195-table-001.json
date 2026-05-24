@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "REGEXP_MATCH"
+    ],
+    [
+      "REGEXP_MATCH(string_to_transform, pattern_or_text_to_match)\nReturns the first occurrence of the pattern_or_text_to_match. This can be either a\nliteral match or PCRE pattern.\nParameters\nstring_to_transform: The string to search within.\npattern_or_text_to_match: The literal text or PCRE pattern to match.\nReturns\nThe first matching text, or NULL if there is no match.\nExample\nThe following expressions all evaluate as true:\nREGEXP_MATCH('sheepdog', 'dog') > 0\nREGEXP_MATCH(\"30dogs\", \"^[0-9]*\") == \"30\"\nThe following snippet shows REGEXP_MATCH constructed as a field:\n<Field>COALESCE(REGEXP_MATCH(/petDescription, \"cat|dog|bear\"), \"back\naway slowly, I don't know what that is\") as /animal_type</Field>\nWith the following data:\n{\"petDescription\": \"tabby cat\"}\n{\"petDescription\": \"havanese dog\"}\n{\"petDescription\": \"grizzly bear\"}\n{\"petDescription\": \"blue gerbil\"}\nWould result in:"
+    ]
+  ]
+}

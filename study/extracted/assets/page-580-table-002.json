@@ -1,0 +1,28 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "--check-\ncurrent",
+      "Returns true if the instance is the same version as the amps_migrate\nutility, with no upgrade needed."
+    ],
+    [
+      "--dry-run",
+      "Step through the entire upgrade process, printing activity, without\nmaking changes.\nReturns false if errors are encountered or upgrade is impossible."
+    ],
+    [
+      "--upgrade",
+      "Upgrade the instance, returning false if the upgrade is impossible or\nthe upgrade process fails."
+    ],
+    [
+      "-h, --help",
+      "Show usage information and exit."
+    ],
+    [
+      "--version",
+      "Show the program's version number and exit."
+    ]
+  ]
+}

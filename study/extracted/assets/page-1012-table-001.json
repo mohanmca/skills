@@ -1,0 +1,32 @@
+{
+  "rows": [
+    [
+      "Acknowledgment",
+      "Description"
+    ],
+    [
+      "none",
+      "No ack is returned.\nThis is the default behavior."
+    ],
+    [
+      "completed",
+      "When a bookmark is present on the subscribe request and this\nacknowledgment is requested, AMPS sends a completed\nacknowledgment message to indicate that bookmark replay is\ncomplete. Further messages on this subscription are from new\npublishes."
+    ],
+    [
+      "persisted",
+      "When a bookmark is present and this acknowledgment is\nrequested, AMPS periodically sends a persisted\nacknowledgment message to indicate the most recent\nbookmark in the server's transaction log."
+    ],
+    [
+      "processed",
+      "AMPS has compiled the filters for the delta_subscribe\nmessage(s)."
+    ],
+    [
+      "received",
+      "The delta_subscribe message has been received."
+    ],
+    [
+      "stats",
+      "Returns an acknowledgment message with Matches,\nTopicMatches and RecordsReturned."
+    ]
+  ]
+}

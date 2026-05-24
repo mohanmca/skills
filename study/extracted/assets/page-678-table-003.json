@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Parameter",
+      "Description"
+    ],
+    [
+      "Condition\n(required)",
+      "Specifies the condition to evaluate. The condition must be a valid\nAMPS filter.\nThe condition will substitute variables from the current context before\nbeing evaluated.\nThere is no default for this parameter."
+    ]
+  ]
+}

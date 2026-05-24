@@ -1,0 +1,32 @@
+{
+  "rows": [
+    [
+      "Topic",
+      "Description"
+    ],
+    [
+      "Installing AMPS",
+      "Basic information on installing the AMPS server."
+    ],
+    [
+      "Starting AMPS",
+      "Information on running the server, including a description\nof the command line options for the server."
+    ],
+    [
+      "JSON Messages - A\nQuick Primer",
+      "A brief description of the JSON format, which is used for\nthe examples in this introduction."
+    ],
+    [
+      "spark: the AMPS\ncommand-line client",
+      "An introduction to the basic command-line client included\nin the AMPS distribution."
+    ],
+    [
+      "Evaluating AMPS on\nWindows or MacOS",
+      "AMPS runs on x64 Linux. This section describes how to\ninstall a development or evaluation system on Windows\nor MacOS"
+    ],
+    [
+      "Galvanometer and\nRESTful Statistics",
+      "This section describes the monitoring interfaces provided\nfor the AMPS server."
+    ]
+  ]
+}

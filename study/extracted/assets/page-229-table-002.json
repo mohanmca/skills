@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "MESSAGE_SIZE"
+    ],
+    [
+      "MESSAGE_SIZE()\nReturns the size of the payload of the current message, in bytes.\nParameters\nNone.\nReturns\nThe size of the message payload in bytes.\nAvailable For\nAll messages."
+    ]
+  ]
+}

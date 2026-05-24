@@ -1,0 +1,32 @@
+{
+  "rows": [
+    [
+      "Acknowledgment",
+      "Description"
+    ],
+    [
+      "none",
+      "No acknowledgment message is returned. This is the default\nbehavior."
+    ],
+    [
+      "completed",
+      "The sow command has completed."
+    ],
+    [
+      "persisted",
+      "Not supported at this time."
+    ],
+    [
+      "processed",
+      "AMPS has compiled the filter(s) for the sow message."
+    ],
+    [
+      "received",
+      "The sow command has been received."
+    ],
+    [
+      "stats",
+      "Returns statistics related to the state of the SOW query results."
+    ]
+  ]
+}

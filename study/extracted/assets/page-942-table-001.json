@@ -1,0 +1,44 @@
+{
+  "rows": [
+    [
+      "Metric",
+      "Description",
+      "Type"
+    ],
+    [
+      "denied_reads",
+      "Number of read requests which\nhave been denied due to an\nentitlement filter.",
+      "cumulative"
+    ],
+    [
+      "denied_writes",
+      "Number of write requests which\nhave been denied.",
+      "cumulative"
+    ],
+    [
+      "description",
+      "Descriptor of the processor.",
+      "fixed"
+    ],
+    [
+      "last_active",
+      "Number of milliseconds since a\nprocessor was last active.\nFor each statistics snapshot,\nthis indicates the longest period\nof time between the time that\nthe statistics were collected and\nthe time an instance of a\nprocessor of this type marked\nitself as active.\nThis counter is expected to\nhave variation in a healthy\ninstance. A steady increase in\nthis counter over a number of\nsamples could indicate that the\nprocessor is not able to become\nactive (for example, due to CPU\nsaturation).",
+      "snapshot"
+    ],
+    [
+      "matches_found",
+      "Number of messages found.",
+      "cumulative"
+    ],
+    [
+      "matches_found_per_sec",
+      "Rate of messages found.",
+      "interval\naverage"
+    ],
+    [
+      "matches_found_bytes",
+      "Number of bytes matched.",
+      "cumulative"
+    ]
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "HTTPHeader",
+      "Sets a header to add to the HTTP request.\nThe configuration can specify any number of\nHTTPHeader elements, and the module will provide\neach of the specified headers with the authentication\nrequest.\nThere is no default for this option. If no HTTPHeader\noption is included, the module provides a standard set\nof headers.\nThis option supports variable replacement during an\nauthentication request, as described in the following\ntable.\nThis option supports expansion of the AMPS_USER_NAME\n(and the USER_NAME backward compatibility form)\nwhen the module is in EntitlementsOnly mode."
+    ],
+    [
+      "EntitlementTimeout",
+      "Optionally, sets the amount of time to consider an\nentitlements document for a given user to be valid.\nAfter this timeout period, AMPS will check each\nentitlements document returned for that user to see if\nthe entitlements have changed. If an authentication\nrequest returns a different entitlements document, the\nmodule will reset permissions for all connections\ncurrently connected with that username (which will\ndisconnect those connections and clear the\nentitlement cache).\nWhen this option is not provided, the module retains\npermissions until all connections with the current user\nname are disconnected, then removes cached\npermissions in the module and clears the AMPS\nentitlement cache.\nThis option is not supported in EntitlementsOnly\nmode.\nThis option accepts a number of milliseconds or an\nAMPS interval.\nThe granularity for the EntitlementTimeout is a\nsecond. Fractions of a second, or values less than one\nsecond, may be rounded or truncated."
+    ]
+  ]
+}

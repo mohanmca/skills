@@ -1,0 +1,22 @@
+{
+  "rows": [
+    [
+      "Specifier",
+      "C Type",
+      "Size (bytes)",
+      "AMPS\nType"
+    ],
+    [
+      "",
+      "",
+      "AMPS will interpret the string up to the\nfirst NULL character or the number of\nbytes specified.",
+      ""
+    ],
+    [
+      "p",
+      "uint8_t\nfollowed by\nchar[]",
+      "Number of bytes must be specified.\nAMPS will consume the number of bytes\nspecified in the Field configuration. The\nfirst byte of data specifies the length of\nthe string. Only that number of bytes,\nstarting with the second byte of the data,\nwill be interpreted as the value.",
+      "string"
+    ]
+  ]
+}

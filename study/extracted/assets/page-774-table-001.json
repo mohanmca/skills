@@ -1,0 +1,28 @@
+{
+  "rows": [
+    [
+      "Feature",
+      "Storage Usage"
+    ],
+    [
+      "State of the World\n(SOW)",
+      "Random access read/write/update."
+    ],
+    [
+      "Transaction Log",
+      "Sequential write for recording messages / sequential read for\nreplay, replication and queue message distribution."
+    ],
+    [
+      "Error and Event\nLog",
+      "Sequential write only."
+    ],
+    [
+      "Statistics\nDatabase",
+      "Random access read/write/update."
+    ],
+    [
+      "Persisted Queue\nMetadata",
+      "Random access read/write/update."
+    ]
+  ]
+}

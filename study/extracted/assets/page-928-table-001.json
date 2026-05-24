@@ -1,0 +1,59 @@
+{
+  "rows": [
+    [
+      "Metric",
+      "Description",
+      "Type"
+    ],
+    [
+      "conflation_ratio",
+      "Ratio representing the amount of conflation for\nthis topic. (If there are no updates, this is not\ncalculated and shows as 0.0.)",
+      "running\naverage"
+    ],
+    [
+      "interval",
+      "Conflation interval.",
+      "fixed"
+    ],
+    [
+      "message_type",
+      "Message type for this topic.",
+      "fixed"
+    ],
+    [
+      "topic",
+      "Name of the conflated topic.",
+      "fixed"
+    ],
+    [
+      "total_executions",
+      "Total number of times the conflation algorithm\nhas been executed.",
+      "cumulative"
+    ],
+    [
+      "total_time",
+      "Amount of time spent processing this topic.",
+      "cumulative"
+    ],
+    [
+      "underlying_topic",
+      "Name of the underlying topic that this topic\nconflates.",
+      "fixed"
+    ],
+    [
+      "filter",
+      "The optionally configured filter for this topic.",
+      "fixed"
+    ],
+    [
+      "pattern",
+      "The generated pattern for this topic (defined\nwhen the underlying topic is a regex topic).",
+      "fixed"
+    ],
+    [
+      "topic_format",
+      "The topic format for this topic (defined when\nthe underlying topic is a regex topic).",
+      "fixed"
+    ]
+  ]
+}

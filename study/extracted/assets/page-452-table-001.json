@@ -1,0 +1,44 @@
+{
+  "rows": [
+    [
+      "MessagePack Type",
+      "AMPS Representation"
+    ],
+    [
+      "nil",
+      "NULL"
+    ],
+    [
+      "bool",
+      "Boolean"
+    ],
+    [
+      "int (all widths)",
+      "Integer"
+    ],
+    [
+      "float (all widths)",
+      "Float"
+    ],
+    [
+      "str (all widths)",
+      "String"
+    ],
+    [
+      "bin (all widths)",
+      "String"
+    ],
+    [
+      "array (all widths)",
+      "Array of AMPS values"
+    ],
+    [
+      "map (all widths)",
+      "Nested AMPS values"
+    ],
+    [
+      "ext (all widths)",
+      "String"
+    ]
+  ]
+}

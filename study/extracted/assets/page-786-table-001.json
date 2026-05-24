@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "/proc/sys/vm/swappiness"
+    ],
+    [
+      "AMPS performs best when the data that it needs to retain resident is in memory. If\nthe operating system needs to use swap because the system requires more memory\nthan is available, performance degrades substantially.\n60East recommends that, for systems that host performance-critical instances of\nAMPS, the vm.swappiness setting is set to 0. This will minimize swapping on this\nsystem, which will improve performance with the tradeoff of making it more likely\nfor processes to be killed by the operating system in low-memory situations. This\ndoes not disable swapping entirely, it only delays it until it's absolutely necessary.\nThis setting is global to the host and applies to all applications.\nRecommended: 0\nTo edit this value, as root you can enter the following command:\nsysctl -w vm.swappiness=0\nThis command will update the value for /proc/sys/vm/swappiness and direct the\noperating system to avoid using swap space until the system is under severe\nmemory pressure.\nUsing the command above will change the swappiness setting until the operating\nsystem is rebooted. To make a permanent change to this setting, as a root user, edit\nthe /etc/sysctl.conf file and either edit or append the following setting:\nvm.swappiness=0"
+    ]
+  ]
+}

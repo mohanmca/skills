@@ -1,0 +1,32 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Definition"
+    ],
+    [
+      "server\n(required)",
+      "AMPS server to connect to."
+    ],
+    [
+      "topic\n(required)",
+      "Topic to query and subscribe to."
+    ],
+    [
+      "batchsize",
+      "Batch size to use during query."
+    ],
+    [
+      "copy",
+      "Publishes records to the secondary server specified."
+    ],
+    [
+      "delta",
+      "Request delta for subscriptions (sends a\nsow_and_delta_subscribe command to AMPS)."
+    ],
+    [
+      "filter",
+      "Content filter to use."
+    ]
+  ]
+}

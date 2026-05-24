@@ -1,0 +1,34 @@
+{
+  "rows": [
+    [
+      "Extension",
+      "File Type",
+      "Description"
+    ],
+    [
+      "",
+      "",
+      "Other than being compressed, they are\ntreated identically to uncompressed journal\nfiles."
+    ],
+    [
+      ".index.gz",
+      "Journal index file",
+      "These files are used during recovery to help\nAMPS quickly rebuild its references to the\ncontent of the transaction log without having\nto completely reprocess each file.\nEach index file contains index information for\nthe corresponding journal file.\nThese files do not contain messages."
+    ],
+    [
+      ".topic.index",
+      "Topic index file",
+      "These files are used during replay to help\nAMPS quickly locate messages for a given\ntopic.\nCreating a topic index is optional, and is\nenabled through instance level Tuning\nconfiguration.\nThese files do not contain messages."
+    ],
+    [
+      ".clients.ack",
+      "Clients\nacknowledgment\ncache",
+      "Used during recovery to help AMPS quickly\nidentify the last message persisted from each\npublisher without having to reprocess each\njournal file.\nThese files do not contain messages.\nWhen present, AMPS will use this file to\ndetermine the last message received from\neach publisher rather than scanning the\njournals to determine the last message\nreceived.\nThe publishers tracked in this file include\nreplication sources."
+    ],
+    [
+      ".queues.ack",
+      "Queue\nacknowledgment\ncache",
+      "For each queue, this file stores the point in the\ntransaction log for which that queue has been\ncompletely processed (that is, all messages\nprior to that point in the transaction log have\nbeen acknowledged or expired)."
+    ]
+  ]
+}

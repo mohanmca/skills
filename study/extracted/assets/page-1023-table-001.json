@@ -1,0 +1,32 @@
+{
+  "rows": [
+    [
+      "Acknowledgment",
+      "Description"
+    ],
+    [
+      "none",
+      "No acknowledgment message is returned.\nThis is the default behavior."
+    ],
+    [
+      "completed",
+      "Supported for a sow_delete with a Filter defined.\nThe completed acknowledgment message is returned when\nthe query portion of the command has completed."
+    ],
+    [
+      "persisted",
+      "When an AMPS engine returns an acknowledgment message of\npersisted this guarantees that:\n1. All downstream synchronous replication(s) have\nacknowledged that the message(s) have been deleted\nfrom their respective SOW topic(s).\n2. The sow_delete message has been sent to all available\ndownstream asynchronous replications."
+    ],
+    [
+      "processed",
+      "AMPS has compiled the filter(s) for the sow_delete messages."
+    ],
+    [
+      "received",
+      "The sow_delete message has been received."
+    ],
+    [
+      "stats",
+      "Returns an acknowledgment message with Matches,\nTopicMatches and RecordsDeleted."
+    ]
+  ]
+}

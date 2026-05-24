@@ -1,0 +1,32 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Definition"
+    ],
+    [
+      "filter",
+      "Content filter to use.\nNotice that a filter of 1=1 is true for every message and will\ndelete the entire set of records in the SOW."
+    ],
+    [
+      "proto",
+      "Protocol to use.\nIn this release, spark supports amps, fix, nvfix and xml.\nDefaults to amps. spark also supports json as a synonym for\namps in this release."
+    ],
+    [
+      "secure\n(applies to SSL\nconnections)",
+      "Specifies whether to use an SSL-secured connection (tcps URI\nscheme).\nValues: false/0/no or true/1/yes\nDefault: false"
+    ],
+    [
+      "type",
+      "For protocols and transports that accept multiple message types\non a given transport, specifies the message type to use."
+    ],
+    [
+      "uriopts",
+      "Custom connection URI parameters to be passed in the URI\nquery string.\nFor example:\ntcp_nodelay=true&tcp_sndbuf=8192"
+    ],
+    [
+      "urischeme\n(applies to SSL\nconnections)",
+      "Allows a custom URI scheme to be specified.\nWhen both secure and urischeme are specified, urischeme\ntakes precedence."
+    ]
+  ]
+}

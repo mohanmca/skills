@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "TOPIC_NAME"
+    ],
+    [
+      "TOPIC_NAME()\nReturns the topic name for the message currently being processed.\nWhen used in a filter for a message being delivered from a queue that has multiple\nunderlying topics, returns the name of the underlying topic\nParameters\nNone.\nReturns\nA string containing the topic name for the message.\nAvailable For\nAll messages"
+    ]
+  ]
+}

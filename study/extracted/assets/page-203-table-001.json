@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "STRFTIME"
+    ],
+    [
+      "STRFTIME(format_string, timestamp)\nProduces a string that contains a representation of the provided timestamp,\nformatted as specified in the provided format_string.\nParameters\nformat_string: The format string, using the same format specifiers as the\nstandard strftime(3) function. This function also supports the additional\nformat specifier %f to format microseconds, and the format specifier %03f to\nformat milliseconds.\ntimestamp: The timestamp to format.\nReturns\nA formatted string representation of the timestamp. The length of the string\nproduced for the time is limited to 128 bytes."
+    ]
+  ]
+}

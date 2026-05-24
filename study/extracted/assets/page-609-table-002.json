@@ -1,0 +1,28 @@
+{
+  "rows": [
+    [
+      "On Event",
+      "Action"
+    ],
+    [
+      "SIGUSR1",
+      "amps-action-do-disable-authentication"
+    ],
+    [
+      "SIGUSR1",
+      "amps-action-do-disable-entitlement"
+    ],
+    [
+      "SIGUSR2",
+      "amps-action-do-enable-authentication"
+    ],
+    [
+      "SIGUSR2",
+      "amps-action-do-enable-entitlement"
+    ],
+    [
+      "SIGINT",
+      "amps-action-do-shutdown"
+    ]
+  ]
+}

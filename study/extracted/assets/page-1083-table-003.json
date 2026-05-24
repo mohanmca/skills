@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Header",
+      "Comment"
+    ],
+    [
+      "topic\n(required)",
+      "Sets the topic that contains the messages to acknowledge."
+    ],
+    [
+      "bookmark\n(required)",
+      "A comma-delimited list of Bookmarks that specify the messages to\nacknowledge."
+    ]
+  ]
+}

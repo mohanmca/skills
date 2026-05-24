@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Option /\nHeader",
+      "Result"
+    ],
+    [
+      "",
+      "/orderId TEXT, /updateTimestamp DESC\nIf no sort order is specified for an identifier, AMPS defaults to\nascending order. If no type hint is specified for an identifier, AMPS\ndefaults to using a mixed-type sort."
+    ]
+  ]
+}

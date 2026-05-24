@@ -1,0 +1,20 @@
+{
+  "rows": [
+    [
+      "Condition",
+      "Modules"
+    ],
+    [
+      "On Message Condition Timeout",
+      "amps-action-on-message-condition-timeout"
+    ],
+    [
+      "On Message State Change",
+      "amps-action-on-alert"
+    ],
+    [
+      "On Custom Event",
+      "amps-action-on-execute-event"
+    ]
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "rows": [
+    [
+      "Type",
+      "Description",
+      "Untyped Message\nExamples"
+    ],
+    [
+      "Boolean",
+      "True (1) or false (0)",
+      "JSON: {\"e\":true}"
+    ],
+    [
+      "Integer",
+      "Signed 64-bit integer or unsigned 64-\nbit integer for values > LONG_MAX",
+      "NVFIX: b=24\nJSON: {\"b\":24}\nXML: <b>24</b>"
+    ],
+    [
+      "Floating Point\nNumber",
+      "64-bit floating point number",
+      "NVFIX: c=24.0\nJSON: {\"c\":24.0}\nXML: <c>24.0</c>"
+    ],
+    [
+      "String",
+      "Arbitrary sequence of bytes of a\nspecific length\nAn empty string is considered to be\nNULL",
+      "NVFIX: d=Grilled cheese\nsandwich<SOH>\nJSON: {\"d\":\"Grilled\ncheese sandwich\"}\nXML: <d>Grilled cheese\nsandwich</d>"
+    ]
+  ]
+}

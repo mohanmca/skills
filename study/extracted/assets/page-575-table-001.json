@@ -1,0 +1,56 @@
+{
+  "rows": [
+    [
+      "Metric",
+      "Explanation"
+    ],
+    [
+      "elapsed time",
+      "Time during which the tool was actively writing/reading data."
+    ],
+    [
+      "writer thread\ncount",
+      "Number of threads writing data (always 1)."
+    ],
+    [
+      "batch size",
+      "Number of messages (submissions) in a batch."
+    ],
+    [
+      "submit size",
+      "Size of each message (submission), in bytes."
+    ],
+    [
+      "write size",
+      "Total size of each batch written, in bytes."
+    ],
+    [
+      "submit count",
+      "Number of messages (submissions) during the test."
+    ],
+    [
+      "read count",
+      "Number of read operations during the test."
+    ],
+    [
+      "write count",
+      "Number of write operations during the test."
+    ],
+    [
+      "submit rate",
+      "Average number of messages (submissions) per second while the\ntool was actively writing/reading data."
+    ],
+    [
+      "write rate",
+      "Average number of writes (batches written) per second while the\ntool was actively writing/reading data."
+    ],
+    [
+      "actual read\nmix",
+      "Proportion of reads to writes during the test (this may differ from\nthe target due to thread scheduling, etc.)."
+    ],
+    [
+      "mean write\nlatency",
+      "Mean latency for a write, in microseconds."
+    ]
+  ]
+}

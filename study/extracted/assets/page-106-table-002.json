@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Units",
+      "Description"
+    ],
+    [
+      "k",
+      "10^3 - thousand"
+    ],
+    [
+      "M",
+      "10^6 - million"
+    ]
+  ]
+}

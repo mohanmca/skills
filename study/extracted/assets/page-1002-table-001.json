@@ -1,0 +1,36 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "",
+      "option, that field will not appear in the aggregated message,\neven if the field is in the underlying message.\nWhen this option is provided, a projection must also be\nprovided.\nThis option cannot be used with a bookmark."
+    ],
+    [
+      "live",
+      "Tells AMPS to send messages to subscribing clients before they\nhave been persisted to the transaction log.\nThis option is only valid for bookmark subscriptions."
+    ],
+    [
+      "no_sowkey",
+      "Tells AMPS not to send the AMPS-generated SowKey for\nmessages."
+    ],
+    [
+      "non_regex_topic",
+      "Specifies that the topic name should be a literal match, even if\nthe topic name contains regular expression characters."
+    ],
+    [
+      "oof",
+      "Send on OOF message for records which have fallen out of\nfocus from the original subscription."
+    ],
+    [
+      "pause",
+      "Pause a bookmark subscription.\nThis option is only valid for bookmark subscriptions that do not\nuse the live option. When this option is present, AMPS pauses\nthe subscription or subscriptions provided in the SubId of the\ncommand."
+    ],
+    [
+      "projection=\n[fields]",
+      "For use with aggregated subscriptions.\nSpecifies a comma-delimited set of fields to project, within\nbrackets. Each entry has the format described in the AMPS User\nGuide.\nThis option must contain an entry for every field in the\naggregated message. If there is no entry for a field in this\noption, that field will not appear in the aggregated message,\neven if the field is in the underlying message.\nThere is no default for this option. When this option is provided,\na grouping must also be provided. This option cannot be used\nwith a bookmark.\nThe maximum size of this option is 64KB."
+    ]
+  ]
+}

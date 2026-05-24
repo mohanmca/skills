@@ -1,0 +1,40 @@
+{
+  "rows": [
+    [
+      "Scenario",
+      "AMPS Feature(s)"
+    ],
+    [
+      "Simple, low-latency publish and subscribe (many to many\nmessaging) with no need to persist messages.",
+      "Ad hoc Publish and\nSubscribe"
+    ],
+    [
+      "Publish and subscribe with a replayable audit trail.",
+      "Transaction Log and\nBookmark Subscription"
+    ],
+    [
+      "Snapshot of the current state of a set of messages (for\nexample, graphing the elapsed time for all pending\norders).",
+      "State of the World\n(SOW)"
+    ],
+    [
+      "Creating a view server that aggregates information about\na high-velocity data feed for reporting.",
+      "State of the World\n(SOW)\nViews and Aggregation\nTransaction Log and\nReplication"
+    ],
+    [
+      "Snapshot of the current state of a set of messages\nfollowed by updates to those messages (for example,\nshowing the current status of a set of orders when a UI\nstarts and then showing real-time updates to those\nmessages).",
+      "State of the World\n(SOW)\nSOW and Subscribe\nfrom client application"
+    ],
+    [
+      "Ensuring that a given message is processed once, by a\nsingle subscriber (for example, a workload distribution\nsystem).",
+      "Message Queues and\nTransaction Log\n(Queues use the\nTransaction Log)"
+    ],
+    [
+      "Replaying messages from a point in time.",
+      "Transaction Log and\nBookmark Subscription"
+    ],
+    [
+      "Transforming messages as they are published to AMPS.",
+      "State of the World\n(SOW) and Enrichment"
+    ]
+  ]
+}

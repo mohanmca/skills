@@ -1,0 +1,20 @@
+{
+  "rows": [
+    [
+      "value",
+      "result if no provided bookmark is found"
+    ],
+    [
+      "epoch",
+      "Begin replay at the start of the transaction log."
+    ],
+    [
+      "now",
+      "Begin replay at the end of the transaction log. (Default for bookmark\nsubscriptions if this option is not provided.)"
+    ],
+    [
+      "fail",
+      "Report a failure if no bookmark in the bookmark string is available."
+    ]
+  ]
+}

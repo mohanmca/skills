@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "Certificate",
+      "The certificate to use for the AMPS connection to the web\nservice. When configured, this certificate can be provided to\nthe web service if the web service requests client\nauthentication for the connection.\nThere is no default for this parameter."
+    ],
+    [
+      "Key",
+      "The key file to use for the AMPS connection to the web\nservice. When configured, this key can be used for client\nauthentication if the web service requests client\nauthentication for the connection.\nThere is no default for this parameter."
+    ],
+    [
+      "CAKey",
+      "The certificate authority key. When configured, this key can\nbe used for the AMPS server to verify the identity of the web\nservice.\nThere is no default for this parameter. The CAKey must be\nprovided when AllowUnverfiedPeer is set to false, the\ndefault."
+    ],
+    [
+      "AllowUnverifiedPeer",
+      "Specifies whether AMPS requires the web service to identify\nitself. When this is set to false, the default, AMPS requires\nthat the web service provides a certificate that can be\nverified with the configured CAKey."
+    ]
+  ]
+}

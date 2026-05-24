@@ -1,0 +1,64 @@
+{
+  "rows": [
+    [
+      "Metric",
+      "Description",
+      "Type"
+    ],
+    [
+      "last_queued_txid",
+      "The local transaction ID of the last\ntransaction processed for the queue.",
+      "live state"
+    ],
+    [
+      "last_acked_txid",
+      "The local transaction ID of the last\nacknowledged point in the queue.",
+      "live state"
+    ],
+    [
+      "priority_count",
+      "The number of distinct priority values for the\nqueue. (This will be 0 if the queue does not\nhave a priority expression configured.)",
+      "live state"
+    ],
+    [
+      "seconds_behind",
+      "The point in the transaction log of the oldest\nmessage in the queue, in seconds, as\nmeasured by the time between the time the\nmessage was added to the local transaction\nlog and the current time.",
+      "live state"
+    ],
+    [
+      "age_of_oldest_lease",
+      "The amount of time, in seconds, that the\noldest current lease has been held by a\nclient.",
+      "live state"
+    ],
+    [
+      "backlog",
+      "Number of messages currently leased from\nthe queue.",
+      "live state"
+    ],
+    [
+      "expired_leases",
+      "Number of leases that have expired from\nthis queue.",
+      "cumulative\nlive state"
+    ],
+    [
+      "locally_owned",
+      "Number of messages owned by this\ninstance.",
+      "live state"
+    ],
+    [
+      "transferred_in",
+      "Number of messages that have had\nownership transferred to this instance.",
+      "cumulative\nlive state"
+    ],
+    [
+      "cursors",
+      "Details of delivery cursors for this queue.",
+      "live state"
+    ],
+    [
+      "messages",
+      "Details for messages currently in this queue.",
+      "live state"
+    ]
+  ]
+}

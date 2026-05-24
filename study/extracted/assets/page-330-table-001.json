@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Command",
+      "Result"
+    ],
+    [
+      "delta_publish",
+      "Publish a delta message.\nIf no record exists in the SOW, add the message to the SOW.\nIf a record exists in the SOW, merge the data from this record into\nthe existing record."
+    ]
+  ]
+}

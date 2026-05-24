@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Field",
+      "Description"
+    ],
+    [
+      "ack_type",
+      "The type of acknowledgment. One of completed, persisted,\nprocessed, received or stats."
+    ],
+    [
+      "cmd_id",
+      "The command ID that this ack refers to. Clients can use this field to\ncorrelate the ack returned with the command being acknowledged.\nThis field will not be returned for acknowledgments that are conflated\n(persisted acknowledgments for publish commands when AMPS has a\ntransaction log configured)."
+    ],
+    [
+      "status",
+      "The status of the command."
+    ],
+    [
+      "reason",
+      "The reason for the status, most often returned with a failure status to\nprovide more detailed information about why the command failed."
+    ]
+  ]
+}

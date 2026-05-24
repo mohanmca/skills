@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Module",
+      "Description"
+    ],
+    [
+      "amps-default-entitlement-module",
+      "Allows any user to access any resource."
+    ],
+    [
+      "amps-default-no-entitlement-module",
+      "Denies access to all resources for all users."
+    ]
+  ]
+}

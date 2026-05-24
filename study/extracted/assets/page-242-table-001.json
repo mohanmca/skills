@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "COALESCE"
+    ],
+    [
+      "COALESCE(value, [value, ...])\nReturns the first value that is not NULL.\nParameters\nvalue: One or more values to check.\nReturns\nThe first value that is not NULL. If all values are NULL, returns NULL."
+    ]
+  ]
+}

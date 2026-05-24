@@ -1,0 +1,20 @@
+{
+  "rows": [
+    [
+      "Header",
+      "Comment"
+    ],
+    [
+      "topic\n(required)",
+      "Sets the topic to subscribe to. The topic specified can be the literal topic\nname, or a regular expression that matches multiple topics."
+    ],
+    [
+      "bookmark",
+      "Sets the point in the transaction log at which the subscription will begin.\nThe bookmark provided can be a specific AMPS bookmark, a timestamp,\nor one of the client-provided constants. AMPS also accepts a comma-\ndelimited list of bookmarks. In this case, AMPS begins the subscription\nfrom whichever of the bookmarks is earliest in the transaction log."
+    ],
+    [
+      "opts",
+      "A comma-separated list of options for the command. To control the rate\nat which AMPS delivers messages, the options for the command must\ninclude a rate specifier. For example, to specify that AMPS replays no\nfaster than twice the original rate, include 2X in the options string. To\nspecify that AMPS will go no more than 3 seconds without producing a\nmessage, regardless of the original replay timing, use a rate_max_gap of\n3s. To provide the options described above, you would use the options\nstring: rate=2X,rate_max_gap=3s."
+    ]
+  ]
+}

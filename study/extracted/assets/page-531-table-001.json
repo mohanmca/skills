@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Utility",
+      "Description"
+    ],
+    [
+      "amps_report_minidump",
+      "Utility for submitting minidump files to 60East at the\ncrash@crankuptheamps.com email address."
+    ]
+  ]
+}

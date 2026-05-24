@@ -1,0 +1,40 @@
+{
+  "rows": [
+    [
+      "Term",
+      "Definition"
+    ],
+    [
+      "",
+      "that the destination or destinations have received the\nmessages."
+    ],
+    [
+      "Replication\nTransport",
+      "A transport used only for replication (amps-replication\ntransport), that allows the flow of incoming replication\nmessages from another AMPS instance (the replication source)."
+    ],
+    [
+      "Slow Client",
+      "A client that is being sent messages at a rate which is faster\nthan it can consume, to the point where AMPS detects that the\nnetwork buffer to the client has filled. This term is used any\ntime that the outgoing network buffer to a client is filled,\nregardless of whether this is due to processing speed on the\nclient, a network slowdown, or AMPS simply producing more\nresults than the network can immediately transmit."
+    ],
+    [
+      "SOW (State of the\nWorld) Topic",
+      "A last value cache used to store the current state of messages\nbelonging to a topic. These topics can also be treated as a\nmessage database with the key fields determining message\nuniqueness."
+    ],
+    [
+      "SOW Key",
+      "A value used to identify a unique record in an AMPS SOW topic.\nFor a given topic, you can configure AMPS to generate the SOW\nkey based on content in the message, provide the SOW key on\neach message published, or use a SOW key generator module\nto programmatically create the SOW key. Within a SOW topic,\npublishes to the same SOW key value are interpreted updates\nto the same record."
+    ],
+    [
+      "Topic",
+      "A label, which is affixed to every message by a publisher, which\nis used to group messages for routing and delivery. Messages\nwithin a topic all have the same message type, persistence, and\ndelivery paradigm. Topics are a broad partition of messages\nwithin AMPS. AMPS also allows subscribers to further refine\nsubscriptions based on the content of the message."
+    ],
+    [
+      "Transaction Log",
+      "A history of all messages published for a configurable set of\ntopics which can be used to recreate an up to date state of all\nmessages processed. Applications can query and replay\nmessages from the transaction log. The transaction log\npreserves the order in which messages are processed by an\ninstance of AMPS both within a topic and across topics."
+    ],
+    [
+      "Transport",
+      "The network protocol used to to transfer messages between\nAMPS subscribers, publishers and other instances of AMPS (via\nreplication)."
+    ]
+  ]
+}

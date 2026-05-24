@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Field",
+      "Value"
+    ],
+    [
+      "user_name",
+      "Specifies that the module should set the authenticated user name of\nthe connection to the provided value.\nThis option is ignored when the module is in EntitlementsOnly mode.\nIf this field is not present in the returned permissions document, the\nrequest authenticates the logon with the user name provided with the\nlogon request from the client."
+    ]
+  ]
+}

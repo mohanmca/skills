@@ -1,0 +1,40 @@
+{
+  "rows": [
+    [
+      "Field",
+      "Description"
+    ],
+    [
+      "cmd",
+      "The command to be executed.\nValue: logon"
+    ],
+    [
+      "client_name",
+      "A string identifier used to give a client a unique ID. AMPS does not\nlimit the character set used in this name. However, the specific\nprotocol may have character set limitations.\n60East recommends that the client name is meaningful, short,\nhuman readable, and avoids using control characters, newline\ncharacters, or square brackets.\nThe client name must be unique across the set of instances that\nshare messages through replication. Otherwise messages may be\nlost since the client name is included in the process AMPS uses to\nform the unique identifier for messages published to AMPS."
+    ],
+    [
+      "ack_type",
+      "Acknowledgment type for the given command.\nValue is a comma separated list of one or more of the following:\nnone, received or processed."
+    ],
+    [
+      "message_type",
+      "The message type for the connection.\nRequired if the Transport accepts any message type."
+    ],
+    [
+      "user_id",
+      "The username passed into the AMPS authentication and\nentitlement module."
+    ],
+    [
+      "password",
+      "The password passed into the AMPS authentication and\nentitlement module."
+    ],
+    [
+      "correlation_id",
+      "A user-provided string that will be included in the log message\nrecording this logon, and in the information provided for the\nconnection in the administration interface.\nAMPS does not interpret this string or use the string for any other\npurpose. If this header is not present, AMPS does not store a\nvalue for the correlation id for this connection. The contents of\nthis header must consist of characters that are legal in Base64\nencoding."
+    ],
+    [
+      "version",
+      "The client library version (typical includes the language and build\nnumber) of the client making the connection. This version number"
+    ]
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "rows": [
+    [
+      "Method",
+      "Description"
+    ],
+    [
+      "setClientName",
+      "Sets the base client name."
+    ],
+    [
+      "setPublishStoreFunction",
+      "Sets the SerializableFunction that gets\neach client a store. The parameter is the client\nname that an individual client of the sink will\nuse."
+    ],
+    [
+      "setPublishCommand",
+      "Sets the publish command for the sink.\nValid commands include:\n\"publish\" (Default)\n\"sow_delete\"\n\"delta_publish\" (May require a custom\nserialization schema)"
+    ],
+    [
+      "setFailedWriteHandlerSupplier",
+      "Sets the supplier that gets each client a\nFailedWriteHandler. The supplier must be\nserializable."
+    ],
+    [
+      "setReconnectDelayStrategySupplier",
+      "Sets the supplier that gets each client a\nReconnectDelayStrategy. Default uses\nexponential delay. The supplier must be\nserializable."
+    ],
+    [
+      "setExceptionListenerSupplier",
+      "Sets the supplier that gets each client an\nexception listener. The supplier must be\nserializable."
+    ],
+    [
+      "setHeartbeat",
+      "Sets the heartbeat interval in seconds for the\nclients."
+    ],
+    [
+      "setRetryOnDisconnect",
+      "Set whether or not messages being sent to the\nserver should retry if the client is\ndisconnected."
+    ]
+  ]
+}

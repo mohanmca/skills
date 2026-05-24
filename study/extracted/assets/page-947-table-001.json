@@ -1,0 +1,44 @@
+{
+  "rows": [
+    [
+      "Metric",
+      "Description",
+      "Type"
+    ],
+    [
+      "",
+      "Messages that are present, but not yet\nactive are shown in the\ninactive_message_count.",
+      ""
+    ],
+    [
+      "seconds_behind",
+      "Age of the oldest unacknowledged\nmessage in the queue.\nThis counter resets when the instance is\nrestarted.\nThis statistic is measured in seconds, at\nthe resolution of the system clock.",
+      "snapshot"
+    ],
+    [
+      "owned",
+      "Number of messages currently owned by\nthis instance of the queue.",
+      "snapshot"
+    ],
+    [
+      "proxied_transfer",
+      "State of the proxied transfer setting.",
+      "fixed"
+    ],
+    [
+      "topic",
+      "Name of the queue topic.",
+      "fixed"
+    ],
+    [
+      "transferred_in",
+      "The number of messages originally\npublished to another instance that have\nbeen transferred to this instance for\ndelivery from this queue.",
+      "cumulative"
+    ],
+    [
+      "transferred_out",
+      "The number of messages originally\npublished to this instance that have been\ntransferred to another instance for\ndelivery from the replicated instance of\nthis queue.",
+      "cumulative"
+    ]
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "RTRIM"
+    ],
+    [
+      "RTRIM(string, [characters_to_trim])\nReturns the input string, with all trailing characters in the set of\ncharacters_to_trim removed.\nParameters\nstring: The string to process.\ncharacters_to_trim: Optional. The set of characters to trim. Defaults to a\nspace.\nReturns\nThe right-trimmed string.\nExample\nTRIM(\" Lancelot \", \" \") == \" Lancelot\""
+    ]
+  ]
+}

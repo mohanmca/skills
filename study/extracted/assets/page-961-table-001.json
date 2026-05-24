@@ -1,0 +1,34 @@
+{
+  "rows": [
+    [
+      "Metric",
+      "Description",
+      "Type"
+    ],
+    [
+      "journals",
+      "A list of all journal file names.",
+      "snapshot"
+    ],
+    [
+      "max_timestamp",
+      "The largest timestamp in the transaction log.",
+      "snapshot"
+    ],
+    [
+      "min_timestamp",
+      "The smallest timestamp in the transaction log.",
+      "snapshot"
+    ],
+    [
+      "write_latency",
+      "Statistics covering the latency of writes to the\ntransaction log.",
+      "snapshot"
+    ],
+    [
+      "write_size",
+      "Statistics covering the size of writes to the transaction\nlog.",
+      "snapshot"
+    ]
+  ]
+}

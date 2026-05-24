@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "MAX"
+    ],
+    [
+      "MAX(expression)\nReturns the maximum value out of the values specified by the expression.\nParameters\nexpression: The expression to find the maximum value from.\nReturns\nThe maximum value."
+    ]
+  ]
+}

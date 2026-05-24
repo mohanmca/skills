@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Condition",
+      "Modules"
+    ],
+    [
+      "On a Schedule",
+      "amps-action-on-schedule"
+    ],
+    [
+      "On AMPS Startup or Shutdown",
+      "amps-action-on-startup\namps-action-on-shutdown"
+    ]
+  ]
+}

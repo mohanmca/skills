@@ -1,0 +1,44 @@
+{
+  "rows": [
+    [
+      "Term",
+      "Definition"
+    ],
+    [
+      "Expression",
+      "A text string that produces a specific value. AMPS uses\nexpressions in filters and when constructing fields for\nenrichment or projecting views."
+    ],
+    [
+      "Filter",
+      "A text string that is used to match a subset of messages from a\nlarger set of messages. In AMPS, every filter is an AMPS\nexpression that returns TRUE or FALSE."
+    ],
+    [
+      "Message\nExpiration",
+      "The process where the life span of records stored in a State-of-\nthe-World topic or queue are limited."
+    ],
+    [
+      "Message Type",
+      "The data format used to encapsulate messages. Each message\nwithin AMPS has a single, defined message type. Each\nconnection to AMPS uses a single, defined message type."
+    ],
+    [
+      "Module",
+      "A shared object that provides functionality to the AMPS server.\nModules are used to extend AMPS functionality: capabilities\nsuch as authentication, entitlement, the ability to parse and\nserialize messages of a given format (message type), and\nfunctions in the AMPS expression language are implemented as\nmodules. AMPS loads a default set of modules automatically.\nOther modules may be loaded using directives in the AMPS\nconfiguration file."
+    ],
+    [
+      "oof (out of focus)",
+      "Notification to a subscriber that a message which was\npreviously a result of a SOW or a SOW subscribe filter result has\neither expired, been deleted from the SOW or has been updated\nsuch that it no longer matches the filter criteria."
+    ],
+    [
+      "Queue",
+      "A topic that provides competitive consumption with the goal of\nallowing an application to process a message once, regardless\nof the number of consumers. Notice that a queue is not\nnecessary to provide reliable replay or consistent ordering -- the\ntransaction log provides those properties."
+    ],
+    [
+      "Replication",
+      "The process of duplicating the messages stored into an AMPS\ninstance to one or more additional AMPS instances. The\ninstance that contains messages (and related commands, for\nexample, deletions from a SOW topic) pushes those messages\nto the instance that receives the commands over a transport\ndesigned for that purpose. AMPS replication occurs on a\ncommand-by-command basis for low latency."
+    ],
+    [
+      "Replication\nDestination",
+      "An instance of AMPS that is receiving messages directly from\nanother AMPS instance (the replication source)."
+    ]
+  ]
+}

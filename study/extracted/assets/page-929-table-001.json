@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Metric",
+      "Description",
+      "Type"
+    ],
+    [
+      "system_percent",
+      "Percent of CPU utilization time consumed while\nexecuting kernel processes on behalf of this AMPS\ninstance.",
+      "snapshot"
+    ],
+    [
+      "total_percent",
+      "Total percent of CPU utilization on behalf of this AMPS\ninstance.",
+      "snapshot"
+    ],
+    [
+      "user_percent",
+      "Percent of CPU utilization time consumed while\nprocessing non-I/O events on behalf of this AMPS\ninstance.",
+      "snapshot"
+    ]
+  ]
+}

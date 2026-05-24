@@ -1,0 +1,32 @@
+{
+  "rows": [
+    [
+      "Field",
+      "Description"
+    ],
+    [
+      "cmd",
+      "Command to be executed.\nValue: delta_subscribe"
+    ],
+    [
+      "topic",
+      "Topic with which to place a subscription."
+    ],
+    [
+      "ack_type",
+      "Acknowledgment type for the delta_subscribe command.\nValue is a comma separated list of one or more of the\nfollowing: none, received, processed, completed or stats."
+    ],
+    [
+      "cmd_id",
+      "If specified with an AMPS command requesting an\nacknowledgment message, all requested acknowledgment\nmessages will contain the CommandId in the acknowledgment\nresponse header."
+    ],
+    [
+      "data_only",
+      "A Boolean (true or false) used to determine the type of data\nsent to the subscriber.\nA value of true will, for example, not include a SOAP\nenvelope."
+    ],
+    [
+      "filter",
+      "String which is used as a content filter expression.\nWhen using XML, the filter must be wrapped in a CDATA."
+    ]
+  ]
+}

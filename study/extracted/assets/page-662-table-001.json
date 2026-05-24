@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Parameter",
+      "Description"
+    ],
+    [
+      "GracePeriod",
+      "The approximate time to wait after start up before beginning to\ncheck whether to downgrade links.\nThe GracePeriod allows time for other AMPS instances to start up\nand for connections to be established between AMPS instances."
+    ]
+  ]
+}

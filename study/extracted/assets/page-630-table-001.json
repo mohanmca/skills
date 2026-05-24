@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Parameter",
+      "Description"
+    ],
+    [
+      "Topic\n(required)",
+      "The name of the topic to monitor for messages.\nThis parameter does not support regular expressions. The topic name\nmust be either a SOW topic, a view, a conflated topic or a queue.\nThere is no default for this parameter."
+    ],
+    [
+      "MessageType\n(required)",
+      "The message type of the topic to monitor for messages.\nThere is no default for this parameter."
+    ]
+  ]
+}

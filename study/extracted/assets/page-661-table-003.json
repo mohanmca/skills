@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Parameter",
+      "Description"
+    ],
+    [
+      "Age\n(required)",
+      "Specifies the maximum message age at which AMPS downgrades a\nreplication destination to async.\nWhen this action runs, AMPS downgrades any destination for which\nthe oldest unacknowledged message is older than the specified Age.\nFor example, when the Age is 5m, AMPS will downgrade any\ndestination where a message older than 5 minutes has not been\nacknowledged.\nThere is no default for this parameter."
+    ]
+  ]
+}

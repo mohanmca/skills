@@ -1,0 +1,40 @@
+{
+  "rows": [
+    [
+      null,
+      "Header",
+      "Comment",
+      null
+    ],
+    [
+      null,
+      "Topic\n(required)",
+      "Sets the topic to query. The topic specified must be a literal topic name.\nPagination is not supported with regular expression subscriptions.",
+      null
+    ],
+    [
+      null,
+      "OrderBy",
+      "Orders the results returned as specified. Requires a comma-separated\nlist of identifiers of the form: /field/[ASC | DESC] . For example, to\nsort in descending order by orderDate so that the most recent orders\nare first, and ascending order by customerName for orders with the same\ndate, you might use a specifier such as: /orderDate DESC,\n/customerName ASC",
+      null
+    ],
+    [
+      "",
+      "",
+      "",
+      "/customerName ASC"
+    ],
+    [
+      null,
+      "",
+      null,
+      null
+    ],
+    [
+      null,
+      "Options",
+      "An options string that sets the top_n and skip_n values for this query.\nFor example, to skip 100 records and return the next 10 records, use an\noptions string such as: top_n=10,skip_n=100",
+      null
+    ]
+  ]
+}

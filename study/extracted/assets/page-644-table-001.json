@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Parameter",
+      "Description"
+    ],
+    [
+      "Count",
+      "Specifies the maximum number of files that meet the Age and\nPattern criteria to compress.\nAMPS will compress files matching the criteria, starting with the oldest\nfiles, and stop when the number of files specified in this parameter\nhave been compressed.\nThere is no default for this parameter. When both Keep and Count are\nspecified, AMPS will not compress any files if the number of files\nmeeting the criteria is less than the number specified in the Keep\nparameter."
+    ]
+  ]
+}

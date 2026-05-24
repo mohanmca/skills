@@ -1,0 +1,20 @@
+{
+  "rows": [
+    [
+      "Field",
+      "Description"
+    ],
+    [
+      "leaseperiod",
+      "For messages received from a queue, the ISO-8601 datetime that\nindicates when the lease expires."
+    ],
+    [
+      "msg_len",
+      "For messages that contain a message body (message data), the\nlength of the message body."
+    ],
+    [
+      "sow_key",
+      "If the message was from a topic that uses a SOW, the message\nincludes the sow_key that AMPS uses to uniquely identify the\nmessage within the SOW."
+    ]
+  ]
+}

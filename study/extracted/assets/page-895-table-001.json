@@ -1,0 +1,36 @@
+{
+  "rows": [
+    [
+      "Item",
+      "Description"
+    ],
+    [
+      "/bin",
+      "AMPS binaries: the AMPS server, daemon deployment scripts, AMPS\nutilities, and spark."
+    ],
+    [
+      "/docs",
+      "AMPS base documentation. Current versions of the documentation and\nadditional guides are available from the 60East website."
+    ],
+    [
+      "HISTORY",
+      "Information on the AMPS revision history. In current distributions, this\nprovides a link to the entry for this release of AMPS within the full revision\nhistory on the 60East web site."
+    ],
+    [
+      "/lib",
+      "Libraries used by the AMPS binary."
+    ],
+    [
+      "LICENSE",
+      "The AMPS license."
+    ],
+    [
+      "README",
+      "The README file for AMPS."
+    ],
+    [
+      "/sdk",
+      "Headers used for modules that extend AMPS."
+    ]
+  ]
+}

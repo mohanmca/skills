@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "",
+      "up the information.\nThere is no default for this parameter. Either the ResourceURI or\nCredentialStore must be provided. If both are provided, the\nmodule uses the value of the CredentialStore."
+    ]
+  ]
+}

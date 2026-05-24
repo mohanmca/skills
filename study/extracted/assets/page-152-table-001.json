@@ -1,0 +1,40 @@
+{
+  "rows": [
+    [
+      "Escape Sequence",
+      "Definition"
+    ],
+    [
+      "\\a",
+      "Alert"
+    ],
+    [
+      "\\b",
+      "Backspace"
+    ],
+    [
+      "\\t",
+      "Horizontal tab"
+    ],
+    [
+      "\\n",
+      "Newline"
+    ],
+    [
+      "\\f",
+      "Form feed"
+    ],
+    [
+      "\\r",
+      "Carriage return"
+    ],
+    [
+      "\\xHH",
+      "Hexadecimal digit where H is (0..9,a..f,A..F)"
+    ],
+    [
+      "\\OOO",
+      "Octal Digit (0..7)"
+    ]
+  ]
+}

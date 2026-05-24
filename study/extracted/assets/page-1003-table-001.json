@@ -1,0 +1,32 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "rate=n",
+      "Set the maximum message delivery rate for a bookmark\nsubscription.\nThis option is only valid for bookmark subscriptions that do not\nuse the live option.\nThe rate can be specified as either the number of messages per\nsecond (for example, 1000), the number of bytes per second\n(for example, 100KB), or a multiple of the original replay rate\n(for example, 1.5X)."
+    ],
+    [
+      "replace",
+      "Replace the subscription associated with SubId with another\nsubscription.\nWhen provided as part of sow_and_subscribe, AMPS runs a\nSOW query for the new subscription."
+    ],
+    [
+      "resume",
+      "Resume a bookmark subscription.\nThis option is only valid for bookmark subscriptions that do not\nuse the live option.\nWhen this option is present, AMPS resumes the subscription or\nsubscriptions provided in the SubId of the command."
+    ],
+    [
+      "top_n=n",
+      "AMPS will provide at most n records, starting at the beginning\nof the result set as defined by the OrderBy header.\nThis option is equivalent to providing a TopN header."
+    ],
+    [
+      "skip_n=n",
+      "AMPS will skip the specified number of records in the result set\nbefore returning results.\nThis option is used with the top_n option to create a paginated\nsubscription."
+    ],
+    [
+      "send_keys",
+      "AMPS will send the SOW keys (that is, the data fields used to\nidentify unique messages in the SOW) back with matching\nmessages from the SOW."
+    ]
+  ]
+}

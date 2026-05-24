@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Metric Category",
+      "Base Table Names"
+    ],
+    [
+      "api (embedded client)",
+      "IGLOBALS"
+    ],
+    [
+      "clients",
+      "ICLIENTS"
+    ],
+    [
+      "conflated topics",
+      "ICONFLATEDTOPICS (info also in ISOW)"
+    ],
+    [
+      "cpu (instance)",
+      "ICPUS (host level info in HCPU)"
+    ]
+  ]
+}

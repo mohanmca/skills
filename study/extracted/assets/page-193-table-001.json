@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "REGEXP_REPLACE"
+    ],
+    [
+      "REGEXP_REPLACE(string_to_transform, pattern_to_match, replacement_text)\nReturns the input string, with all occurrences of the pattern_to_match replaced with\nthe replacement_text. This function uses a PCRE pattern to find the string to be\nreplaced.\nParameters\nstring_to_transform: The string to transform.\npattern_to_match: The PCRE pattern to search for.\nreplacement_text: The text to replace the matched string with.\nReturns\nThe transformed string.\nExample\nREGEXP_REPLACE('fandango','n.*n', 'r') == 'fargo'"
+    ]
+  ]
+}

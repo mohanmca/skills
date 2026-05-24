@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "LDAP.Username",
+      "Sets the username to provide when authenticating to a\ndestination that uses LDAP authentication.When this option is\nspecified, the module will provide LDAP authentication. This\nparameter is required if the LDAP.PasswordFile parameter is\nspecified.There is no default for this parameter."
+    ]
+  ]
+}

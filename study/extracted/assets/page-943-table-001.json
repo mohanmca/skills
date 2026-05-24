@@ -1,0 +1,39 @@
+{
+  "rows": [
+    [
+      "Metric",
+      "Description",
+      "Type"
+    ],
+    [
+      "matches_found_bytes_per_sec",
+      "Rate of bytes matched for this\nprocessor.",
+      "interval\naverage"
+    ],
+    [
+      "messages_received",
+      "Number of messages received.",
+      "cumulative"
+    ],
+    [
+      "messages_received_per_sec",
+      "Rate of messages received.",
+      "interval\naverage"
+    ],
+    [
+      "messages_received_bytes",
+      "Number of bytes received.",
+      "cumulative"
+    ],
+    [
+      "messages_received_bytes_per_sec",
+      "Rate of bytes received for this\nprocessor.",
+      "interval\naverage"
+    ],
+    [
+      "throttle_count",
+      "Number of times the processor\nhad to wait to add a message to\nthe processing pipeline due to\nthe instance reaching capacity\nlimits on the number of in-\nprogress messages.\nThis metric can indicate\nresource constraints on AMPS.",
+      "cumulative"
+    ]
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "DEGREES"
+    ],
+    [
+      "DEGREES(radians)\nReturns the provided number converted from radians to degrees.\nParameters\nradians: The number in radians.\nReturns\nThe number converted to degrees.\nExample\nDEGREES(/rad)"
+    ]
+  ]
+}

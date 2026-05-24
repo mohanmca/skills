@@ -1,0 +1,14 @@
+{
+  "rows": [
+    [
+      null,
+      "http://localhost:8085/amps/instance/processors/all/matches_found_per_sec.csv?",
+      ""
+    ],
+    [
+      "",
+      "t0=20230830T0",
+      null
+    ]
+  ]
+}

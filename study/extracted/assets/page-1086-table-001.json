@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Header",
+      "Comment"
+    ],
+    [
+      "topic\n(required)",
+      "Sets the topic to subscribe to. The topic specified can be the literal topic\nname, or a regular expression that matches multiple topics."
+    ],
+    [
+      "opts",
+      "A comma-separated list of options for the command. Set the conflation\ninterval and the fields that determine a unique message in the options.\nFor example, to set a conflation interval of 250 milliseconds for\nmessages that have the same value for /id, provide the following\noption: conflation=250ms,conflation_key= [/id]. To set the conflation\ninterval to 1 minute for messages that are the same, as determined by a\ncombination of /customerId and /issueNumber, provide an option of:\nconflation=1m, conflation_key=[/customerId,/issueNumber]."
+    ]
+  ]
+}

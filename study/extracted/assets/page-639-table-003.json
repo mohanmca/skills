@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Parameter",
+      "Description"
+    ],
+    [
+      "Event",
+      "The event to respond to. When an amps-action-do-execute-event\nthat specifies the same Event runs, this action will run.\nThere is no default for this parameter."
+    ]
+  ]
+}

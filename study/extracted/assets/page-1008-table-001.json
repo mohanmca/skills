@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Field",
+      "Description"
+    ],
+    [
+      "",
+      "The Options Field table below describes the Options available\nfor use in the delta_subscribe command."
+    ],
+    [
+      "send_empty",
+      "Boolean (true or false) value used to determine whether\nempty messages which are published will be forwarded to\nmatching subscriptions.\nDefault: true"
+    ],
+    [
+      "send_matching_ids",
+      "Boolean (true or false) subscription identifiers will not be\nsent for all matched messages if set to false."
+    ],
+    [
+      "sub_id",
+      "The subscription ID for this command. When provided with a\nnew subscription, this is the identifier that AMPS will use for\nthe subscription.\nWhen provided with the replace option, this field specifies\nthe subscription to replace.\nWhen provided with a pause or resume option, this field\nspecifies the subscriptions to pause or resume.\nFor a new subscription, the AMPS clients will generate a\nsubscription ID if one is not provided."
+    ]
+  ]
+}

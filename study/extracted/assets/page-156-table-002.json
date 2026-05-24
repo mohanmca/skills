@@ -1,0 +1,25 @@
+{
+  "rows": [
+    [
+      null,
+      null,
+      "['a1', 'a2',",
+      "",
+      ""
+    ],
+    [
+      "y",
+      "",
+      "",
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      "'a3]",
+      null,
+      null
+    ]
+  ]
+}

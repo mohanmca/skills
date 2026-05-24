@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Field",
+      "Description"
+    ],
+    [
+      "sow_key",
+      "An AMPS-created identifier for this message."
+    ]
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Definition"
+    ],
+    [
+      "Name",
+      "The name to use for the lookup."
+    ],
+    [
+      "Parameter Count",
+      "The number of fields to use for the lookup."
+    ],
+    [
+      "Message Type",
+      "The message type of the topic to use for lookup."
+    ],
+    [
+      "Topic Name",
+      "The name of the topic to use for lookup."
+    ],
+    [
+      "Return Field",
+      "The field to return from the located message."
+    ],
+    [
+      "Lookup Fields",
+      "The fields to use to look up the message."
+    ]
+  ]
+}

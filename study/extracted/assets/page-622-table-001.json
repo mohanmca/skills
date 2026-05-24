@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Parameter",
+      "Description"
+    ],
+    [
+      "Topic\n(required)",
+      "The name of the topic to monitor for message delivery. This\nparameter supports regular expressions.\nThere is no default for this parameter."
+    ],
+    [
+      "MessageType\n(required)",
+      "The message type of the topic to monitor for message delivery.\nThere is no default for this parameter."
+    ]
+  ]
+}

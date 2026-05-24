@@ -1,0 +1,94 @@
+{
+  "rows": [
+    [
+      "Feature",
+      "Maintenance Required",
+      null,
+      null,
+      "Actions",
+      null,
+      null,
+      null
+    ],
+    [
+      "Statistics\nDatabase",
+      "Truncate unneeded statistics.\n60East recommends retaining statistics for the\nperiod of time that you will need to have\navailable for troubleshooting problems.\nFor example, if your monitoring policies\nevaluate throughput twice a week, truncating\nstatistics the day after each evaluation may be\nreasonable.",
+      null,
+      null,
+      "amps-action-do-",
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      "amps-action-do-",
+      "",
+      ""
+    ],
+    [
+      null,
+      null,
+      null,
+      "",
+      "truncate-",
+      "",
+      "",
+      ""
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      ""
+    ],
+    [
+      null,
+      null,
+      "nitoring policies",
+      "",
+      "",
+      "",
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      "",
+      "statistics",
+      null,
+      null
+    ],
+    [
+      "Transaction\nLog",
+      "Remove unneeded journal files.\n60East recommends removing journal files\nwhen the messages contained within the file\nare no longer needed.",
+      null,
+      null,
+      "amps-action-do-\nremove-journal",
+      null,
+      null,
+      null
+    ],
+    [
+      "Event and\nError Logs",
+      "Remove unneeded log files.\n60East recommends retaining log files for the\nperiod of time that you will need to have\navailable for troubleshooting problems.",
+      null,
+      null,
+      "amps-action-do-\nremove-files",
+      null,
+      null,
+      null
+    ]
+  ]
+}

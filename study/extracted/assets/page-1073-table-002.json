@@ -1,0 +1,52 @@
+{
+  "rows": [
+    [
+      null,
+      "Header",
+      "Comment",
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      "Topic\n(required)",
+      "Sets the topic to query. The topic specified can be the literal topic name,\nor a regular expression that matches multiple topics.",
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      "SowKeys",
+      "A comma-delimited list of SowKey values. AMPS returns only the records\nspecified in this list. For example, a valid format for a list of keys would\nbe: 1853097931817257202,104027799402\n01650075,22363879930342650852",
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      "1853097931817257202,104027799402",
+      ""
+    ],
+    [
+      "",
+      "",
+      "",
+      "01650075,22363879930342650852",
+      "",
+      null
+    ],
+    [
+      null,
+      "",
+      null,
+      null,
+      null,
+      null
+    ]
+  ]
+}

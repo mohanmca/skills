@@ -1,0 +1,19 @@
+{
+  "rows": [
+    [
+      "Element",
+      "Description",
+      "Type"
+    ],
+    [
+      "updates_per_sec",
+      "Number of updates to existing records per\nsecond.",
+      "interval\naverage"
+    ],
+    [
+      "valid_keys",
+      "Number of distinct messages in the SOW -\ndefined by the SOW topic key.\nFor topics that maintain a history, this\nshows the total number of messages that\nthe SOW maintains, which may be larger\nthan the number of messages that would\nbe returned by a query at the current\ntime, or the number of messages that\nwould be returned by a query at a\nhistorical point in time.",
+      "snapshot"
+    ]
+  ]
+}

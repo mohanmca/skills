@@ -1,0 +1,20 @@
+{
+  "rows": [
+    [
+      "Reason",
+      "Explanation"
+    ],
+    [
+      "connection\nclosed",
+      "AMPS has detected that the socket has been closed."
+    ],
+    [
+      "entitlement\nreset",
+      "Entitlements have been reset for this user (or the full transport)."
+    ],
+    [
+      "name in use",
+      "A client session (as identified by the client name) has\nreconnected, and the redundant connection has been closed."
+    ]
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Parameter",
+      "Description"
+    ],
+    [
+      "Transport",
+      "The name of the transport to enable or disable.\nIf no name is provided, the module affects all transports."
+    ]
+  ]
+}

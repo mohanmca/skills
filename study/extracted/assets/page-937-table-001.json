@@ -1,0 +1,56 @@
+{
+  "rows": [
+    [
+      "Cache Name",
+      "Description"
+    ],
+    [
+      "byte buffer cache",
+      "General purpose cache."
+    ],
+    [
+      "byte in buffer cache",
+      "Cache for bytes being received from clients."
+    ],
+    [
+      "byte out buffer cache",
+      "Cache for bytes being sent to clients."
+    ],
+    [
+      "client cache",
+      "Cache for client objects."
+    ],
+    [
+      "client entitlement cache",
+      "Cache for maintaining entitlement information."
+    ],
+    [
+      "client session cache",
+      "Cache for maintaining current session state."
+    ],
+    [
+      "client status cache",
+      "Cache for forming client status messages."
+    ],
+    [
+      "message cache",
+      "Cache for message objects."
+    ],
+    [
+      "query context cache",
+      "Cache for query contexts."
+    ],
+    [
+      "sow update cache",
+      "Cache for SOW updates."
+    ],
+    [
+      "subscription cache",
+      "Cache for subscription state."
+    ],
+    [
+      "xpath value data buffer cache",
+      "Cache for XPath values."
+    ]
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "rows": [
+    [
+      "Element",
+      "Description"
+    ],
+    [
+      "MessageMemoryLimit",
+      "The total amount of memory to allocate to messages before\nofflining clients.\nDefault: 10% of total host memory or 10% of the amount of\nhost memory AMPS is allowed to consume (as reported by\nulimit -m ), whichever is lowest."
+    ],
+    [
+      "MessageDiskLimit",
+      "The total amount of disk space to allocate to messages\nbefore disconnecting clients.\nDefault: 1GB or the amount specified in the\nMessageMemoryLimit, whichever is highest."
+    ],
+    [
+      "MessageDiskPath",
+      "The path to use to write offline files.\nDefault: /var/tmp"
+    ]
+  ]
+}

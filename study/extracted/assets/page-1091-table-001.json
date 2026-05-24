@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Header",
+      "Comment"
+    ],
+    [
+      "topic\n(required)",
+      "Sets the topic to subscribe to. The topic specified can be the literal topic\nname, or a regular expression that matches multiple topics."
+    ],
+    [
+      "sub_id\n(required)",
+      "The identifier for the subscription to update. The sub_id is the sub_id\nof the original subscribe command (or the cmd_id if a sub_id was not\nprovided)."
+    ],
+    [
+      "opts",
+      "A comma-separated list of options. To replace the filter on a\nsubscription, include replace in the list of options."
+    ],
+    [
+      "filter",
+      "Sets the content filter to be applied to the subscription. Only messages\nthat match the content filter will be provided to the subscription after\nthe filter is replaced."
+    ]
+  ]
+}

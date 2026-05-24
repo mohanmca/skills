@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "/proc/sys/vm/max_map_count"
+    ],
+    [
+      "AMPS makes extensive use of memory mapped files, and frequently modifies the\nmaps. The /proc/sys/vm/max_map_count parameter sets the maximum number of\nmaps that the Linux kernel will allow for a process. If the number of requested maps\nexceeds the number of maps in this parameter, memory allocation operations can\nfail even when there is sufficient memory available.\nThis setting is global to the host and applies to all applications, so this needs to be\nset high enough for the most map-intensive application on the host.\nMinimum: 65530\nRecommended: 500000\nTo edit this value, as root you can enter the following command:\nsysctl -w vm.max_map_count=500000\nThis command will update the value for /proc/sys/vm/max_map_count and allow\n500,000 maps to be created, but will only do so until the next time the machine is\nrebooted. To make a permanent change to this setting, as a root user, edit the\n/etc/sysctl.conf file and either edit or append the following setting:\nvm.max_map_count=500000"
+    ]
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "rows": [
+    [
+      "1 <Actions>\n2 <Action>\n3 <On>\n4 <Module>amps-action-on-connect-client</Module>\n5 </On>\n6 <If>\n7 <Module>amps-action-if-condition</Module>\n8 <Options>\n9 <Condition>'{{AMPS_CLIENT_NAME}}' LIKE\n'important'</Condition>\n10 </Options>\n11 </If>\n12 <Do>\n13 <Module>amps-action-do-publish-message</Module>\n14 <Options>\n15 <Topic>important-logon-notification</Topic>"
+    ],
+    [
+      "1"
+    ],
+    [
+      "2"
+    ],
+    [
+      "3"
+    ],
+    [
+      "4"
+    ],
+    [
+      "5"
+    ],
+    [
+      "6"
+    ],
+    [
+      "7"
+    ],
+    [
+      "8"
+    ],
+    [
+      "9"
+    ],
+    [
+      "10"
+    ],
+    [
+      "11"
+    ],
+    [
+      "12"
+    ],
+    [
+      "13"
+    ],
+    [
+      "14"
+    ],
+    [
+      "15"
+    ]
+  ]
+}

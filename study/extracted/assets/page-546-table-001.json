@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Definition"
+    ],
+    [
+      "server\n(required)",
+      "AMPS server to connect to."
+    ],
+    [
+      "proto",
+      "Protocol to use.\nIn this release, spark supports amps, fix, nvfix and xml.\nDefaults to amps. spark also supports json as a synonym for\namps in this release."
+    ],
+    [
+      "secure\n(applies to SSL\nconnections)",
+      "Specifies whether to use an SSL-secured connection (tcps\nURI scheme).\nValues: false/0/no or true/1/yes\nDefault: false"
+    ],
+    [
+      "uriopts",
+      "Custom connection URI parameters to be passed in the URI\nquery string.\nFor example:\ntcp_nodelay=true&tcp_sndbuf=8192"
+    ]
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Variable",
+      "Description"
+    ],
+    [
+      "AMPS_TOPIC",
+      "The name of the topic specified by the subscribe or unsubscribe\ncommand."
+    ],
+    [
+      "AMPS_CLIENT_NAME",
+      "The name of the client submitting the command."
+    ],
+    [
+      "AMPS_OPTIONS",
+      "The options on the subscription."
+    ],
+    [
+      "AMPS_FILTER",
+      "The filter for the subscription."
+    ]
+  ]
+}

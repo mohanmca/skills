@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "timestamp(string)",
+      "Convert the provided ISO8601 format string to an\nAMPS statistics timestamp."
+    ]
+  ]
+}

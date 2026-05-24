@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Message Published to Topic",
+      "Results"
+    ],
+    [
+      "/orders/specialHandling",
+      "Matches Topic definition. Stored in the\nTopic.\nThe Preprocessing directive runs and\ncreates the /orderId from the\n/customerName and /customerSerialNumber\nif there is no /orderId already present."
+    ]
+  ]
+}

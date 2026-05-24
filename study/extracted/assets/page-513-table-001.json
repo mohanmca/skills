@@ -1,0 +1,32 @@
+{
+  "rows": [
+    [
+      "Level",
+      "Description"
+    ],
+    [
+      "LOG_CONS",
+      "Write directly to system console if there is an error while sending to\nsystem logger."
+    ],
+    [
+      "LOG_NDELAY",
+      "Open the connection immediately (normally, the connection is opened\nwhen the first message is logged)."
+    ],
+    [
+      "LOG_NOWAIT",
+      "No effect on Linux platforms."
+    ],
+    [
+      "LOG_ODELAY",
+      "The converse of LOG_NDELAY; opening of the connection is delayed\nuntil syslog() is called. (This is the default, and need not be\nspecified.)"
+    ],
+    [
+      "LOG_PERROR",
+      "Print to standard error as well."
+    ],
+    [
+      "LOG_PID",
+      "Include PID with each message."
+    ]
+  ]
+}

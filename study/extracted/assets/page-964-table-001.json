@@ -1,0 +1,14 @@
+{
+  "rows": [
+    [
+      "Metric",
+      "Description",
+      "Type"
+    ],
+    [
+      "NUMA",
+      "Indicates whether AMPS NUMA tuning is enabled.",
+      "fixed"
+    ]
+  ]
+}

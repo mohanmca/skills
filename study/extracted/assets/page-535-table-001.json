@@ -1,0 +1,36 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Definition"
+    ],
+    [
+      "server\n(required)",
+      "AMPS server to connect to."
+    ],
+    [
+      "topic\n(required)",
+      "Topic to publish to."
+    ],
+    [
+      "delimiter",
+      "Decimal value of message separator character (default 10)."
+    ],
+    [
+      "delta",
+      "Use delta publish (sends a delta_publish command to AMPS)."
+    ],
+    [
+      "file",
+      "File to publish messages from, stdin when omitted. spark interprets\neach line in the input as a message.\nThe file provided to this argument can be either uncompressed or\ncompressed in ZIP format.\nIf a ZIP file is provided, it must contain one message per file in the\nsame structure produced by amps_sow_dump -z. The ZIP format\nrequires an archive where the first message payload is stored in a\nfile named 1, the second in a file named 2, and so on, with all\nmessage files located in the ZIP's top-level directory."
+    ],
+    [
+      "proto",
+      "Protocol to use.\nIn this release, spark supports amps, fix, nvfix and xml.\nDefaults to amps. spark also supports json as a synonym for amps\nin this release."
+    ],
+    [
+      "rate",
+      "Messages to publish per second.\nThis is a decimal value, so values less than 1 can be provided to\ncreate a delay of more than a second between messages. '.25'\nimplies 1 message every 4 seconds. '1000' implies 1000 messages\nper second."
+    ]
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "LAST_READ"
+    ],
+    [
+      "LAST_READ()\nReturns a timestamp for the last time that this message was read from the SOW.\nThis function only returns a value for messages in a topic in the SOW.\nThis value is not persisted across restarts or shared across instances.\nParameters\nNone.\nReturns\nA double indicating the last time that this message was read from the SOW on the\nlocal instance. This value is not persisted across restarts or shared across instances.\nAvailable For\nQueries of a SOW topic"
+    ]
+  ]
+}

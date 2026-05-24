@@ -1,0 +1,52 @@
+{
+  "rows": [
+    [
+      "Metric Category",
+      "Base Table Names"
+    ],
+    [
+      "logging",
+      "ICONSOLE_LOGGERS, IFILE_LOGGERS,\nISYSLOG_LOGGERS"
+    ],
+    [
+      "memory (instance)",
+      "IMEMORY, IMEMORY_CACHES, IPAGINATIONS"
+    ],
+    [
+      "message processors",
+      "IPROCESSORS"
+    ],
+    [
+      "queues",
+      "IQUEUES (info also in ISOW)"
+    ],
+    [
+      "replication",
+      "IREPLICATIONS"
+    ],
+    [
+      "sow (including information on\nviews, conflated topics, queues)",
+      "ISOW"
+    ],
+    [
+      "statistics",
+      "ISTATISTICS"
+    ],
+    [
+      "subscriptions",
+      "ISUBSCRIPTIONS"
+    ],
+    [
+      "transaction log",
+      "ITRANSACTION_LOG,\nITRANSACTION_WRITE_LATENCY,\nITRANSACTION_WRITE_SIZE"
+    ],
+    [
+      "transports",
+      "ITRANSPORTS"
+    ],
+    [
+      "views",
+      "IVIEWS"
+    ]
+  ]
+}

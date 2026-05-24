@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "ResourceURI",
+      "The URI to request when a user logs into AMPS using\nthis module. This option is required.\nFor this option, AMPS substitutes the placeholder\n{{USER_NAME}} with the name of the user being\nauthenticated. For example, here are two possible\nvalues for the ResourceURI:\nhttp://cred-server:8080/admin/group_policy.json\nhttp://cred-server:8080/{{USER_NAME}}.json\nIn the first case, AMPS requests a document with the\ncurrent user name of the user logging on substituted\nfor the {{USER_NAME}} component of the URI. In the\nsecond case, the document is requested with the\ncredentials of the user connecting, but AMPS requests\nthe same document for each user.\nThere is no default for this parameter."
+    ],
+    [
+      "CredentialStore",
+      "Identifier for the entitlement store where the retrieved\npermission sets will be stored. When used for\nauthentication, this is the name of the entitlement"
+    ]
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Parameter",
+      "Description"
+    ],
+    [
+      "Signal\n(required)",
+      "Specifies the signal to respond to. This module supports the standard\nLinux signals. Configuring an action uses the standard name of the\nsignal.\nFor example, to configure an action to SIGUSR1, the value for the\nSignal element is SIGUSR1. To configure an action for SIGHUP, the\nvalue for the Signal element is SIGHUP and so on.\nAMPS reserves SIGQUIT for producing minidumps and does not allow\nthis module to override SIGQUIT. AMPS registers actions for several\nsignals by default, as described in the following table."
+    ]
+  ]
+}

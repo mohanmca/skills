@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "EXP"
+    ],
+    [
+      "EXP(exponent)\nReturns e raised to the power of the provided exponent.\nParameters\nexponent: The exponent to use.\nReturns\nThe value of e raised to the power of the exponent.\nExample\nEXP(3.14)"
+    ]
+  ]
+}

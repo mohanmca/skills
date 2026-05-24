@@ -1,0 +1,59 @@
+{
+  "rows": [
+    [
+      "Name",
+      "Type",
+      "Definition"
+    ],
+    [
+      "MessageType",
+      "string\nOne of the configured\nmessage types in AMPS.",
+      "Message type."
+    ],
+    [
+      "MsgLen",
+      "integer",
+      "Sent with messages that\nhave data (a message body)\nto indicate the number of\nbytes in the message body."
+    ],
+    [
+      "Opts",
+      "string",
+      "A comma-delimited list of\noptions on a specific\ncommand."
+    ],
+    [
+      "Password",
+      "string",
+      "Password used to\nauthenticate with an AMPS\nserver."
+    ],
+    [
+      "QueryID",
+      "string",
+      "SOW query identifier set by\nclient to identify a query."
+    ],
+    [
+      "Reason",
+      "string",
+      "The failure message that\nappears when an\nacknowledgment returns a\nstatus or failure."
+    ],
+    [
+      "RecordsDeleted",
+      "integer",
+      "Used in conjunction with the\nstats acknowledgment, this\nis the number of records\ndeleted from the SOW with a\nsow_delete command."
+    ],
+    [
+      "RecordsInserted",
+      "integer",
+      "Used in conjunction with the\nstats acknowledgment, this\nis the number of records\ninserted into the SOW."
+    ],
+    [
+      "RecordsUpdated",
+      "integer",
+      "Used in conjunction with the\nstats acknowledgment, this\nis the number of records\nupdated in the SOW."
+    ],
+    [
+      "RecordsReturned",
+      "integer",
+      "Returned in the\nacknowledgment to an SOW\nquery that indicates number\nof records in the store."
+    ]
+  ]
+}

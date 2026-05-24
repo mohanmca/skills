@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Query Parameter\nValues",
+      "Behavior"
+    ],
+    [
+      "",
+      "must be a timestamp that is present in the statistics. Valid\ntimestamps can be obtained via the instance/timestamp admin\nAPI endpoint."
+    ]
+  ]
+}

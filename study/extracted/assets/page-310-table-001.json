@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "grouping=\n[keys]",
+      "For use with aggregated SOW queries.\nThe format of this option is a comma-delimited list of XPath\nidentifiers within brackets. For example, to aggregate entries based\non their /description (producing one record in the aggregation for\neach distinct value in /description), you would use the following\noption:\ngrouping=[/description]\nWhen this option is provided, a projection must also be provided.\nWhen the topic has History enabled, this option can be used with a\nbookmark to aggregate the historical state of the SOW."
+    ],
+    [
+      "projection=\n[fields]",
+      "For use with aggregated SOW queries.\nSpecifies a comma-delimited set of fields to project, within brackets.\nEach entry has the format described in the AMPS User Guide.\nThis option must contain an entry for every field in the aggregated\nmessage. If there is no entry for a field in this option, that field will\nnot appear in the aggregated message, even if the field is in the\nunderlying message.\nThere is no default for this option. When this option is provided, a\ngrouping must also be provided.\nWhen the topic has History enabled, this option can be used with a\nbookmark to aggregate the historical state of the SOW."
+    ]
+  ]
+}

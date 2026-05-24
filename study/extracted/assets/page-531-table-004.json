@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Utility",
+      "Description"
+    ],
+    [
+      "ampserr",
+      "Can be used to expand and examine error messages that\nmay be observed in the logs.\nThis utility allows a user to input a specific error code, or a\nclass of error codes, examine the error message in more\ndetail, and where applicable, view common\nrecommendations."
+    ],
+    [
+      "amps_bio_perf_test",
+      "Used to measure sequential write performance on a drive (as\na way of measuring maximum throughput for writes to the\nAMPS transaction log)."
+    ]
+  ]
+}

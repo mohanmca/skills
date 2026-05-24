@@ -1,0 +1,19 @@
+{
+  "rows": [
+    [
+      "Client",
+      "State",
+      "Symbol"
+    ],
+    [
+      "Adam",
+      "Open",
+      "MSFT"
+    ],
+    [
+      "Adam",
+      "Open",
+      "ORCL"
+    ]
+  ]
+}

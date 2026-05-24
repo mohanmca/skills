@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "1 <SOW>\n2 <!-- Single topic aggregation. -->\n3 <Topic>\n4 <Topic>/ett/order</Topic>\n5 <MessageType>fix</MessageType>\n6 <Key>/orderId</Key>\n7 </Topic>\n8 <View>\n9 <MessageType>nvfix</MessageType>\n10 <Topic>TOTAL_VALUE</Topic>\n11 <UnderlyingTopic>/ett/order</UnderlyingTopic>\n12 <Projection>\n13 <Field>/109</Field>\n14 <Field>SUM(/14 * /6) AS /71406</Field>\n15 </Projection>\n16 <Grouping>\n17 <Field>/109</Field>\n18 </Grouping>\n19 </View>\n20\n21 <!-- Single topic aggregation with filter. -->\n22 <Topic>\n23 <Name>orders</Name>\n24 <MessageType>json</MessageType>\n25 <Key>/orderId</Key>\n26 <FileName>./sow/%n.sow</FileName>\n27 </Topic>\n28 <View>\n29 <Name>CompleteByRegion</Name>\n30 <UnderlyingTopic>orders</UnderlyingTopic>\n31 <MessageType>json</MessageType>\n32 <Projection>\n33 <Field>COUNT(/orderId) AS /completedOrders</Field>\n34 <Field>/region AS /region</Field>\n35 </Projection>\n36 <Grouping>\n37 <Field>/region</Field>\n38 </Grouping>\n39 <Filter>/status = 'complete'</Filter>"
+    ],
+    [
+      ""
+    ]
+  ]
+}

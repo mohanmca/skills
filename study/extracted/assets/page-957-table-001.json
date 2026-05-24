@@ -1,0 +1,59 @@
+{
+  "rows": [
+    [
+      "Element",
+      "Description",
+      "Type"
+    ],
+    [
+      "disk_per_sample",
+      "Amount of storage the stats database has grown\nsince the last sample interval.",
+      "snapshot"
+    ],
+    [
+      "file_name",
+      "Location where statistics are stored.\nDefault: :memory: which stores the statistics\ndatabase in system memory.",
+      "fixed"
+    ],
+    [
+      "file_size",
+      "Size on disk of the statistics database.",
+      "snapshot"
+    ],
+    [
+      "interval",
+      "Time in milliseconds between statistics\ndatabase updates.",
+      "fixed"
+    ],
+    [
+      "memory_used",
+      "Size in bytes of the system memory\nconsumption of the statistics database.",
+      "snapshot"
+    ],
+    [
+      "queries",
+      "Number of queries processed from the statistics\ndatabase.",
+      "cumulative"
+    ],
+    [
+      "time_per_sample",
+      "Time taken to process each statistics database\nquery.",
+      "snapshot"
+    ],
+    [
+      "total_commit_time",
+      "Total amount of time spent committing statistics\ninformation to the database.",
+      "cumulative"
+    ],
+    [
+      "total_samples",
+      "Number of statistics database updates that have\ntaken place since the AMPS server started.",
+      "cumulative"
+    ],
+    [
+      "total_time",
+      "Total amount of time spent publishing statistics,\nincluding the commit time, since the AMPS\nserver started.",
+      "cumulative"
+    ]
+  ]
+}

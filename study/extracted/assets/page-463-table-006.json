@@ -1,0 +1,25 @@
+{
+  "rows": [
+    [
+      null,
+      null,
+      "unsigned",
+      "",
+      "8"
+    ],
+    [
+      "",
+      "",
+      "",
+      "",
+      null
+    ],
+    [
+      null,
+      null,
+      "long long",
+      null,
+      null
+    ]
+  ]
+}

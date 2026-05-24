@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "POWER"
+    ],
+    [
+      "POWER(base, exponent)\nReturns the value of base raised to the power of exponent.\nParameters\nbase: The base number.\nexponent: The exponent.\nReturns\nThe value of the base raised to the power of the exponent.\nExample\nPOWER(/number, 3)"
+    ]
+  ]
+}

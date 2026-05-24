@@ -1,0 +1,32 @@
+{
+  "rows": [
+    [
+      "Method",
+      "Description"
+    ],
+    [
+      "setClientName",
+      "Sets the base client name."
+    ],
+    [
+      "setContentFilter",
+      "Sets the content filter used by all clients from\nthis source. This can be used to provide a filter\nthat all clients should use in addition to any\nfilter provided by a split."
+    ],
+    [
+      "setOptions",
+      "Sets additional options."
+    ],
+    [
+      "setBookmarkStoreFunction",
+      "Sets the SerializableFunction that gets\neach client a bookmark store. The parameter\nis the client name that an individual client of\nthe source will use.\nThis should only be used if checkpointing is\nenabled or discardAfterEmit is true."
+    ],
+    [
+      "setBookmark",
+      "Sets the starting bookmark.\nOnly valid for topics with a transaction log."
+    ],
+    [
+      "setSplits",
+      "Sets the splits for the source using a collection\nof strings that are content filters that will\nshard the topic.\nThis can be used instead of setAMPSSplits to\nuse content filters on the topic set by\nsetTopic."
+    ]
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "rows": [
+    [
+      "FIX",
+      "XML",
+      "JSON/BSON/MsgPack",
+      "Definition"
+    ],
+    [
+      "20007",
+      "MessageType",
+      "message_type",
+      "The message type of the topic."
+    ],
+    [
+      "20065",
+      "Timestamp",
+      "timestamp",
+      "Timestamp in which AMPS sent\nthe message."
+    ],
+    [
+      "20066",
+      "Topic",
+      "topic",
+      "Topic that statistics are being\nreported on."
+    ],
+    [
+      "20067",
+      "Records",
+      "record_count",
+      "Number of records in the SOW\ntopic."
+    ]
+  ]
+}

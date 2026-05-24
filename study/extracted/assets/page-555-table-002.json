@@ -1,0 +1,20 @@
+{
+  "rows": [
+    [
+      "Field",
+      "Description"
+    ],
+    [
+      "Total Entries",
+      "Total number of journal entries entered into the journal file."
+    ],
+    [
+      "Total Bytes",
+      "The number of reserved bytes consumed by the journal file."
+    ],
+    [
+      "Remaining\nBytes",
+      "The number of unused bytes available out of the total reserved\nfile size."
+    ]
+  ]
+}

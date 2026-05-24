@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Field",
+      "Description"
+    ],
+    [
+      "cmd",
+      "The command to be executed.\nValue: sow_and_subscribe"
+    ],
+    [
+      "topic",
+      "The target SOW topic to query and subscribe."
+    ],
+    [
+      "ack_type",
+      "Acknowledgment type for the given command.\nValue is a comma separated string of one or more of the\nfollowing: none, received, processed, completed or stats."
+    ],
+    [
+      "batch_size",
+      "Number of records to return in a single sow query results\nmessage.\nThe AMPS server default value is 1.\nIt is recommended to use a higher value, as even small\nincreases can yield greater performance in query result\ndelivery. Current AMPS client libraries provide a batch size of\n10 by default.\nThe BatchSize header only applies to the sow query."
+    ]
+  ]
+}

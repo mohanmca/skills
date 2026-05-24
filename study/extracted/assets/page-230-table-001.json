@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "CORRELATION_ID"
+    ],
+    [
+      "CORRELATION_ID()\nReturns the correlation ID of the current message as a string.\nParameters\nNone.\nReturns\nThe correlation ID of the current message, or NULL if there is no correlation ID.\nAvailable For\nAll messages."
+    ]
+  ]
+}

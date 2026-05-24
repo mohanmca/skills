@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Parameter",
+      "Description"
+    ],
+    [
+      "TimeoutEvent\n(required)",
+      "The value to store when a message is in the tracked state for\nlonger than the timeout period.\nThere is no default for this parameter."
+    ],
+    [
+      "EventVariable\n(required)",
+      "The name of the context variable in which to store the reason that\nthe action is running (either the string in OOFEvent or the string in\nTimeoutEvent).\nThere is no default for this parameter."
+    ],
+    [
+      "Duration",
+      "The amount of time to wait for an OOF notification for the message\nbefore running the action."
+    ],
+    [
+      "Filter",
+      "Sets the filter to apply.\nOnly messages that match this filter will be monitored by this\naction. If no filter is provided, every message of the specified\nmessage type in topics that match the Topic value will be\nmonitored."
+    ]
+  ]
+}

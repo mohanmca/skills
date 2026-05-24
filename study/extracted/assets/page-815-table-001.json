@@ -1,0 +1,20 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "Password",
+      "Provide the contents of this option as the\npassword."
+    ],
+    [
+      "PasswordFileName",
+      "Read the password from the specified filename."
+    ],
+    [
+      "PasswordEnvironmentVariable",
+      "Read the password from the specified environment\nvariable."
+    ]
+  ]
+}

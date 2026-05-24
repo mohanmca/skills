@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "CONNECTION_NAME"
+    ],
+    [
+      "CONNECTION_NAME()\nReturns the connection name of the currently connected client.\nParameters\nNone.\nReturns\nThe connection name of the currently connected client.\nAvailable For\nSubscriptions to a topic or conflated topic.\nEnrichment and preprocessing."
+    ]
+  ]
+}

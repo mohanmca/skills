@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Filter",
+      "Evaluates as"
+    ],
+    [
+      "/data = 1",
+      "TRUE, /data contains 1"
+    ],
+    [
+      "/data = 'zebra'",
+      "TRUE, /data contains 'zebra'"
+    ],
+    [
+      "/data != 'zebra'",
+      "TRUE, /data contains an element that is not 'zebra'"
+    ],
+    [
+      "/data = 42",
+      "FALSE, /data does not contain 42"
+    ]
+  ]
+}

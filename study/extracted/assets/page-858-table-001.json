@@ -1,0 +1,44 @@
+{
+  "rows": [
+    [
+      "Function",
+      "Parameters",
+      "Description"
+    ],
+    [
+      "",
+      "",
+      "For example, calling YEAR on a timestamp that\nrepresents January 25, 2010 at 10:04 AM in UTC\nreturns 2010."
+    ],
+    [
+      "MONTH",
+      "timestamp",
+      "Returns the month for the provided timestamp.\nThe month is calculated in the UTC timezone.\nFor example, calling MONTH on a timestamp that\nrepresents January 25, 2010 at 10:04 AM in UTC\nreturns 1."
+    ],
+    [
+      "DAY",
+      "timestamp",
+      "Returns the day for the provided timestamp. The\nday is calculated in the UTC timezone.\nFor example, calling DAY on a timestamp that\nrepresents January 25, 2010 at 10:04 AM in UTC\nreturns 25."
+    ],
+    [
+      "DATE_UTC",
+      "timestamp",
+      "Returns a timestamp for the beginning of the\nprovided day (00:00:00) in UTC.\nThe timestamp is represented in seconds."
+    ],
+    [
+      "DATE",
+      "timestamp",
+      "Returns the UNIX timestamp for the beginning of\nthe provided day (00:00:00) in the local timezone.\nThe timestamp is represented in seconds."
+    ],
+    [
+      "TODAY_UTC",
+      "(none)",
+      "Returns the UNIX timestamp for the beginning of\nthe current day (00:00:00) in UTC -- that is, the\nlocal timestamp that corresponds to the UTC time\nfor the start of the current day.\nThe timestamp is represented in seconds."
+    ],
+    [
+      "TODAY",
+      "(none)",
+      "Returns the UNIX timestamp for the beginning of\nthe current day (00:00:00) in the local timezone.\nThe timestamp is represented in seconds."
+    ]
+  ]
+}

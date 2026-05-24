@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Topic",
+      "Description"
+    ],
+    [
+      "Introduction",
+      "General introduction to evaluating AMPS."
+    ],
+    [
+      "Evaluation and\nDevelopment With AMPS",
+      "Description of the suggested evaluation process and how\nto get started with developing applications with AMPS."
+    ],
+    [
+      "Tips on Measuring\nPerformance",
+      "Performance measurement guidance and considerations."
+    ],
+    [
+      "Next Steps",
+      "Suggested paths after reading this guide."
+    ]
+  ]
+}

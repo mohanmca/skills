@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "REPLACE"
+    ],
+    [
+      "REPLACE(string_to_transform, string_to_match, replacement_text)\nReturns the input string, with all occurrences of the string_to_match replaced with\nthe replacement_text. This function does a literal match of the string to be\nreplaced.\nParameters\nstring_to_transform: The string to transform.\nstring_to_match: The string to search for.\nreplacement_text: The text to replace the matched string with.\nReturns\nThe transformed string.\nExample\nREPLACE('fandango', 'dan', 'din') == 'fandingo'"
+    ]
+  ]
+}

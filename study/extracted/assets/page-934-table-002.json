@@ -1,0 +1,19 @@
+{
+  "rows": [
+    [
+      "Metric",
+      "Description",
+      "Type"
+    ],
+    [
+      "bytes_written",
+      "Number of bytes written to the log.",
+      "cumulative"
+    ],
+    [
+      "exclude_errors",
+      "Errors which are excluded from logging.",
+      "fixed"
+    ]
+  ]
+}

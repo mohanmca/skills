@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Header",
+      "Comment"
+    ],
+    [
+      "topic\n(required)",
+      "Sets the topic to subscribe to. The topic specified can be the literal topic\nname, or a regular expression that matches multiple topics."
+    ],
+    [
+      "Bookmark",
+      "Sets the point in the transaction log at which the subscription will begin.\nThe bookmark provided can be a specific AMPS bookmark, a timestamp,\nor one of the client-provided constants. AMPS also accepts a comma-\ndelimited list of bookmarks. In this case, AMPS begins the subscription\nfrom whichever of the bookmarks is earliest in the transaction log."
+    ]
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Field",
+      "Description"
+    ],
+    [
+      "cmd",
+      "Command to be executed.\nValue: unsubscribe"
+    ],
+    [
+      "sub_id",
+      "Subscription ID entered in AMPS by the client when the original\nsubscription was placed.\nAMPS accepts a single subscription ID or a comma-delimited list of\nsubscription ID.\nThe keyword all can also be used to unsubscribe from all current\nsubscriptions for the client.\nWhen both SubId and QueryId are provided, AMPS removes all\nmatching subscriptions and SOW queries.\nThis command requires at least one of the SubId or QueryId fields to be\nset."
+    ]
+  ]
+}

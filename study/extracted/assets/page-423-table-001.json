@@ -1,0 +1,20 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Result"
+    ],
+    [
+      "<none>",
+      "Message is considered to be successfully processed and removed from the\nqueue."
+    ],
+    [
+      "cancel",
+      "Message is returned to the queue.\nThe count of cancels for this message is incremented, and if the count is\ngreater than the configured MaxCancels for the queue, the message is\nexpired."
+    ],
+    [
+      "expire",
+      "Message is immediately expired from the queue."
+    ]
+  ]
+}

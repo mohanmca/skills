@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Header",
+      "Comment"
+    ],
+    [
+      "topic\n(required)",
+      "Sets the topic to query and subscribe to. The topic specified can be the\nliteral topic name, or a regular expression that matches multiple topics."
+    ],
+    [
+      "filter",
+      "Sets the content filter to be applied to the query. Only messages that\nmatch the content filter will be returned in response to the query."
+    ]
+  ]
+}

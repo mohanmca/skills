@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Metric",
+      "Description",
+      "Type"
+    ],
+    [
+      "pass_through",
+      "Boolean stating whether messages\nreceived via replication can be forwarded\non this connection.",
+      "fixed"
+    ],
+    [
+      "replication_type",
+      "One of either sync or async.",
+      "snapshot"
+    ],
+    [
+      "seconds_behind",
+      "The current point in the transaction log\nthat has been acknowledged by this\ndestination.\nThis is calculated as the difference in\nseconds between the time that the last\nmessage acknowledged by the destination\nwas written to the transaction log and the\ntime that the most recent transaction was\nprocessed.\nThat is, if the last message that the\ndestination has acknowledged was written\nto the local transaction log at\n12:00:01.100 (one second and 100 ms\nafter 12:00) and the current time is\n12:00:03.212, the seconds behind shown\nin the current statistics would be\napproximately 2.112. Acknowledgments\nare transmitted at a specific interval (1s\nby default) from the destination instance\nto the source instance.\nAMPS rounds any value below 1 to 0.",
+      "snapshot"
+    ]
+  ]
+}

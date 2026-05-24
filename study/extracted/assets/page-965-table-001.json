@@ -1,0 +1,29 @@
+{
+  "rows": [
+    [
+      "Element",
+      "Description",
+      "Type"
+    ],
+    [
+      "hh",
+      "Hours",
+      "snapshot"
+    ],
+    [
+      "mm",
+      "Minutes",
+      "snapshot"
+    ],
+    [
+      "ss",
+      "Seconds",
+      "snapshot"
+    ],
+    [
+      "uuuuuu",
+      "Microseconds",
+      "snapshot"
+    ]
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Variable",
+      "Description"
+    ],
+    [
+      "The variable specified in\nEventVariable",
+      "The reason the action is running. This will be either the\nvalue of OOFEvent or the value of TimeoutEvent,\ndepending on what caused the action to run."
+    ]
+  ]
+}

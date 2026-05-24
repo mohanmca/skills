@@ -1,0 +1,54 @@
+{
+  "rows": [
+    [
+      "Name",
+      "Type",
+      "Definition"
+    ],
+    [
+      "",
+      "stopped\nalive\ntimed out\nerror",
+      "heartbeats."
+    ],
+    [
+      "SubscriptionId",
+      "string, e.g. SAMPS-XYZ",
+      "The subscription identifier\nset by server when\nprocessing a subscription."
+    ],
+    [
+      "SubscriptionIds",
+      "string",
+      "Comma-separated list of\nSubIds sent from AMPS\nengine to identify which\nclient subscriptions match a\ngiven publish message."
+    ],
+    [
+      "TimeoutInterval",
+      "integer",
+      "Used in conjunction with the\nheartbeat interval to set the\ntimeout interval for a\npublisher."
+    ],
+    [
+      "TopNRecordsReturned",
+      "unsigned integer",
+      "The number of records to\nreturn.\nNote: If TopN is not equally\ndivisible by the BtchSz, then\nmore records will be\nreturned so that the total\nnumber of records is equally\ndivisible by the BtchSz\nsetting."
+    ],
+    [
+      "Topic",
+      "string",
+      "Topic"
+    ],
+    [
+      "TopicMatches",
+      "integer",
+      "Returned in the\nacknowledgment to an SOW\nquery that indicates number\nof topic matches."
+    ],
+    [
+      "TransmissionTime",
+      "ISO-8601 date-time",
+      "Timestamp - Optionally set\nto time the message was\nprocessed by the server."
+    ],
+    [
+      "UseNamespaces",
+      "Boolean (true or false)",
+      "Use SOAP XML namespaces\nin all messages from the\nAMPS engine."
+    ]
+  ]
+}

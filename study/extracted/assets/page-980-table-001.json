@@ -1,0 +1,28 @@
+{
+  "rows": [
+    [
+      "Field",
+      "Description"
+    ],
+    [
+      "cmd",
+      "Command to be executed.\nValue: delta_publish"
+    ],
+    [
+      "topic",
+      "The SOW topic to publish the message to."
+    ],
+    [
+      "ack_type",
+      "Acknowledgment type for the given command. Value is a comma\nseparated list of one or more of the following: none, received,\nprocessed, completed or stats."
+    ],
+    [
+      "cmd_id",
+      "If specified with an AMPS command which requests an\nacknowledgment message, all non-conflated requested\nacknowledgment messages will contain the command_id in the\nack response header. Notice that AMPS may conflate successful\npersisted acknowledgments for publishes."
+    ],
+    [
+      "expiration",
+      "An interval used to define the lifetime of a delta_message\nmessage.\nTime period is in seconds."
+    ]
+  ]
+}

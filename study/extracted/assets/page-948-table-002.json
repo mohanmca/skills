@@ -1,0 +1,29 @@
+{
+  "rows": [
+    [
+      "Metric",
+      "Description",
+      "Type"
+    ],
+    [
+      "internal_depth",
+      "The current amount of space the queue has\nreserved for metadata entries.\nIf the queue has grown and then messages\nhave been acknowledged, this can be larger\nthan the current number of messages in the\nqueue.",
+      "live state"
+    ],
+    [
+      "insert_count",
+      "The number of messages inserted into the\nqueue.\nThis is the metric that will be recorded in the\nSOW metrics for the queue topic.",
+      "live state"
+    ],
+    [
+      "delete_count",
+      "The number of messages removed from the\nqueue due to being acknowledged or having\nexpired.\nThis is the metric that will be recorded in the\nSOW metrics for the queue topic.",
+      "live state"
+    ],
+    [
+      "depth",
+      "Current number of unacknowledged\nmessages in the queue.\nThis is the metric that will be recorded in the\nSOW metrics for the queue topic.",
+      "live state"
+    ]
+  ]
+}

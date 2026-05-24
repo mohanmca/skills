@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Acknowledgment",
+      "Description"
+    ],
+    [
+      "none",
+      "No ack message is returned.\nThis is the default behavior."
+    ],
+    [
+      "completed",
+      "AMPS has processed the message and, if necessary, enqueued\nthe message for persistence and replication.\nThis acknowledgment includes the steps acknowledged by the\nprocessed acknowledgment."
+    ]
+  ]
+}

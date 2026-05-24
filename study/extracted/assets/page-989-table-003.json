@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Acknowledgment",
+      "Description"
+    ],
+    [
+      "none",
+      "No acknowledgment message is returned. This is the default\nbehavior."
+    ]
+  ]
+}

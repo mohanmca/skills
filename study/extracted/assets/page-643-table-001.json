@@ -1,0 +1,20 @@
+{
+  "rows": [
+    [
+      "Parameter",
+      "Description"
+    ],
+    [
+      "(required)",
+      "The module removes any file older than the specified Age that\nmatches the specified Pattern.\nFor example, when the Age is 5d, only files that have not been\nmodified within 5 days and that match the pattern will be processed\nby the module.\nThere is no default for this parameter."
+    ],
+    [
+      "Pattern\n(required)",
+      "Specifies the pattern for files to remove.\nThe module removes any files that match the specified Pattern that\nhave not been modified more recently than the specified Age.\nThis parameter is interpreted as a Unix shell globbing pattern. It is not\ninterpreted as a regular expression.\nAs with other parameters that use the file system, when the pattern\nspecified is a relative path, the parameter is interpreted relative to the\ncurrent working directory of the AMPS process. When the pattern\nspecified is an absolute path, AMPS uses the absolute path.\nThere is no default for this parameter."
+    ],
+    [
+      "Keep",
+      "Specifies the number of files that meet the Age and Pattern criteria\nto leave uncompressed.\nWhen this parameter is specified, AMPS will compress files matching\nthe criteria, starting with the oldest files, and stop when the number of\nremaining files is the number specified in this parameter.\nThere is no default for this parameter. When both Keep and Count are\nspecified, AMPS will not compress any files if the number of files\nmeeting the criteria is less than the number specified in the Keep\nparameter."
+    ]
+  ]
+}

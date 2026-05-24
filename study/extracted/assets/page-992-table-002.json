@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "none",
+      "This is the default Options type."
+    ],
+    [
+      "no_sowkey",
+      "Tells AMPS not to send the AMPS-generated SowKey for messages."
+    ]
+  ]
+}

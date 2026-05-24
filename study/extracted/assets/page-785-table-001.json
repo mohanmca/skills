@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "/proc/sys/net/core/somaxconn"
+    ],
+    [
+      "AMPS can quickly accept new inbound connections, but during a failover event in\nwhich hundreds or thousands of clients are trying to connect to an instance this can\ncause the backlog of unaccepted connections to exceed the host's configured limit\nand return an ECONNREFUSED (Connection Refused) error back to the client. Since this\nlimit is in the host environments networking layer, this means the error occurs\nbefore AMPS has a chance to accept the client connection and no logging of the\nconnection attempt will be in the AMPS logging.\n60East recommends that, to better absorb large inbound connection spikes, setting\nthe somaxconn system parameter to 4096 (in some cases higher if you have many\nthousands of connections).\nThis setting is global to the host and applies to all applications.\nRecommended: 4096\nTo edit this value, as root you can enter the following command:\nsysctl -w net.core.somaxconn=4096\nThis command will update the value for /proc/sys/net/core/somaxconn and\nincrease the backlog of unaccepted connections.\nUsing the command above will change the somaxconn setting until the operating\nsystem is rebooted. To make a permanent change to this setting, as a root user, edit\nthe /etc/sysctl.conf file and either edit or append the following setting:\nnet.core.somaxconn=4096"
+    ]
+  ]
+}

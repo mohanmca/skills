@@ -1,0 +1,44 @@
+{
+  "rows": [
+    [
+      "Metric",
+      "Description",
+      "Type"
+    ],
+    [
+      "file_name",
+      "File defined in the configuration file\nwhere the log file is written to.",
+      "fixed"
+    ],
+    [
+      "file_name_mask",
+      "Mask of the logging output file name, if\navailable.",
+      "fixed"
+    ],
+    [
+      "file_system_free_percent",
+      "Percentage of free space on the file\nsystem that contains the file.",
+      "snapshot"
+    ],
+    [
+      "include_errors",
+      "Errors which are included during\nlogging.",
+      "fixed"
+    ],
+    [
+      "log_levels",
+      "Log level used to control logging output.",
+      "fixed"
+    ],
+    [
+      "rotation",
+      "Boolean representation denoting if log\nrotation is turned on.",
+      "fixed"
+    ],
+    [
+      "rotation_threshold",
+      "Log size at which log rotation will occur.",
+      "fixed"
+    ]
+  ]
+}

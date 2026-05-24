@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Parameter",
+      "Description"
+    ],
+    [
+      "Age\n(required)",
+      "Specifies the age of the statistics to remove. The module processes\nany file older than the specified Age.\nFor example, when the Age is 5d, the module removes statistics that\nare older than 5 days.\nThere is no default for this parameter."
+    ]
+  ]
+}

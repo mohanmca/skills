@@ -1,0 +1,32 @@
+{
+  "rows": [
+    [
+      "Modifier",
+      "Meaning"
+    ],
+    [
+      "i",
+      "Case insensitive search"
+    ],
+    [
+      "m",
+      "Multi-line search"
+    ],
+    [
+      "s",
+      "Any character (including newlines) can be matched by a . character"
+    ],
+    [
+      "x",
+      "Unescaped white space is ignored in the pattern"
+    ],
+    [
+      "A",
+      "Constrain the pattern to only match the beginning of a string"
+    ],
+    [
+      "U",
+      "Make the quantifiers non-greedy by default (the quantifiers are greedy\nand try to match as much as possible by default)"
+    ]
+  ]
+}

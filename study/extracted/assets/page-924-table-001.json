@@ -1,0 +1,29 @@
+{
+  "rows": [
+    [
+      "Metric",
+      "Description",
+      "Type"
+    ],
+    [
+      "messages_out_per_sec",
+      "Rate of messages sent to the client.",
+      "interval\naverage"
+    ],
+    [
+      "query_time",
+      "The amount of time spent for queries\nfrom this client.",
+      "cumulative"
+    ],
+    [
+      "queue_depth_out",
+      "Number of messages queued to be sent\nto client.\nThis represents a count of the messages\nthat AMPS cannot write to the outgoing\nsocket due to the transmit buffer being\nfull.\nThis does not count messages already\nwritten to the transmit buffer. (The\ntransport_tx_queue has information about\nthe transmit buffer.)",
+      "snapshot"
+    ],
+    [
+      "queue_max_latency",
+      "The age of the oldest item in the queue\nwhich has not yet been sent.\nThis is used as a measure of how far\nbehind AMPS believes a subscribing client\nis.\nThis measures the age of the oldest\nmessage that AMPS cannot write to the\noutgoing socket due to the transmit buffer\nbeing full.\nThis does not count messages already\nwritten to the transmit buffer. (The\ntransport_tx_queue has information about\nthe transmit buffer.)\nThe latency is measured in seconds at the\nresolution of the system clock.",
+      "snapshot"
+    ]
+  ]
+}

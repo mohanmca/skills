@@ -1,0 +1,44 @@
+{
+  "rows": [
+    [
+      "Element",
+      "Description",
+      "Type"
+    ],
+    [
+      "bytes_in",
+      "Number of bytes received by the interface.",
+      "interval\nsnapshot"
+    ],
+    [
+      "bytes_in_per_second",
+      "Rate of bytes received by the interface.",
+      "interval\naverage"
+    ],
+    [
+      "bytes_out",
+      "Number of bytes transmitted by the\ninterface.",
+      "interval\nsnapshot"
+    ],
+    [
+      "bytes_out_per_second",
+      "Rate of bytes sent by the interface.",
+      "interval\naverage"
+    ],
+    [
+      "errors",
+      "Total errors both incoming and outgoing.\nThis number includes packets dropped,\ncollisions, fifo, frame, and carrier errors.",
+      "interval\nsnapshot"
+    ],
+    [
+      "packets_in",
+      "The total number of packets received by\nthe interface.",
+      "interval\nsnapshot"
+    ],
+    [
+      "packets_out",
+      "The total number of packets sent by the\ninterface.",
+      "interval\nsnapshot"
+    ]
+  ]
+}

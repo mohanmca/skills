@@ -1,0 +1,48 @@
+{
+  "rows": [
+    [
+      "AMPS Code",
+      "Component"
+    ],
+    [
+      "29",
+      "Plug-in Modules (including AMPS features implemented as modules)"
+    ],
+    [
+      "2A",
+      "Message Pipeline"
+    ],
+    [
+      "2B",
+      "Module Manager"
+    ],
+    [
+      "2C",
+      "File Management"
+    ],
+    [
+      "2D",
+      "NUMA Module"
+    ],
+    [
+      "2F",
+      "SOW Update Broadcaster"
+    ],
+    [
+      "30",
+      "AMPS Internal Utilities"
+    ],
+    [
+      "31",
+      "AMPS Queues"
+    ],
+    [
+      "70",
+      "AMPS Networking"
+    ],
+    [
+      "FF",
+      "Shutdown"
+    ]
+  ]
+}

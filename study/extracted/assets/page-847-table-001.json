@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "DefaultAuthenticationMechanism",
+      "When provided, sets the authentication\nmechanism to use if AMPS cannot identify the\ntype of authentication token provided by the\nconnection.\nIn this release, the value for this parameter can\nbe either Kerberos or LDAP.\nThere is no default for this option. If no\nDefaultAuthenticationMechanism is\nconfigured and AMPS cannot identify the type\nof authentication token provided by a\nconnection, AMPS reports an error for that\nlogon."
+    ]
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "rows": [
+    [
+      "Field",
+      "Description"
+    ],
+    [
+      "topic byte\ncount",
+      "The length, in bytes, of the topic name."
+    ],
+    [
+      "topic",
+      "The name of the topic this command applies to."
+    ],
+    [
+      "data",
+      "The data for this entry in the transaction log.\nFor published messages, this will be the message as published. For\nother commands, this could be data used internally by AMPS."
+    ],
+    [
+      "correlation id\nbyte count",
+      "The number of bytes in the correlation ID for the command."
+    ],
+    [
+      "correlation id",
+      "The correlation ID for the command, if one was set on the command."
+    ],
+    [
+      "auth id byte\ncount",
+      "The length of the authenticated ID that submitted the command."
+    ],
+    [
+      "auth id",
+      "The authenticated ID that submitted the command."
+    ],
+    [
+      "rep path\nbyte count",
+      "The length of the replication path. This path records the route that\nthis message took to reach this instance of AMPS."
+    ],
+    [
+      "rep path",
+      "The replication path. This path records the route that the message\ntook to reach this instance of AMPS."
+    ]
+  ]
+}

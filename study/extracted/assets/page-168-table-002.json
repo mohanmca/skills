@@ -1,0 +1,25 @@
+{
+  "rows": [
+    [
+      null,
+      null,
+      "/data NOT IN",
+      "",
+      ""
+    ],
+    [
+      "",
+      "",
+      "",
+      "",
+      null
+    ],
+    [
+      null,
+      null,
+      "(\"zebra\",\"antelope\",\"lion\")",
+      null,
+      null
+    ]
+  ]
+}

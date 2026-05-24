@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Title",
+      "Description"
+    ],
+    [
+      "AMPS Command\nReference",
+      "Description of the commands sent from an AMPS client to the\nAMPS server and responses from the server."
+    ],
+    [
+      "Client Language\nDeveloper\nGuides",
+      "Guide to using a client library to work with AMPS."
+    ]
+  ]
+}

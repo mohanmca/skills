@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Result"
+    ],
+    [
+      "no_empties",
+      "Do not send messages if no data fields have been updated.\nBy default, AMPS will publish a delta for every publish to the record,\neven if the data has not changed. By specifying this option, AMPS will\nonly send messages when there is changed data."
+    ],
+    [
+      "no_sowkey",
+      "Do not include the AMPS generated SowKey with messages.\nBy default, AMPS includes this key to help you identify unique records\nwithin the SOW."
+    ],
+    [
+      "send_keys",
+      "Include the SOW key fields in the message.\nSince the SOW key fields indicate which message to update, without\nthis option, updates to delta messages will never contain the SOW key\nfields. For views, the SOW key fields are the fields specified in the\nGrouping element.\nAMPS accepts this option for backward compatibility. This behavior is\nthe default if no_empties is not provided."
+    ],
+    [
+      "oof",
+      "AMPS will deliver out of focus messages on this subscription.\nWhen focus tracking is enabled, AMPS will also deliver the full\nmessage to a subscription when a previously out-of-focus message\ncomes into focus."
+    ]
+  ]
+}

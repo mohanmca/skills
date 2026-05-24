@@ -1,0 +1,20 @@
+{
+  "rows": [
+    [
+      "Parameter",
+      "Description"
+    ],
+    [
+      "Topic\n(required)",
+      "The name of the SOW topic from which to delete messages.\nThis parameter supports regular expressions.\nThere is no default for this parameter."
+    ],
+    [
+      "MessageType\n(required)",
+      "The message type of the SOW topic or topics to delete from.\nThere is no default for this parameter."
+    ],
+    [
+      "Filter\n(required)",
+      "Set the filter to apply.\nOnly messages matching that filter will be deleted."
+    ]
+  ]
+}

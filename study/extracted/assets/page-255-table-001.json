@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "GROUP_CONCAT"
+    ],
+    [
+      "GROUP_CONCAT(expression, [delimiter])\nCreates a list of the distinct values in the specified expression, using the second\nargument as the delimiter.\nParameters\nexpression: The expression that provides the values to concatenate.\ndelimiter: Optional. The delimiter to use between values. If no delimiter is\nprovided, the delimiter defaults to , (a comma).\nReturns\nA string that contains the distinct values from the expression, separated by the\ndelimiter. This function returns a string, regardless of the types of the values in the\nexpression. The order of the values within the string is not guaranteed.\nExample\nTo create a list of the distinct values in the /names column for the group delimited\nby a | character, you would use:\nGROUP_CONCAT(/names, '|')"
+    ]
+  ]
+}

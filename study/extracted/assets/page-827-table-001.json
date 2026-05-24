@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Field",
+      "Value"
+    ],
+    [
+      "replicated-\ntopics",
+      "An array containing the topics that this user can replicate to.\nWhen this field is present, the value of the field must be an array of\nstrings that specify topic names or regular expressions. For\nexample, the following entry allows this user to replicate ONLY to\ntopics that begin with /orders/NYC\n\"replicated-topics\":[\"^/orders/NYC/.*\"]\nIf this field is not present in the permissions document, the user\ncannot replicate to any topics."
+    ]
+  ]
+}

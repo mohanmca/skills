@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Query Parameter\nValues",
+      "Behavior"
+    ],
+    [
+      "Only t0 is set",
+      "The result set is the list of values recorded from time t0 until\nthe latest recorded admin interval. The range is inclusive."
+    ],
+    [
+      "Only t1 is set",
+      "The result set is the list of values recorded from the first admin\ninterval recorded in the stats.db of the AMPS instance until\ntime t1. The range is inclusive."
+    ],
+    [
+      "Both t0 and t1\nare set to different\ntimestamp values",
+      "The result set is the list of values recorded starting from time\nt0 until time t1. This range is inclusive."
+    ],
+    [
+      "Both t0 and t1\nare set to the\nsame timestamp\nvalue",
+      "Returns a single value that represents the recorded value of\nthat statistic at the specific admin interval set by t0 and t1.\nImportant:\nUnlike the other time query behaviors, when selecting a single\ndata point by setting t0 and t1 to the same value, that value"
+    ]
+  ]
+}

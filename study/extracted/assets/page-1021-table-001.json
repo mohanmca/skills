@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Field",
+      "Description"
+    ],
+    [
+      "cmd",
+      "Command to be executed.\nValue: sow_delete"
+    ],
+    [
+      "topic",
+      "The SOW topic from which to delete the messages(s)."
+    ],
+    [
+      "ack_type",
+      "Acknowledgment type for the given command.\nValue is a comma separated list of one or more of the following: none,\nreceived, processed, persisted, completed and stats."
+    ],
+    [
+      "cmd_id",
+      "If specified with an AMPS command requesting an ack, all requested\nacknowledgment messages will contain the command ID in the"
+    ]
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      ""
+    ],
+    [
+      "</plugin>\n<plugin>\n<groupId>org.apache.maven.plugins</groupId>\n<artifactId>maven-compiler-plugin</artifactId>\n<version>3.11.0</version>\n</plugin>\n</plugins>\n</build>\n</project>"
+    ]
+  ]
+}

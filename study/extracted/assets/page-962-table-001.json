@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Metric",
+      "Description",
+      "Type"
+    ],
+    [
+      "histogram",
+      "An ASCII histogram of the monitored statistic.",
+      "snapshot"
+    ],
+    [
+      "minimum",
+      "The lowest observed sample of the statistic, in\nmicroseconds or bytes.",
+      "snapshot"
+    ],
+    [
+      "maximum",
+      "The largest observed sample of the statistic, in\nmicroseconds or bytes.",
+      "snapshot"
+    ]
+  ]
+}

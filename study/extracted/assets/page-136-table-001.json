@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Header",
+      "Description"
+    ],
+    [
+      "",
+      "This header is limited to characters used in Base64 encoding."
+    ],
+    [
+      "Status",
+      "Set on ack messages to indicate the results of the command, such as\nSuccess or Failure."
+    ],
+    [
+      "Reason",
+      "Set on ack messages to indicate the reason for the Status\nacknowledgment."
+    ],
+    [
+      "Timestamp",
+      "Optionally set on publish messages and sow messages to indicate\nthe time at which the local AMPS instance processed the message.\nTo receive a timestamp, the SOW query or subscription must include\nthe timestamp option on the command that creates the subscription\nor runs the query. The timestamp is returned in ISO-8601 format."
+    ]
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Variable",
+      "Description"
+    ],
+    [
+      "AMPS_DATA",
+      "The data of the message being affinitized."
+    ],
+    [
+      "AMPS_CLIENT_NAME",
+      "The name of the client the message is being affinitized to\nor removed from."
+    ],
+    [
+      "AMPS_AFFINITY_ACTION",
+      "The type of event.\nIf the message is being affinitized to this client, the type\nwill be assign. If the message is being de-affinitized, the\ntype will be unassign."
+    ],
+    [
+      "AMPS_AFFINITY_REASON",
+      "The reason for the event.\nFor example, if the message no longer matches the\nDataFilter or has been deleted, the reason would be oof.\nIf the update is happening because the client that was\nassigned to the message is no longer active, the reason\nwould be unsubscribe."
+    ]
+  ]
+}

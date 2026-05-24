@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Name",
+      "Type",
+      "Definition"
+    ],
+    [
+      "AckType",
+      "string",
+      "Acknowledgment type for\nthe given command."
+    ],
+    [
+      "BatchSize",
+      "integer\nDefault is 1 when not\npresent.",
+      "Specifies the number of\nmessages that are batched\ntogether when returning a\nquery result."
+    ],
+    [
+      "Bookmark",
+      "string",
+      "A client-originated identifier\nused to mark a location in\njournaled messages."
+    ]
+  ]
+}

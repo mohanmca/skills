@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Modifier",
+      "Description"
+    ],
+    [
+      "OF\nCURRENT",
+      "Specify that the XPath identifier refers to the incoming message."
+    ],
+    [
+      "OF\nPREVIOUS",
+      "Specify that the XPath identifier refers to the previous state of the\nmessage in the SOW.\nIf there is no record in the SOW for this message, all identifiers that\nspecify OF PREVIOUS return NULL."
+    ]
+  ]
+}

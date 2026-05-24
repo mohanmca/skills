@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "/proc/sys/net/ipv4/tcp_frto"
+    ],
+    [
+      "This option controls whether Forward RTO-Recovery (FRTO) is enabled for the TCP\nnetwork. Enabling FRTO can be beneficial for overall network performance if a\nsystem is sending packets over wireless networks with substantial interference (for\nexample, public WiFi in an urban area). However, this recovery algorithm can reduce\nperformance in wired networks. While this option is enabled on most current Linux\ndistributions by default, disabling the option can improve network performance.\n60East recommends disabling this option unless the server is directly delivering\ntraffic over a congested WiFi network.\nThis setting is global to the host and applies to all applications.\nRecommended: 0\nTo edit this value, as root you can enter the following command:\nsysctl -w net.ipv4.tcp_frto=0\nThis command will update the value for /proc/sys/net/ipv4/tcp_frto and direct\nthe operating system to disable FRTO.\nUsing the command above will change the setting until the operating system is\nrebooted. To make a permanent change to this setting, as a root user, edit the\n/etc/sysctl.conf file and either edit or append the following setting:\nnet.ipv4.tcp_frto=0"
+    ]
+  ]
+}

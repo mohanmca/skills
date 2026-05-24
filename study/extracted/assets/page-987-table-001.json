@@ -1,0 +1,28 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "",
+      "The format of this option is a comma-delimited list of XPath\nidentifiers within brackets.\nFor example, to conflate based on the value of the\n/tickerId and /customerId within a message, the value of\nthis option would be:\n[/tickerId,/customerId].\nDefaults to the SOW key fields for SOW topics.\nNo default for non-SOW topics. This option is required for\nnon-SOW topics.\nThis option is not valid with the oof option unless the keys\nprovided are identical to the keys for the topic."
+    ],
+    [
+      "fully_durable",
+      "Tells AMPS to send messages to subscribing clients only after\nthey have been persisted to the local transaction log and\nacknowledged by all downstream instances that use\nsynchronous replication.\nThis option is only valid for bookmark subscriptions."
+    ],
+    [
+      "live",
+      "Tells AMPS to send messages to subscribing clients before\nthey have been persisted to the transaction log.\nThis option has no effect on subscriptions that are not\nreplays from the transaction log (that is, this option only\napplies to bookmark subscriptions)."
+    ],
+    [
+      "max_backlog=n",
+      "When subscribing to a queue, the number of\nunacknowledged messages the client is willing to accept at a\ntime.\nAMPS will not exceed this number, but may choose a smaller\nnumber depending on the queue configuration.\nThis option does not apply for subscriptions that are not\nsubscriptions to a queue, local queue, or group local queue."
+    ],
+    [
+      "non_regex_topic",
+      "Specifies that the topic name should be a literal match, even\nif the topic name contains regular expression characters."
+    ]
+  ]
+}

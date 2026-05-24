@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "ABS"
+    ],
+    [
+      "ABS(number)\nReturns the absolute value of a number.\nParameters\nnumber: The number to find the absolute value of.\nReturns\nThe absolute value of the number.\nExample\nThe following filter will be TRUE when the difference between /a and /b is greater\nthan 5, regardless of whether /a or /b is larger.\nABS(/a - /b) > 5"
+    ]
+  ]
+}

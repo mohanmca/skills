@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Variable",
+      "Description"
+    ],
+    [
+      "AMPS_TOPIC",
+      "The topic of the message that was deleted."
+    ],
+    [
+      "AMPS_DATA",
+      "The current data of the message."
+    ],
+    [
+      "AMPS_DATA_LENGTH",
+      "The length of the current data of the message, in bytes."
+    ],
+    [
+      "AMPS_CORRELATION_ID",
+      "The correlation ID set on the publish command, if one was\nset."
+    ]
+  ]
+}

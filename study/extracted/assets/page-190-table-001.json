@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "UPPER"
+    ],
+    [
+      "UPPER(string_to_transform)\nReturns the input string, transformed to uppercase. This function is not unicode\naware.\nParameters\nstring_to_transform: The string to transform.\nReturns\nThe uppercase version of the string.\n#Example\nYou might compare an incoming field of unknown case to a set of known values as\nfollows:\nUPPER(/ticker) IN ('MSFT', 'IBM', 'RHAT', 'DIS')"
+    ]
+  ]
+}

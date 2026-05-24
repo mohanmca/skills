@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Parameter",
+      "Description"
+    ],
+    [
+      "Data\n(required)",
+      "The data to translate. Most often, this is the value of a variable in the\ncurrent context."
+    ],
+    [
+      "Value\n(required)",
+      "The variable to store the translated value in."
+    ],
+    [
+      "Case",
+      "A translation statement. The translation statement takes the form of\noriginal_value=translated_value.\nThis action allows you to provide any number of Case statements.\nThe action matches the Data provided to the original_value in each\nCase statement. When it finds a matching value, the action stores the\ntranslated value in the variable identified by the Value statement.\nFor example, the following translation statement translates a value of\ncredit_check_in_progress to a value of pending.\n<Case>credit_check_in_progress=pending</Case>\nThere is no default for this option."
+    ],
+    [
+      "Default",
+      "The default translation. AMPS sets the value of the variable to the\ncontents of this element if no Case statement matches the Data\nprovided."
+    ]
+  ]
+}

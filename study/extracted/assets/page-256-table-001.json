@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "MIN"
+    ],
+    [
+      "MIN(expression)\nReturns the minimum value out of the values specified by the expression.\nParameters\nexpression: The expression to find the minimum value from.\nReturns\nThe minimum value."
+    ]
+  ]
+}

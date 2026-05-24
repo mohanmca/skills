@@ -1,0 +1,84 @@
+{
+  "rows": [
+    [
+      "Metric",
+      "Description",
+      "Type"
+    ],
+    [
+      "authenticated_id",
+      "The ID used to authenticate the\nconnection to this instance of AMPS.",
+      "fixed"
+    ],
+    [
+      "bytes_out",
+      "Number of bytes sent to this destination.",
+      "cumulative"
+    ],
+    [
+      "bytes_out_per_sec",
+      "Rate of bytes sent.",
+      "interval\naverage"
+    ],
+    [
+      "client_name",
+      "The client name used for this destination.",
+      "fixed"
+    ],
+    [
+      "client_type",
+      "Specifies whether client is a replication\nsource or destination.",
+      "fixed"
+    ],
+    [
+      "connect_time",
+      "Time connected to this destination.",
+      "snapshot"
+    ],
+    [
+      "destination_admin_addr",
+      "The admin address of the destination.",
+      "fixed"
+    ],
+    [
+      "destination_group_name",
+      "The group name of the destination.",
+      "fixed"
+    ],
+    [
+      "destination_name",
+      "The name of the destination.",
+      "fixed"
+    ],
+    [
+      "disconnect_count",
+      "Number of times replication destination\nhas been disconnected.",
+      "cumulative"
+    ],
+    [
+      "disconnect_time",
+      "Timestamp of the last time the replication\ndestination disconnected.",
+      "snapshot"
+    ],
+    [
+      "is_connected",
+      "Boolean telling whether replication\ndestination is currently connected.",
+      "snapshot"
+    ],
+    [
+      "messages_out",
+      "Number of messages sent to this\ndestination.",
+      "cumulative"
+    ],
+    [
+      "messages_out_per_sec",
+      "Rate of messages sent to this destination.",
+      "interval\naverage"
+    ],
+    [
+      "name",
+      "Name of replication configuration.",
+      "fixed"
+    ]
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Header",
+      "Comment"
+    ],
+    [
+      "topic\n(required)",
+      "Sets the topic to query and subscribe to. The topic specified can be the\nliteral topic name, or a regular expression that matches multiple topics."
+    ],
+    [
+      "opts",
+      "A comma-delimited set of options for this command. For an aggregated\nSOW and delta subscribe, the options provide the projection and\ngrouping for the command. A SOW and delta subscribe can provide\noptions in addition to the projection and grouping. The most common\nadditional options are:\noof - Request out of focus notifications.\ntimestamp - Include timestamps.\nno_empties - Do not send a delta message if the update does not\nchange the value of a field."
+    ]
+  ]
+}

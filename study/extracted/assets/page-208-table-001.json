@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "ARRAY_TO_STRING"
+    ],
+    [
+      "ARRAY_TO_STRING(array, delimiter, null_replacement)\nReturns a string comprised of the elements of the array, separated by the provided\ndelimiter. NULL values in the array are replaced with the provided\nnull_replacement value.\nParameters\narray: The array to convert to a string.\ndelimiter: The delimiter to use between array elements.\nnull_replacement: The value to use for NULL elements in the array.\nReturns\nA string representation of the array."
+    ]
+  ]
+}

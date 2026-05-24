@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "AMPS_GROUP_NAME"
+    ],
+    [
+      "AMPS_GROUP_NAME()\nReturns the group name of this AMPS instance.\nParameters\nNone.\nReturns\nThe group name of this AMPS instance."
+    ]
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "ulimit"
+    ],
+    [
+      "The ulimit command is used by a Linux administrator to get and set user limits on\nvarious system resources.\nulimit -c\nIt is common for an AMPS instance to be configured to consume gigabytes of\nmemory for large SOW caches. If a failure were to occur in a large deployment it\ncould take seconds (maybe even hours, depending on storage performance and\nprocess size) to dump the core file. AMPS has a minidump reporting mechanism built\nin that collects information important to debugging an instance before exiting. This\nminidump is much faster than dumping a core file to disk. For this reason, it is\nrecommended that the per user core file size limit is set to 0 to prevent a large\nprocess image from being dumped to storage.\nulimit -n\nThe number of file descriptors allowed for a user running AMPS needs to be at least\ndouble the sum of counts for the following: connected clients, SOW topics and pre-\nallocated journal files.\nMinimum: 4096\nRecommended: 32768, or the value recommended by AMPS in any diagnostic\nmessages, whichever is greater"
+    ]
+  ]
+}

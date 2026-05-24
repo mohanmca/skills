@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "STRPTIME"
+    ],
+    [
+      "STRPTIME(time_string, format_string)\nThis function interprets the time_string provided as a timestamp, with the\nformat_string specifying how to interpret the time_string.\nParameters\ntime_string: The string containing a timestamp to parse.\nformat_string: The format string, using the same format specifiers as the\nstandard strptime(3) function. This function also supports the additional\nformat specifier %f to parse microseconds, and the format specifier %03f to\nparse milliseconds.\nReturns\nA double representing the parsed timestamp."
+    ]
+  ]
+}

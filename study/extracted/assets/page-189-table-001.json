@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "CONCAT"
+    ],
+    [
+      "CONCAT(string1, [string2, ...])\nTakes any number of parameters and returns a string constructed from those\nparameters. The function can accept both XPath identifiers and literal values.\nParameters\nstring1: The first string.\nstring2: Optional. Additional strings to concatenate.\nReturns\nA single string that is the concatenation of all the parameters.\nExample\nThe CONCAT function can be used in any AMPS expression that uses a string. For\nexample, you could CONCAT in a filter as follows:\nCONCAT(/firstName, \" \", /lastName) = 'George Orwell'\nCONCAT can be combined with other expressions, including conditional expressions.\nA mailingAddressName field in a view could be constructed as follows:\n<Field>CONCAT(/firstName, \" \", /lastName,\nIF(/suffix NOT NULL, CONCAT(\", \", /suffix), \"\") )\nAS /mailingAddressName</Field>"
+    ]
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Parameter",
+      "Description"
+    ],
+    [
+      "Options",
+      "The options for the query.\nThis action accepts any valid option for a sow command except the\ntop_n option (since this action is already limited to a top_n value of\n1)."
+    ]
+  ]
+}

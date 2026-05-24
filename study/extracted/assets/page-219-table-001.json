@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "ROUND"
+    ],
+    [
+      "ROUND(number, [decimal_places])\nReturns a number rounded to the specified number of decimal places.\nParameters\nnumber: The number to round.\ndecimal_places: Optional. The number of decimal places to round to. Defaults\nto 0. Can be positive or negative.\nReturns\nThe rounded number.\nExample\nYou could use the following expression in a view to limit the precision of the /price\nfield of the source topic to 2 decimal places.\nROUND(/price, 2) AS /price"
+    ]
+  ]
+}

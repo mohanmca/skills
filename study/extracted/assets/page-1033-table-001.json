@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Field",
+      "Description"
+    ],
+    [
+      "cmd",
+      "Type of message.\nAlways publish, as encoded by the protocol."
+    ]
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "rows": [
+    [
+      "Field",
+      "Description"
+    ],
+    [
+      "sub_id",
+      "The sub_id sent with the sow command."
+    ],
+    [
+      "query_id",
+      "The query_id sent with the sow command."
+    ],
+    [
+      "records_returned",
+      "The number of records returned by a SOW query.\nThis header field is present on stats acknowledgments."
+    ],
+    [
+      "topic_matches",
+      "The total number of records compared across all matching SOW\ntopics.\nThis header field is present on stats acknowledgments."
+    ],
+    [
+      "matches",
+      "The number of records that match the topic regular expression\nand content filter.\nThis header field is present on stats acknowledgments."
+    ]
+  ]
+}

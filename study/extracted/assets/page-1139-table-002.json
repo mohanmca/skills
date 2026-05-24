@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "package example;\nimport com.crankuptheamps.client.Client;\nimport com.crankuptheamps.client.Message;\nimport com.crankuptheamps.client.MessageHandler;\nimport com.crankuptheamps.flink.source.AMPSSource;\nimport com.crankuptheamps.flink.sink.AMPSSink;\nimport org.apache.flink.api.common.eventtime.WatermarkStrategy;\nimport org.apache.flink.api.common.serialization.SimpleStringSchema;\nimport\norg.apache.flink.streaming.api.environment.StreamExecutionEnvironment;\nimport org.apache.flink.streaming.api.functions.ProcessFunction;\nimport org.apache.flink.util.Collector;\npublic class FirstProgram {\npublic static void main(String[] args) throws Exception {\nString uri = \"tcp://localhost:9006/amps/json\";\nString initTopic = \"initial-topic\";\nString modifiedTopic = \"modified-topic\";\nint pubCount = 100;\ntry (Client client = new Client(\"client\");) {\nclient.connect(uri);\nclient.logon();"
+    ],
+    [
+      ""
+    ]
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "rows": [
+    [
+      "Title",
+      "Description"
+    ],
+    [
+      "Introduction to\nAMPS",
+      "Overview of AMPS functionality.\nThis is a good place to start if you are new to AMPS or if you are\nfamiliar with older versions of AMPS."
+    ],
+    [
+      "AMPS User\nGuide",
+      "Guide to AMPS functionality and configuration.\nThis guide provides detailed descriptions of AMPS features, best\npractices, and in-depth explanations of how AMPS works. It also\nincludes a complete reference to the configuration file syntax,\naccepted values, and examples for configuring commonly-used\noptions."
+    ],
+    [
+      "AMPS\nMonitoring\nGuide",
+      "Guide to the RESTful monitoring interface and the AMPS statistics\ndatabase.\nUse this guide when creating a monitoring strategy or when\ncollecting statistics about an instance."
+    ]
+  ]
+}

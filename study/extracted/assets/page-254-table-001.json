@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "COUNT"
+    ],
+    [
+      "COUNT(expression)\nCounts the values in an expression.\nParameters\nexpression: The expression to count values from.\nReturns\nThe number of values specified by the expression."
+    ]
+  ]
+}

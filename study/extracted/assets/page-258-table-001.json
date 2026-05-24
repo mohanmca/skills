@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "SUM"
+    ],
+    [
+      "SUM(expression)\nCalculates the summation over an expression.\nParameters\nexpression: The expression to sum.\nReturns\nThe total value of the values specified by the expression."
+    ]
+  ]
+}

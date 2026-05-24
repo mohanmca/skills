@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      ""
+    ],
+    [
+      "*/\nString outStr = value.substring(0, value.length() -\n1);\n/*\n* Collect the String plus a new field 'num'.\n*/\nout.collect(outStr + \",\\\"num\\\":\" + Math.random() +\n\"}\");\n}\n})\n.sinkTo(sink);\n/*\n* Submit the job to Flink. This method is synchronous and will\nwait until\n* the job completes to resume the rest of the Java program.\nSince we\n* are using topN with a bookmark subscription, the AMPS Source\nis\n* BOUNDED and the job will be finished once pubCount messages\nare\n* received by the AMPS Source.\n*/\nenv.execute(\"First Program with AMPS Flink Connectors\");\n/*\n* Sleep for a short duration to make sure all messages are\nprinted to the console.\n*/\nThread.sleep(1000);\n}\n}\n}"
+    ]
+  ]
+}

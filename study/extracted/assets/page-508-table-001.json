@@ -1,0 +1,96 @@
+{
+  "rows": [
+    [
+      "AMPS Code",
+      "Component"
+    ],
+    [
+      "12",
+      "Trace In - for inbound messages"
+    ],
+    [
+      "13",
+      "Datasource"
+    ],
+    [
+      "14",
+      "Subscription Manager"
+    ],
+    [
+      "15",
+      "SOW"
+    ],
+    [
+      "16",
+      "Query"
+    ],
+    [
+      "17",
+      "Trace Out - for outbound messages"
+    ],
+    [
+      "18",
+      "Parser"
+    ],
+    [
+      "19",
+      "Administration Console"
+    ],
+    [
+      "1A",
+      "Evaluation Engine"
+    ],
+    [
+      "1B",
+      "SQLite"
+    ],
+    [
+      "1C",
+      "Meta Data Manager"
+    ],
+    [
+      "1D",
+      "Transaction Log Monitor"
+    ],
+    [
+      "1E",
+      "Replication Bootstrap Initialization"
+    ],
+    [
+      "1F",
+      "Client Session"
+    ],
+    [
+      "20",
+      "Global Heartbeat"
+    ],
+    [
+      "21",
+      "Transaction Replay"
+    ],
+    [
+      "22",
+      "TX Completion"
+    ],
+    [
+      "23",
+      "Bookmark Subscription"
+    ],
+    [
+      "24",
+      "Thread Monitor"
+    ],
+    [
+      "25",
+      "Authorization"
+    ],
+    [
+      "26",
+      "SOW Cache"
+    ],
+    [
+      "28",
+      "Memory Cache"
+    ]
+  ]
+}

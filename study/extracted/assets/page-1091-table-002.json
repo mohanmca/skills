@@ -1,0 +1,29 @@
+{
+  "rows": [
+    [
+      "Header",
+      "Comment",
+      null
+    ],
+    [
+      "topic\n(required)",
+      "Sets the topic to subscribe to. The topic specified can be the literal topic\nname, or a regular expression that matches multiple topics.",
+      null
+    ],
+    [
+      "",
+      "A comma-separated list of options. To request a value for the\nmax_backlog, pass the value in the options as follows: max_backlog=\nNN. For example, to request a max_backlog of 7, your application would\npass the following option: max_backlog=7.",
+      null
+    ],
+    [
+      "opts",
+      "",
+      "NN"
+    ],
+    [
+      "",
+      null,
+      null
+    ]
+  ]
+}

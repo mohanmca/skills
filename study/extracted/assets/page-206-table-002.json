@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "ARRAY_MAX"
+    ],
+    [
+      "ARRAY_MAX(array)\nReturns the largest value in the array.\nParameters\narray: The array to find the maximum value of.\nReturns\nThe largest value in the array, using the standard AMPS > comparison."
+    ]
+  ]
+}

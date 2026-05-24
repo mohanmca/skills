@@ -1,0 +1,32 @@
+{
+  "rows": [
+    [
+      "Field",
+      "Description"
+    ],
+    [
+      "topic",
+      "The topic the message was published to."
+    ],
+    [
+      "correlation_id",
+      "A publisher-provided string that is passed, verbatim, to\nsubscribers.\nIf this header is not present, or the message is a synthetic\nmessage as described above, subscribers receive no value for the\ncorrelation_id.\nThe contents of this header must consist of characters that are\nlegal in Base64 encoding.\nFor delta publishes, AMPS uses the correlation_id of the delta\npublish if one is present. If no correlation_id is present on the\npublish, AMPS uses the correlation_id of the existing message,\nif one is present.\nIf there is no correlation_id on the publish, and there is no\ncorrelation_id for the existing message, AMPS does not provide\na correlation_id."
+    ],
+    [
+      "user_id",
+      "The user_id of the client that published the message.\nAn authentication module may choose whether to allow\nsubscribers to receive this information."
+    ],
+    [
+      "sids",
+      "The set of subscription IDs that produced this message.\nWhen a message matches multiple subscriptions, AMPS may\nproduce a list of subscription IDs for all matching subscriptions.\nThis header is provided by AMPS. The AMPS Clients process this\nlist and provide a single sub_id for each message provided to\nmessage handlers."
+    ],
+    [
+      "bookmark",
+      "The bookmark assigned to this message, if the message was\npersisted to a transaction log."
+    ],
+    [
+      "timestamp",
+      "An ISO-8601 datetime that notes the time the message was\nprocessed by this instance of AMPS.\nThe header is included if the client requested a timestamp for the\nsubscription. The value returned has microsecond resolution.\nFractions of a second are represented as decimal values."
+    ]
+  ]
+}

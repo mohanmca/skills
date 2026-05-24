@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "--client=CLIENT_HASH",
+      "Search client hash(es) metadata for all matching\nrecords. This argument may be provided multiple\ntimes to search for multiple clients."
+    ]
+  ]
+}

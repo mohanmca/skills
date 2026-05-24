@@ -1,0 +1,20 @@
+{
+  "rows": [
+    [
+      "Metric",
+      "Short Description"
+    ],
+    [
+      "/transferred_in",
+      "Number of messages that have had ownership transferred to\nthis instance."
+    ],
+    [
+      "/transferred_out",
+      "Number of messages that this instance has previously owned,\nbut granted ownership to another instance."
+    ],
+    [
+      "/owned",
+      "Number of messages currently owned."
+    ]
+  ]
+}

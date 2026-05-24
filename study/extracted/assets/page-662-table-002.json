@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Parameter",
+      "Description"
+    ],
+    [
+      "Age\n(required)",
+      "Specifies the maximum message age at which a previously-\ndowngraded destination will be upgraded to sync mode.\nWhen this action runs, AMPS upgrades any destination that has been\npreviously downgraded where the oldest unacknowledged message\nis more recent than the time value specified in the Age parameter.\nFor example, if a destination has been downgraded to async mode\nand the Age is 2m, AMPS will upgrade the destination when the\noldest unacknowledged message to that destination is less than 2\nminutes old.\nThere is no default for this parameter."
+    ],
+    [
+      "GracePeriod",
+      "The approximate time to wait after start up before beginning to\ncheck whether to upgrade links.\nThe GracePeriod allows time for other AMPS instances to start up,\nand for connections to be established between AMPS instances."
+    ]
+  ]
+}

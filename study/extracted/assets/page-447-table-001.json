@@ -1,0 +1,32 @@
+{
+  "rows": [
+    [
+      "Message\nType",
+      "Description"
+    ],
+    [
+      "bson",
+      "Binary JSON (BSON) messages.\nSee http://www.bsonspec.org for information on this format."
+    ],
+    [
+      "bflat",
+      "BFlat, a schemaless message format based on key-value pairs that\nincludes support for binary representations of numeric data.\nSee http://bflat.io for information on this format. The section on BFlat\nMessages describes how AMPS interprets BFlat messages."
+    ],
+    [
+      "fix",
+      "FIX messages using numeric tags. FIX is a standard format widely used\nin the financial industry.\nSee https://www.fixtrading.org/what-is-fix/ for more information on this\nformat."
+    ],
+    [
+      "json",
+      "JSON (JavaScript Object Notation) messages.\nSee http://www.json.org for information on this format."
+    ],
+    [
+      "msgpack",
+      "MessagePack messages.\nMessagePack is a schemaless serialization format designed to\nefficiently encode data.\nSee http://msgpack.org/index.html for more information on\nMessagePack. The section on MessagePack Messages describes how\nAMPS interprets messagepack messages."
+    ],
+    [
+      "nvfix",
+      "NVFIX (name/value FIX) messages.\nNVFIX uses the same basic format as FIX, but allows tags to contain\nany byte that is not = or the configured field separator character (by\ndefault, the ASCII SOH character).\nBy contrast, FIX requires that tags are numeric."
+    ]
+  ]
+}

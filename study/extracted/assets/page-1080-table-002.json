@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Header",
+      "Comment"
+    ],
+    [
+      "topic\n(required)",
+      "Sets the topic to query and subscribe to. The topic specified can be the\nliteral topic name, or a regular expression that matches multiple topics."
+    ],
+    [
+      "bookmark",
+      "Sets the historical point in the SOW at which to query. The query returns\nthe saved state of the records in the SOW as of the point in time"
+    ]
+  ]
+}

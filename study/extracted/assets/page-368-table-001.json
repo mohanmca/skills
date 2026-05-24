@@ -1,0 +1,20 @@
+{
+  "rows": [
+    [
+      "NVFIX Tag",
+      "Description"
+    ],
+    [
+      "CompanyId",
+      "Unique identifier for the company"
+    ],
+    [
+      "Tick",
+      "Symbol"
+    ],
+    [
+      "Name",
+      "Company name"
+    ]
+  ]
+}

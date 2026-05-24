@@ -1,0 +1,32 @@
+{
+  "rows": [
+    [
+      "Field",
+      "Description"
+    ],
+    [
+      "cmd",
+      "Command to be executed.\nValue: sow"
+    ],
+    [
+      "topic",
+      "The SOW topic from which the records will be queried."
+    ],
+    [
+      "ack_type",
+      "Acknowledgment type for the given command.\nValue is a comma separated list of one or more of the following: none,\nreceived, processed, completed or stats."
+    ],
+    [
+      "batch_size",
+      "Number of records to return in a single sow query result message.\nThe AMPS server default value is 1.\nIt is recommended to use a higher value, as even small increases can\nyield greater performance in query result delivery. Current AMPS client\nlibraries provide a BatchSize of 10 by default.\nThe BatchSize header only applies to a sow query."
+    ],
+    [
+      "bookmark",
+      "A bookmark specifying the historical state of the SOW to return results\nfrom.\nFor SOW topics where historical query is enabled, AMPS returns the\nsaved state of the SOW as of that bookmark.\nFor SOW topics where historical query is not enabled, AMPS ignores\nthis parameter."
+    ],
+    [
+      "cmd_id",
+      "If specified with an AMPS command requesting an acknowledgment\nmessage, all requested acknowledgment messages will contain the"
+    ]
+  ]
+}

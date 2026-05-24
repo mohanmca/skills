@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "SUBSTR"
+    ],
+    [
+      "SUBSTR(string, starting_position, [length])\nReturns a portion of the input string, starting at the starting_position and ending\nafter the specified length.\nParameters\nstring: The string to process.\nstarting_position: The 1-based position to start the substring. A negative\nnumber counts backward from the end of the string.\nlength: Optional. The length of the substring. If not provided, returns the rest of\nthe string.\nReturns\nThe extracted substring.\nExample\nThe following expressions are all TRUE:\nSUBSTR(\"fandango\", 4) == \"dango\"\nSUBSTR(\"fandango\", 1) == \"fandango\"\nSUBSTR(\"fandango\", -2) == \"go\"\nSUBSTR(\"fandango\", 1, 3) == \"fan\""
+    ]
+  ]
+}

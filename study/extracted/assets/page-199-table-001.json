@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "LTRIM"
+    ],
+    [
+      "LTRIM(string, [characters_to_trim])\nReturns the input string, with all leading characters in the set of\ncharacters_to_trim removed.\nParameters\nstring: The string to transform.\ncharacters_to_trim: Optional. The set of characters to trim. Defaults to a\nspace.\nReturns\nThe left-trimmed string.\nExample\nTRIM(\" Lancelot \", \" \") == \"Lancelot \""
+    ]
+  ]
+}

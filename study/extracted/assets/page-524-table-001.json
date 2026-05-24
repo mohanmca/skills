@@ -1,0 +1,94 @@
+{
+  "rows": [
+    [
+      "FIX",
+      "XML",
+      "JSON/BSON/MsgPack",
+      "Description"
+    ],
+    [
+      "20062",
+      "Reason",
+      "reason",
+      "Reason for the event (if\napplicable). This is present\non client disconnect\nevents to record the\nreason that the client\ndisconnected."
+    ],
+    [
+      "20065",
+      "Timestamp",
+      "timestamp",
+      "Timestamp at which AMPS\nprocessed the message."
+    ],
+    [
+      "20066",
+      "Event",
+      "event",
+      "Command executed by the\nclient."
+    ],
+    [
+      "20067",
+      "ClientName",
+      "client_name",
+      "Client Name"
+    ],
+    [
+      "20068",
+      "Tpc",
+      "topic",
+      "Topic for the event (if\napplicable)."
+    ],
+    [
+      "20069",
+      "Filter",
+      "filter",
+      "Filter (if applicable)."
+    ],
+    [
+      "20070",
+      "SubId",
+      "sub_id",
+      "Subscription ID (if\napplicable)."
+    ],
+    [
+      "20071",
+      "ConnName",
+      "connection_name",
+      "Internal AMPS connection\nname."
+    ],
+    [
+      "20072",
+      "Options",
+      "options",
+      "The options for the\nsubscription (if applicable)."
+    ],
+    [
+      "20073",
+      "QId",
+      "query_id",
+      "The identifier for the query\n(if applicable)."
+    ],
+    [
+      "20074",
+      "CorrelationID",
+      "correlation_id",
+      "The correlation ID of the\ncommand (if applicable)."
+    ],
+    [
+      "20080",
+      "ClientAddr",
+      "client_address",
+      "The remote address of the\nclient."
+    ],
+    [
+      "20081",
+      "AuthId",
+      "auth_id",
+      "The authenticated identity\nof the client (if applicable)."
+    ],
+    [
+      "20082",
+      "EntitlementFilter",
+      "entitlement_filter",
+      "The entitlement filter for\nthe command (if\napplicable)."
+    ]
+  ]
+}

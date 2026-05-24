@@ -1,0 +1,36 @@
+{
+  "rows": [
+    [
+      "Utility",
+      "Description"
+    ],
+    [
+      "amps-grep",
+      "Utility for searching AMPS error and event logs or AMPS\njournal files.\nFor error and event logs, the utility is aware of the\nstructure of AMPS messages, and searches message by\nmessage rather than line by line.\nFor journal files, the utility is able to interpret the journal\nfile format and is aware of the structure of AMPS\nbookmarks and is also able to correlate client names to\nthe hash values in journal files, making it much easier to\nlocate specific messages or the activity of a specific\npublisher."
+    ],
+    [
+      "amps_journal_dump",
+      "Utility for extracting information from the journal files that\ncomprise the AMPS transaction log.\nThis utility fully supports compressed journal files."
+    ],
+    [
+      "amps_journal_search",
+      "Utility for searching for a specific message within the\njournal files that comprise the AMPS transaction log.\nThis utility is optimized for locating a specific message by\nexact bookmark.\nFor other searches, use amps-grep."
+    ],
+    [
+      "amps_sow_dump",
+      "Utility for extracting information from the file that holds\nSOW topic data."
+    ],
+    [
+      "amps_sqlite3",
+      "Utility for running SQL queries over the SQLite3 database\nthat holds AMPS statistics."
+    ],
+    [
+      "amps_file",
+      "Utility for providing file type and version information for\nAMPS files."
+    ],
+    [
+      "amps_clients_ack_dump",
+      "Utility for displaying the contents of the file that contains\ninformation on the last message persisted for a given\npublisher."
+    ]
+  ]
+}

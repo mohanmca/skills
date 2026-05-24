@@ -1,0 +1,20 @@
+{
+  "rows": [
+    [
+      "Parameter",
+      "Description"
+    ],
+    [
+      "Topic\n(required)",
+      "The name of the topic to monitor for messages.\nThis parameter does not support regular expressions. The topic\nname must be either a SOW topic, a view or a conflated topic.\nQueues are not supported.\nThere is no default for this parameter."
+    ],
+    [
+      "MessageType\n(required)",
+      "The message type of the topic to monitor for messages.\nThere is no default for this parameter."
+    ],
+    [
+      "OOFEvent\n(required)",
+      "The value to store when an out-of-focus notification is received for\na tracked message.\nThere is no default for this parameter."
+    ]
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Element",
+      "Description"
+    ],
+    [
+      "ClientMessageAgeLimit",
+      "The maximum amount of time for the client to lag behind.\nIf a message for the client has been held longer than this\ntime, the client will be disconnected. This parameter is an\nAMPS time interval (for example, 30s for 30 seconds, or\n1h for 1 hour).\nNotice that this policy applies to all messages and all\nconnections.\nIf you have applications that will consume large result\nsets (SOW queries) over low-bandwidth network\nconnections, consider creating a separate transport with\nthe age limit set higher to allow those operations to\ncomplete.\nDefault: No age limit"
+    ],
+    [
+      "ClientMaxCapacity",
+      "The amount of available capacity a single client can\nconsume. Before a client is offlined, this limit applies to\nthe MessageMemoryLimit. After a client is offlined, this\nlimit applies to the MessageDiskLimit. This parameter is\na percentage of the total.\nDefault: 50% (previous versions defaulted to 100%)"
+    ]
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "rows": [
+    [
+      "Specifier",
+      "C Type",
+      "Size (bytes)",
+      "AMPS\nType"
+    ],
+    [
+      "B",
+      "unsigned\nchar",
+      "1",
+      "integer"
+    ],
+    [
+      "?",
+      "bool\n(as though\nstdbool.h\nwere\nincluded)",
+      "1",
+      "boolean"
+    ],
+    [
+      "h",
+      "short",
+      "2",
+      "integer"
+    ],
+    [
+      "H",
+      "unsigned\nshort",
+      "2",
+      "integer"
+    ],
+    [
+      "i",
+      "int",
+      "4",
+      "integer"
+    ],
+    [
+      "I",
+      "unsigned\nint",
+      "4",
+      "integer"
+    ],
+    [
+      "l",
+      "long",
+      "4",
+      "integer"
+    ],
+    [
+      "L",
+      "unsigned\nlong",
+      "4",
+      "integer"
+    ],
+    [
+      "q",
+      "long long",
+      "8",
+      "integer"
+    ],
+    [
+      "Q",
+      "unsigned\nlong long",
+      "8",
+      "integer"
+    ],
+    [
+      "n",
+      "ssize_t",
+      "",
+      "integer"
+    ],
+    [
+      "N",
+      "size_t",
+      "",
+      "integer"
+    ],
+    [
+      "f",
+      "float",
+      "4",
+      "double"
+    ],
+    [
+      "d",
+      "double",
+      "8",
+      "double"
+    ],
+    [
+      "s",
+      "char[]",
+      "Number of bytes must be specified.\nAMPS will interpret the specified number\nof bytes as the string.",
+      "string"
+    ]
+  ]
+}

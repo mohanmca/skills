@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Utility",
+      "Description"
+    ],
+    [
+      "amps_upgrade",
+      "Provided for backward compatibility.\nThis utility is no longer necessary and should not be used for\nupgrades from 5.0.0 and later versions of AMPS."
+    ]
+  ]
+}

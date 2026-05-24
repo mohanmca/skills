@@ -1,0 +1,40 @@
+{
+  "rows": [
+    [
+      "Units",
+      "Description"
+    ],
+    [
+      "ns",
+      "nanoseconds"
+    ],
+    [
+      "us",
+      "microseconds"
+    ],
+    [
+      "ms",
+      "milliseconds"
+    ],
+    [
+      "s",
+      "seconds"
+    ],
+    [
+      "m",
+      "minutes"
+    ],
+    [
+      "h",
+      "hours"
+    ],
+    [
+      "d",
+      "days"
+    ],
+    [
+      "w",
+      "weeks"
+    ]
+  ]
+}

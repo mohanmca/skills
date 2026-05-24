@@ -1,0 +1,39 @@
+{
+  "rows": [
+    [
+      "Extension",
+      null,
+      "File Type",
+      "Description",
+      null
+    ],
+    [
+      ".journal",
+      null,
+      "Journal file",
+      "These files contain the messages that\ncomprise the transaction log.\nAMPS always writes new messages to an\nuncompressed journal file.",
+      null
+    ],
+    [
+      ".journal.gz",
+      null,
+      "Compressed\njournal file",
+      "These files contain messages that comprise\nthe transaction log.\nThese files have been compressed by AMPS as\na result of the amps-action-do-compress-\njournal action.",
+      null
+    ],
+    [
+      null,
+      "",
+      "",
+      "",
+      "journal"
+    ],
+    [
+      null,
+      null,
+      "",
+      null,
+      null
+    ]
+  ]
+}

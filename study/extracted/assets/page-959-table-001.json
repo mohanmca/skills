@@ -1,0 +1,29 @@
+{
+  "rows": [
+    [
+      "Metric",
+      "Description",
+      "Type"
+    ],
+    [
+      "pagination_id",
+      "For subscriptions that use pagination, the\nidentifier of the paginated set for this\nsubscription.",
+      "fixed"
+    ],
+    [
+      "seconds_behind",
+      "For bookmark subscriptions, the age of the last\nmessage enqueued for the client.\nThis indicates the point in the transaction log at\nwhich replay is currently happening, and does\nnot necessarily correspond to the rate at which\nthe client is receiving messages or the amount of\ntime required for the client to complete replay.",
+      "snapshot"
+    ],
+    [
+      "sub_id",
+      "The subscription ID for this subscription.",
+      "fixed"
+    ],
+    [
+      "topic",
+      "Subscription topic.",
+      "fixed"
+    ]
+  ]
+}

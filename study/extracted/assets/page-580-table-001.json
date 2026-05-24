@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "",
+      "If this directory does not exist, it will be created. amps_upgrade\nwill fail without changing any existing files if this directory\nalready exists and contains files from a previous migration."
+    ]
+  ]
+}

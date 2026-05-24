@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "ATAN2"
+    ],
+    [
+      "ATAN2(y, x)\nReturns the arctangent of the provided numbers.\nParameters\ny: The y-coordinate.\nx: The x-coordinate.\nReturns\nThe arctangent of the numbers.\nExample\nATAN2(/y,/x)"
+    ]
+  ]
+}

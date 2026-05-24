@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Parameter",
+      "Description"
+    ],
+    [
+      "Key",
+      "A field to use in chaining. AMPS supports any number of Key fields.\nThe first Key field specified in the configuration is the primary field to\nuse in chaining. When the primary field is present on a message, and\nthe value of the field is not in an existing chain of values, the module\ncreates a new chain.\nWhen the message contains the primary field and there is no previous\nentry for the value of that field, this message is the head of the chain\nand is used to generate the SOW key.\nKey parameters specified after the first Key are secondary fields.\nWhen a secondary field is present on the message, the module\ngenerates a SOW key for this message as though the message\ncontained a primary field with this value. In addition, the module\nstores the value of the primary field in the current, if any, message as\nequivalent to this value, enabling subsequent messages to be chained\nto this message.\nThere is no default for this parameter. The parameter requires an\nAMPS field identifier, such as /11 or /Order/ClOrdID.\nThe module requires a primary field and at least one secondary field\nto be defined."
+    ],
+    [
+      "FileName",
+      "Sets the name of the file that the module uses to store chaining data.\nThis module persists existing chains between restarts of the AMPS\nserver. If a file with the given name exists when AMPS starts, the\nmodule reads chaining data from the file. Otherwise, the module\ncreates a new file."
+    ],
+    [
+      "Primary",
+      "A synonym for Key that explicitly specifies that this field is the\nprimary field.\nWhen this configuration element is present, AMPS uses the field\nspecified in this element as the primary field and considers any field\nspecified in a Key element to be a secondary field."
+    ],
+    [
+      "Secondary",
+      "A synonym for Key that explicitly specifies that this field is a\nsecondary field."
+    ]
+  ]
+}

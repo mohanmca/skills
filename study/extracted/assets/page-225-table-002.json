@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "TAN"
+    ],
+    [
+      "TAN(number)\nReturns the tangent of the provided number.\nParameters\nnumber: The number to operate on.\nReturns\nThe tangent of the number.\nExample\nTAN(/x)"
+    ]
+  ]
+}

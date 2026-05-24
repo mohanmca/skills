@@ -1,0 +1,44 @@
+{
+  "rows": [
+    [
+      null,
+      null,
+      "Module\nName",
+      null,
+      null,
+      "Does"
+    ],
+    [
+      null,
+      null,
+      "amps-action-",
+      null,
+      null,
+      "Rotates logs that are older than a specified age, for log types that\nsupport log rotation. Rotating a log involves closing the log and\nopening the next log in sequence.\nAMPS will use the name specifier provided in the AMPS\nconfiguration for the new log file. This may overwrite the current\nlog file if the specifier results in the same name as the current log\nfile."
+    ],
+    [
+      null,
+      null,
+      null,
+      "amps-action-",
+      "",
+      ""
+    ],
+    [
+      null,
+      "",
+      "do-rotate-",
+      null,
+      null,
+      null
+    ],
+    [
+      "",
+      null,
+      "",
+      "logs",
+      null,
+      null
+    ]
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "SINH\nSINH(number)"
+    ],
+    [
+      "Returns the hyperbolic sine of the provided number.\nParameters\nnumber: The number to operate on.\nReturns\nThe hyperbolic sine of the number.\nExample\nSINH(/x)"
+    ]
+  ]
+}

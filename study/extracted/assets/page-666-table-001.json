@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Parameter",
+      "Description"
+    ],
+    [
+      "",
+      "This element is optional. If no Default is specified, AMPS uses the\nvalue of the original Data as the default translation."
+    ]
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "rows": [
+    [
+      "ack Type",
+      "Meaning"
+    ],
+    [
+      "completed",
+      "An operation has completed.\nFor example, subscriptions that replay from the transaction log can\nproduce a completed acknowledgment to indicate when transaction log\nreplay has finished and further messages for the subscription are the\nresult of new publishes."
+    ],
+    [
+      "persisted",
+      "Data has been persisted."
+    ],
+    [
+      "processed",
+      "AMPS has processed the command.\nNotice that, depending on the command, AMPS may not have executed\nthe command when this acknowledgment is produced."
+    ],
+    [
+      "received",
+      "AMPS has received the command, but has not yet processed it."
+    ],
+    [
+      "stats",
+      "Statistics for the command.\nThis acknowledgment is typically produced after the command has fully\ncompleted."
+    ]
+  ]
+}

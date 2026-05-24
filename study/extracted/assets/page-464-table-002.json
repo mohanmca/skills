@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Specifier",
+      "Byte Order"
+    ],
+    [
+      "@",
+      "Native (little-endian for AMPS server)"
+    ],
+    [
+      "=",
+      "Native (little-endian for AMPS server)"
+    ],
+    [
+      "<",
+      "Little-endian"
+    ],
+    [
+      ">",
+      "Big-endian"
+    ]
+  ]
+}

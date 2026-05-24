@@ -1,0 +1,44 @@
+{
+  "rows": [
+    [
+      "Expression",
+      "Result"
+    ],
+    [
+      "1 < 2",
+      "TRUE"
+    ],
+    [
+      "10 < '2'",
+      "FALSE, '2' can be converted to a number"
+    ],
+    [
+      "'2.000' <> '2.0'",
+      "TRUE, no conversion to numbers since both are strings"
+    ],
+    [
+      "2 = 2.0",
+      "TRUE, numeric comparison"
+    ],
+    [
+      "10 < 'Crank It Up'",
+      "TRUE, strings are greater than numbers"
+    ],
+    [
+      "10 < ''",
+      "FALSE, an empty string is considered to be NULL"
+    ],
+    [
+      "10 > ''",
+      "FALSE, an empty string is considered to be NULL"
+    ],
+    [
+      "'' = ''",
+      "FALSE, an empty string is considered to be NULL"
+    ],
+    [
+      "'' IS NULL",
+      "TRUE, an empty string is considered to be NULL"
+    ]
+  ]
+}

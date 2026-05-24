@@ -1,0 +1,14 @@
+{
+  "rows": [
+    [
+      "Type",
+      "Description",
+      "Untyped Message\nExamples"
+    ],
+    [
+      "NULL",
+      "Unknown, untyped value (SQL-92\nsemantics)",
+      "[no field provided]\nNVFIX: a=<SOH>\nJSON: {\"a\":null}\nXML: <a/>"
+    ]
+  ]
+}

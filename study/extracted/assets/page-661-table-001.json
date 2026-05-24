@@ -1,0 +1,52 @@
+{
+  "rows": [
+    [
+      null,
+      null,
+      "Module Name",
+      null,
+      null,
+      "Does"
+    ],
+    [
+      null,
+      null,
+      "amps-action-do-",
+      null,
+      null,
+      "Downgrades replication connections from synchronous to\nasynchronous if the age of the last acknowledged message is\nolder than a specified time period."
+    ],
+    [
+      null,
+      null,
+      null,
+      "amps-action-do-",
+      "",
+      "Downgrades repli"
+    ],
+    [
+      null,
+      "",
+      "downgrade-",
+      null,
+      null,
+      ""
+    ],
+    [
+      "",
+      null,
+      "",
+      "replication",
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      "amps-action-do-\nupgrade-\nreplication",
+      null,
+      null,
+      "Upgrades previously-downgraded replication connections\nfrom asynchronous to synchronous if the age of the last\nacknowledged message is more recent than a specified time\nperiod.\nThis action has no effect on replication destinations that are\nspecified as async in the configuration file."
+    ]
+  ]
+}

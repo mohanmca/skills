@@ -1,0 +1,60 @@
+{
+  "rows": [
+    [
+      "Item",
+      "Description"
+    ],
+    [
+      "ampServer",
+      "The AMPS server binary."
+    ],
+    [
+      "ampServer-compat",
+      "The downward compatible version of the AMPS server\nbinary. This version avoids using some of the hardware\ncapabilities present in newer CPU architectures."
+    ],
+    [
+      "amps_file",
+      "A utility for identifying the type of AMPS files and the file\nformat that the file uses."
+    ],
+    [
+      "amps-init-script",
+      "Part of the AMPS service installation. This script is\ninstalled into the init.d directory when the AMPS service\nis installed."
+    ],
+    [
+      "amps_journal_dump",
+      "Utility for extracting the contents of AMPS transaction\nlog journal files."
+    ],
+    [
+      "amps_mt_perf_test",
+      "Diagnostic tool for performance testing of the AMPS\nengine parsing infrastructure."
+    ],
+    [
+      "amps_sow_dump",
+      "Utility for extracting the contents of AMPS SOW files."
+    ],
+    [
+      "amps-sqlite3",
+      "Convenience wrapper for querying an AMPS statistics\ndatabase."
+    ],
+    [
+      "amps_upgrade",
+      "Utility for upgrading data files from previous versions of\nAMPS to the current version."
+    ],
+    [
+      "install-amps-\ndaemon.sh",
+      "Installation script for installing AMPS as a Linux service."
+    ],
+    [
+      "/lib",
+      "Directory containing the libraries used by the spark\nutility."
+    ],
+    [
+      "spark",
+      "Utility that provides a command-line interface to AMPS."
+    ],
+    [
+      "uninstall-amps-\ndaemon.sh",
+      "Installation script for removing the AMPS Linux service\nfrom the system."
+    ]
+  ]
+}

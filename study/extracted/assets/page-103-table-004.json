@@ -1,0 +1,39 @@
+{
+  "rows": [
+    [
+      "Token",
+      "Description",
+      "Example"
+    ],
+    [
+      "%a",
+      "Short weekday name",
+      "Fri"
+    ],
+    [
+      "%A",
+      "Full weekday name",
+      "Friday"
+    ],
+    [
+      "%b",
+      "Short month name",
+      "Feb"
+    ],
+    [
+      "%B",
+      "Full month name",
+      "February"
+    ],
+    [
+      "%c",
+      "Simple date and time",
+      "Fri Feb 14 17:25:00\n2014"
+    ],
+    [
+      "%C",
+      "Century",
+      "20"
+    ]
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "rows": [
+    [
+      "Item",
+      "Description"
+    ],
+    [
+      "amps_bio_perf_test",
+      "Diagnostic tool for testing the performance of I/O\nsystems."
+    ],
+    [
+      "amps_clients_ack_dump",
+      "Utility for showing the contents of the AMPS clients.ack\nfile, containing persistent per-client information."
+    ],
+    [
+      "ampserr",
+      "Utility for looking up details on AMPS log file items."
+    ]
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "rows": [
+    [
+      "Id",
+      "Name",
+      "Species"
+    ],
+    [
+      "1",
+      "Bianca",
+      "cat"
+    ],
+    [
+      "2",
+      "Gracie",
+      "cat"
+    ],
+    [
+      "5",
+      "Snuggles",
+      "penguin"
+    ],
+    [
+      "7",
+      "Percival",
+      "octopus"
+    ],
+    [
+      "9",
+      "SparklyFangs",
+      "dragon"
+    ]
+  ]
+}

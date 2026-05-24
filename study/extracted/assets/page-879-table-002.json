@@ -1,0 +1,20 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "Command",
+      null
+    ],
+    [
+      "MaxLength",
+      "Sets the maximum number of bytes to read from the command.\nDefault: 1024"
+    ],
+    [
+      "UserName",
+      null
+    ]
+  ]
+}

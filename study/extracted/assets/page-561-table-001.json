@@ -1,0 +1,28 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "filename\n(required)",
+      "Filename of the AMPS transaction log topic index file."
+    ],
+    [
+      "-h, --help",
+      "Show the program help message and quit."
+    ],
+    [
+      "--topic-hash",
+      "Display offset list for a given topic."
+    ],
+    [
+      "--topic",
+      "Display offset list for topic."
+    ],
+    [
+      "--message-type",
+      "Message type of topic used to produce topic hash."
+    ]
+  ]
+}

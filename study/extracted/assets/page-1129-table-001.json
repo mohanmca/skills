@@ -1,0 +1,32 @@
+{
+  "rows": [
+    [
+      "Method",
+      "Description"
+    ],
+    [
+      "setDeliveryGuarantee",
+      "Sets the source's delivery guarantee by internally setting\nup a Memory Bookmark Store with a Recovery Point\nAdapter. Default is NONE.\nThis should only be set to AT_LEAST_ONCE or\nEXACTLY_ONCE if checkpointing is enabled or\ndiscardAfterEmit is true."
+    ],
+    [
+      "setInternalBufferSize",
+      "Sets the buffer size of the queue that each client uses to\nbuffer messages from AMPS. Default is 1000. This should\nbe adjusted based on the application the source is being\nused for. For example, applications with large message\nsizes may want to use a smaller buffer size to avoid\nexcessive memory use on buffering messages."
+    ],
+    [
+      "setConfiguration",
+      "Sets the Flink Configuration used to supply\nSourceReaderOptions."
+    ],
+    [
+      "setSleepMillisAfterBlock",
+      "Sets the amount of milliseconds to sleep for after blocking\nfor a message. Default is 0. This can be used to allow\nsome messages to buffer in the queue before handing\nthem to Flink."
+    ],
+    [
+      "setDiscardAfterEmit",
+      "Sets the flag for if bookmarks should be discarded after a\nrecord is emitted rather than on checkpoint completion.\nDefault is false. If the checkpoint interval for an application\nis high, this may help reduce memory usage for the\nsource's bookmark store."
+    ],
+    [
+      "setUseSuffix",
+      "Sets the flag for if a suffix should be appended to the\nclient name. Default is false, but it will be set to true if\nparallelism is greater than 1 and there are multiple splits."
+    ]
+  ]
+}

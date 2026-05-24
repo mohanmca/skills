@@ -1,0 +1,58 @@
+{
+  "rows": [
+    [
+      "Server",
+      "Group",
+      "Destinations",
+      "PassThrough"
+    ],
+    [
+      "NewYork 1",
+      "NewYork",
+      "NewYork 2 /\nsync ack",
+      ".*"
+    ],
+    [
+      "",
+      "",
+      "[London 1, London 2] / async ack",
+      "NewYork"
+    ],
+    [
+      "NewYork 2",
+      "NewYork",
+      "NewYork 1 /\nsync ack",
+      ".*"
+    ],
+    [
+      "",
+      "",
+      "[London 1, London 2] / async ack",
+      "NewYork"
+    ],
+    [
+      "London 1",
+      "London",
+      "London 2 /\nsync ack",
+      ".*"
+    ],
+    [
+      "",
+      "",
+      "[NewYork 1, NewYork 2] / async ack",
+      "London"
+    ],
+    [
+      "London 2",
+      "London",
+      "London 1 /\nsync ack",
+      ".*"
+    ],
+    [
+      "",
+      "",
+      "[NewYork 1, NewYork 2] / async ack",
+      "London"
+    ]
+  ]
+}

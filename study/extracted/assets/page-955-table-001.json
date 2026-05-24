@@ -1,0 +1,69 @@
+{
+  "rows": [
+    [
+      "Element",
+      "Description",
+      "Type"
+    ],
+    [
+      "mmaps",
+      "The number of memory maps used for\nthis topic in the SOW.",
+      "snapshot"
+    ],
+    [
+      "message_type",
+      "Message type for this topic.",
+      "fixed"
+    ],
+    [
+      "path",
+      "File system location of the SOW topics file\nstore.",
+      "fixed"
+    ],
+    [
+      "queries_per_sec",
+      "Rate of queries for this SOW topic.",
+      "interval\naverage"
+    ],
+    [
+      "query_count",
+      "Number of queries processed for this\ntopic.",
+      "cumulative"
+    ],
+    [
+      "record_size",
+      "Record size for the topic in the SOW.\nFor SOW files created with current\nversions of AMPS, this will always return\nthe same value.",
+      "fixed"
+    ],
+    [
+      "resident_percent",
+      "Percentage of the storage of this topic\nthat is currently resident in memory.\nMessages that are not currently in\nmemory will need to be retrieved from\nstorage before they are delivered. When\npart of a topic is not resident, either the\ninstance is under memory pressure or the\nmessages (if any) in that part of the topic\nhave not been recently updated or\ndelivered.",
+      "snapshot"
+    ],
+    [
+      "slab_count",
+      "The total number of slabs allocated for\nthis SOW topic.",
+      "snapshot"
+    ],
+    [
+      "slab_size",
+      "The slab size for this SOW topic.",
+      "fixed"
+    ],
+    [
+      "stored_bytes",
+      "Number of bytes stored for this topic.",
+      "snapshot"
+    ],
+    [
+      "topic",
+      "Name of this SOW topic.",
+      "fixed"
+    ],
+    [
+      "update_count",
+      "Number of updates to existing records\nprocessed by this topic.",
+      "cumulative"
+    ]
+  ]
+}

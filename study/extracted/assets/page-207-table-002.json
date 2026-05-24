@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "ARRAY_SUM"
+    ],
+    [
+      "ARRAY_SUM(array)\nReturns a number produced by adding all of the elements in the array. NULL values\nin the array are ignored.\nParameters\narray: The array to sum.\nReturns\nThe sum of all elements in the array."
+    ]
+  ]
+}

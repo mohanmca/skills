@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "LAST_LEASED"
+    ],
+    [
+      "LAST_LEASED()\nFor a message in a queue, returns a timestamp for the last time this message was\nleased from this instance, as a double. Returns NULL for a message that is not in a\nqueue.\nNotice that this timestamp is set based on when the local instance leased the\nmessage. This counter is reset when the instance restarts.\nParameters\nNone.\nReturns\nA timestamp for the last time this message was leased.\nAvailable For\nQueries of a message queue\nSubscription to a message queue\nSOW delete by filter for a message queue"
+    ]
+  ]
+}

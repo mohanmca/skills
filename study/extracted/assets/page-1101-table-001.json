@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Metric",
+      "Short Description"
+    ],
+    [
+      "/throttle_count",
+      "Number of times that the processor had to wait to\nadd a message to the processing pipeline due to the\ninstance reaching capacity limits on the number of\nin-progress messages.\nThis metric can indicate resource constraints on\nAMPS."
+    ],
+    [
+      "/last_active",
+      "The last active time for a message processor.\nIf this time grows, either there is no traffic to the\ninstance, or there is a delay in processing."
+    ]
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Header",
+      "Comment"
+    ],
+    [
+      "topic\n(required)",
+      "Sets the topic to query and subscribe to. The topic specified can be the\nliteral topic name, or a regular expression that matches multiple topics."
+    ],
+    [
+      "opts",
+      "A comma-delimited set of options for this command. See the\nsow_and_subscribe section for a full description of supported options.\nFor example, to remove all fields except for id and ticker, and also\nrequest out of focus notifications, you might use an options string of:\noof,select=[-/,+/id,+/ticker]."
+    ]
+  ]
+}

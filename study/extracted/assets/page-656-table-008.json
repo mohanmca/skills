@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Parameter",
+      "Description"
+    ],
+    [
+      "Transport",
+      "The name of the transport for which to reset authentication or\nentitlements.\nIf no name is provided, these modules affect all transports."
+    ],
+    [
+      "AuthenticationId",
+      "The authentication ID of the client for which to reset\nentitlements."
+    ]
+  ]
+}

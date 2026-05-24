@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "",
+      "The contents of this option are a comma-delimited list of\ninclusion specifiers."
+    ],
+    [
+      "timestamp",
+      "AMPS will include a header with the time at which this instance\nof AMPS processed the incoming publish command for this\nmessage."
+    ]
+  ]
+}

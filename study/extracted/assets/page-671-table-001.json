@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Parameter",
+      "Description"
+    ],
+    [
+      "Topic\n(required)",
+      "The name of the queue topic for which to enable or disable proxied\ntransfer.\nThere is no default value for this parameter."
+    ],
+    [
+      "MessageType\n(required)",
+      "The message type of the topic for which to enable or disable proxied\ntransfer.\nThere is no default value for this parameter."
+    ]
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Parameter",
+      "Description"
+    ],
+    [
+      "Value\n(required)",
+      "An assignment statement that specifies the variable to store the\nextracted value in and the XPath identifier for the value to extract.\nThis action can contain any number of Value elements, each\nproviding an assignment statement.\nThe format of the assignment is as follows:\nvariable=amps-expression\nFor example, the following assignment statement stores the value of\nthe /previousRegionCode within the message to the variable\nPREVIOUS_REGION. After this action runs, the content of the variable\ncan be referenced in subsequent action steps as\n{{PREVIOUS_REGION}}.\nPREVIOUS_REGION=/previousRegionCode\nLikewise, the following assignment statement creates a string from\nthe values of the /firstName and /lastName fields within the\nmessage, and stores that to the variable COMBINED_NAME. After this\naction runs, the content of the variable can be referenced in\nsubsequent action steps as {{COMBINED_NAME}}.\nCOMBINED_NAME=CONCAT(/firstName, ' ', /lastName)\nThere is no default for this option. If no Value options are provided,\nAMPS does not save any values from the parsed message."
+    ],
+    [
+      "Data",
+      "Contains the data to parse. Typically it is a message received from a\npublish event or retrieved from a SOW query.\nThe action expands context variables when this action is run, which\ncan be useful for processing variables set by other action steps.\nThere is no default value for this parameter. If it is omitted, AMPS will\nnot parse data when the action is run."
+    ]
+  ]
+}

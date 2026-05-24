@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "LDAP.Host",
+      "Sets the host name to use for LDAP\nauthentication.\nWhen this option is specified, the module will\nprovide LDAP authentication. This parameter\nis required if any other LDAP parameter is\nspecified.\nThere is no default for this parameter."
+    ],
+    [
+      "LDAP.Port",
+      "Sets the port number to use for LDAP\nauthentication.\nWhen this option is specified, the module will\nprovide LDAP authentication and an\nLDAP.Host must also be specified.\nDefault: 389"
+    ]
+  ]
+}

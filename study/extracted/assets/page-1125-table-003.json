@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Method",
+      "Description"
+    ],
+    [
+      "setDeserializationSchema",
+      "Sets the deserialization schema that will be used to\ndeserialize messages from AMPS."
+    ]
+  ]
+}

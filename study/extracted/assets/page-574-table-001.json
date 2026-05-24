@@ -1,0 +1,28 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "-b,--batch_size",
+      "The number of messages to be batched (1 to 256)."
+    ],
+    [
+      "-m,--\nmessage_size",
+      "The message size in bytes (256 to 128K, must be a multiple of\n256)."
+    ],
+    [
+      "-f,--file_size",
+      "Size of the data file to write to, in MB (max 8192)."
+    ],
+    [
+      "-r,--read_mix",
+      "Read mix specified as a percentage (0 - 99)."
+    ],
+    [
+      "-f,--file",
+      "Name of the data file that is created (this should be on the\ndevice to be tested).\nThe file will be allocated before the test begins running, and will\ncontain nonsense data."
+    ]
+  ]
+}

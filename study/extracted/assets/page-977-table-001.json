@@ -1,0 +1,32 @@
+{
+  "rows": [
+    [
+      "Field",
+      "Description"
+    ],
+    [
+      "cmd",
+      "Command to be executed.\nValue: publish"
+    ],
+    [
+      "topic",
+      "The topic to publish the message to."
+    ],
+    [
+      "ack_type",
+      "Acknowledgment type for the given command.\nValue is a comma separated list of one or more of the following:\nnone, received, persisted or processed."
+    ],
+    [
+      "cmd_id",
+      "If specified with an AMPS command requesting an\nacknowledgment message in response to the publish command,\nall requested acknowledgment messages will contain the\nCommandId in the response header."
+    ],
+    [
+      "expiration",
+      "An interval in seconds, used to define the lifetime of a publish\nmessage."
+    ],
+    [
+      "seq",
+      "A monotonically increasing identifier used in high availability\nconfigurations to determine message uniqueness across replicas."
+    ]
+  ]
+}

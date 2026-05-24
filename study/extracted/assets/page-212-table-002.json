@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "FLOOR"
+    ],
+    [
+      "FLOOR(number)\nReturns the value rounded downward to the next lower integer.\nParameters\nnumber: The number to round.\nReturns\nThe rounded-down integer. Returns an integer unchanged.\nExample\nFLOOR(/estimatedReturn)"
+    ]
+  ]
+}

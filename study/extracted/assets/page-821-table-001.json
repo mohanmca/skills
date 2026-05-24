@@ -1,0 +1,20 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "AllowedTopics",
+      "A regular expression that matches the topics that the module\nwill allow access to. The module will grant access only to\ntopics that match this regular expression and do not match\nthe DeniedTopics regular expression.\nDefaults to .*, matching all topics in the instance."
+    ],
+    [
+      "DeniedTopics",
+      "A regular expression that matches the topics that the module\nwill deny access to. The module will grant access only to\ntopics that do not match this regular expression.\nThere is no default for this parameter. If not provided, the\nmodule does not consider any topics to be explicitly denied\nand will grant access to any topic that matches the\nAllowedTopics parameter."
+    ],
+    [
+      "GrantedPermissions",
+      "When set, this option directs the module to grant only read or\nwrite permissions when a topic is allowed.\nThis option accepts a value of read or write, specifying\nwhich permission the module will grant.\nThere is no default for this parameter. If not provided, the\nmodule will grant both read and write permissions to any\nallowed topic.\nWhen using this option for the Admin transport, notice that\nthe administrator actions use an HTTP GET, so they are\nconsidered read operations."
+    ]
+  ]
+}

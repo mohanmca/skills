@@ -1,0 +1,36 @@
+{
+  "rows": [
+    [
+      "Term",
+      "Definition"
+    ],
+    [
+      "Acknowledgment",
+      "A networking technique in which the receiver of a message is\nresponsible for informing the sender that the message was\nreceived.\nIn AMPS:\nCommands to the AMPS server from an application are\nasynchronous: AMPS responds with acknowledgment\nmessages to indicate the results of the command.\nAn application acknowledges messages from an AMPS\nqueue to indicate that the message has been processed\nand the application can accept more work."
+    ],
+    [
+      "Authentication",
+      "The process of establishing a proven identity for a connection to\nAMPS."
+    ],
+    [
+      "Bookmark",
+      "Unique identifier for a message, formed from a combination of a\nnumber derived from the client name (which is used as the\npublisher session ID) and a sequence number managed by the\nclient. Unlike a SOW Key (defined later), this identifier is unique\nto each individual message. That is, two updates to the same\nrecord have different bookmarks, even though they update the\nsame key."
+    ],
+    [
+      "Conflated Topic",
+      "A copy of a SOW topic that conflates updates on a specified\ninterval. This helps to conserve bandwidth and processing\nresources for subscribers to the conflated topic."
+    ],
+    [
+      "Conflation",
+      "The process of merging a group of messages into a single\nmessage. For example, when a particular record in the SOW is\nupdated hundreds or thousands of times a second, conflation\ncan enable an application to receive the most recent update\nevery 300ms, reducing the network traffic to the application\nwhile still guaranteeing that the application has recent data."
+    ],
+    [
+      "Delta",
+      "A message that contains only the differences between the\nprevious state of a stored message and the new state of the\nstored message. AMPS supports delta messaging for both\npublish (changing a subset of fields in a message) and\nsubscribe (receiving only the fields of a message that have\nchanged)."
+    ],
+    [
+      "Entitlement",
+      "The process of assigning permissions to a connection based on\nthe identity established for that connection."
+    ]
+  ]
+}

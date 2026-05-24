@@ -1,0 +1,54 @@
+{
+  "rows": [
+    [
+      null,
+      null,
+      null,
+      "TIP\nWhen evaluating against a set of values, the IN operator typically provides better\nperformance than using a set of OR operators. That is, a filter written as /firstName\nIN ('Joe', 'Kathleen', 'Frank', 'Cindy', 'Mortimer') will typically perform",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      "",
+      "",
+      "IN ('Joe', 'Kathleen', 'Frank', 'Cindy', 'Mortimer')",
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      "better than an equivalent filter written as",
+      null,
+      "/firstName = 'Joe' OR /firstName =",
+      "",
+      ""
+    ],
+    [
+      null,
+      "",
+      null,
+      "'Kathleen' OR /firstName = 'Frank' OR /firstName = 'Cindy' OR /firstName =",
+      null,
+      null,
+      null,
+      ""
+    ],
+    [
+      "",
+      null,
+      null,
+      "",
+      "'Mortimer'",
+      null,
+      null,
+      null
+    ]
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "/proc/sys/vm/force_cgroup_v2_swappiness"
+    ],
+    [
+      "WARNING\n60East recommends this setting only for Red Hat Enterprise Linux 8.\nOnly for installations on Red Hat Enterprise Linux 8 (RHEL8), this option helps to\nenforce vm.swappiness system-wide. If on cgroup v1, by default, the system will use\na per-cgroup swappiness value. The default cgroup v1 swappiness value is 60,\nwhich is not recommended.\nWhen this is set to 1 the system value vm.swappiness is used and behaves like\nRHEL7 or RHEL9. Without this setting, a RHEL8 system using cgroup v1 can\nprematurely swap and degrade performance substantially.\nThis setting is global to the host and applies to all applications.\nRecommended: 1\nTo edit this value, as root you can enter the following command:\nsysctl -w vm.force_cgroup_v2_swappiness=1\nUsing the command above will change the vm.force_cgroup_v2_swappiness setting\nuntil the operating system is rebooted. To make a permanent change to this setting,\nas a root user, edit the /etc/sysctl.conf file and either edit or append the\nfollowing setting:\nvm.force_cgroup_v2_swappiness=1"
+    ]
+  ]
+}

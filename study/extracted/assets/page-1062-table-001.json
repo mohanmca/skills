@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "XML Header Field",
+      "AMPS Protocol Equivalent"
+    ],
+    [
+      "UsrId",
+      "user_id"
+    ],
+    [
+      "Version",
+      "version"
+    ]
+  ]
+}

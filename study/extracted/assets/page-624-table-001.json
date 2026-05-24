@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Parameter",
+      "Description"
+    ],
+    [
+      "DataTopic\n(required)",
+      "The name of the topic that contains the messages to be affinitized.\nEach distinct record in the topic (that is, each distinct SOW Key) will\nbe affinitized.\nBy default, all data within the topic will be affinitized. Optionally,\nyou can restrict affinitization to only certain records (for example,\norders in a certain state) by setting the DataFilter option."
+    ],
+    [
+      "DataFilter",
+      "When present, restricts affinitization to only those messages in the\nDataTopic that also match the DataFilter."
+    ]
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "rows": [
+    [
+      "Acknowledgment",
+      "Description"
+    ],
+    [
+      "",
+      "This is the default behavior."
+    ],
+    [
+      "completed",
+      "All previous commands have been processed by AMPS."
+    ],
+    [
+      "persisted",
+      "All previous commands from this publisher have been persisted\nby AMPS (or have failed and produced the requested\nacknowledgments)."
+    ],
+    [
+      "processed",
+      "AMPS has processed the flush message."
+    ],
+    [
+      "received",
+      "The flush command has been received."
+    ],
+    [
+      "stats",
+      "Not supported at this time."
+    ]
+  ]
+}

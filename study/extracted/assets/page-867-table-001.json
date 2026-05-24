@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Parameter",
+      "Description"
+    ],
+    [
+      "",
+      "module will consider it an error when it detects that two or more\ndistinct chains share identifiers and would have been combined into a\nsingle chain had messages arrived in a different order. In some\nsystems, this indicates an error in message processing.\nDefault: This option defaults to false."
+    ]
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Definition"
+    ],
+    [
+      "server\n(required)",
+      "AMPS server to connect to."
+    ],
+    [
+      "topic\n(required)",
+      "Topic to query."
+    ],
+    [
+      "batchsize",
+      "Batch Size to use during query.\nA batch size > 1 can help improve performance, as described in\nthe Querying the State of the World chapter of this guide."
+    ],
+    [
+      "copy",
+      "Publishes records to the secondary server specified."
+    ],
+    [
+      "filter",
+      "The content filter to use."
+    ],
+    [
+      "format",
+      "Optional format used for displaying messages. May contain literal\nseparator characters mixed with format tags.\nAllowed tags are:\n{bookmark}, {command}, {correlation_id}, {data},\n{expiration}, {lease_period}, {length}, {sowkey},\n{user_id}, {timestamp}, {topic}\nNotice that not all headers may be available on every request,\ndepending on the options provided to the request. See the AMPS\nCommand Reference for details.\nExample: -format \"{command}:{data}\""
+    ],
+    [
+      "orderby",
+      "An expression that AMPS will use to order the results."
+    ],
+    [
+      "proto",
+      "Protocol to use.\nIn this release, spark supports amps, fix, nvfix and xml.\nDefaults to amps. spark also supports json as a synonym for\namps in this release."
+    ]
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "minidumps\n(required)",
+      "The minidump file or files to be submitted."
+    ],
+    [
+      "-e, --email=SENDER_EMAIL\n(required)",
+      "Email address to be used as the sender."
+    ],
+    [
+      "-s, --subject=SUBJECT\n(required)",
+      "The subject field of the email."
+    ],
+    [
+      "-b, --body=BODY",
+      "The body of the email."
+    ],
+    [
+      "-c, --compress",
+      "Create tar.gz before sending multiple minidumps."
+    ],
+    [
+      "-t, --ticket=TICKET",
+      "The ticket number you are submitting a minidump for."
+    ],
+    [
+      "--help",
+      "Show the help message and exit."
+    ]
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "rows": [
+    [
+      "1 <Logging>\n2 <Target>\n3 <Protocol>file</Protocol>\n4 <FileName>${AMPS_CONFIG_DIRECTORY}/logs/infoLog.log</FileName>\n5 <Level>info</Level>\n6 <RotationThreshold>2G</RotationThreshold>"
+    ],
+    [
+      "1"
+    ],
+    [
+      "2"
+    ],
+    [
+      "3"
+    ],
+    [
+      "4"
+    ],
+    [
+      "5"
+    ],
+    [
+      "6"
+    ]
+  ]
+}

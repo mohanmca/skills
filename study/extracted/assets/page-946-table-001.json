@@ -1,0 +1,49 @@
+{
+  "rows": [
+    [
+      "Metric",
+      "Description",
+      "Type"
+    ],
+    [
+      "age_of_oldest_lease",
+      "The age of the oldest current lease, in\nseconds.",
+      "snapshot"
+    ],
+    [
+      "backlog",
+      "The number of leased messages awaiting\nacknowledgment.",
+      "snapshot"
+    ],
+    [
+      "deferred_ack_count",
+      "The number of acknowledgments received\nfor messages that have not yet become\nactive in the queue.",
+      "snapshot"
+    ],
+    [
+      "expired_leases",
+      "The number of leases that have expired\nfor this queue.\nThis counter resets when the instance is\nrestarted.",
+      "cumulative"
+    ],
+    [
+      "inactive_message_count",
+      "The number of messages for this queue\nthat are present in the transaction log, but\nhave not yet become active because they\nare beyond current active limit of the\nqueue (as set by TargetQueueDepth, when\nthat option is present).",
+      "snapshot"
+    ],
+    [
+      "max_backlog",
+      "The configured MaxBacklog for the queue.",
+      "fixed"
+    ],
+    [
+      "target_queue_depth",
+      "The configured TargetQueueDepth for the\nqueue.",
+      "fixed"
+    ],
+    [
+      "message_type",
+      "The message type for the queue.",
+      "fixed"
+    ]
+  ]
+}

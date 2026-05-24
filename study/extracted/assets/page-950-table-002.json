@@ -1,0 +1,39 @@
+{
+  "rows": [
+    [
+      "Metric",
+      "Description",
+      "Type"
+    ],
+    [
+      "txid",
+      "The local transaction ID of the message.",
+      "live\nstate"
+    ],
+    [
+      "bookmark",
+      "The bookmark of the message.",
+      "live\nstate"
+    ],
+    [
+      "journal",
+      "The path to the journal file that contains the message.",
+      "live\nstate"
+    ],
+    [
+      "deliverable",
+      "Flag indicating whether the message is currently\ndeliverable (1 is true, 0 is false).\nA message may not be deliverable if this instance does\nnot currently own the message, or if it is already leased\nto a subscriber.",
+      "live\nstate"
+    ],
+    [
+      "age",
+      "The age of the message, as measured by the time\nbetween the time the message was added to the local\ntransaction log and the current time.",
+      "live\nstate"
+    ],
+    [
+      "locally_owned",
+      "Flag indicating whether the message is currently owned\nby this instance (1 is true, 0 is false).",
+      "live\nstate"
+    ]
+  ]
+}

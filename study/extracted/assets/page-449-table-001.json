@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Message Type\nName",
+      "Description"
+    ],
+    [
+      "composite-\nglobal",
+      "Composite message type that combines message parts for content\nfiltering. This message type combines one or more existing\nmessage types into a message.\nThis type of composite message does not distinguish between\nsections of the message when parsing the message.\nThis type is described in more detail in the section on composite-\nglobal in Composite Messages."
+    ],
+    [
+      "composite-\nlocal",
+      "Composite message type, filterable by individual parts. This\nmessage type combines one or more existing message types into\na message.\nThis type of composite message preserves information about the\nsections of the message when parsing the message.\nThis type is described in more detail in the section on composite-\nlocal in Composite Messages."
+    ]
+  ]
+}

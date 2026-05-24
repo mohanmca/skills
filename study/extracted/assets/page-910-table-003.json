@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Metric Category",
+      "Base Table Names"
+    ],
+    [
+      "cpu (host level)",
+      "HCPUS (instance info in ICPUS)"
+    ],
+    [
+      "disk capacity and activity",
+      "HDISKS"
+    ],
+    [
+      "memory (host level)",
+      "HMEMORY (instance info in IMEMORY)"
+    ],
+    [
+      "network activity",
+      "HNET"
+    ]
+  ]
+}

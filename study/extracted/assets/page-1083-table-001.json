@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Header",
+      "Comment"
+    ],
+    [
+      "topic\n(required)",
+      "Sets the topic from which to remove records."
+    ],
+    [
+      "data\n(required)",
+      "The message to remove."
+    ]
+  ]
+}

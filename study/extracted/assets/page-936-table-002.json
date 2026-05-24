@@ -1,0 +1,49 @@
+{
+  "rows": [
+    [
+      "Metric",
+      "Description",
+      "Type"
+    ],
+    [
+      "allocations",
+      "Number of memory allocations for this cache.",
+      "cumulative"
+    ],
+    [
+      "bytes",
+      "Number of bytes allocated to this cache.",
+      "snapshot"
+    ],
+    [
+      "description",
+      "Description of the cache.",
+      "fixed"
+    ],
+    [
+      "efficiency",
+      "Ratio of hits to requests for this cache.",
+      "snapshot"
+    ],
+    [
+      "entries",
+      "Number of entries in this cache.",
+      "snapshot"
+    ],
+    [
+      "evictions",
+      "Count of evictions from this cache.",
+      "cumulative"
+    ],
+    [
+      "fetches",
+      "Count of fetches from this cache.",
+      "cumulative"
+    ],
+    [
+      "overflow_bytes",
+      "Bytes allocated for slow consumers to this cache.",
+      "cumulative"
+    ]
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Interface",
+      "URI"
+    ],
+    [
+      "Galvanometer",
+      "http://<host>:<port>/"
+    ],
+    [
+      "RESTful Statistics",
+      "http://<host>:<port>/amps"
+    ]
+  ]
+}

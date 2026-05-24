@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "AMPS_INSTANCE_NAME"
+    ],
+    [
+      "AMPS_INSTANCE_NAME()\nReturns the instance name of this AMPS instance.\nParameters\nNone.\nReturns\nThe instance name of this AMPS instance."
+    ]
+  ]
+}

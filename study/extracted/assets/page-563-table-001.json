@@ -1,0 +1,94 @@
+{
+  "rows": [
+    [
+      null,
+      "Option",
+      null,
+      null,
+      null,
+      "Description",
+      null
+    ],
+    [
+      null,
+      "filename\n(required)",
+      null,
+      null,
+      null,
+      "Filename of the AMPS journal file.",
+      null
+    ],
+    [
+      null,
+      "-h, --help",
+      null,
+      null,
+      null,
+      "Show the program help message and quit.",
+      null
+    ],
+    [
+      null,
+      "<search-pattern>",
+      null,
+      null,
+      null,
+      "The bookmark or transaction id to locate.\nWhen a <search-pattern> is provided, the utility\nsearches the record metadata, but does not search\nthe message data.",
+      null
+    ],
+    [
+      null,
+      "-d <search-string>, --data",
+      null,
+      null,
+      null,
+      "Locate messages that contain the data in <search-\nstring>.\nIf <search-string> is a bookmark, also includes\nrecords matching the bookmark.",
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      "",
+      null,
+      "",
+      "string>"
+    ],
+    [
+      null,
+      null,
+      "-d <search-string>, --data",
+      null,
+      "",
+      "",
+      null
+    ],
+    [
+      "",
+      "",
+      "<search-string>",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      "-topic=TOPIC_NAME",
+      null,
+      null,
+      null,
+      "Search metadata for the provided topic term.",
+      null
+    ],
+    [
+      null,
+      "--no-data",
+      null,
+      null,
+      null,
+      "Do not provide message data in the output.",
+      null
+    ]
+  ]
+}

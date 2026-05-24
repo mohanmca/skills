@@ -1,0 +1,20 @@
+{
+  "rows": [
+    [
+      "Method",
+      "Description"
+    ],
+    [
+      "setExpiration",
+      "Sets the expiration for SOW/queue messages\nsent."
+    ],
+    [
+      "setCorrelationId",
+      "Sets the correlation ID to use on every\nmessage sent to AMPS from this sink. Must\ncontain only Base64 characters.\nThe correlation ID provided by an\nAMPSSerializationSchema will override the\ncorrelation ID provided here. If there is no\ncorrelation ID provided by the schema, then\nthis value will be used."
+    ],
+    [
+      "setConnectorInitializer",
+      "Sets the ConnectorInitializer that will run\nits init(HAClient) method before the reader\nconnects to AMPS. This can be used to execute\ncode such as setting up an SSLContext for the\nAMPS clients."
+    ]
+  ]
+}

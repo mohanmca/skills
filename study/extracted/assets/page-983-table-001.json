@@ -1,0 +1,28 @@
+{
+  "rows": [
+    [
+      "Command",
+      "Usage"
+    ],
+    [
+      "subscribe",
+      "Receive a stream of messages from a topic."
+    ],
+    [
+      "sow",
+      "Query a snapshot of the values within a topic in the\nState of the World (SOW)."
+    ],
+    [
+      "sow_and_subscribe",
+      "Query a snapshot of the values within a topic in the\nSOW and begin a subscription atomically at the point of\nquery."
+    ],
+    [
+      "delta_subscribe",
+      "Receive a stream of messages from a topic. If the topic\nis in the SOW, and it is possible to construct a partial\nmessage, receive only fields that have changed (fields\nthat identify the message are also included by default)."
+    ],
+    [
+      "sow_and_delta_subscribe",
+      "Query a snapshot of the values within a topic in the\nSOW and begin a subscription atomically at the point of\nquery. If the topic is in the SOW, and it is possible to\nconstruct a partial message, receive only fields that\nhave changed (fields that identify the message are also\nincluded by default)."
+    ]
+  ]
+}

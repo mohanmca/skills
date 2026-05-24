@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Acknowledgment",
+      "Description"
+    ],
+    [
+      "none",
+      "No ack message is returned.\nThis is the default behavior."
+    ],
+    [
+      "bookmark",
+      "Specifies that the subscription should return bookmarks, if\navailable, on each publish message. Bookmarks are only\navailable if the topic that is subscribed to is recorded in the\ntransaction log.\nNotice that this option does not set the starting point for a\nbookmark subscription: use the Bookmark header for that\npurpose.\nThis option is not required to receive bookmarks for a\nbookmark subscription. Those subscriptions always include"
+    ]
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "ARRAY_COUNT"
+    ],
+    [
+      "ARRAY_COUNT(array)\nReturns the number of elements in the array.\nParameters\narray: The array to count the elements of.\nReturns\nThe number of elements in the array."
+    ]
+  ]
+}

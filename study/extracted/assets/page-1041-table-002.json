@@ -1,0 +1,20 @@
+{
+  "rows": [
+    [
+      "Field",
+      "Description"
+    ],
+    [
+      "query_id",
+      "The QueryId sent with the sow_delete command."
+    ],
+    [
+      "records_deleted",
+      "The number of records deleted by the command.\nThis header field is present on stats acknowledgments."
+    ],
+    [
+      "topic_matches",
+      "The total number of records compared across all matching SOW\ntopics.\nThis header field is present on stats acknowledgments."
+    ]
+  ]
+}

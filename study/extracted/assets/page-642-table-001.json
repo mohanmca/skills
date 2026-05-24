@@ -1,0 +1,44 @@
+{
+  "rows": [
+    [
+      null,
+      null,
+      "Module\nName",
+      null,
+      null,
+      "Does"
+    ],
+    [
+      null,
+      null,
+      "amps-action-",
+      null,
+      null,
+      "Compresses files that match the specified pattern that are older\nthan the specified age.\nThis action accepts an arbitrary pattern, and compresses files that\nmatch that pattern. While AMPS attempts to protect against\ndeleting journal files, using a pattern that compresses files that are\ncritical for AMPS, for the application, or for the operating system\nmay result in loss of data.\nThe module does not recurse into directories. It skips open files.\nThe module does not compress AMPS journals (that is, files that\nend with a .journal extension), and reports an error if a file with\nthat extension matches the specified Pattern.\nThe commands to compress files are executed with the current\npermissions of the AMPS process."
+    ],
+    [
+      null,
+      null,
+      null,
+      "amps-action-",
+      "",
+      "may result in lo"
+    ],
+    [
+      null,
+      "",
+      "do-compress-",
+      null,
+      null,
+      ""
+    ],
+    [
+      "",
+      null,
+      "",
+      "files",
+      null,
+      null
+    ]
+  ]
+}

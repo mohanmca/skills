@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Header",
+      "Comment"
+    ],
+    [
+      "topic\n(required)",
+      "Sets the topic to query and subscribe to. The topic specified can be the\nliteral topic name, or a regular expression that matches multiple topics."
+    ],
+    [
+      "opts",
+      "A comma-delimited set of options for this command. See the\nsow_and_delta_subscribe section for a full description of supported\noptions. The most common options for this command are:\noof - Request out of focus notifications.\ntimestamp - Include timestamps on messages."
+    ]
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "rows": [
+    [
+      "Name",
+      "Type",
+      "Definition"
+    ],
+    [
+      "GracePeriod",
+      "integer (milliseconds)",
+      "Grace period after heartbeat\ninterval is exceeded before\nclient is considered in error\nstate."
+    ],
+    [
+      "GroupSequenceNumber",
+      "integer",
+      "Group Sequence Number\nreturned with each batch\nmessage of a SOW response."
+    ],
+    [
+      "Heartbeat",
+      "One of:\nstart\nstop\nbeat",
+      "Heartbeat command."
+    ],
+    [
+      "LeasePeriod",
+      "timestamp",
+      "For messages from a queue,\nthe time at which the lease\nexpires."
+    ],
+    [
+      "LogLevel",
+      "One of:\ninfo\nnone",
+      "Set the log level.\nDeprecated\nNot used in current versions\nof AMPS."
+    ],
+    [
+      "Matches",
+      "integer",
+      "Returned in the\nacknowledgment to a SOW\nquery that indicates number\nof matches."
+    ],
+    [
+      "MaximumMessages",
+      "integer greater than zero",
+      "Specifies the maximum\nnumber of messages within\na batch publish."
+    ],
+    [
+      "MessageID",
+      "string, e.g. MAMPS–XYZ",
+      "Set by AMPS engine to tag\nevery incoming message."
+    ],
+    [
+      "MessageLength",
+      "integer",
+      "Sent with messages that\nhave data (a message body)\nto indicate the number of\nbytes in the message body."
+    ]
+  ]
+}

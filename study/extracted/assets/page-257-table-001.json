@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "STDDEV_POP"
+    ],
+    [
+      "STDDEV_POP(expression)\nCalculates the population standard deviation of an expression.\nParameters\nexpression: The expression for which to calculate the standard deviation.\nReturns\nThe calculated standard deviation."
+    ]
+  ]
+}

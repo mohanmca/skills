@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Field",
+      "Description"
+    ],
+    [
+      "cmd",
+      "The command to be executed.\nValue: heartbeat"
+    ],
+    [
+      "opts",
+      "Specifies whether this command starts the timer or refreshes the timer.\nValid options are:\nstart, immediately followed by an interval - This option specifies that\nthe command starts a timer, and sets the interval at which AMPS will\nexpect heartbeat messages.\nFor example, to specify an interval of 5 seconds, the option is start,5\nbeat - This option specifies that the command refreshes the heartbeat\ntimer."
+    ]
+  ]
+}

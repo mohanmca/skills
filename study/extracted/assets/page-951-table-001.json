@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Metric",
+      "Description",
+      "Type"
+    ],
+    [
+      "priority",
+      "Priority value of this message.",
+      "live\nstate"
+    ],
+    [
+      "leased_to",
+      "If the message is currently leased, the client name of the\nconnection the message is leased to.\nThis field is not present if the message is not currently\nleased.",
+      "live\nstate"
+    ],
+    [
+      "leased_age",
+      "If the message is currently leased, the amount of time, in\nseconds, the message has been leased.\nThis field is not present if the message is not currently\nleased.",
+      "live\nstate"
+    ]
+  ]
+}

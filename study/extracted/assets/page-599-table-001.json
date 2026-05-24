@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "",
+      ""
+    ],
+    [
+      "http://localhost:8085/",
+      "Root URI for Galvanometer."
+    ],
+    [
+      "http://localhost:8085/amps",
+      "Root URI for simple monitoring interface."
+    ]
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Scenario",
+      "AMPS Feature(s)"
+    ],
+    [
+      "Producing aggregate data for a stream of messages.",
+      "State of the World\n(SOW) and Views or\nAggregated\nSubscriptions"
+    ],
+    [
+      "Coordinating work across a set of independent workers\nwho are each assigned discrete tasks.",
+      "Message Queues and\nTransaction Log"
+    ],
+    [
+      "Dividing work among a set of workers who each update a\nportion of a record.",
+      "State of the World\n(SOW) and Delta Publish"
+    ],
+    [
+      "Providing highly available messaging with multiple\nservers providing failover.",
+      "Transaction Log and\nReplication"
+    ]
+  ]
+}

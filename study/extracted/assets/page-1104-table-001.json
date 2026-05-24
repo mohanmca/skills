@@ -1,0 +1,32 @@
+{
+  "rows": [
+    [
+      "Metric",
+      "Short Description"
+    ],
+    [
+      "/transport_rx_queue",
+      "Number of bytes in the transport receive queue for this\nconnection."
+    ],
+    [
+      "/transport_tx_queue",
+      "Number of bytes in the transport send queue for this\nconnection."
+    ],
+    [
+      "/bytes_out_per_sec",
+      "Number of bytes per second sent to the client."
+    ],
+    [
+      "/bytes_in_per_sec",
+      "Number of bytes per second received from the client."
+    ],
+    [
+      "/queue_depth_out",
+      "Number of messages buffered in AMPS for the client."
+    ],
+    [
+      "/queue_max_latency",
+      "Oldest message buffered in AMPS for the client."
+    ]
+  ]
+}

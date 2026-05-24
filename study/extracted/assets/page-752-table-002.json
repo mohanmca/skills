@@ -1,0 +1,39 @@
+{
+  "rows": [
+    [
+      "orders",
+      null,
+      null
+    ],
+    [
+      "Client",
+      "State",
+      "Symbol"
+    ],
+    [
+      "Adam",
+      "Open",
+      "MSFT"
+    ],
+    [
+      "Chris",
+      "Pending",
+      "ORCL"
+    ],
+    [
+      "Adam",
+      "Open",
+      "ORCL"
+    ],
+    [
+      "Adam",
+      "Fulfilled",
+      "IBM"
+    ],
+    [
+      "John",
+      "Open",
+      "MSFT"
+    ]
+  ]
+}

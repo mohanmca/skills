@@ -1,0 +1,36 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "",
+      "The maximum size of this option is 64KB."
+    ],
+    [
+      "replace",
+      "Replace the subscription associated with SubId with another\nsubscription."
+    ],
+    [
+      "top_n=n",
+      "AMPS will provide at most n records, starting at the beginning\nof the result set as defined by the OrderBy header.\nThis option is equivalent to providing a TopN header."
+    ],
+    [
+      "skip_n=n",
+      "AMPS will skip the specified number of records in the result set\nbefore returning results.\nThis option is used with the top_n option to create a paginated\nsubscription."
+    ],
+    [
+      "send_keys",
+      "AMPS will send the SOW keys (that is, the data fields used to\nidentify unique messages in the SOW) back with matching\nmessages from the SOW."
+    ],
+    [
+      "select=[fields]",
+      "Specifies the fields to include in messages provided on this\nsubscription.\nThe contents of this option are a comma-delimited list of\ninclusion specifiers."
+    ],
+    [
+      "timestamp",
+      "AMPS will include a header with the time at which this instance\nof AMPS processed the incoming publish command for this\nmessage."
+    ]
+  ]
+}

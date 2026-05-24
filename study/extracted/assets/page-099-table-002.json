@@ -1,0 +1,40 @@
+{
+  "rows": [
+    [
+      "1 <AMPSConfig>\n2 <Name>test-AMPS-1</Name>\n3\n4 <Transports>\n5 <Transport>\n6 <Name>any-tcp</Name>\n7 <Type>tcp</Type>\n8 <InetAddr>9007</InetAddr>\n9 <MessageType>json</MessageType>\n10 <Protocol>amps</Protocol>\n11 </Transport>"
+    ],
+    [
+      "1"
+    ],
+    [
+      "2"
+    ],
+    [
+      "3"
+    ],
+    [
+      "4"
+    ],
+    [
+      "5"
+    ],
+    [
+      "6"
+    ],
+    [
+      "7"
+    ],
+    [
+      "8"
+    ],
+    [
+      "9"
+    ],
+    [
+      "10"
+    ],
+    [
+      "11"
+    ]
+  ]
+}

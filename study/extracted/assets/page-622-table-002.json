@@ -1,0 +1,32 @@
+{
+  "rows": [
+    [
+      "Variable",
+      "Description"
+    ],
+    [
+      "AMPS_TOPIC",
+      "The topic of the message."
+    ],
+    [
+      "AMPS_DATA",
+      "The data the message contains."
+    ],
+    [
+      "AMPS_DATA_LENGTH",
+      "The length of the data the message contains."
+    ],
+    [
+      "AMPS_BOOKMARK",
+      "The bookmark associated with this message. This is an\nempty string if the message does not have a bookmark."
+    ],
+    [
+      "AMPS_CLIENT_NAME",
+      "The name of the client to which this message was delivered."
+    ],
+    [
+      "AMPS_CORRELATION_ID",
+      "The correlation ID set on the publish command, if one was\nset."
+    ]
+  ]
+}

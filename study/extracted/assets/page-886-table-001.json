@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Utility",
+      "Description"
+    ],
+    [
+      "amps_queues_ack_dump",
+      "Utility for displaying the contents of the file that contains\ninformation on the last acknowledged message for a\ngiven queue."
+    ],
+    [
+      "ampserr",
+      "Utility that provides information about AMPS errors and\nevents."
+    ]
+  ]
+}

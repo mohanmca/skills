@@ -1,0 +1,32 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "TokenEndpoint\n(required)",
+      "URI endpoint of the authorization server. The module will submit\nauthorization requests to this URI.\nThere is no default for this option."
+    ],
+    [
+      "RedirectURI\n(required)",
+      "URI to which the authorization server redirects the user.\nThere is no default for this option."
+    ],
+    [
+      "ClientID\n(required)",
+      "Unique identifier issued by the authorization server for AMPS to\nidentify itself to the authorization server.\nThere is no default for this option."
+    ],
+    [
+      "ClientSecret\n(required)",
+      "Secret used for AMPS to identify itself to the authorization\nserver.\nThere is no default for this option."
+    ],
+    [
+      "GrantType",
+      "Type of OAuth grant or flow to request.\nDefault: authorization_code"
+    ],
+    [
+      "RequestTimeout",
+      "The maximum amount of time to wait for the authorization\nserver to return a result each request, in milliseconds. If the\nserver does not return a response within the specified time, the\nmodule closes the connection and the request fails.\nIncreasing this timeout above the default value may produce\npotential stuck thread warnings if the authentication service is"
+    ]
+  ]
+}

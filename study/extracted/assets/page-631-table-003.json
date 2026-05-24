@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Parameter",
+      "Description"
+    ],
+    [
+      "Topic\n(required)",
+      "The topic to monitor for OOF messages.\nThe topic specified must be a SOW topic, view or conflated topic. This\nparameter supports regular expressions.\nThere is no default for this parameter.\nThis module should not be used with queue topics."
+    ]
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "CLIENT_VERSION"
+    ],
+    [
+      "CLIENT_VERSION()\nReturns the version string reported by the currently connected client.\nParameters\nNone.\nReturns\nThe version string reported by the currently connected client.\nAvailable For\nSubscriptions to a topic or conflated topic.\nEnrichment and preprocessing."
+    ]
+  ]
+}

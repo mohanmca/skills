@@ -1,0 +1,52 @@
+{
+  "rows": [
+    [
+      null,
+      null,
+      "Module Name",
+      null,
+      null,
+      "Usage"
+    ],
+    [
+      null,
+      null,
+      "amps-action-do-",
+      null,
+      null,
+      "Removes statistics that are older than a specified age.\nThis frees space in the statistics file, but does not reduce the\nsize of the file."
+    ],
+    [
+      null,
+      null,
+      null,
+      "amps-action-do-",
+      "",
+      ""
+    ],
+    [
+      null,
+      "",
+      "truncate-",
+      null,
+      null,
+      null
+    ],
+    [
+      "",
+      null,
+      "",
+      "statistics",
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      "amps-action-do-\nvacuum-statistics",
+      null,
+      null,
+      "Deprecated\nThis action has been deprecated in current versions of AMPS\nand will no longer vacuum statistics. 60East recommends\noffline maintenance of the statistics database instead.\nSee the section on AMPS Statistics, in the AMPS User Guide,\nfor details on shrinking the size of a statistics database."
+    ]
+  ]
+}

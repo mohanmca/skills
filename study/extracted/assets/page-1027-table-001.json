@@ -1,0 +1,20 @@
+{
+  "rows": [
+    [
+      "Field",
+      "Description"
+    ],
+    [
+      "cmd",
+      "The command to be executed.\nValue: flush"
+    ],
+    [
+      "client_name",
+      "A string identifier used to give a client a unique ID."
+    ],
+    [
+      "ack_type",
+      "Acknowledgment type for the given command.\nValue is a comma separated list of one or more of the following:\nnone, completed or processed."
+    ]
+  ]
+}

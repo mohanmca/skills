@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "--from=BASE",
+      "The root directory of the AMPS installation being migrated.\nThis is the directory in which you usually start the ampServer\nprocess. Any relative paths in the config file will be evaluated\nrelative to this directory."
+    ],
+    [
+      "--config=CONFIG",
+      "The xml configuration file for the AMPS server being migrated."
+    ],
+    [
+      "--work-\ndir=WORK_DIR",
+      "The working directory from which the ampServer is invoked."
+    ],
+    [
+      "--tmp-\ndir=TMP_DIR",
+      "The temporary directory where upgrade files are written while\nthe upgrade process is underway."
+    ]
+  ]
+}

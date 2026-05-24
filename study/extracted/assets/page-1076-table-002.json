@@ -1,0 +1,20 @@
+{
+  "rows": [
+    [
+      "Header",
+      "Comment"
+    ],
+    [
+      "topic\n(required)",
+      "Sets the topic to query and subscribe to. The topic specified can be the\nliteral topic name, or a regular expression that matches multiple topics."
+    ],
+    [
+      "orderby",
+      "Specifies how to order the results within the paginated result set. If the\nOrderBy is not provided, the results are ordered by the SowKey for the\nmessages."
+    ],
+    [
+      "opts",
+      "A comma-separated list of options for the command. Set the number of\nresults returned with top_n, and the starting point within the result set\nwith skip_n. For example, to display records 31-50 of the result set, you\ncould provide the following option:\ntop_n=20,skip_n=30,oof\nThis tells AMPS to skip the first 30 records of the result set, and then\nprovide the top 20 records from the remaining results. Out of focus\nnotifications will be provided."
+    ]
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Field",
+      "Value"
+    ],
+    [
+      "logon",
+      "Specifies permission for an application to log on to AMPS.\nWhen this field is present, the value of the field must be a boolean true or\nfalse."
+    ],
+    [
+      "topic",
+      "Controls access to topics within AMPS.\nWhen this field is present, the value of the field must be a permission list, as\ndescribed below.\nIf this field is not present, the user cannot publish to or subscribe to any\ntopics."
+    ]
+  ]
+}

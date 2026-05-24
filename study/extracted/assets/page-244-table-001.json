@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "FALSE_VALUE"
+    ],
+    [
+      "FALSE_VALUE()\nReturns a boolean false value. This function is most useful for constructing values in\nmessage types that have a distinct type for boolean values. In the AMPS expression\nlanguage, false is equivalent to a literal 0.\nParameters\nNone.\nReturns\nA boolean false value."
+    ]
+  ]
+}

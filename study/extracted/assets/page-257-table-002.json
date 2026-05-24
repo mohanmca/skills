@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "STDDEV_SAMP"
+    ],
+    [
+      "STDDEV_SAMP(expression)\nCalculates the sample standard deviation of an expression.\nParameters\nexpression: The expression for which to calculate the standard deviation.\nReturns\nThe calculated standard deviation."
+    ]
+  ]
+}

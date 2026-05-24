@@ -1,0 +1,32 @@
+{
+  "rows": [
+    [
+      "Field",
+      "Description"
+    ],
+    [
+      "",
+      "CommandId in the ack response header."
+    ],
+    [
+      "filter",
+      "Content filter expression.\nSee the Content Filtering chapter in the AMPS User Guide for more\ninformation on using content filters."
+    ],
+    [
+      "order_by",
+      "Return the SOW results sorted by the specified fields.\nFields are a comma-delimited list of AMPS identifiers, and may\noptionally include a sort specifier, ASC or DESC."
+    ],
+    [
+      "query_id",
+      "Unique identifier which is returned as part of the response delivered\nback to the client."
+    ],
+    [
+      "sow_keys",
+      "A comma-delimited list of SowKeys that identify the messages to\nreturn from the query."
+    ],
+    [
+      "top_n",
+      "Return up to the number of messages specified from the SOW query."
+    ]
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "rows": [
+    [
+      null,
+      null,
+      "amps-default-",
+      "",
+      "Allows any\nimplicit log"
+    ],
+    [
+      "",
+      "",
+      "",
+      "",
+      null
+    ],
+    [
+      null,
+      null,
+      "authentication-module",
+      null,
+      null
+    ]
+  ]
+}

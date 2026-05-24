@@ -1,0 +1,32 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "",
+      "not appear in the aggregated message, even if the field is in the\nunderlying message.\nWhen this option is provided, a projection must also be provided.\nWhen the topic has History enabled, this option can be used with\na bookmark to aggregate the historical state of the SOW."
+    ],
+    [
+      "oof",
+      "Send on OOF message for records which have fallen out of focus\nfrom the original subscription."
+    ],
+    [
+      "projection=\n[fields]",
+      "For use with aggregated SOW queries.\nSpecifies a comma-delimited set of fields to project, within\nbrackets. Each entry has the format described in the AMPS User\nGuide.\nThis option must contain an entry for every field in the aggregated\nmessage. If there is no entry for a field in this option, that field will\nnot appear in the aggregated message, even if the field is in the\nunderlying message.\nThere is no default for this option. When this option is provided, a\ngrouping must also be provided.\nWhen the topic has History enabled, this option can be used with\na bookmark to aggregate the historical state of the SOW.\nThe maximum size of this option is 64KB."
+    ],
+    [
+      "replace",
+      "Replace the subscription associated with SubId with another\nsubscription.\nWhen provided as part of sow_and_subscribe, AMPS runs a SOW\nquery for the new subscription."
+    ],
+    [
+      "skip_n=n",
+      "Skips the number of messages specified before returning results.\nA command that provides this option must also provide a top_n\noption (or header) and an OrderBy header."
+    ],
+    [
+      "top_n=n",
+      "Return up to the number of messages specified from the SOW\nquery."
+    ]
+  ]
+}

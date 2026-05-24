@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Parameter",
+      "Description"
+    ],
+    [
+      "MessageType\n(required)",
+      "The message type of the topic to monitor for publishes.\nThere is no default for this parameter."
+    ],
+    [
+      "MessageSource",
+      "The source to monitor for publishes. The source of the message\ndefaults to all, which monitors both publishes directly to this\nAMPS instance and messages received via replication.\nThis parameter also accepts local for when the message source is\npublished directly to this AMPS instance and replicated for\nmessages received via replication."
+    ],
+    [
+      "Filter",
+      "Sets the filter to apply.\nOnly messages that match this filter will cause the action to run."
+    ],
+    [
+      "Options",
+      "Sets the options to apply when listening for messages.\nThis action supports any option that would be supported by the\nsubscribe command when not using a bookmark."
+    ]
+  ]
+}

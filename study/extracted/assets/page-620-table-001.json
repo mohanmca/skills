@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Parameter",
+      "Description"
+    ],
+    [
+      "Topic\n(required)",
+      "The name of the topic to monitor for publishes.\nThis parameter supports regular expressions.\nThere is no default for this parameter."
+    ]
+  ]
+}

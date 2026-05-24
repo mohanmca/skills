@@ -1,0 +1,40 @@
+{
+  "rows": [
+    [
+      "Category",
+      "Function Types Provided"
+    ],
+    [
+      "String",
+      "String Comparison Functions"
+    ],
+    [
+      "",
+      "Converting Arrays to Strings\n(see ARRAY_TO_STRING)"
+    ],
+    [
+      "",
+      "Concatenating Strings"
+    ],
+    [
+      "",
+      "Managing String Case"
+    ],
+    [
+      "",
+      "Replacing Text in Strings"
+    ],
+    [
+      "",
+      "String Manipulation Functions"
+    ],
+    [
+      "Date and Time",
+      "Date and Time Functions\nSee also Legacy Messaging Compatibility Functions"
+    ],
+    [
+      "Array Reduce",
+      "Array Reduce Functions"
+    ]
+  ]
+}

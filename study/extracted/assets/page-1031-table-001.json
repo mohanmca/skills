@@ -1,0 +1,36 @@
+{
+  "rows": [
+    [
+      "Field",
+      "Description"
+    ],
+    [
+      "cmd",
+      "Type of message.\nAlways sow, as encoded by the protocol."
+    ],
+    [
+      "topic",
+      "The topic from which the records were produced."
+    ],
+    [
+      "sow_key",
+      "An AMPS-created identifier for this message."
+    ],
+    [
+      "batch_size",
+      "The number of records returned in a single sow batch."
+    ],
+    [
+      "timestamp",
+      "The time at which AMPS processed the message. This is returned in\nISO-8601 format. This timestamp has microsecond precision. Fractions\nof a second are represented as a decimal value."
+    ],
+    [
+      "query_id",
+      "The QueryId of the query that produced this message."
+    ],
+    [
+      "msg_len",
+      "The length of the first SOW message in the data portion of this\nmessage."
+    ]
+  ]
+}

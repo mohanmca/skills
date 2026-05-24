@@ -1,0 +1,29 @@
+{
+  "rows": [
+    [
+      "Reason Field",
+      "Description",
+      "Message Contents"
+    ],
+    [
+      "deleted",
+      "The message was deleted from the\ntopic.",
+      "previous message"
+    ],
+    [
+      "expired",
+      "The message was removed from the\ntopic due to expiration.",
+      "previous message"
+    ],
+    [
+      "match",
+      "The message no longer matches the\ncontent filter or has moved outside of\nthe record set requested.",
+      "updated message\nthat no longer\nmatches subscription\ncriteria"
+    ],
+    [
+      "entitlement",
+      "The message has changed such that\nthe user is not entitled to see the\nupdated message.",
+      "previous message"
+    ]
+  ]
+}

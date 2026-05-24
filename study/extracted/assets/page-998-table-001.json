@@ -1,0 +1,36 @@
+{
+  "rows": [
+    [
+      "Field",
+      "Description"
+    ],
+    [
+      "query_id",
+      "Identifier used to identify the client's SOW topic query.\nThis identifier will be added to all messages representing a\nresponse to the sow_and_subscribe command."
+    ],
+    [
+      "send_oof",
+      "Messages that have fallen out of focus from the subscription\nare sent to the client.\nDefault: false"
+    ],
+    [
+      "send_keys",
+      "Option to instruct AMPS that the client would like to receive\nthe SowKey back."
+    ],
+    [
+      "send_matching_ids",
+      "If true, subscription identifiers will be sent for a matched\nmessage."
+    ],
+    [
+      "sow_keys",
+      "A comma-delimited list of SowKeys that identify the messages\nto return from the query."
+    ],
+    [
+      "sub_id",
+      "The subscription ID for this command. When provided with a\nnew subscription, this is the identifier that AMPS will use for\nthe subscription.\nWhen provided with the replace option, this field specifies\nthe subscription to replace.\nWhen provided with a pause or resume option, this field\nspecifies the subscriptions to pause or resume.\nFor a new subscription, the AMPS clients will generate a\nsubscription ID if one is not provided."
+    ],
+    [
+      "top_n",
+      "Return up to the number of messages specified from the SOW\nquery."
+    ]
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "rows": [
+    [
+      "Element",
+      "Description",
+      "Type"
+    ],
+    [
+      "conflation",
+      "The inline conflation mode of the view.",
+      "fixed"
+    ],
+    [
+      "conflation_ratio",
+      "The ratio of incoming to conflated updates. (If there\nare no updates, this is not calculated and shows as\n0.0.)",
+      "snapshot"
+    ],
+    [
+      "grouping",
+      "List of one or more fields, which are used to\ndetermine message aggregation.",
+      "fixed"
+    ],
+    [
+      "message_type",
+      "The message type of messages produced by this\nview.",
+      "fixed"
+    ],
+    [
+      "projection",
+      "The formula defined in the AMPS config for the\ncomputed transformation of one or more fields onto\na new field.",
+      "fixed"
+    ],
+    [
+      "queue_depth",
+      "The number of updates to the view that are\npending, but have not yet been applied.",
+      "snapshot"
+    ],
+    [
+      "topic",
+      "The name of the new AMPS topic created by this\nview.",
+      "fixed"
+    ],
+    [
+      "underlying_topic",
+      "The source topic used to compute the projected\nview.",
+      "fixed"
+    ]
+  ]
+}

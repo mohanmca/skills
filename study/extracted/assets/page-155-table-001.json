@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Path",
+      "Value"
+    ],
+    [
+      "/outer/middle/inner",
+      "5"
+    ]
+  ]
+}

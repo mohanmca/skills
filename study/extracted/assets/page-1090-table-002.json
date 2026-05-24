@@ -1,0 +1,20 @@
+{
+  "rows": [
+    [
+      "Header",
+      "Comment"
+    ],
+    [
+      "topic\n(required)",
+      "Sets the topic to subscribe to. The topic specified can be the literal topic\nname, or a regular expression that matches multiple topics."
+    ],
+    [
+      "SubId\n(required)",
+      "A comma-delimited list of subscription IDs to start."
+    ],
+    [
+      "Options",
+      "A comma-delimited list of options for the command. To resume a\nsubscription, the options must include resume."
+    ]
+  ]
+}

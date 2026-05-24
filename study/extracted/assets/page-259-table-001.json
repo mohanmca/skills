@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "UNIQUE"
+    ],
+    [
+      "UNIQUE(expression)\nDetermines if all of the values in a given field match within the group.\nParameters\nexpression: The expression to check for uniqueness.\nReturns\nIf all of the values match, returns the value. Otherwise, returns NULL.\nNull values are not included in aggregate expressions with AMPS, nor in ANSI SQL.\nCOUNT will count only non-null values, SUM will add only non-null values, AVG will\naverage only non-null values, and MIN and MAX ignore NULL values, and so on.\nMIN and MAX can operate on either numbers or strings, or a combination of the two.\nAMPS compares values using the principles described for comparison operators. For\nMIN and MAX, AMPS determines order based on these rules:\nNumbers sort in numeric order.\nString values sort in ASCII order.\nWhen comparing a number to a string, convert the string to a number, and use a\nnumeric comparison. If that is not successful, the value of the string is higher\nthan the value of the number.\nFor example, given a field that has the following values across a set of messages:\n24, 020, 'cat', 75, 1.3, 200, '75', '42'\nMIN will return 1.3, MAX will return 'cat'. Notice that different message types may\nhave different support for converting strings to numeric values: AMPS relies on the\nparsing done by the message type to determine the numeric value of a string."
+    ]
+  ]
+}

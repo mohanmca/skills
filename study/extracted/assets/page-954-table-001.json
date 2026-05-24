@@ -1,0 +1,49 @@
+{
+  "rows": [
+    [
+      "Element",
+      "Description",
+      "Type"
+    ],
+    [
+      "delete_count",
+      "Number of deletes processed by the SOW.",
+      "cumulative"
+    ],
+    [
+      "deletes_per_sec",
+      "Number of deletes per second processed\nby the SOW.",
+      "interval\naverage"
+    ],
+    [
+      "device",
+      "Device the topic is stored on, if applicable.",
+      "fixed"
+    ],
+    [
+      "historical_granularity",
+      "The granularity at which the SOW\nmaintains history for this topic (if set).",
+      "fixed"
+    ],
+    [
+      "historical_window",
+      "The window for which the SOW maintains\nhistory for this topic (if set).",
+      "fixed"
+    ],
+    [
+      "insert_count",
+      "Count of the number of new records\ninserted into this topic.",
+      "cumulative"
+    ],
+    [
+      "inserts_per_sec",
+      "Rate of inserts into this topic.",
+      "interval\naverage"
+    ],
+    [
+      "memory_bytes",
+      "The number of bytes of memory used for\nthis topic.\nThis metric includes:\nmessages stored in the topic\nmetadata for the messages in the\ntopic\nindices for the topic (both memo\nindices and hash indices)\nNotice that, particularly when the topic is\nheavily indexed, this can be larger than\nthe message size. Indices are not\npersisted, so this can also be larger than\nthe space used for persisting the topic\ndata.\nSee the section on Estimating AMPS\nInstance Memory Usage for details.",
+      "snapshot"
+    ]
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "ANY"
+    ],
+    [
+      "ANY(expression)\nReturns one of the set of values in the expression.\nParameters\nexpression: The expression to evaluate.\nReturns\nOne of the set of values in the expression."
+    ]
+  ]
+}

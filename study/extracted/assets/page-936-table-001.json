@@ -1,0 +1,29 @@
+{
+  "rows": [
+    [
+      "Metric",
+      "Description",
+      "Type"
+    ],
+    [
+      "caches",
+      "Information about AMPS memory caches.",
+      "(see caches)"
+    ],
+    [
+      "paginations",
+      "Information about paginated result sets.",
+      "(see paginations)"
+    ],
+    [
+      "rss",
+      "The resident set size of the AMPS process.",
+      "snapshot"
+    ],
+    [
+      "vmsize",
+      "The virtual memory size of the AMPS process.",
+      "snapshot"
+    ]
+  ]
+}

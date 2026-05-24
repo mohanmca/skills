@@ -1,0 +1,20 @@
+{
+  "rows": [
+    [
+      "Scenario",
+      "AMPS Feature(s)"
+    ],
+    [
+      "Automatically recover subscription\nwithout replaying missed messages.",
+      "HAClient / Subscribe"
+    ],
+    [
+      "Recover subscription and replay any\nmessages missed while application is\noffline.",
+      "HAClient / Transaction Log / Bookmark\nSubscription (refer to the relevant Client\nGuide) / Bookmark Store (refer to the\nrelevant Client Guide)"
+    ],
+    [
+      "Recover subscription, get current\nstate of a set of messages upon\nrecovery and receive updates to that\nstate.",
+      "HAClient / State of the World (SOW) / SOW\nand Subscribe command"
+    ]
+  ]
+}

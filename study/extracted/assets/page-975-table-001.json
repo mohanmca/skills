@@ -1,0 +1,20 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "none",
+      "This is the default Options type."
+    ],
+    [
+      "ack_conflation=interval",
+      "When provided, the interval at which AMPS conflates\npersisted acknowledgment messages for publishes\nsent on this connection.\nAMPS conflates persisted acknowledgment messages\nwhen a transaction log is configured for the instance.\nDefault: 1s if no option is provided."
+    ],
+    [
+      "pretty",
+      "When provided and set to true, AMPS returns a\nformatted representation of the contents of the built-in\nbinary message types rather than the original data."
+    ]
+  ]
+}

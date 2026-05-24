@@ -1,0 +1,32 @@
+{
+  "rows": [
+    [
+      "Variable",
+      "Description"
+    ],
+    [
+      "AMPS_TOPIC",
+      "The topic of the message."
+    ],
+    [
+      "AMPS_DATA",
+      "The data the message contains."
+    ],
+    [
+      "AMPS_DATA_LENGTH",
+      "The length of the data that the message contains."
+    ],
+    [
+      "AMPS_BOOKMARK",
+      "The bookmark associated with this message."
+    ],
+    [
+      "AMPS_TIMESTAMP",
+      "The time at which the message was processed by AMPS."
+    ],
+    [
+      "AMPS_CLIENT_NAME",
+      "The name of the client from which the message was published."
+    ]
+  ]
+}

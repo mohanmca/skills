@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Specifier",
+      "Meaning"
+    ],
+    [
+      "-",
+      "Explicitly exclude the field for the identifier immediately following."
+    ],
+    [
+      "+",
+      "Explicitly include the field for the identifier immediately following."
+    ]
+  ]
+}

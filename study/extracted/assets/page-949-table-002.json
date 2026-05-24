@@ -1,0 +1,19 @@
+{
+  "rows": [
+    [
+      "Metric",
+      "Description",
+      "Type"
+    ],
+    [
+      "cursor_id",
+      "The internal ID of the cursor.",
+      "live\nstate"
+    ],
+    [
+      "state",
+      "Current state of the cursor.",
+      "live\nstate"
+    ]
+  ]
+}

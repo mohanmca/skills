@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "COSH"
+    ],
+    [
+      "COSH(number)\nReturns the hyperbolic cosine of the provided number.\nParameters\nnumber: The number to operate on.\nReturns\nThe hyperbolic cosine of the number.\nExample\nCOSH(/x)"
+    ]
+  ]
+}

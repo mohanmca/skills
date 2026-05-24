@@ -1,0 +1,20 @@
+{
+  "rows": [
+    [
+      "Optional Element",
+      "Description"
+    ],
+    [
+      "RequiredParameter",
+      "Specifies that a request to run this action must include the\nspecified query parameter. If the request does not include this\nitem as part of the query parameters, the request will return\nan error rather than executing the action."
+    ],
+    [
+      "Name",
+      "Specifies the name to use for display purposes for this\nresource."
+    ],
+    [
+      "Description",
+      "Specifies a description to use for display purposes for this\nresource."
+    ]
+  ]
+}

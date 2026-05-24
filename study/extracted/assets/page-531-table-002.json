@@ -1,0 +1,52 @@
+{
+  "rows": [
+    [
+      null,
+      null,
+      "Utility",
+      null,
+      null,
+      "Description"
+    ],
+    [
+      null,
+      null,
+      "amps-",
+      null,
+      null,
+      "Utility for extracting a subset of information from an AMPS sqlite3\ndatabase."
+    ],
+    [
+      null,
+      null,
+      null,
+      "amps-",
+      "",
+      "Utility"
+    ],
+    [
+      null,
+      "",
+      "sqlite3-",
+      null,
+      null,
+      ""
+    ],
+    [
+      "",
+      null,
+      "",
+      "report",
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      "amps-\nsqlite3",
+      null,
+      null,
+      "Utility for easily querying the AMPS statistics database.\nProvides functions for easily working with AMPS statistics\ntimestamps, and automatically handles joins between the STATIC\nand DYNAMIC tables in the AMPS statistics schema."
+    ]
+  ]
+}

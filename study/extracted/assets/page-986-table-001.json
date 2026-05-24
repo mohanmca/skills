@@ -1,0 +1,20 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "",
+      "Notice that this option does not set the starting point for a\nbookmark subscription: use the Bookmark header for that\npurpose.\nThis option is not required to receive bookmarks for a\nbookmark subscription. Those subscriptions always include\nbookmarks on each publish message."
+    ],
+    [
+      "bookmark_not_found",
+      "Specifies how AMPS should interpret a failure to locate one\nof the bookmarks provided in the starting point for the\nbookmark subscription.\nThis option should be one of three parameters:\nepoch specifies that the subscription will start at the\nbeginning of the transaction log.\nnow specifies that the subscription will start at the end\nof the transaction log.\nfail indicates that the replay will fail if none of the\nbookmarks in the starting point is present.\nIf this option is not specified in a bookmark subscription, the\ndefault value of now is used.\nThis option is unsupported on subscriptions that are not\nbookmark replays."
+    ],
+    [
+      "conflation=n",
+      "Specifies whether to conflate this subscription.\nThe value provided can be a time interval, auto, or none.\nWhen present and set to a value other than none, enables\nconflation for the subscription.\nCan also be set to auto, which requests that AMPS attempt\nto determine an appropriate conflation interval based on\nclient consumption.\nRecognizes the same time specifiers used in the AMPS\nconfiguration file (for example, 100ms or 1s or 1m).\nDefault: none"
+    ]
+  ]
+}

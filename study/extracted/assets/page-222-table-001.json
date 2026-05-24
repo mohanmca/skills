@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "ATAN"
+    ],
+    [
+      "ATAN(number)\nReturns the arctangent of the provided number.\nParameters\nnumber: The number to operate on.\nReturns\nThe arctangent of the number.\nExample\nATAN(/x)"
+    ]
+  ]
+}

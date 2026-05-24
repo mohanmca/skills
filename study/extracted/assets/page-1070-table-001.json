@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Header",
+      "Comment"
+    ],
+    [
+      "Topic\n(required)",
+      "Sets the topic to query. The SOW query returns all messages in the SOW.\nThe topic specified can be the literal topic name, or a regular expression\nthat matches multiple topics."
+    ]
+  ]
+}

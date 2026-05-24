@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Field",
+      "Description"
+    ],
+    [
+      "",
+      "The contents of this header must consist of characters that are\nlegal in Base64 encoding."
+    ]
+  ]
+}

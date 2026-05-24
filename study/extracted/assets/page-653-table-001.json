@@ -1,0 +1,32 @@
+{
+  "rows": [
+    [
+      "Parameter",
+      "Description"
+    ],
+    [
+      "Topic\n(required)",
+      "The name of the topic to query.\nThis topic must be a SOW topic, a view, a queue, or a conflated topic.\nThere is no default for this parameter.\nThis parameter supports regular expressions."
+    ],
+    [
+      "MessageType\n(required)",
+      "The message type of the topic to query.\nThere is no default for this parameter"
+    ],
+    [
+      "Filter\n(required)",
+      "Set the filter to apply.\nIf a Filter is present, only messages matching that filter will be\nreturned by the query."
+    ],
+    [
+      "CaptureData\n(required)",
+      "Sets the name of the variable within which AMPS will store the first\nmessage returned."
+    ],
+    [
+      "DefaultData",
+      "If no records are found, AMPS stores the DefaultData in the variable\nspecified by CaptureData."
+    ],
+    [
+      "OrderBy",
+      "An OrderBy expression to use to order the results returned by the\nquery.\nFor example, to order in descending order of the /date field in the\nmessages, you would provide an OrderBy option of /date DESC."
+    ]
+  ]
+}

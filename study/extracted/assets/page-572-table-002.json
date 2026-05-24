@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Parameter",
+      "Description"
+    ],
+    [
+      "database\n(required)",
+      "The sqlite3 database file to query."
+    ],
+    [
+      "size\n(required)",
+      "Print the size of the statistics table."
+    ]
+  ]
+}

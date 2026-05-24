@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "LOG2\nLOG2(number)"
+    ],
+    [
+      "Returns the base-2 logarithm of the provided number.\nParameters\nnumber: The number to operate on.\nReturns\nThe base-2 logarithm of the number.\nExample\nLOG2(/recordSize)"
+    ]
+  ]
+}

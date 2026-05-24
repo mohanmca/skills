@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Filter",
+      "Evaluates as"
+    ],
+    [
+      "/data = /other",
+      "TRUE, a value in /data equals a value in /other"
+    ],
+    [
+      "/data != /other",
+      "TRUE, a value in /data does not equal a value in /other"
+    ]
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "",
+      "that the web service provides a certificate that can be\nverified with the configured CAKey.\nDefault: false"
+    ],
+    [
+      "AllowSelfSigned",
+      "Specifies whether AMPS will accept self-signed certificates\nfor https connections.\nDefault: false"
+    ]
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "On Event",
+      "Action"
+    ],
+    [
+      "SIGQUIT",
+      "amps-action-do-minidump"
+    ]
+  ]
+}

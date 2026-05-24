@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "SQRT"
+    ],
+    [
+      "SQRT(number)\nReturns the square root of the provided number.\nParameters\nnumber: The number to find the square root of.\nReturns\nThe square root of the number.\nExample\nSQRT(2304)"
+    ]
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "rows": [
+    [
+      "Metric",
+      "Description",
+      "Type"
+    ],
+    [
+      "",
+      "This does not count messages already\nwritten to the transmit buffer\n(transport_tx_queue will show messages\nwritten to the transmit buffer that have\nnot yet been sent).",
+      ""
+    ],
+    [
+      "remote_address",
+      "Address and port of the remote side of the\nclient connection.",
+      "fixed"
+    ],
+    [
+      "subscription_count",
+      "Number of subscriptions currently active\nfor the client.",
+      "snapshot"
+    ],
+    [
+      "tcp_zero_window_advert",
+      "Shows whether this client is currently\nadvertising a zero window size.\nThis is 1 if the client is advertising a\nwindows size of zero, set to 0 if the client\nis advertising any other value or if the\nclient connection does not use TCP (for\nexample, the client uses UDS to connect\nto AMPS).",
+      "snapshot"
+    ],
+    [
+      "transport_rx_queue",
+      "Number of bytes in the transport receive\nbuffer (typically the TCP buffer) for this\nclient.\nThis measures messages arriving from\nthe client.",
+      "snapshot"
+    ],
+    [
+      "transport_tx_queue",
+      "Number of bytes in transport transmit\nbuffer (typically the TCP buffer) for this\nclient.\nThis measures messages being sent to\nthe client.",
+      "snapshot"
+    ]
+  ]
+}

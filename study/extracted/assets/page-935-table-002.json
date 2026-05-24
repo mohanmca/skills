@@ -1,0 +1,44 @@
+{
+  "rows": [
+    [
+      "Metric",
+      "Description",
+      "Type"
+    ],
+    [
+      "bytes_written",
+      "Number of bytes written to syslog.",
+      "cumulative"
+    ],
+    [
+      "exclude_errors",
+      "Errors which are excluded from logging.",
+      "fixed"
+    ],
+    [
+      "facility",
+      "Integer enumeration of the logging facility used by\nsyslog.",
+      "fixed"
+    ],
+    [
+      "ident",
+      "Syslog name of the logging instance.",
+      "fixed"
+    ],
+    [
+      "include_errors",
+      "Errors which are included during logging.",
+      "fixed"
+    ],
+    [
+      "log_levels",
+      "Log level used to control logging output.",
+      "fixed"
+    ],
+    [
+      "logopt",
+      "Bitfield of possible log options included.\nThese values are configured in the configuration file\nin the <Options> tag.",
+      "fixed"
+    ]
+  ]
+}

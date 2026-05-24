@@ -1,0 +1,44 @@
+{
+  "rows": [
+    [
+      "Element",
+      "Description",
+      "Type"
+    ],
+    [
+      "file_system_free_percent",
+      "Percentage of the filesystem\ncurrently free.",
+      "snapshot"
+    ],
+    [
+      "mount_point",
+      "The mount point for this filesystem.",
+      "fixed"
+    ],
+    [
+      "in_progress",
+      "Number of I/O requests waiting to be\nprocessed.",
+      "snapshot"
+    ],
+    [
+      "read_await",
+      "Average read time completion in\nmilliseconds.",
+      "interval\naverage"
+    ],
+    [
+      "write_await",
+      "Average write time completion in\nmilliseconds.",
+      "interval\naverage"
+    ],
+    [
+      "read_bytes_per_sec",
+      "Average bytes per second read.",
+      "interval\naverage"
+    ],
+    [
+      "write_bytes_per_sec",
+      "Average bytes per second written.",
+      "interval\naverage"
+    ]
+  ]
+}

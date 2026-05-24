@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Method",
+      "Description"
+    ],
+    [
+      "setSerializationSchema",
+      "Sets the serialization schema that will be used to serialize\nmessages for AMPS."
+    ]
+  ]
+}

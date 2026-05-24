@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Reason",
+      "Description"
+    ],
+    [
+      "deleted",
+      "The message was deleted."
+    ],
+    [
+      "expired",
+      "The message expired."
+    ],
+    [
+      "match",
+      "The message no longer matches the filter for the subscription or (for\npaginated subscriptions) no longer matches the pagination window."
+    ],
+    [
+      "entitlement",
+      "The access to the messaged changed, such that the user no longer\nhas permission to receive the message."
+    ]
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "ACOS"
+    ],
+    [
+      "ACOS(number)\nReturns the arccosine of the provided number.\nParameters\nnumber: The number to operate on.\nReturns\nThe arccosine of the number.\nExample\nACOS(/x)"
+    ]
+  ]
+}

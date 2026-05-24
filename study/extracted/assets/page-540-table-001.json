@@ -1,0 +1,40 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Definition"
+    ],
+    [
+      "server\n(required)",
+      "AMPS server to connect to."
+    ],
+    [
+      "topic\n(required)",
+      "Topic to subscribe to."
+    ],
+    [
+      "ack",
+      "Enable acknowledgments when receiving from a queue.\nNotice that, when this option is provided, spark acknowledges\nmessages from the queue, signaling to AMPS that the message has\nbeen fully processed. (See the chapter on Message Queues in this\nguide for more information.)"
+    ],
+    [
+      "backlog",
+      "Request a max_backlog of greater than 1 when receiving from a\nqueue. (See the chapter on Message Queues in this guide for more\ninformation.)"
+    ],
+    [
+      "copy",
+      "Publishes records to the secondary server specified."
+    ],
+    [
+      "delta",
+      "Use delta subscription (sends a delta_subscribe command to\nAMPS)."
+    ],
+    [
+      "filter",
+      "Content filter to use."
+    ],
+    [
+      "format",
+      "Optional format used for displaying messages. May contain literal\nseparator characters mixed with format tags.\nAllowed tags are:\n{bookmark}, {command}, {correlation_id}, {data},\n{expiration}, {lease_period}, {length}, {sowkey}, {user_id},\n{timestamp}, {topic}"
+    ]
+  ]
+}

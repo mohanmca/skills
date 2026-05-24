@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "--verbose",
+      "Print additional details on each operation to stdout."
+    ],
+    [
+      "--trace",
+      "Print the operations that amps_upgrade performs to stdout."
+    ]
+  ]
+}

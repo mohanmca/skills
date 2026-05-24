@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Configuration\nTag",
+      "Replication\nType",
+      "Description",
+      "Message\nOwnership"
+    ],
+    [
+      "Queue",
+      "Distributed\nqueue",
+      "Fully distributed queue.",
+      "Instance that\nreceived the\ninitial publish\nfrom an\napplication.\nOther\ninstances may\nrequest\nownership."
+    ]
+  ]
+}

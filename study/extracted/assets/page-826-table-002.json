@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Field",
+      "Value"
+    ],
+    [
+      "admin",
+      "Controls access to the administrative interface.\nWhen this field is present, the value of the field must be a permission list, as\ndescribed below.\nIf this field is not present, the user has no access to the administrative\ninterface.\nNotice that, because the Admin console uses HTTP, there is no equivalent of\nthe logon or replication-logon permission for the Admin transport."
+    ]
+  ]
+}

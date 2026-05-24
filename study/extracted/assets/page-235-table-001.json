@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "LEASE_COUNT"
+    ],
+    [
+      "LEASE_COUNT()\nFor a message in a queue, returns the number of times the message has been\nleased from this instance as a double. Returns NULL for a message that is not in a\nqueue.\nNotice that this counter is set based on leases from the local instance. This counter\nis reset when the instance restarts, and does not track leases from other instances.\nParameters\nNone.\nReturns\nThe number of times the message has been leased.\nAvailable For\nQueries of a message queue\nSubscription to a message queue\nSOW delete by filter for a message queue"
+    ]
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Acknowledgment\nType",
+      "Description"
+    ],
+    [
+      "persisted",
+      "The results of the command have been persisted to\ndurable storage."
+    ],
+    [
+      "processed",
+      "AMPS has processed the command."
+    ],
+    [
+      "received",
+      "AMPS has received the command."
+    ],
+    [
+      "stats",
+      "AMPS returns statistics associated with the command."
+    ]
+  ]
+}

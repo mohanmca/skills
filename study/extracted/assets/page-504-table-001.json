@@ -1,0 +1,32 @@
+{
+  "rows": [
+    [
+      "Level",
+      "Description"
+    ],
+    [
+      "developer",
+      "Information on the internal state of AMPS, typically used by the AMPS\ndevelopers.\nMessages logged at this level do not indicate issues, but instead report\nthe detailed state of the AMPS process."
+    ],
+    [
+      "trace",
+      "All inbound/outbound data.\nDevelopment and test instances are recommended to log at this level.\nNotice that logging at this level records information in and out of the\ninstance, including pretty-printed message data and the full content of\ncommands such as logon. Logs recorded at this level should be\nprotected in production instances."
+    ],
+    [
+      "stats",
+      "Statistics messages."
+    ],
+    [
+      "info",
+      "General information messages.\nProduction applications are recommended to log at this level or more\nverbose."
+    ],
+    [
+      "warning",
+      "Problems that AMPS tries to correct that are often harmless."
+    ],
+    [
+      "error",
+      "Events in which processing had to be aborted.\nEvents at this level often indicate that a client will receive incomplete\nor incorrect results (for example, a subscription could not be entered\nbecause an unknown option was provided)."
+    ]
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "",
+      "slow to respond.\nDefault: 5000"
+    ],
+    [
+      "RetryCount",
+      "Sets the number of times to retry the request if retrieving the\nresponse fails for any reason.\nDefault: 0 (only try once)"
+    ],
+    [
+      "HTTPHeader",
+      "Sets a header to add to the HTTP request.\nThe configuration can specify any number of HTTPHeader\nelements, and the module will provide each of the specified\nheaders with the request.\nThere is no default for this option. If no HTTPHeader option is\nincluded, the module provides a standard set of headers."
+    ]
+  ]
+}

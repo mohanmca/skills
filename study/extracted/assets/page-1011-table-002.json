@@ -1,0 +1,20 @@
+{
+  "rows": [
+    [
+      "Command",
+      "Description"
+    ],
+    [
+      "publish",
+      "A message published to AMPS."
+    ],
+    [
+      "oof",
+      "Returned when the oof option is requested on the command, the\nsubscription is to a topic in the SOW, and the subscription is not a\nbookmark subscribe."
+    ],
+    [
+      "ack",
+      "Acknowledgments requested, as described in the following section."
+    ]
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "CLIENT_NAME"
+    ],
+    [
+      "CLIENT_NAME()\nReturns the name of the currently connected client.\nParameters\nNone.\nReturns\nThe name of the currently connected client.\nAvailable For\nSubscriptions to a topic or conflated topic.\nEnrichment and preprocessing."
+    ]
+  ]
+}

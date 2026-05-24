@@ -1,0 +1,20 @@
+{
+  "rows": [
+    [
+      "Type",
+      "Description"
+    ],
+    [
+      "null",
+      "Empty field"
+    ],
+    [
+      "string",
+      "String of bytes\nBFlat does not specify the encoding of a string; this is up to the application\nto determine."
+    ],
+    [
+      "binary",
+      "Untyped sequence of bytes"
+    ]
+  ]
+}

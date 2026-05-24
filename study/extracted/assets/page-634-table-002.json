@@ -1,0 +1,36 @@
+{
+  "rows": [
+    [
+      "Variable",
+      "Description"
+    ],
+    [
+      "AMPS_TOPIC",
+      "The topic of the message that triggered the alert."
+    ],
+    [
+      "AMPS_DATA",
+      "The current data of the message."
+    ],
+    [
+      "AMPS_DATA_LENGTH",
+      "The length of the current data of the message, in bytes."
+    ],
+    [
+      "AMPS_BOOKMARK",
+      "The bookmark of the message. Empty if there is no bookmark\nfor the message."
+    ],
+    [
+      "AMPS_TIMESTAMP",
+      "The timestamp at which the module began tracking the\nmessage."
+    ],
+    [
+      "AMPS_CLIENT_NAME",
+      "The client name of the current value of the message."
+    ],
+    [
+      "AMPS_SOW_KEY",
+      "The current SowKey for the message."
+    ]
+  ]
+}

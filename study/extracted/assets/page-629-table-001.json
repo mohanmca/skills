@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Variable",
+      "Description"
+    ],
+    [
+      "AMPS_DATA",
+      "The current data of the message."
+    ],
+    [
+      "AMPS_DATA_LENGTH",
+      "The length of the current data of the message, in bytes."
+    ],
+    [
+      "AMPS_REASON",
+      "A comma-delimited string indicating one or more reason(s)\nthe message was expired.\nThis string contains one or more of the following values:\ntime_limit - the expiration time for this message or\ntopic has passed.\nforced_expire - this queue message was\nacknowledged with an expire option resulting in the\nmessage's immediate removal.\nmax_cancels - this queue message was acknowledged\nwith a cancel option and the number of cancels\nexceeded the queue's configured MaxCancels limit.\nmax_deliveries - this queue message was not\nsuccessfully acknowledged by a subscriber and the\nnumber of deliveries has exceeded the queue's\nMaxDeliveries limit."
+    ],
+    [
+      "AMPS_CORRELATION_ID",
+      "The correlation ID set on the publish command if one was\nset."
+    ]
+  ]
+}

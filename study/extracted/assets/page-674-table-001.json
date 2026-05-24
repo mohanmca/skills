@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Module Name",
+      "Does"
+    ],
+    [
+      "amps-action-do-\nnothing",
+      "Takes no action.\nDoes not modify the state of AMPS in any way. The module\nsimply logs that it was called."
+    ],
+    [
+      "amps-action-do-\necho-message",
+      "Echoes the specified message to the log. The message\nappears in the log as message 29-0103, at info level.\nThe logging configuration must allow this message to be\nrecorded for the output of this action to appear in the log."
+    ]
+  ]
+}

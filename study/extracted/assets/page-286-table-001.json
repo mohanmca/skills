@@ -1,0 +1,20 @@
+{
+  "rows": [
+    [
+      "Message Published to Topic",
+      "Results"
+    ],
+    [
+      "/orders/RHAT",
+      "Matches the regular expression topic\ndefinition, stored in the regular expression\ntopic."
+    ],
+    [
+      "/orders/specialHandling/oops",
+      "Matches the regular expression topic\ndefinition, stored in the regular expression\ntopic.\nNotice that a Topic definition is an exact\nmatch on the topic name, not a pattern\nmatch."
+    ],
+    [
+      "/customer/orders/timothy_someone",
+      "Does not match either the Topic or the\nregular expression topic.\nNot included in the SOW."
+    ]
+  ]
+}

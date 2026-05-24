@@ -1,0 +1,94 @@
+{
+  "rows": [
+    [
+      "Token",
+      "Description",
+      "Example"
+    ],
+    [
+      "%d",
+      "Day of the month (leading zero if necessary)",
+      "05"
+    ],
+    [
+      "%D",
+      "Short date format (MM/DD/YY)",
+      "02/20/14"
+    ],
+    [
+      "%e",
+      "Day of the month (leading space if necessary)",
+      "5"
+    ],
+    [
+      "%F",
+      "Short date format (YYYY-MM-DD)",
+      "2014-02-20"
+    ],
+    [
+      "%H",
+      "Hour (00-23)",
+      "17"
+    ],
+    [
+      "%I",
+      "Hour (00-12)",
+      "05"
+    ],
+    [
+      "%j",
+      "Day of the year (001-366)",
+      "051"
+    ],
+    [
+      "%m",
+      "Month (01-12)",
+      "02"
+    ],
+    [
+      "%p",
+      "AM or PM",
+      "PM"
+    ],
+    [
+      "%r",
+      "Current time, 12 hour format",
+      "05:25:00 pm"
+    ],
+    [
+      "%R",
+      "Current time, 24 hour format",
+      "17:25"
+    ],
+    [
+      "%T",
+      "ISO 8601 Time format",
+      "17:25:00"
+    ],
+    [
+      "%u",
+      "ISO 8601 day of the week (1-7, Monday = 1)",
+      "5"
+    ],
+    [
+      "%V",
+      "ISO 8601 week number (00-53)",
+      "07"
+    ],
+    [
+      "%y",
+      "Year, last two digits",
+      "14"
+    ],
+    [
+      "%Y",
+      "Year, four digits",
+      "2014"
+    ],
+    [
+      "%Z",
+      "Timezone name or abbreviation (blank if\nundetermined)",
+      "PST"
+    ]
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "rows": [
+    [
+      "Algorithm",
+      "Description"
+    ],
+    [
+      "fast",
+      "This strategy optimizes for the lowest latency.\nAMPS delivers the message to the first subscription found that does\nnot have a full backlog. With this algorithm, AMPS tries to minimize\nthe time spent determining which subscription receives the\nmessage without attempting to distribute messages fairly across\nsubscriptions."
+    ],
+    [
+      "round-robin",
+      "This strategy optimizes for general fairness across subscriptions.\nAMPS delivers the message to the next available subscription that\ndoes not have a full backlog. With this algorithm, AMPS delivers\nmessages evenly among the subscribers that have space in their\nbacklog."
+    ],
+    [
+      "proportional",
+      "This strategy optimizes for delivery to subscriptions with the most\nunused capacity.\nAMPS delivers the message to the subscription that has the highest\nproportion of backlog capacity unused. AMPS determines this by\ntaking the ratio of unacknowledged messages to the maximum\nbacklog.\nFor example, if there are three active subscribers for the queue,\nwith backlog settings and outstanding messages as follows:\nSubscriber Inky: max_backlog=2, currently leased 1 message\nSubscriber Blinky: max_backlog=4, currently leased 3\nmessages\nSubscriber Clyde: max_backlog=10, currently leased 4\nmessages\nIn this case, with proportional delivery, a new message for the\nqueue will be delivered to Clyde, since that subscriber has only filled\n40% of the backlog, as compared with 50% for Inky and 75% for\nBlinky.\nIf more than one subscription has the same unused capacity, AMPS\ndelivers the message to the first subscription found with that\ncapacity."
+    ]
+  ]
+}

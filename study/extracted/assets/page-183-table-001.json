@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "= (Equals)"
+    ],
+    [
+      "string1 = string2\nCase-sensitive. Returns true if string1 is identical to string2.\nParameters\nstring1: The first string.\nstring2: The second string.\nReturns\ntrue if the strings are identical, false otherwise.\nExample\n/state = 'Ohio'"
+    ]
+  ]
+}

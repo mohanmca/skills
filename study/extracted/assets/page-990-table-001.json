@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Acknowledgment",
+      "Description"
+    ],
+    [
+      "completed",
+      "Used by bookmark subscriptions to identify the point at which\nreplay is completed.\nWhen a bookmark is present on the subscribe request and this\nacknowledgment is requested, AMPS sends a completed\nacknowledgment message to indicate that bookmark replay is\ncomplete and the subscription has reached the point in the\ntransaction log at which the subscribe command was received.\nMessages delivered after the completed ack are from new\npublishes."
+    ],
+    [
+      "processed",
+      "AMPS has completed the work necessary to register the\nsubscription.\nWhen a bookmark is present and this acknowledgment is\nrequested, this acknowledgment indicates that AMPS is about\nto begin replay."
+    ],
+    [
+      "persisted",
+      "When a bookmark is present and this acknowledgment is\nrequested, AMPS periodically sends a persisted\nacknowledgment message to indicate the most recent fully-\npersisted bookmark in the server's transaction log. See\nBookmark Subscriptions and Persisted Acknowledgements."
+    ],
+    [
+      "received",
+      "The subscribe message has been received."
+    ]
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Definition"
+    ],
+    [
+      "secure\n(applies to\nSSL\nconnections)",
+      "Specifies whether to use an SSL-secured connection (tcps URI\nscheme).\nValues: false/0/no or true/1/yes\nDefault: false"
+    ],
+    [
+      "type",
+      "For protocols and transports that accept multiple message types on\na given transport, specifies the message type to use."
+    ],
+    [
+      "uriopts",
+      "Custom connection URI parameters to be passed in the URI query\nstring.\nFor example:\ntcp_nodelay=true&tcp_sndbuf=8192"
+    ],
+    [
+      "urischeme\n(applies to\nSSL\nconnections)",
+      "Allows a custom URI scheme to be specified.\nWhen both secure and urischeme are specified, urischeme takes\nprecedence."
+    ]
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "rows": [
+    [
+      "Metric",
+      "Description",
+      "Type"
+    ],
+    [
+      "",
+      "This information is produced in JSON format, and includes\ndetailed internal metrics for the queue as well as the current\ndepth of the queue and information about the individual\nmessages at the head of the queue (up to the first 1000\nmessages).\nThis information is produced on demand from the current state,\nand is not produced from the statistics database.",
+      ""
+    ]
+  ]
+}

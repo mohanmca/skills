@@ -1,0 +1,20 @@
+{
+  "rows": [
+    [
+      "Header",
+      "Comment"
+    ],
+    [
+      "topic\n(required)",
+      "Sets the topic to subscribe to. The topic specified can be the literal topic\nname, or a regular expression that matches multiple topics."
+    ],
+    [
+      "sub_id\n(required)",
+      "The subscription ID to enter in a paused state."
+    ],
+    [
+      "opts\n(required)",
+      "A comma-delimited list of options for the command. To enter a paused\nsubscription, the options must include pause."
+    ]
+  ]
+}

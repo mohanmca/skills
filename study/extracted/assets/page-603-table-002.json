@@ -1,0 +1,44 @@
+{
+  "rows": [
+    [
+      "Action",
+      "Module"
+    ],
+    [
+      "Rotate Error/Event Log",
+      "amps-action-do-rotate-logs"
+    ],
+    [
+      "Compress Files",
+      "amps-action-do-compress-files"
+    ],
+    [
+      "Truncate Statistics",
+      "amps-action-do-truncate-statistics"
+    ],
+    [
+      "Manage Transaction Log Journal Files",
+      "amps-action-do-archive-journal\namps-action-do-compress-journal\namps-action-do-remove-journal"
+    ],
+    [
+      "Remove Error/Event Log Files",
+      "amps-action-do-remove-files"
+    ],
+    [
+      "Delete SOW Messages",
+      "amps-action-do-delete-sow"
+    ],
+    [
+      "Compact SOW Topics",
+      "amps-action-do-compact-sow"
+    ],
+    [
+      "Query a SOW Topic",
+      "amps-action-do-query-sow"
+    ],
+    [
+      "Manage Security",
+      "amps-action-do-disable-authentication\namps-action-do-enable-authentication\namps-action-do-reset-authentication\namps-action-do-reset-entitlement\namps-action-do-disable-entitlement\namps-action-do-enable-entitlement"
+    ]
+  ]
+}

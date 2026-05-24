@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Header",
+      "Comment"
+    ],
+    [
+      "topic\n(required)",
+      "Sets the topic from which to remove records."
+    ],
+    [
+      "sow_keys\n(required)",
+      "A comma-delimited list of SOW Keys that specify the messages to\nremove."
+    ]
+  ]
+}

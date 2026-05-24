@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Parameter",
+      "Description"
+    ],
+    [
+      "Topic\n(required)",
+      "Specifies the topic or topic regular expression pattern to monitor for\nsubscribe commands."
+    ],
+    [
+      "MessageType\n(required)",
+      "The message type of the topic to monitor for subscribe or\nunsubscribe. There is no default for this parameter."
+    ]
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "rows": [
+    [
+      "Function",
+      "Parameters",
+      "Description"
+    ],
+    [
+      "TIMEZONEOFFSET",
+      "(none)",
+      "Returns a long that contains the current\ntimezone offset from UTC, represented in\nseconds."
+    ],
+    [
+      "YEAR",
+      "timestamp",
+      "Returns the year for the provided timestamp. The\nyear is calculated in the UTC timezone."
+    ]
+  ]
+}

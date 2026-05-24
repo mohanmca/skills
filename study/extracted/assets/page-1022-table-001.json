@@ -1,0 +1,32 @@
+{
+  "rows": [
+    [
+      "Field",
+      "Description"
+    ],
+    [
+      "",
+      "acknowledgment message header."
+    ],
+    [
+      "sow_keys",
+      "A comma separated list of unique ids to be deleted.\nAMPS uses these IDs to locate and remove the specified records. Notice\nthat these values are the internal ID used by AMPS -- the sow_key -- and\nnot the value of a field in the message.\nTo use the values of fields in the message to locate the records to\nremove, use a filter or Data."
+    ],
+    [
+      "filter",
+      "Content filter expression.\nSee the Content Filtering chapter in the AMPS User Guide for more\ninformation on using content filters.\nWhen provided, AMPS removes the matching records."
+    ],
+    [
+      "data",
+      "Message data that identifies the record to be removed.\nWhen provided, AMPS uses this data to look up the record that would be\nupdated were this command a publish. AMPS then deletes that record."
+    ],
+    [
+      "bookmark",
+      "Processed when the sow_delete command is acknowledging a message\nfrom a queue.\nWhen this option is used, the message must have been provided from a\nmessage queue, and the SowKeys and Filter headers may not be used."
+    ],
+    [
+      "opts",
+      "Available when the sow_delete command is acknowledging a message\nfrom a queue.\nWhen a value of cancel is provided in this field, the message is returned\nto the queue and made available to other subscribers.\nWhen a value of expire is provided in this field, the message is\nautomatically expired by AMPS, removing the message from the queue\nand invoking any actions configured to listen for message expirations."
+    ]
+  ]
+}

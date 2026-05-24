@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "",
+      "cache that the module stores parsed information into\nuntil AMPS requests the information.\nIn most cases, there is no need to set this parameter.\nWhen multiple transports use different ResourceURI\nvalues, but those transports are expected to maintain\nthe same information, specifying a CredentialStore\nvalue can speed the logon process and reduce the\nnumber of copies of the parsed permissions document\nin memory. Likewise, if a module must ensure that\npermission sets are kept separate (so that, for\nexample, an internal user named 'johndoe' and a\nweb user named 'johndoe' have separate\ncredentials), explicitly setting a CredentialStore\nvalue can make it easier to verify that the permission\nsets are completely separate.\nDefault: The literal value of the ResourceURI\nparameter."
+    ],
+    [
+      "ConnectionTimeout",
+      "The maximum amount of time to wait for a connection\nto the web server for each request, in milliseconds. If a\nconnection is not made within the specified time, the\nmodule stops the connection attempt and the request\nfails.\nDefault: 2000"
+    ],
+    [
+      "RequestTimeout",
+      "The maximum amount of time to wait for the web\nserver to return a permissions document on each\nrequest, in milliseconds. If the server does not return a\npermissions document within the specified time, the\nmodule closes the connection and the request fails.\nIncreasing this timeout above the default value may\nproduce potential stuck thread warnings if the web\nservice is slow to respond.\nDefault: 5000"
+    ],
+    [
+      "RetryCount",
+      "Sets the number of times to retry the request if\nretrieving the authentication document fails for any\nreason.\nDefault: 0 (only try once)"
+    ]
+  ]
+}

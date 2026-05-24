@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "file_name\n(required)",
+      "The file name to report on.\nThis argument supports UNIX shell globbing."
+    ]
+  ]
+}

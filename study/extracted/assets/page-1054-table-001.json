@@ -1,0 +1,19 @@
+{
+  "rows": [
+    [
+      "Name",
+      "Type",
+      "Definition"
+    ],
+    [
+      "UserId",
+      "string",
+      "Used to identify the user ID\nof a command."
+    ],
+    [
+      "Version",
+      "string",
+      "Contains the version of the\nAMPS server."
+    ]
+  ]
+}

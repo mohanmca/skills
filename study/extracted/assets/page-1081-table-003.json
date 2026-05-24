@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Header",
+      "Comment"
+    ],
+    [
+      "topic\n(required)",
+      "Sets the topic to query and subscribe to. The topic specified can be the\nliteral topic name, or a regular expression that matches multiple topics."
+    ],
+    [
+      "opts",
+      "A comma-delimited set of options for this command. For an aggregated\nsubscription, the options provide the projection and grouping for the\ncommand. An aggregated SOW and Subscribe can include options in\naddition to projection and grouping. The most common additional\noptions are:\noof - Request out of focus notifications.\ntimestamp - Include timestamp headers on messages."
+    ]
+  ]
+}

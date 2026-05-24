@@ -1,0 +1,34 @@
+{
+  "rows": [
+    [
+      "Path",
+      "Value",
+      "Notes"
+    ],
+    [
+      "/outer/array",
+      "['a1', 'a2',\n'a3]",
+      "Elements in the array can be referred to\ndirectly with subscript notation.\nFor example: /outer/array[0] is 'a1'."
+    ],
+    [
+      "/outer/compound/A",
+      "'middle-A'",
+      ""
+    ],
+    [
+      "/outer/compound/B",
+      "'middle-B'",
+      ""
+    ],
+    [
+      "/outer/compound/C/C1",
+      "['first-C1',\n'second-C1']",
+      "Elements in the array can be referred to\ndirectly with subscript notation.\nFor example: /outer/compound/C/C1[0]\nis 'first-C1'."
+    ],
+    [
+      "/outer/compound/C/D1",
+      "['first-D1',\n'second-D1']",
+      "Elements in the array can be referred to\ndirectly with subscript notation.\nFor example: /outer/compound/C/D1[0]\nis 'first-D1'."
+    ]
+  ]
+}

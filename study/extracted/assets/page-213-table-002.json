@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "LN"
+    ],
+    [
+      "LN(number)\nReturns the natural logarithm of the provided number.\nParameters\nnumber: The number to operate on.\nReturns\nThe natural logarithm of the number.\nExample\nLN(/time)"
+    ]
+  ]
+}

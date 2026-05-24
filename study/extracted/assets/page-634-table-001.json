@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Parameter",
+      "Description"
+    ],
+    [
+      "Topic\n(required)",
+      "The name of the topic to monitor for messages.\nThis parameter does not support regular expressions. The topic name\nmust be either a SOW topic, a view or a conflated topic.\nQueues are not supported.\nThere is no default for this parameter."
+    ],
+    [
+      "MessageType\n(required)",
+      "The message type of the topic to monitor for messages.\nThere is no default for this parameter."
+    ],
+    [
+      "Duration",
+      "The amount of time to wait for an OOF notification for the message\nbefore running the action."
+    ],
+    [
+      "Filter",
+      "Sets the filter to apply.\nOnly messages that match this filter will be monitored by this action.\nIf no filter is provided, every message of the specified message type\nin topics that match the Topic value will be monitored."
+    ]
+  ]
+}

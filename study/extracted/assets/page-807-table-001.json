@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Resource Type",
+      "Description"
+    ],
+    [
+      "logon",
+      "Permission to log on to the AMPS instance."
+    ],
+    [
+      "replication_logon",
+      "Permission to log on to the AMPS instance as a replication\nsource."
+    ],
+    [
+      "topic",
+      "Permission to receive from or publish to a specific topic."
+    ],
+    [
+      "admin",
+      "Permission to read admin statistics or perform admin functions\nfrom the web interface."
+    ]
+  ]
+}

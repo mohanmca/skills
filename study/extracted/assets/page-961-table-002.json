@@ -1,0 +1,28 @@
+{
+  "rows": [
+    [
+      "Metric",
+      "Description"
+    ],
+    [
+      "file_name",
+      "The file name of the selected journal."
+    ],
+    [
+      "min_timestamp",
+      "The smallest timestamp of the journal."
+    ],
+    [
+      "max_timestamp",
+      "The largest timestamp of the journal."
+    ],
+    [
+      "is_archived",
+      "Whether or not the journal is archived."
+    ],
+    [
+      "is_compressed",
+      "Whether or not the journal is compressed."
+    ]
+  ]
+}

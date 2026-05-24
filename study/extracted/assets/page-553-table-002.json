@@ -1,0 +1,36 @@
+{
+  "rows": [
+    [
+      "Field",
+      "Description"
+    ],
+    [
+      "entry",
+      "A monotonically increasing value representing the order in which the\nrecord was inserted into the transaction log file."
+    ],
+    [
+      "crc32",
+      "The cyclic redundancy check used for error checking the transaction\nlog entry."
+    ],
+    [
+      "type",
+      "The AMPS command used in the original message or the type of\nentry in the journal file."
+    ],
+    [
+      "file offset",
+      "Offset for this entry within the journal file."
+    ],
+    [
+      "tx byte\ncount",
+      "Size of this entry within the journal file."
+    ],
+    [
+      "msg byte\ncount",
+      "Number of bytes in the message payload."
+    ],
+    [
+      "msg type",
+      "Message type of the message."
+    ]
+  ]
+}

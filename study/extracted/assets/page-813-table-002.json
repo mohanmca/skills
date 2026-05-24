@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Module",
+      "Description"
+    ],
+    [
+      "libamps_simple_access_entitlement.so",
+      "This module provides a simple\nallow/deny list for all users on the\ntransport. See Simple Access\nEntitlements Module for details."
+    ],
+    [
+      "libamps_http_entitlement.so",
+      "This module makes requests to an\nexternal RESTful service for\nauthentication. This module will typically\nalso handle entitlements for the\nTransports that use it. See RESTful\nAuthentication and Entitlements for\ndetails."
+    ]
+  ]
+}

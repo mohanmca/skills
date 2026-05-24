@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "CHAR_VALUE"
+    ],
+    [
+      "CHAR_VALUE(integer)\nReturns the character (byte) for the integer provided (0-255). This function is most\nuseful for constructing values in message types that have a distinct type for char\nvalues.\nIn the AMPS expression language, a single character value is equivalent to a string\nconstructed with an escape, and constructing a string literal is more efficient. That\nis, '\\x01' is more efficient in a filter or field construction than CHAR_VALUE(1).\nHowever, to construct a character based on a field, use CHAR_VALUE.\nParameters\ninteger: An integer between 0 and 255.\nReturns\nThe character corresponding to the integer.\nExample\nCHAR_VALUE(/code)"
+    ]
+  ]
+}

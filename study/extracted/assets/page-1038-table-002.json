@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Field",
+      "Description"
+    ],
+    [
+      "cmd",
+      "Type of message. Always ack, as encoded by the protocol."
+    ]
+  ]
+}

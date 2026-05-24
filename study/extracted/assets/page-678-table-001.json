@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Module Name",
+      "Does"
+    ],
+    [
+      "amps-action-if-\ncondition",
+      "Checks whether the specified expression is true or false.\nIf the expression evaluates to true, subsequent steps in the\naction run. If not, the action stops at this step."
+    ]
+  ]
+}

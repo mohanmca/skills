@@ -1,0 +1,103 @@
+{
+  "rows": [
+    [
+      null,
+      null,
+      "Filter",
+      null,
+      null,
+      null,
+      null,
+      "Evaluates as",
+      null
+    ],
+    [
+      null,
+      null,
+      "3 IN (/data)",
+      null,
+      null,
+      null,
+      null,
+      "TRUE, 3 is a member of /data",
+      null
+    ],
+    [
+      null,
+      null,
+      "/data IN (1, 2, 3)",
+      null,
+      null,
+      null,
+      null,
+      "TRUE, a member of /data is in (1, 2,\n3)",
+      null
+    ],
+    [
+      null,
+      null,
+      "/data IN (\"zebra\", \"antelope\",",
+      null,
+      null,
+      null,
+      null,
+      "TRUE, a member of /data is in (\"zebra\",\n\"antelope\", \"lion\")",
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      "/data IN (\"zebra\", \"antelope\",",
+      null,
+      "",
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      "",
+      "",
+      "\"lion\")",
+      "",
+      null,
+      null,
+      "",
+      "\"antelope\", \"lion\")"
+    ],
+    [
+      null,
+      null,
+      "NOT /data IN (\"zebra\", \"antelope\",",
+      null,
+      null,
+      null,
+      null,
+      "FALSE, a member of /data is in\n(\"zebra\", \"antelope\", \"lion\")",
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      "NOT /data IN (\"zebra\", \"antelope\",",
+      null,
+      null,
+      "",
+      "FA",
+      null
+    ],
+    [
+      "",
+      null,
+      "",
+      "\"lion\")",
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  ]
+}

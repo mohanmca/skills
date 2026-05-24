@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Method",
+      "Description"
+    ],
+    [
+      "setTopic",
+      "Sets the topic that will be used by the publish command."
+    ]
+  ]
+}

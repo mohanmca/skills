@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Acknowledgment",
+      "Description"
+    ],
+    [
+      "",
+      "2. When the publish message has been sent to all available\ndownstream asynchronous replications.\nIf no replication is configured for this topic, this\nacknowledgment applies only to local persistence.\nIf no persistence is configured for this topic, this\nacknowledgment is still provided when requested.\nAMPS may conflate successful persisted acknowledgments to\nacknowledge multiple publishes at once. In this case, the seq\nprovided means that the message with that sequence number,\nand all previous messages from this publisher, have been\nacknowledged."
+    ],
+    [
+      "processed",
+      "AMPS has processed the message(s) to be published to the\nSOW. Any errors which occur in the message will be returned to\nthe client in this acknowledgment message.\nThis includes processing entitlement checks, and parsing the\nmessage but does not guarantee that the message has been\nreplicated or persisted."
+    ],
+    [
+      "received",
+      "The delta_publish message has been received."
+    ],
+    [
+      "stats",
+      "Not supported at this time."
+    ]
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "UNIX_TIMESTAMP"
+    ],
+    [
+      "UNIX_TIMESTAMP()\nReturns the current timestamp as a double, represented in seconds (including parts\nof a second as a decimal).\nA UNIX timestamp is seconds elapsed since 00:00 on January 1, 1970 in UTC and is\nindependent of the timezone of the local system.\nThe underlying system call used for this function has microsecond resolution,\nsubject to any hardware or host limitations.\nINFO\nThis function is non-deterministic, and cannot be used in contexts that require a\ndeterministic function.\nParameters\nNone.\nReturns\nA double representing the current UNIX timestamp."
+    ]
+  ]
+}

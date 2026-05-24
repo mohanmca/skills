@@ -1,0 +1,20 @@
+{
+  "rows": [
+    [
+      "Variable",
+      "Description"
+    ],
+    [
+      "AMPS_CLIENT_NAME",
+      "The name of the AMPS client.\n(For the amps-action-on-connect-client action, this\nwill be the connection name since this event happens\nbefore the client has provided a client name in the logon\ncommand.)"
+    ],
+    [
+      "AMPS_CONNECTION_NAME",
+      "The name of the AMPS connection."
+    ],
+    [
+      "AMPS_AUTHENTICATION_ID",
+      "The authentication ID of the AMPS connection (for amps-\naction-on-disconnect-client action only)."
+    ]
+  ]
+}

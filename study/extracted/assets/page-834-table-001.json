@@ -1,0 +1,44 @@
+{
+  "rows": [
+    [
+      "Authentication Header\nToken",
+      "Expansion"
+    ],
+    [
+      "AMPS_CLIENT_NAME",
+      "Client name provided in the logon request."
+    ],
+    [
+      "AMPS_CONNECTION_NAME",
+      "The connection name for the connection requesting\nlogon, as assigned by the AMPS server (based on the\ntransport name)."
+    ],
+    [
+      "AMPS_CORRELATION_ID",
+      "The correlation ID provided on the logon request."
+    ],
+    [
+      "AMPS_MESSAGE_TYPE",
+      "The message type of the logon request."
+    ],
+    [
+      "AMPS_PASSWORD",
+      "The password provided with the logon request."
+    ],
+    [
+      "AMPS_REMOTE_ADDRESS",
+      "Remote address from which the logon request was\nmade."
+    ],
+    [
+      "AMPS_USER_NAME",
+      "User name for the request."
+    ],
+    [
+      "CORRELATION_ID",
+      "The correlation ID provided on the logon request.\nLegacy compatibility token"
+    ],
+    [
+      "USER_NAME",
+      "User name for the request.\nLegacy compatibility token"
+    ]
+  ]
+}

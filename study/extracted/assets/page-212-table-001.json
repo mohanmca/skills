@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "CEILING"
+    ],
+    [
+      "CEILING(number)\nReturns the value rounded upward to the next greatest integer.\nParameters\nnumber: The number to round.\nReturns\nThe rounded-up integer. Returns an integer unchanged.\nExample\nCEILING(/estimatedDelta)"
+    ]
+  ]
+}

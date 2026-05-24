@@ -1,0 +1,44 @@
+{
+  "rows": [
+    [
+      "Field",
+      "Description"
+    ],
+    [
+      "cmd_id",
+      "If specified with an AMPS command requesting an\nacknowledgment message, all ack messages will contain the\nCommandId in the acknowledgment message."
+    ],
+    [
+      "data_only",
+      "If true, send only raw data to subscriber for a matching\npublish message.\nFor example, this will remove the SOAP envelope in an XML\nmessage."
+    ],
+    [
+      "filter",
+      "Content filter expression."
+    ],
+    [
+      "opts",
+      "A comma separated list of flags available to the\nsow_and_delta_subscribe command.\nThe Options Field table below describes the Options available\nfor use in the sow_and_delta_subscribe command."
+    ],
+    [
+      "orderby",
+      "Return the SOW results sorted by the specified fields.\nFields are a comma-delimited list of AMPS identifiers, and may\noptionally include a sort specifier, ASC or DESC."
+    ],
+    [
+      "query_id",
+      "Identifier used to identify the client's SOW topic query.\nThis identifier will be added to all messages that represent a\nresponse to the sow_and_delta_subscribe command."
+    ],
+    [
+      "send_empty",
+      "If set to true, empty published messages are forwarded to\nmatching subscriptions.\nDefault: true"
+    ],
+    [
+      "send_oof",
+      "Messages that have fallen out of focus from the subscription\nare sent to the client.\nDefault: false"
+    ],
+    [
+      "send_keys",
+      "Option to instruct AMPS that the client would like to receive\nthe SowKey back."
+    ]
+  ]
+}

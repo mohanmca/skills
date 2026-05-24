@@ -1,0 +1,29 @@
+{
+  "rows": [
+    [
+      "Component",
+      "Description",
+      "Minimum\nVerification"
+    ],
+    [
+      "MAJOR",
+      "Increments when there are any backward-\nincompatible changes in functionality, file formats,\nclient network formats or configuration; or when\ndeprecated functionality is removed.\nMay introduce major new functionality or include\ninternal improvements that introduce major\nbehavioral changes.",
+      "Megacert"
+    ],
+    [
+      "MINOR",
+      "Increments when functionality is added in a\nbackwards-compatible way, or when functionality\nis deprecated.\nMay include internal improvements, including\ninternal improvements that introduce minor\nbehavioral changes or changes to network\nformats used only by the AMPS server (such as\nreplication).",
+      "Megacert"
+    ],
+    [
+      "FEATURE",
+      "Increments for previews of new features.\nMay introduce behavioral changes to fix incorrect\nbehavior, enable new functionality or to enhance\nperformance.\nMay include internal enhancements that do not\nintroduce behavioral changes.\nNote: A feature level of 0 indicates a long-term\nstable release. A feature level above zero\nindicates the current feature level (a preview of\nthe next long-term stable release).",
+      "Kilocert"
+    ],
+    [
+      "HOTFIX",
+      "A release for a critical defect impacting a\ncustomer. A hotfix release is designed to be 100%\ncompatible with the release it fixes (that is, a\nrelease with same MAJOR.MINOR.FEATURE version).\nMay introduce behavioral changes to fix incorrect\nbehavior. May document previously\nundocumented features or extend surface area to\nimprove usability for existing features.",
+      "Cert"
+    ]
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "max_backlog=n",
+      "When subscribing to a queue, the number of unacknowledged\nmessages the client is willing to accept at a time.\nAMPS will not exceed this number, but may choose a smaller\nnumber depending on the queue configuration."
+    ],
+    [
+      "no_empties",
+      "Tells AMPS not to send empty publish messages to matching\nsubscriptions.\nThis can be useful for suppressing messages where no fields\nhave changed."
+    ],
+    [
+      "no_sowkey",
+      "Tells AMPS not to send the AMPS-generated SowKey for\nmessages."
+    ],
+    [
+      "non_regex_topic",
+      "Specifies that the topic name should be a literal match, even if\nthe topic name contains regular expression characters."
+    ],
+    [
+      "oof",
+      "Send an OOF message for records which have fallen out of\nfocus from the original subscription.\nWhen focus tracking is enabled, AMPS will also deliver the full\nmessage to a subscription when a previously out-of-focus\nmessage comes into focus."
+    ],
+    [
+      "pause",
+      "Pause a bookmark subscription.\nThis option is only valid for bookmark subscriptions that do not\nuse the live option. When this option is present, AMPS pauses\nthe subscription or subscriptions provided in the SubId of the\ncommand."
+    ],
+    [
+      "rate=n",
+      "Set the maximum message delivery rate for a bookmark\nsubscription.\nThis option is only valid for bookmark subscriptions that do not\nuse the live option.\nThe rate can be specified as either the number of messages per\nsecond (for example, 1000), the number of bytes per second\n(for example, 100KB), or a multiple of the original replay rate\n(for example, 1.5X)."
+    ]
+  ]
+}

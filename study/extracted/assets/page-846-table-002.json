@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "AllowAnonymous",
+      "When set to enabled, allows users to logon\nwithout providing a password. In this case,\nhowever, the authenticated username will be\nset to an empty string.\nDefault: disabled"
+    ]
+  ]
+}

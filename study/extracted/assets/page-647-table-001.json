@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Parameter",
+      "Description"
+    ],
+    [
+      "",
+      "AMPS does not remove the current journal file or files that are being\nused for replay, files that are being used for replication or files that\ncontain unacknowledged and unexpired messages in a queue; even if\nthe file is older than the Age parameter.\nAMPS does not allow gaps in the journal files, so it will only remove a\ngiven file if all previous files have been removed.\nAMPS can compress and archive journal files that are still in use since\ncompressed or archived journal files are part of the transaction log and\nAMPS will replay messages from these files.\nThere is no default for this parameter."
+    ]
+  ]
+}

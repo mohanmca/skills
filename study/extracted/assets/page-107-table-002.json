@@ -1,0 +1,20 @@
+{
+  "rows": [
+    [
+      "Variable Name",
+      "Contains"
+    ],
+    [
+      "AMPS_CONFIG_DIRECTORY",
+      "Directory in which the configuration file used to start\nAMPS is located."
+    ],
+    [
+      "AMPS_CONFIG_PATH",
+      "Full path to the configuration file used to start AMPS,\nincluding the file name."
+    ],
+    [
+      "AMPS_VERSION",
+      "Full version number of the AMPS server."
+    ]
+  ]
+}

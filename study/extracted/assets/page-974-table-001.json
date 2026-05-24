@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Field",
+      "Description"
+    ],
+    [
+      "",
+      "is logged for the connection, but does not otherwise affect the\nconnection."
+    ]
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "ARRAY_MIN"
+    ],
+    [
+      "ARRAY_MIN(array)\nReturns the minimum value in the array.\nParameters\narray: The array to find the minimum value of.\nReturns\nThe minimum value in the array, using the standard AMPS < comparison."
+    ]
+  ]
+}

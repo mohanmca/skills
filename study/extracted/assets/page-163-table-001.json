@@ -1,0 +1,14 @@
+{
+  "rows": [
+    [
+      "Function\nor\nOperator",
+      "Parameters",
+      "Description"
+    ],
+    [
+      "LIKE",
+      "The string to be\ncompared\nThe pattern to\nevaluate the\nstring against",
+      "Case-sensitive\nReturns true if the string to be compared\nmatches the pattern.\nFor example, the following filter uses a PCRE\nbackreference to return true for any message\nwhere the /state field contains two identical\ncharacters in a row.\n/state LIKE '(.)\\1'\nThis operator is not unicode-aware."
+    ]
+  ]
+}

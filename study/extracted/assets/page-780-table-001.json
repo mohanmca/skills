@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "Transparent Huge Pages"
+    ],
+    [
+      "Transparent huge pages is enabled by default for most linux distributions, which can\nadd significant overhead to memory management. For this reason 60East\nrecommends changing the setting to madvise, which requires applications to\nexplicitly request use of transparent huge pages. Previously the recommendation\nwas to use never, which is still acceptable, but is less flexible as it disables\ntransparent huge pages for all applications running on the system.\nTo change the setting until the operating system is rebooted, the following command\ncan be used:\necho madvise > /sys/kernel/mm/transparent_hugepage/enabled\nTo make a permanent change to this setting, add the above command to the startup\nscripts, or add the transparent_hugepage=madvise option to the kernel startup flags\n(see the documentation for your Linux distribution for details).\nRecommended: madvise"
+    ]
+  ]
+}

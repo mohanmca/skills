@@ -1,0 +1,19 @@
+{
+  "rows": [
+    [
+      "Certification\nLevel",
+      "Description",
+      "Time to\nCertify"
+    ],
+    [
+      "Kilocert",
+      "Full regression suite and stress-testing suite,\nincluding replication testing and application\nscenario tests.\nFull unit testing suite, including new unit tests to\nverify correct behavior of bugfixes in this release.",
+      "less than 1\nweek"
+    ],
+    [
+      "Cert",
+      "Full unit testing suite, including new unit tests to\nverify correct behavior of bugfixes in this release.\nReplication testing suite if release affects\nreplication code.",
+      "4 hours"
+    ]
+  ]
+}

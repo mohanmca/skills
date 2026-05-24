@@ -1,0 +1,36 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "files\n(required)",
+      "The file or files to search."
+    ],
+    [
+      "--version",
+      "Show the version number of the program and exit."
+    ],
+    [
+      "--help",
+      "Show the help message and exit."
+    ],
+    [
+      "-e,\n--search_term=TERM",
+      "An exact match string to search."
+    ],
+    [
+      "-f,\n--\nfile=LITERAL_TERMS_FILE",
+      "Obtain exact matches from LITERAL_TERMS_FILE, one\nper line."
+    ],
+    [
+      "-E,\n--extended_regex=REGEX",
+      "Regular expression to search."
+    ],
+    [
+      "-n,\n--line-number",
+      "Include line numbers in results."
+    ]
+  ]
+}

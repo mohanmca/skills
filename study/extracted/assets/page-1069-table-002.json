@@ -1,0 +1,20 @@
+{
+  "rows": [
+    [
+      "Header",
+      "Comment"
+    ],
+    [
+      "topic\n(required)",
+      "Sets the topic to publish to. The topic specified must be a literal topic\nname. Regular expression characters in the topic name are not\ninterpreted. Some topics in AMPS, such as views and conflated topics,\ncannot be published to directly. Instead, a publisher must publish to the\nunderlying topics."
+    ],
+    [
+      "data",
+      "The data to publish to the topic. The AMPS client does not interpret,\nescape, or validate this data: the data is provided to the server\nverbatim."
+    ],
+    [
+      "sow_key",
+      "The SOW Key to use for this message. This header is only supported for\npublishes to a topic that requires an explicit SOW Key."
+    ]
+  ]
+}

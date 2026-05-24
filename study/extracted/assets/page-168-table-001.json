@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Filter",
+      "Evaluates as"
+    ],
+    [
+      "/data NOT IN\n(\"zebra\",\"antelope\",\"lion\")",
+      ""
+    ]
+  ]
+}

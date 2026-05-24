@@ -1,0 +1,32 @@
+{
+  "rows": [
+    [
+      "Field",
+      "Description"
+    ],
+    [
+      "client_name",
+      "The name of the client provided with the command."
+    ],
+    [
+      "seq",
+      "The last message sequence number fully processed (and, if possible,\nsafely persisted) for this client, as identified by the client_name."
+    ],
+    [
+      "bookmark",
+      "The last bookmark from this client."
+    ],
+    [
+      "user_id",
+      "user-id to use when the status is retry."
+    ],
+    [
+      "password",
+      "Password to use when the status is retry."
+    ],
+    [
+      "version",
+      "The version of the AMPS server."
+    ]
+  ]
+}

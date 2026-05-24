@@ -1,0 +1,28 @@
+{
+  "rows": [
+    [
+      "Reason",
+      "Explanation"
+    ],
+    [
+      "heartbeat",
+      "The connection failed to provide a heartbeat within the period of\ntime set by the connection, so AMPS has closed the connection."
+    ],
+    [
+      "slow client",
+      "The connection was closed due to the client capacity settings\nbeing exceeded."
+    ],
+    [
+      "unknown\ncommand",
+      "The client sent an unknown or malformed command, so AMPS\nclosed the connection."
+    ],
+    [
+      "auth",
+      "The connection failed to authenticate."
+    ],
+    [
+      "entitlement",
+      "The connection successfully authenticated, but the user does not\nhave permission to log in."
+    ]
+  ]
+}

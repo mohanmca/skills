@@ -1,0 +1,8 @@
+{
+  "rows": [
+    [
+      "$ amps_sqlite3_report stats.db 20180501T000000\namps-sqlite3-report on stats.db since 20180501T0000\nTABLE HCPUS\ntimestamp,static_id,idle_percent,iowait_percent,system_percent,user_percent,s\n212391936000000,2,0,0,0,0,2,all\n212391936000000,3,0,0,0,0,3,cpu0\n212391936000000,4,0,0,0,0,4,cpu1\n212391936000000,5,0,0,0,0,5,cpu2\n212391936000000,6,0,0,0,0,6,cpu3\n... etc ...",
+      ""
+    ]
+  ]
+}

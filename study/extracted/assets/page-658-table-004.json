@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Module Name",
+      "Does"
+    ],
+    [
+      "amps-action-do-enable-transport",
+      "Enables a specific transport."
+    ],
+    [
+      "amps-action-do-disable-transport",
+      "Disables a specific transport."
+    ]
+  ]
+}

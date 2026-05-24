@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Units",
+      "Description"
+    ],
+    [
+      "kb",
+      "kilobytes"
+    ],
+    [
+      "mb",
+      "megabytes"
+    ],
+    [
+      "gb",
+      "gigabytes"
+    ],
+    [
+      "tb",
+      "terabytes"
+    ]
+  ]
+}

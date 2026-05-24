@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "ReuseConnections",
+      "Optionally, sets the module to reuse connections to\nthe entitlement service when possible. By default, the\nmodule creates a new connection for each entitlement\nrequest.\nWhen set to enabled, the module will reuse HTTP\nconnections when possible.\nThis option is only supported within the Modules\ndefinition, and is set for all uses of the module within\nthe configuration. The option will be ignored if it is set\nwithin the Authentication or Entitlement blocks.\nDefault: disabled"
+    ],
+    [
+      "ServerAcceptsEmptyAuthId",
+      "By default, the module will refuse authentication\nrequests that do not contain an auth ID without\nallowing the request to reach the server. Instead, the\nmodule returns an authentication failure to AMPS\nimmediately.\nThis is designed to protect the authentication web\nservice from requests that cannot succeed.\nIn some environments, the web service providing\nauthentication will authenticate a user based entirely\non the authentication token provided as the password,\nand will return the authentication ID for AMPS to use in\nthe permissions document.\nWhen this option is set to true, the module will\nsubmit authentication requests to the service even\nwhen no authentication ID is provided on the logon\nrequest from the AMPS client.\nAn authentication ID is still required for AMPS to be\nable to track permissions. When this option is set to\ntrue, the authentication service must set the auth ID\nin the permissions document when no auth ID is\nprovided in the permissions request. Otherwise, the\nauthentication request will fail.\nDefault: false"
+    ]
+  ]
+}

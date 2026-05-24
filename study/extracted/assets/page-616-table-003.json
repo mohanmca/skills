@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Variable",
+      "Description"
+    ],
+    [
+      "AMPS_CLIENT_NAME",
+      "The name of the AMPS client."
+    ],
+    [
+      "AMPS_CONNECTION_NAME",
+      "The name of the AMPS connection."
+    ]
+  ]
+}

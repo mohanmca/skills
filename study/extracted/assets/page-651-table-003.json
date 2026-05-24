@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Parameter",
+      "Description"
+    ],
+    [
+      "Topic",
+      "The name of the SOW topic from which to compact.\nThis option must be specified if the MessageType is provided.\nThere is no default for this parameter."
+    ],
+    [
+      "MessageType",
+      "The message type of the SOW topic or topics to compact.\nThis option must be specified if the Topic is provided.\nThere is no default for this parameter."
+    ]
+  ]
+}

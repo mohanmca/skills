@@ -1,0 +1,29 @@
+{
+  "rows": [
+    [
+      "Component",
+      "Description",
+      "Minimum\nVerification"
+    ],
+    [
+      "",
+      "May include internal enhancements that do not\nintroduce behavioral changes.\nNote: A feature level of 0 indicates a long-term\nstable release. A feature level above zero\nindicates the current feature level (a preview of\nthe next long-term stable release).",
+      ""
+    ],
+    [
+      "HOTFIX",
+      "A release for a critical defect impacting a\ncustomer. A hotfix release is designed to be 100%\ncompatible with the release it fixes (that is, a\nrelease with same MAJOR.MINOR.FEATURE version).\nMay introduce behavioral changes to fix incorrect\nbehavior. May document previously\nundocumented features or extend surface area to\nimprove usability for existing features.",
+      "Cert"
+    ],
+    [
+      "TIMESTAMP",
+      "Proprietary build timestamp.",
+      "(does not affect\nverification\nlevel)"
+    ],
+    [
+      "TAG",
+      "Identifier that corresponds to precise code used in\nthe release.",
+      "(does not affect\nverification\nlevel)"
+    ]
+  ]
+}

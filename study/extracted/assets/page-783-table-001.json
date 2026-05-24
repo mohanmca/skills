@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "/proc/sys/vm/min_free_kbytes"
+    ],
+    [
+      "This parameter sets the minimum amount of memory to keep free in the system.\nSetting this value properly can help the operating system function more effectively\nin low-memory situations. If this value is set too low, the operating system can have\ndifficulty reclaiming memory, which can lead to unnecessary out-of-memory events.\nIf this value is set too high, overall system efficiency decreases as the operating\nsystem can spend more time than necessary reclaiming memory.\n60East recommends setting this parameter to 1% of the physical memory on the\nsystem, rounding up to the nearest GB.\nNotice that the units of this parameter are in kilobytes. For example, to set this\nvalue for a system that has 128GB of memory, you would calculate 1% of the\nphysical memory (1.28 GB), round up to the nearest GB (2 GB) and then allocate\n2000000 KB as the min_free_kbytes.\nMinimum: 1000000 (1GB)\nRecommended: 1% of physical memory, rounded up to the nearest GB\nTo edit this value, as root you can enter the following command:\nsysctl -w vm.min_free_kbytes=2000000\nNotice that this tuning recommendation is designed for a server-class machine with\na reasonable amount of memory. For a small development machine or blade (for\nexample, a system with less than 32GB of memory), leaving this parameter at the\noperating system default may be more appropriate."
+    ]
+  ]
+}

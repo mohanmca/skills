@@ -1,0 +1,44 @@
+{
+  "rows": [
+    [
+      "Name",
+      "Type",
+      "Definition"
+    ],
+    [
+      "ClientName",
+      "string",
+      "Used to identify a client.\nUseful for publishers that\nwish to identify the source of\na publish, client status\nmessages and for client\nheartbeats.\nCan be set with logon\ncommand."
+    ],
+    [
+      "Command",
+      "One of:\npublish\nsubscribe\nsow\nsow_and_subscribe\nsow_delete\nunsubscribe\nflush\nheartbeat\nlogon",
+      "Command to be executed."
+    ],
+    [
+      "CommandId",
+      "string",
+      "Client-specified command ID.\nThe CmdId is returned by the\nengine in responses to\ncommands to allow the\nclient to correlate the\nresponse to the command."
+    ],
+    [
+      "CorrelationId",
+      "string, base64 encoded\ncharacters only",
+      "Opaque token set by an\napplication and returned\nwith the message."
+    ],
+    [
+      "DataOnly",
+      "Boolean (true or false)",
+      "If true, only send raw data\nto subscriber for a matching\npublish message, i.e. do not\ninclude FIX/NVFIX envelope."
+    ],
+    [
+      "Expiration",
+      "integer (seconds)",
+      "SOW expiration time if used\nin publish."
+    ],
+    [
+      "Filter",
+      "string, should wrap in\nCDATA",
+      "Content filter expression."
+    ]
+  ]
+}

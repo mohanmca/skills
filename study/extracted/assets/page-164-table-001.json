@@ -1,0 +1,14 @@
+{
+  "rows": [
+    [
+      "Function or\nOperator",
+      "Parameters",
+      "Description"
+    ],
+    [
+      "IF",
+      "Conditional\nexpression\nValue to return if\nconditional\nexpression is true\nValue to return if\nconditional\nexpression is false",
+      "Evaluate the conditional expression and\nreturn one of the two input values based on\nthe results of the expression.\nThe AMPS expression engine can\nconditionally evaluate the terms provided to\nthe IF statement in version 5.3.4 and\ngreater.\nIn previous versions of AMPS, all\nexpressions provided to the IF statement\nwere fully evaluated before the IF\nstatement was evaluated."
+    ]
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Parameter",
+      "Description"
+    ],
+    [
+      "MessageType\n(required)",
+      "The message type for the message to parse.\nThere is no default for this parameter."
+    ]
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "CRC32"
+    ],
+    [
+      "CRC32(string)\nReturns a 32-bit integer calculated as a checksum of the provided string. This\nfunction uses CRC32-C to create the result. If a NULL value is provided, this function\nreturns a constant value.\nParameters\nstring: The string to calculate the checksum for.\nReturns\nA 32-bit integer checksum."
+    ]
+  ]
+}

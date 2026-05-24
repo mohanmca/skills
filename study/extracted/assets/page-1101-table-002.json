@@ -1,0 +1,36 @@
+{
+  "rows": [
+    [
+      "Metric",
+      "Short Description"
+    ],
+    [
+      "/inserts_per_sec",
+      "Number of new records added per second."
+    ],
+    [
+      "/updates_per_sec",
+      "Number of records updated per second."
+    ],
+    [
+      "/deletes_per_sec",
+      "Number of records deleted per second."
+    ],
+    [
+      "/queries_per_sec",
+      "Number of queries of the topic per second."
+    ],
+    [
+      "/insert_count",
+      "Total count of new records added to the topic."
+    ],
+    [
+      "/delete_count",
+      "Total count of records removed from the topic."
+    ],
+    [
+      "/update_count",
+      "Total count of updates to records in the topic."
+    ]
+  ]
+}

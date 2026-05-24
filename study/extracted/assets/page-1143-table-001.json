@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "* These imports are for publishing the initial messages to AMPS and\n* printing the messages that were modified by Flink and published\n* back to AMPS by the connectors. They are not necessary for a\n* real job as they are included for demonstration purposes.\n*/\nimport com.crankuptheamps.client.Client;\nimport com.crankuptheamps.client.Message;\nimport com.crankuptheamps.client.MessageHandler;\n/*\n* These imports are for the connectors.\n*/\nimport com.crankuptheamps.flink.source.AMPSSource;\nimport com.crankuptheamps.flink.sink.AMPSSink;\n/*\n* These imports are for creating and submitting the Flink job.\n*/\nimport org.apache.flink.api.common.eventtime.WatermarkStrategy;\nimport org.apache.flink.api.common.serialization.SimpleStringSchema;\nimport\norg.apache.flink.streaming.api.environment.StreamExecutionEnvironment;\nimport org.apache.flink.streaming.api.functions.ProcessFunction;\nimport org.apache.flink.util.Collector;\npublic class FirstProgram {\npublic static void main(String[] args) throws Exception {\n/*\n* The connection URI the client and connectors use to connect to\nAMPS.\n*/\nString uri = \"tcp://localhost:9006/amps/json\";\n/*\n* The initial topic with a transaction log the client publishes to\n* and the AMPS Source subscribes to.\n*/\nString initTopic = \"initial-topic\";\n/*\n* The modified ad hoc topic the AMPS Sink publishes to and the\n* client subscribes to.\n*/\nString modifiedTopic = \"modified-topic\";\n/*\n* The amount of messages the client will publish and the AMPS\nSource\n* will read from AMPS.\n*/"
+    ],
+    [
+      ""
+    ]
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Field",
+      "Value"
+    ],
+    [
+      "replication-\nlogon",
+      "Controls permission for a replication connection to log on to AMPS.\nWhen this field is present, the value of this field must be a boolean\ntrue or false."
+    ]
+  ]
+}

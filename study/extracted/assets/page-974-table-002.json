@@ -1,0 +1,32 @@
+{
+  "rows": [
+    [
+      "Acknowledgment",
+      "Description"
+    ],
+    [
+      "none",
+      "No ack message is returned.\nThis is the default behavior."
+    ],
+    [
+      "completed",
+      "Not supported at this time."
+    ],
+    [
+      "persisted",
+      "Not supported at this time."
+    ],
+    [
+      "processed",
+      "AMPS has processed the logon message."
+    ],
+    [
+      "received",
+      "The logon command has been received."
+    ],
+    [
+      "stats",
+      "Not supported at this time."
+    ]
+  ]
+}

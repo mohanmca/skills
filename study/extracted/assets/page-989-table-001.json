@@ -1,0 +1,20 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Description"
+    ],
+    [
+      "select=[fields]",
+      "Specifies the fields to include in messages provided on this\nsubscription.\nThe contents of this option are a comma-delimited list of\ninclusion specifiers."
+    ],
+    [
+      "send_keys",
+      "Not supported by this command type."
+    ],
+    [
+      "timestamp",
+      "AMPS will include a header with the time at which this\ninstance of AMPS processed the incoming publish command\nfor this message."
+    ]
+  ]
+}

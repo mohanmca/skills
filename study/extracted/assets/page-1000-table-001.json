@@ -1,0 +1,32 @@
+{
+  "rows": [
+    [
+      "Acknowledgment",
+      "Description"
+    ],
+    [
+      "",
+      "bookmarks on each publish message."
+    ],
+    [
+      "completed",
+      "The sow_and_subscribe message has completed the sow\nportion of the command, and all future messages will be\nupdated based on publishes."
+    ],
+    [
+      "persisted",
+      "Not supported at this time."
+    ],
+    [
+      "processed",
+      "AMPS has completed the work necessary to register the\nsubscription and begin the SOW query."
+    ],
+    [
+      "received",
+      "The sow_and_subscribe message has been received."
+    ],
+    [
+      "stats",
+      "Returns an ack message with Matches, TopicMatches and\nRecordsReturned."
+    ]
+  ]
+}

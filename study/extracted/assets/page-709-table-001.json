@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      "Queue Type",
+      "Initial Owner"
+    ],
+    [
+      "Queue",
+      "Instance where the message was published."
+    ],
+    [
+      "GroupLocalQueue",
+      "Instance specified in the InitialOwner tag."
+    ]
+  ]
+}

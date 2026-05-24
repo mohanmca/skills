@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Header",
+      "Description"
+    ],
+    [
+      "Topic",
+      "The topic that the message applies to.\nFor commands to AMPS, this is the topic that AMPS will apply the\ncommand to. For messages from AMPS, this is the topic from which\nthe message originated."
+    ],
+    [
+      "Command",
+      "The command type of the message. Each message has a specific\ncommand type.\nFor example, messages that contain data from a query over a SOW\ntopic have a command of sow, while messages that contain data\nfrom a publish command have a command of publish and messages\nthat acknowledge a command to AMPS have a command type of ack."
+    ],
+    [
+      "CommandId",
+      "An identifier used to correlate responses from AMPS with an initial\ncommand.\nFor example, ack messages returned by AMPS contain the\nCommandId provided with the command they acknowledge and\nsubscriptions can be updated or removed using the CommandId\nprovided with the subscribe command."
+    ],
+    [
+      "SowKey",
+      "For messages received from a State of the World (or SOW) topic, an\nidentifier that AMPS assigns to the record for this message. SOW\ntopics are described the State of the World Topics section.\nThis header is included on messages from a SOW topic by default.\nAMPS will omit this header when the subscription or SOW query\nincludes the no_sowkey option."
+    ]
+  ]
+}

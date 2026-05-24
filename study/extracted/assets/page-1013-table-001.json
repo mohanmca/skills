@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Field",
+      "Description"
+    ],
+    [
+      "cmd",
+      "The command to be executed.\nValue: sow_and_delta_subscribe"
+    ],
+    [
+      "topic",
+      "The target SOW topic to query and subscribe to."
+    ],
+    [
+      "ack_type",
+      "Acknowledgment type for the given command.\nValue is a comma separated string of one or more of the\nfollowing: none, received, processed, completed or stats."
+    ],
+    [
+      "batch_size",
+      "Number of records to return in a single sow query results\nmessage.\nWhile the default value is 1, it is recommended to use a higher\nvalue, as even small increases can yield greater performance\nin query result delivery."
+    ]
+  ]
+}

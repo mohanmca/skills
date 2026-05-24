@@ -1,0 +1,48 @@
+{
+  "rows": [
+    [
+      "FIX/NVFIX Header Field",
+      "AMPS Protocol Equivalent"
+    ],
+    [
+      "20055",
+      "records_returned"
+    ],
+    [
+      "20056",
+      "topic_matches"
+    ],
+    [
+      "20057",
+      "matches"
+    ],
+    [
+      "20058",
+      "msg_len"
+    ],
+    [
+      "20059",
+      "sow_key"
+    ],
+    [
+      "20060",
+      "gseq"
+    ],
+    [
+      "20061",
+      "sids"
+    ],
+    [
+      "20062",
+      "reason"
+    ],
+    [
+      "20063",
+      "N/A -- obsolete header\n(MessageID)"
+    ],
+    [
+      "20074",
+      "correlation_id\n(used for AMPS/ClientStatus messages)"
+    ]
+  ]
+}

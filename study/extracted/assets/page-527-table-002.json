@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "FIX",
+      "Definition"
+    ],
+    [
+      "20007",
+      "The message type of the topic."
+    ],
+    [
+      "20065",
+      "Timestamp in which AMPS sent the message."
+    ],
+    [
+      "20068",
+      "Topic that statistics are being reported on."
+    ],
+    [
+      "20075",
+      "Number of records in the SOW topic."
+    ]
+  ]
+}

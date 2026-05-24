@@ -1,0 +1,12 @@
+{
+  "rows": [
+    [
+      "Option",
+      "Definition"
+    ],
+    [
+      "urischeme\n(applies to SSL\nconnections)",
+      "Allows a custom URI scheme to be specified.\nWhen both secure and urischeme are specified, urischeme\ntakes precedence."
+    ]
+  ]
+}

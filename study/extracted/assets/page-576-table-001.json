@@ -1,0 +1,20 @@
+{
+  "rows": [
+    [
+      "512 bytes",
+      "2,500,000 per second"
+    ],
+    [
+      "1024 bytes (1KB)",
+      "1,250,000 per second"
+    ],
+    [
+      "10KB",
+      "125,000 per second"
+    ],
+    [
+      "100KB",
+      "12,500 per second"
+    ]
+  ]
+}

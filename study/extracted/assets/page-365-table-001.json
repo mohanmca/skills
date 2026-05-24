@@ -1,0 +1,28 @@
+{
+  "rows": [
+    [
+      "NVFIX Tag",
+      "Description"
+    ],
+    [
+      "OrderID",
+      "Unique order identifier"
+    ],
+    [
+      "Tick",
+      "Symbol"
+    ],
+    [
+      "ClientId",
+      "Unique client identifier"
+    ],
+    [
+      "Shares",
+      "Currently executed shares for the chain of orders"
+    ],
+    [
+      "Price",
+      "Average price for the chain of orders"
+    ]
+  ]
+}

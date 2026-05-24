@@ -1,0 +1,28 @@
+{
+  "rows": [
+    [
+      "Variable",
+      "Description"
+    ],
+    [
+      "AMPS_REPLICATION_PEER_NAME",
+      "The instance name of the AMPS instance on\nthe opposite end of the connection, if\navailable."
+    ],
+    [
+      "AMPS_REPLICATION_CLIENT_NAME",
+      "The name of the AMPS client used for this\nconnection."
+    ],
+    [
+      "AMPS_REPLICATION_REMOTE_ADDRESS",
+      "The remote address of the opposite end of the\nconnection."
+    ],
+    [
+      "AMPS_REPLICATION_GROUP_NAME",
+      "The group name of the AMPS instance on the\nopposite end of the connection, if available."
+    ],
+    [
+      "AMPS_REPLICATION_TRANSPORT_NAME",
+      "The name of the transport making the\noutgoing connection."
+    ]
+  ]
+}

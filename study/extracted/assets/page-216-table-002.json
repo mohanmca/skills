@@ -1,0 +1,10 @@
+{
+  "rows": [
+    [
+      "MD5"
+    ],
+    [
+      "MD5(string)\nReturns the MD5 checksum of the provided string.\nParameters\nstring: The string to checksum.\nReturns\nThe MD5 checksum of the string.\nExample\nMD5(/data)"
+    ]
+  ]
+}
