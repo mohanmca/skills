@@ -122,6 +122,25 @@ To match the high-quality standards of our top study apps, every generated app M
 4. **Animations:** Use `cubic-bezier(0.34, 1.56, 0.64, 1)` for the "pop-in" effect on slides to make them feel "alive."
 5. **Footer:** A fixed bottom navigation bar with "Back", slide counter (e.g., "3 / 15"), and "Next" buttons.
 6. **Inline Quiz Feedback:** NEVER use `alert()`, `confirm()`, or `prompt()`. Every quiz MUST use inline visual feedback (green for correct, red for incorrect) to maintain the student's flow.
+7. **Study Tricks Portal:** Every app MUST include a floating "💡" icon that opens a colorful "Study Tricks" overlay. This portal teaches evidence-based strategies like Active Recall, Spaced Repetition, and the Blurting Method.
+
+### Bug Prevention & Stability
+
+To ensure the app remains stable and bug-free, every generation MUST follow these technical rules:
+
+1. **Hooks in Loops:** NEVER use `useState` or other hooks directly inside a `.map()` loop (e.g., when rendering quiz questions). Always create a standalone component (like `QuizQuestion.jsx`) to encapsulate question-specific state.
+2. **Mermaid Rendering:** Always use the `mermaid.render()` API with unique IDs for dynamic SVG injection. This prevents diagrams from displaying as raw text during slide transitions.
+3. **MIME Type Compatibility:** When using the standalone template, assume the server might not support modern module formats. Provide a CDN-based fallback (React/Babel/Tailwind) for quick previews.
+
+### Journey Navigation Logic
+
+The app's "Next" button MUST guide the student through a continuous loop:
+- **Module Study Slides** (Slide 1 to N)
+- **Module Quiz** (After the last slide)
+- **Daily Review (SRS)** (After finishing the quiz)
+- **Next Module** (Slide 1 of the next module in the sequence)
+
+The navigation counter in the footer should display `${currentSlideIndex + 1} / ${totalSlides}` during study, and the Mode Name (e.g., "QUIZ", "SRS") during other phases.
 
 ---
 
