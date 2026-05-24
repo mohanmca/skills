@@ -121,7 +121,9 @@ To match the high-quality standards of our top study apps, every generated app M
 3. **Slide Container:** Use the `.slide-premium` class with a white background, rounded corners (1.25rem), and the `popIn` animation.
 4. **Animations:** Use `cubic-bezier(0.34, 1.56, 0.64, 1)` for the "pop-in" effect on slides to make them feel "alive."
 5. **Footer:** A fixed bottom navigation bar with "Back", slide counter (e.g., "3 / 15"), and "Next" buttons.
-6. **Inline Quiz Feedback:** NEVER use `alert()`, `confirm()`, or `prompt()`. Every quiz MUST use inline visual feedback (green for correct, red for incorrect) to maintain the student's flow.
+6. **Inline Interactive Feedback:** NEVER use `alert()`, `confirm()`, or `prompt()`. Every interactive element MUST use inline visual feedback. 
+   - **Quizzes:** Use green for correct, red for incorrect.
+   - **Flashcards:** Show a brief inline confirmation (e.g., "Scheduled for Good!") after rating, rather than a popup.
 7. **Study Tricks Portal:** Every app MUST include a floating "💡" icon that opens a colorful "Study Tricks" overlay. This portal teaches evidence-based strategies like Active Recall, Spaced Repetition, and the Blurting Method.
 
 ### Bug Prevention & Stability
