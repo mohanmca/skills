@@ -1,0 +1,790 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Workshop</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f8fb;
+      --panel: #ffffff;
+      --panel-soft: #f0f5f8;
+      --ink: #17202a;
+      --muted: #5f6b7a;
+      --line: #d9dee7;
+      --accent: #0f766e;
+      --accent-soft: #e5f4f1;
+      --accent-2: #6d4aff;
+      --accent-2-soft: #eeeafe;
+      --hook: #b45309;
+      --hook-soft: #fff7dc;
+      --good: #15803d;
+      --bad: #b91c1c;
+      --shadow: 0 18px 45px rgba(15, 23, 42, 0.10);
+    }
+    * { box-sizing: border-box; }
+    html, body { min-height: 100%; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.5;
+      overflow: hidden;
+    }
+    button {
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--panel);
+      color: var(--ink);
+      font: inherit;
+      min-height: 38px;
+      padding: 8px 12px;
+      cursor: pointer;
+    }
+    button:hover { border-color: var(--accent); }
+    button.primary { background: var(--accent); border-color: var(--accent); color: white; }
+    button.secondary { background: var(--accent-2-soft); border-color: #cfc6ff; color: #35227d; }
+    button:disabled { cursor: not-allowed; opacity: 0.5; }
+    .progress-track {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: #e8edf3;
+      z-index: 50;
+    }
+    .progress-fill {
+      width: 0;
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      transition: width 220ms ease;
+    }
+    .app-shell {
+      min-height: 100vh;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      padding-top: 4px;
+    }
+    header, footer {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 18px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.96);
+      z-index: 20;
+    }
+    footer { border-top: 1px solid var(--line); border-bottom: 0; }
+    .title-block h1 { margin: 0; font-size: 18px; letter-spacing: 0; }
+    .title-block p { margin: 2px 0 0; color: var(--muted); font-size: 13px; }
+    .controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: flex-end; }
+    .page-pill {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--panel-soft);
+      color: var(--muted);
+      min-width: 112px;
+      padding: 7px 12px;
+      text-align: center;
+      font-variant-numeric: tabular-nums;
+    }
+    main {
+      width: min(1180px, calc(100vw - 32px));
+      margin: 18px auto;
+      overflow: auto;
+    }
+    .slide {
+      min-height: min(680px, calc(100vh - 170px));
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(300px, 42%);
+      gap: 20px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+    }
+    .slide h2 { margin: 0 0 12px; font-size: clamp(28px, 3vw, 44px); line-height: 1.08; letter-spacing: 0; }
+    .eyebrow { margin: 0 0 8px; color: var(--accent); font-weight: 750; letter-spacing: 0; }
+    .why, .principle, .hook {
+      border-left: 4px solid var(--accent);
+      background: var(--accent-soft);
+      padding: 10px 12px;
+      margin: 12px 0;
+      border-radius: 0 6px 6px 0;
+    }
+    .principle { border-left-color: var(--accent-2); background: var(--accent-2-soft); }
+    .hook { border-left-color: var(--hook); background: var(--hook-soft); }
+    .slide ul { padding-left: 22px; }
+    .slide li { margin: 8px 0; }
+    .diagram {
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fbfcfe;
+      min-height: 340px;
+      overflow: auto;
+      padding: 10px;
+    }
+    .diagram svg { width: 100%; max-height: 540px; }
+    .quiz-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 26px;
+      min-height: min(620px, calc(100vh - 180px));
+      box-shadow: var(--shadow);
+    }
+    .quiz-card h2 { margin-top: 0; font-size: clamp(24px, 2.5vw, 36px); letter-spacing: 0; }
+    .answers { display: grid; gap: 10px; margin-top: 18px; }
+    .answer { text-align: left; }
+    .answer.correct { border-color: var(--good); background: #f0fdf4; }
+    .answer.incorrect { border-color: var(--bad); background: #fef2f2; }
+    .feedback { margin-top: 18px; padding: 12px; border-radius: 6px; background: #f8fafc; border: 1px solid var(--line); }
+    .empty-state { color: var(--muted); }
+    .panel {
+      position: fixed;
+      inset: 0;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 32px;
+      background: rgba(23, 32, 42, 0.32);
+      z-index: 100;
+    }
+    .panel.open { display: flex; }
+    .panel-card {
+      width: min(760px, 96vw);
+      max-height: min(760px, 88vh);
+      overflow: auto;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      padding: 24px;
+    }
+    .panel-card h2 { margin-top: 0; }
+    .toc-list { display: grid; gap: 8px; }
+    .toc-list button { text-align: left; }
+    .shortcut-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 9px 0;
+      border-top: 1px solid var(--line);
+    }
+    .shortcut-row:first-of-type { border-top: 0; }
+    .kbd {
+      min-width: 88px;
+      text-align: center;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 12px;
+      color: var(--accent);
+      background: var(--accent-soft);
+      border: 1px solid #b7ddd5;
+      border-radius: 4px;
+      padding: 2px 6px;
+    }
+    .notes {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: min(420px, 92vw);
+      transform: translateX(100%);
+      transition: transform 220ms ease;
+      background: var(--panel);
+      border-left: 1px solid var(--line);
+      z-index: 90;
+      padding: 28px;
+      box-shadow: var(--shadow);
+      overflow: auto;
+    }
+    .notes.open { transform: translateX(0); }
+    .notes-label { color: var(--accent); font-weight: 750; font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; }
+    .print-deck { display: none; }
+    @media (max-width: 820px) {
+      body { overflow: auto; }
+      .app-shell { min-height: 100dvh; }
+      .slide { grid-template-columns: 1fr; min-height: auto; }
+      header, footer { align-items: flex-start; flex-direction: column; }
+      main { width: min(100vw - 20px, 1180px); }
+      .controls { justify-content: flex-start; }
+    }
+    @media print {
+      @page { size: A4 landscape; margin: 8mm; }
+      body { background: #fff; font-size: 10pt; overflow: visible; }
+      .app-shell, .progress-track, .panel, .notes { display: none !important; }
+      .print-deck {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6mm;
+      }
+      .print-slide {
+        break-inside: avoid;
+        border: 1px solid #aaa;
+        border-radius: 4px;
+        padding: 5mm;
+        min-height: 87mm;
+      }
+      .print-slide h2 { margin: 0 0 3mm; font-size: 15pt; }
+      .print-slide p, .print-slide li { font-size: 8.8pt; margin: 1.8mm 0; }
+      .print-slide ul { padding-left: 5mm; }
+      .print-slide svg { max-height: 42mm; width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <script id="workshop-data" type="application/json">
+  {
+    "title": "Replace With Workshop Title",
+    "audience": "Replace with target audience",
+    "modules": [
+      {
+        "id": "m01",
+        "title": "Replace With Module Title",
+        "objective": "Replace with module objective",
+        "slides": [
+          {
+            "title": "Why This Workshop Exists",
+            "why": "Learners need a reason before they can prioritize details.",
+            "principle": "Learning starts by naming the pressure that makes the concept necessary.",
+            "content": ["State the problem the module solves.", "Name the consequence of not understanding it."],
+            "memoryHook": "Need creates attention; attention makes details stick.",
+            "speakerNotes": "Open by tying this module to the learner's daily work.",
+            "diagramSvg": "<svg role=\"img\" aria-label=\"Need to outcome diagram\" viewBox=\"0 0 560 260\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"32\" y=\"84\" width=\"140\" height=\"82\" rx=\"8\" fill=\"#e5f4f1\" stroke=\"#0f766e\"/><text x=\"102\" y=\"130\" text-anchor=\"middle\" font-size=\"18\">Need</text><path d=\"M185 125h168\" stroke=\"#475569\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/><rect x=\"378\" y=\"84\" width=\"150\" height=\"82\" rx=\"8\" fill=\"#eeeafe\" stroke=\"#6d4aff\"/><text x=\"453\" y=\"130\" text-anchor=\"middle\" font-size=\"18\">Outcome</text><defs><marker id=\"arrow\" markerWidth=\"10\" markerHeight=\"10\" refX=\"8\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L0,6 L9,3 z\" fill=\"#475569\"/></marker></defs></svg>"
+          },
+          {
+            "title": "First Principles Baseline",
+            "why": "A shared baseline prevents later vocabulary from becoming memorized noise.",
+            "principle": "Start with the smallest true statement, then build upward.",
+            "content": ["Define the irreducible concept.", "Separate facts from conveniences."],
+            "memoryHook": "Find the floor before building the staircase.",
+            "speakerNotes": "Replace placeholders with source-grounded fundamentals."
+          },
+          {
+            "title": "Core Vocabulary",
+            "why": "Precise terms reduce confusion during architecture and sequence discussions.",
+            "principle": "A term is useful only when it marks a meaningful boundary.",
+            "content": ["Introduce the main nouns.", "Tie each term to a responsibility."],
+            "memoryHook": "Vocabulary is a map legend, not a word list.",
+            "speakerNotes": "Use source terminology exactly when available."
+          },
+          {
+            "title": "Mental Model",
+            "why": "Learners remember a working model better than isolated facts.",
+            "principle": "A mental model compresses many details into a usable prediction.",
+            "content": ["Explain the simple model.", "Show what the model predicts."],
+            "memoryHook": "A good model lets you guess what happens next.",
+            "speakerNotes": "Use a domain-specific analogy."
+          },
+          {
+            "title": "Architecture View",
+            "why": "Architecture shows how the pieces cooperate to produce the outcome.",
+            "principle": "Architecture is responsibility plus connection.",
+            "content": ["Name major parts.", "Show boundaries and dependencies."],
+            "memoryHook": "Boxes are promises; arrows are dependencies.",
+            "speakerNotes": "Replace with a source-specific architecture diagram."
+          },
+          {
+            "title": "Component Responsibilities",
+            "why": "Responsibility boundaries explain where changes and failures belong.",
+            "principle": "A component should own a coherent decision or capability.",
+            "content": ["List each component's job.", "Call out what it should not own."],
+            "memoryHook": "If everyone owns it, nobody debugs it.",
+            "speakerNotes": "Use concrete classes, services, files, or modules from the source."
+          },
+          {
+            "title": "Sequence Of Work",
+            "why": "Order reveals dependencies that static diagrams hide.",
+            "principle": "A sequence diagram is a cause-and-effect chain.",
+            "content": ["Walk through the happy path.", "Name the handoff at each step."],
+            "memoryHook": "Follow the request like a baton.",
+            "speakerNotes": "Replace with a source-specific lifecycle or request flow."
+          },
+          {
+            "title": "State And Data",
+            "why": "State explains why the same input can produce different outcomes.",
+            "principle": "Data plus state plus rule produces behavior.",
+            "content": ["Identify durable data.", "Identify temporary state and transitions."],
+            "memoryHook": "Behavior is data in motion.",
+            "speakerNotes": "Ground in tables, configs, files, queues, or messages."
+          },
+          {
+            "title": "Failure Modes",
+            "why": "Failures reveal the real contract of the system.",
+            "principle": "A robust design defines what happens when assumptions break.",
+            "content": ["Name common failures.", "Explain detection and recovery paths."],
+            "memoryHook": "The contract is clearest when something breaks.",
+            "speakerNotes": "Use operational examples from the source."
+          },
+          {
+            "title": "Tradeoffs",
+            "why": "Tradeoffs prevent learners from treating one design as universally best.",
+            "principle": "Every design pays with complexity, latency, cost, coupling, or risk.",
+            "content": ["Name the benefit.", "Name the cost and when it matters."],
+            "memoryHook": "There is no free architecture.",
+            "speakerNotes": "Compare source choices against plausible alternatives."
+          },
+          {
+            "title": "Applied Walkthrough",
+            "why": "Application turns concepts into usable skill.",
+            "principle": "Walkthroughs connect the model to a real task.",
+            "content": ["Trace one real example.", "Pause at decision points."],
+            "memoryHook": "Practice is where the model pays rent.",
+            "speakerNotes": "Use a repo path, command, config, or scenario when available."
+          },
+          {
+            "title": "Recap And Quiz Setup",
+            "why": "A short recap primes retrieval before assessment.",
+            "principle": "Recall strengthens learning more than rereading.",
+            "content": ["Restate the module's core model.", "Preview the quiz themes."],
+            "memoryHook": "Close the loop before testing the loop.",
+            "speakerNotes": "End with the questions learners should now be able to answer."
+          }
+        ],
+        "quiz": {
+          "questions": [
+            {
+              "id": "m01-q01",
+              "prompt": "Why should a workshop begin with first principles?",
+              "options": ["They give learners a stable foundation for later details.", "They make diagrams unnecessary.", "They replace examples with definitions.", "They let the quiz be skipped."],
+              "answer": 0,
+              "explanation": "First principles let learners understand why later details exist and how to reason when examples change.",
+              "whyWrong": "The wrong answers confuse foundations with shortcuts or omitted practice.",
+              "sourceModule": "m01"
+            },
+            {
+              "id": "m01-q02",
+              "prompt": "What should an architecture diagram clarify?",
+              "options": ["Responsibilities, boundaries, and dependencies.", "Only the color palette.", "Every line of implementation code.", "Only the final exam answers."],
+              "answer": 0,
+              "explanation": "Architecture diagrams are useful when they show what owns what and how the parts depend on each other.",
+              "whyWrong": "A diagram can support implementation, but it should not become decorative or code-level noise.",
+              "sourceModule": "m01"
+            },
+            {
+              "id": "m01-q03",
+              "prompt": "Why track failed quiz questions?",
+              "options": ["To let learners retry the exact concepts they missed.", "To remove them from the final exam.", "To hide incorrect feedback.", "To keep answer order fixed."],
+              "answer": 0,
+              "explanation": "Retrying missed concepts focuses practice where it is most useful.",
+              "whyWrong": "Failure tracking should improve learning, not avoid feedback or reduce coverage.",
+              "sourceModule": "m01"
+            },
+            {
+              "id": "m01-q04",
+              "prompt": "Why store the correct answer at index 0 before shuffling?",
+              "options": ["It keeps authoring predictable while render-time shuffle prevents pattern memorization.", "It makes every first visible option correct.", "It removes the need for explanations.", "It disables final exam generation."],
+              "answer": 0,
+              "explanation": "The stored data stays easy to review, and the UI can randomize display order safely.",
+              "whyWrong": "Index 0 is canonical storage, not the visible answer position after shuffling.",
+              "sourceModule": "m01"
+            },
+            {
+              "id": "m01-q05",
+              "prompt": "What makes a memory hook effective?",
+              "options": ["It compresses the lesson into a sticky retrieval cue.", "It adds unrelated humor.", "It replaces the first-principles explanation.", "It removes the need for diagrams."],
+              "answer": 0,
+              "explanation": "A good hook helps learners retrieve the concept later without distorting it.",
+              "whyWrong": "Hooks support the lesson; they do not replace accurate teaching.",
+              "sourceModule": "m01"
+            },
+            {
+              "id": "m01-q06",
+              "prompt": "Why keep print mode compact?",
+              "options": ["To produce useful handouts with minimal paper waste.", "To hide slide numbers.", "To remove diagrams.", "To force learners to use fullscreen."],
+              "answer": 0,
+              "explanation": "Print mode should optimize for review and portability, not full-screen presentation spacing.",
+              "whyWrong": "Compact printing should preserve learning value, including page numbers and diagrams.",
+              "sourceModule": "m01"
+            }
+          ]
+        }
+      }
+    ]
+  }
+  </script>
+
+  <div class="progress-track" aria-hidden="true"><div id="progressFill" class="progress-fill"></div></div>
+  <div class="app-shell">
+    <header>
+      <div class="title-block">
+        <h1 id="workshopTitle">Workshop</h1>
+        <p id="progressText">Ready</p>
+      </div>
+      <div class="controls">
+        <span id="pageNumber" class="page-pill">Page 1 / 1</span>
+        <button id="tocBtn" type="button">TOC</button>
+        <button id="quizBtn" type="button">Module Quiz</button>
+        <button id="retryBtn" type="button">Retry Missed</button>
+        <button id="examBtn" type="button" class="secondary">Final Exam</button>
+        <button id="notesBtn" type="button">Notes</button>
+        <button id="helpBtn" type="button">Help</button>
+        <button id="printBtn" type="button">Print PDF</button>
+      </div>
+    </header>
+    <main id="stage" aria-live="polite"></main>
+    <footer>
+      <button id="prevBtn" type="button">Previous</button>
+      <div id="footerStatus">Slide</div>
+      <button id="nextBtn" type="button" class="primary">Next</button>
+    </footer>
+  </div>
+
+  <section id="printDeck" class="print-deck" aria-label="Printable workshop handout"></section>
+
+  <div id="tocPanel" class="panel" role="dialog" aria-modal="true" aria-label="Table of contents">
+    <div class="panel-card">
+      <h2>Table Of Contents</h2>
+      <div id="tocList" class="toc-list"></div>
+    </div>
+  </div>
+
+  <div id="helpPanel" class="panel" role="dialog" aria-modal="true" aria-label="Keyboard shortcuts">
+    <div class="panel-card">
+      <h2>Keyboard Shortcuts</h2>
+      <div class="shortcut-row"><span>Next slide or question</span><span class="kbd">Right / Space</span></div>
+      <div class="shortcut-row"><span>Previous slide</span><span class="kbd">Left</span></div>
+      <div class="shortcut-row"><span>First slide</span><span class="kbd">Home</span></div>
+      <div class="shortcut-row"><span>Last slide</span><span class="kbd">End</span></div>
+      <div class="shortcut-row"><span>Table of contents</span><span class="kbd">T</span></div>
+      <div class="shortcut-row"><span>Speaker notes</span><span class="kbd">N</span></div>
+      <div class="shortcut-row"><span>Fullscreen</span><span class="kbd">F</span></div>
+      <div class="shortcut-row"><span>Help</span><span class="kbd">? / /</span></div>
+      <div class="shortcut-row"><span>Close panels</span><span class="kbd">Esc</span></div>
+    </div>
+  </div>
+
+  <aside id="notesPanel" class="notes" aria-label="Speaker notes">
+    <div class="notes-label">Speaker Notes - press N to close</div>
+    <div id="notesContent"></div>
+  </aside>
+
+  <script>
+    const data = JSON.parse(document.getElementById("workshop-data").textContent);
+    const STORE_KEY = "first-principles-workshop:" + slugify(data.title);
+    const slides = data.modules.flatMap((module, moduleIndex) =>
+      module.slides.map((slide, slideIndex) => ({ module, moduleIndex, slide, slideIndex })));
+    const state = {
+      mode: "slide",
+      slideGlobalIndex: 0,
+      quizTitle: "",
+      quizQuestions: [],
+      questionIndex: 0,
+      selected: null,
+      failedQuestionIds: new Set()
+    };
+    const els = {
+      title: document.getElementById("workshopTitle"),
+      progress: document.getElementById("progressText"),
+      progressFill: document.getElementById("progressFill"),
+      pageNumber: document.getElementById("pageNumber"),
+      stage: document.getElementById("stage"),
+      footer: document.getElementById("footerStatus"),
+      prev: document.getElementById("prevBtn"),
+      next: document.getElementById("nextBtn"),
+      toc: document.getElementById("tocBtn"),
+      quiz: document.getElementById("quizBtn"),
+      retry: document.getElementById("retryBtn"),
+      exam: document.getElementById("examBtn"),
+      notes: document.getElementById("notesBtn"),
+      help: document.getElementById("helpBtn"),
+      print: document.getElementById("printBtn"),
+      printDeck: document.getElementById("printDeck"),
+      tocPanel: document.getElementById("tocPanel"),
+      helpPanel: document.getElementById("helpPanel"),
+      tocList: document.getElementById("tocList"),
+      notesPanel: document.getElementById("notesPanel"),
+      notesContent: document.getElementById("notesContent")
+    };
+
+    function slugify(value) {
+      return String(value || "workshop").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+    }
+    function escapeHtml(value) {
+      return String(value || "").replace(/[&<>"']/g, char => ({
+        "&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;", "'": "&#39;"
+      })[char]);
+    }
+    function trustedSvg(value) {
+      return String(value || "").trim().startsWith("<svg") ? value : "";
+    }
+    function shuffle(items) {
+      const copy = items.slice();
+      for (let i = copy.length - 1; i > 0; i -= 1) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [copy[i], copy[j]] = [copy[j], copy[i]];
+      }
+      return copy;
+    }
+    function currentSlideMeta() {
+      return slides[Math.max(0, Math.min(slides.length - 1, state.slideGlobalIndex))];
+    }
+    function currentModule() {
+      return currentSlideMeta().module;
+    }
+    function canonicalQuestions(module) {
+      return ((module.quiz && module.quiz.questions) || []).map(question => ({
+        ...question,
+        id: question.id || `${module.id}-${Math.random().toString(36).slice(2)}`,
+        sourceModule: question.sourceModule || module.id
+      }));
+    }
+    function allQuestions() {
+      return data.modules.flatMap(module => canonicalQuestions(module));
+    }
+    function prepareQuestions(questions) {
+      return shuffle(questions).map(question => ({
+        ...question,
+        shuffledOptions: shuffle((question.options || []).map((text, index) => ({ text, originalIndex: index })))
+      }));
+    }
+    function save() {
+      try {
+        localStorage.setItem(STORE_KEY, JSON.stringify({
+          slideGlobalIndex: state.slideGlobalIndex,
+          failedQuestionIds: Array.from(state.failedQuestionIds)
+        }));
+      } catch (_) {}
+    }
+    function load() {
+      try {
+        const stored = JSON.parse(localStorage.getItem(STORE_KEY) || "{}");
+        if (Number.isInteger(stored.slideGlobalIndex)) {
+          state.slideGlobalIndex = Math.max(0, Math.min(slides.length - 1, stored.slideGlobalIndex));
+        }
+        if (Array.isArray(stored.failedQuestionIds)) {
+          state.failedQuestionIds = new Set(stored.failedQuestionIds);
+        }
+      } catch (_) {}
+    }
+    function updateChrome() {
+      const meta = currentSlideMeta();
+      const page = state.mode === "slide" ? state.slideGlobalIndex + 1 : state.questionIndex + 1;
+      const total = state.mode === "slide" ? slides.length : Math.max(1, state.quizQuestions.length);
+      els.title.textContent = data.title;
+      els.pageNumber.textContent = state.mode === "slide" ? `Page ${page} / ${total}` : `Question ${page} / ${total}`;
+      els.progress.textContent = state.mode === "slide"
+        ? `${meta.module.id.toUpperCase()} - ${meta.module.title} - slide ${meta.slideIndex + 1} of ${meta.module.slides.length}`
+        : state.quizTitle;
+      els.footer.textContent = state.mode === "slide" ? `${meta.moduleIndex + 1}/${data.modules.length} modules` : state.mode.toUpperCase();
+      els.progressFill.style.width = `${(page / total) * 100}%`;
+      els.retry.disabled = state.failedQuestionIds.size === 0;
+    }
+    function renderSlide() {
+      const { module, slide } = currentSlideMeta();
+      els.stage.innerHTML = `
+        <article class="slide">
+          <section>
+            <p class="eyebrow">${escapeHtml(module.objective)}</p>
+            <h2>${escapeHtml(slide.title)}</h2>
+            <div class="why"><strong>Why:</strong> ${escapeHtml(slide.why)}</div>
+            <div class="principle"><strong>First principle:</strong> ${escapeHtml(slide.principle)}</div>
+            <ul>${(slide.content || []).map(item => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
+            <div class="hook"><strong>Memory hook:</strong> ${escapeHtml(slide.memoryHook)}</div>
+          </section>
+          <section class="diagram">${trustedSvg(slide.diagramSvg) || "<p class=\"empty-state\">Add an architecture, component, or sequence SVG when this slide explains structure or flow.</p>"}</section>
+        </article>`;
+      updateNotes();
+    }
+    function renderQuiz() {
+      const question = state.quizQuestions[state.questionIndex];
+      if (!question) {
+        els.stage.innerHTML = `<article class="quiz-card"><h2>No Questions Available</h2><p class="empty-state">Add quiz questions before using this mode.</p></article>`;
+        return;
+      }
+      const answered = state.selected !== null;
+      els.stage.innerHTML = `
+        <article class="quiz-card">
+          <p class="eyebrow">${escapeHtml(question.sourceModule || "")}</p>
+          <h2>${escapeHtml(question.prompt)}</h2>
+          <div class="answers">
+            ${question.shuffledOptions.map((option, index) => {
+              const selected = state.selected === index;
+              const correct = option.originalIndex === question.answer;
+              const resultClass = answered && selected ? (correct ? "correct" : "incorrect") : "";
+              return `<button class="answer ${resultClass}" data-answer="${index}" type="button">${escapeHtml(option.text)}</button>`;
+            }).join("")}
+          </div>
+          ${answered ? `<div class="feedback"><strong>${question.shuffledOptions[state.selected].originalIndex === question.answer ? "Correct" : "Review this"}</strong><p>${escapeHtml(question.explanation)}</p><p>${escapeHtml(question.whyWrong || "")}</p></div>` : ""}
+        </article>`;
+      document.querySelectorAll("[data-answer]").forEach(button => {
+        button.addEventListener("click", () => {
+          state.selected = Number(button.dataset.answer);
+          const selectedOption = question.shuffledOptions[state.selected];
+          if (selectedOption.originalIndex !== question.answer) {
+            state.failedQuestionIds.add(question.id);
+          } else {
+            state.failedQuestionIds.delete(question.id);
+          }
+          save();
+          render();
+        });
+      });
+      updateNotes();
+    }
+    function renderPrintDeck() {
+      els.printDeck.innerHTML = slides.map((meta, index) => `
+        <article class="print-slide">
+          <h2>${index + 1}. ${escapeHtml(meta.slide.title)}</h2>
+          <p><strong>Module:</strong> ${escapeHtml(meta.module.id.toUpperCase())} - ${escapeHtml(meta.module.title)}</p>
+          <p><strong>Why:</strong> ${escapeHtml(meta.slide.why)}</p>
+          <p><strong>Principle:</strong> ${escapeHtml(meta.slide.principle)}</p>
+          <ul>${(meta.slide.content || []).map(item => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
+          <p><strong>Hook:</strong> ${escapeHtml(meta.slide.memoryHook)}</p>
+          ${trustedSvg(meta.slide.diagramSvg)}
+        </article>`).join("");
+    }
+    function renderToc() {
+      els.tocList.innerHTML = slides.map((meta, index) => `
+        <button type="button" data-slide="${index}">
+          Page ${index + 1}: ${escapeHtml(meta.module.id.toUpperCase())} - ${escapeHtml(meta.slide.title)}
+        </button>`).join("");
+      document.querySelectorAll("[data-slide]").forEach(button => {
+        button.addEventListener("click", () => {
+          go(Number(button.dataset.slide));
+          closePanels();
+        });
+      });
+    }
+    function updateNotes() {
+      if (state.mode === "slide") {
+        const { module, slide } = currentSlideMeta();
+        els.notesContent.innerHTML = `<h2>${escapeHtml(slide.title)}</h2><p><strong>Module:</strong> ${escapeHtml(module.title)}</p><p>${escapeHtml(slide.speakerNotes || slide.why || "")}</p>`;
+      } else {
+        const question = state.quizQuestions[state.questionIndex];
+        els.notesContent.innerHTML = `<h2>${escapeHtml(state.quizTitle)}</h2><p>${escapeHtml(question ? question.explanation : "No question selected.")}</p>`;
+      }
+    }
+    function render() {
+      updateChrome();
+      if (state.mode === "slide") renderSlide();
+      else renderQuiz();
+      renderPrintDeck();
+      renderToc();
+    }
+    function go(index) {
+      state.mode = "slide";
+      state.slideGlobalIndex = Math.max(0, Math.min(slides.length - 1, index));
+      state.selected = null;
+      save();
+      render();
+    }
+    function next() {
+      if (state.mode !== "slide") {
+        if (state.questionIndex < state.quizQuestions.length - 1) {
+          state.questionIndex += 1;
+          state.selected = null;
+          render();
+        } else {
+          state.mode = "slide";
+          state.selected = null;
+          render();
+        }
+      } else {
+        go(state.slideGlobalIndex + 1);
+      }
+    }
+    function previous() {
+      if (state.mode !== "slide") {
+        state.mode = "slide";
+        state.selected = null;
+        render();
+      } else {
+        go(state.slideGlobalIndex - 1);
+      }
+    }
+    function startQuiz(mode, title, questions) {
+      state.mode = mode;
+      state.quizTitle = title;
+      state.quizQuestions = prepareQuestions(questions);
+      state.questionIndex = 0;
+      state.selected = null;
+      render();
+    }
+    function startModuleQuiz() {
+      startQuiz("quiz", `${currentModule().title} - Module Quiz`, canonicalQuestions(currentModule()));
+    }
+    function startFinalExam() {
+      startQuiz("exam", "Final Exam - All Modules", allQuestions());
+    }
+    function startRetryMissed() {
+      const missed = allQuestions().filter(question => state.failedQuestionIds.has(question.id));
+      startQuiz("retry", "Retry Missed Questions", missed);
+    }
+    function togglePanel(panel) {
+      panel.classList.toggle("open");
+    }
+    function closePanels() {
+      els.tocPanel.classList.remove("open");
+      els.helpPanel.classList.remove("open");
+      els.notesPanel.classList.remove("open");
+    }
+    function toggleFullscreen() {
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen().catch(() => {});
+      } else {
+        document.exitFullscreen().catch(() => {});
+      }
+    }
+
+    els.prev.addEventListener("click", previous);
+    els.next.addEventListener("click", next);
+    els.toc.addEventListener("click", () => togglePanel(els.tocPanel));
+    els.quiz.addEventListener("click", startModuleQuiz);
+    els.retry.addEventListener("click", startRetryMissed);
+    els.exam.addEventListener("click", startFinalExam);
+    els.notes.addEventListener("click", () => els.notesPanel.classList.toggle("open"));
+    els.help.addEventListener("click", () => togglePanel(els.helpPanel));
+    els.print.addEventListener("click", () => window.print());
+    els.tocPanel.addEventListener("click", event => { if (event.target === els.tocPanel) closePanels(); });
+    els.helpPanel.addEventListener("click", event => { if (event.target === els.helpPanel) closePanels(); });
+    document.addEventListener("keydown", event => {
+      if (event.target.tagName === "INPUT" || event.target.tagName === "TEXTAREA") return;
+      if (event.key === "ArrowRight" || event.key === " ") { event.preventDefault(); next(); }
+      else if (event.key === "ArrowLeft") { event.preventDefault(); previous(); }
+      else if (event.key === "Home") { event.preventDefault(); go(0); }
+      else if (event.key === "End") { event.preventDefault(); go(slides.length - 1); }
+      else if (event.key === "t" || event.key === "T") { event.preventDefault(); togglePanel(els.tocPanel); }
+      else if (event.key === "n" || event.key === "N") { event.preventDefault(); els.notesPanel.classList.toggle("open"); }
+      else if (event.key === "f" || event.key === "F") { event.preventDefault(); toggleFullscreen(); }
+      else if (event.key === "?" || event.key === "/") { event.preventDefault(); togglePanel(els.helpPanel); }
+      else if (event.key === "Escape") { closePanels(); }
+    });
+    document.addEventListener("click", event => {
+      if (event.target.closest("button, .panel, .notes, a")) return;
+      if ("ontouchstart" in window) return;
+      const x = event.clientX / window.innerWidth;
+      if (x < 0.18) previous();
+      else if (x > 0.82) next();
+    });
+    let touchStartX = null;
+    let touchStartY = null;
+    document.addEventListener("touchstart", event => {
+      touchStartX = event.changedTouches[0].screenX;
+      touchStartY = event.changedTouches[0].screenY;
+    }, { passive: true });
+    document.addEventListener("touchend", event => {
+      if (touchStartX === null) return;
+      const dx = event.changedTouches[0].screenX - touchStartX;
+      const dy = event.changedTouches[0].screenY - touchStartY;
+      touchStartX = null;
+      touchStartY = null;
+      if (event.target.closest(".notes, .panel, button")) return;
+      if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.4) {
+        if (dx < 0) next();
+        else previous();
+      }
+    }, { passive: true });
+
+    load();
+    render();
+  </script>
+</body>
+</html>

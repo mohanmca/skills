@@ -1,0 +1,4 @@
+interface:
+  display_name: "First Principles Workshop"
+  short_description: "Build resumable workshop slide courses"
+  default_prompt: "Use $first-principles-workshop to turn source material into a resumable HTML workshop with modules, quizzes, diagrams, memory hooks, and a final exam."
